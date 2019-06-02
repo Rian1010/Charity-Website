@@ -1,0 +1,154 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+.hvr-shutter-out-vertical {
+  background-color: #ffffff; }
+
+.hpimg-1, .hpimg-2, .hpimg-3, .hpimg-4, .hpimg-5 {
+  position: relative;
+  background-size: 132% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+
+.hpimg-1 {
+  width: 100%;
+  top: 40px;
+  height: 95vh;
+  background-image: url("/assets/images/sadness-africa.jpg"); }
+
+.hpimg-2 {
+  width: 100%;
+  height: 95vh;
+  background-image: linear-gradient(to right, #D4D3D3, #FDFCFC, #FDFCFC, #DBDADA);
+  top: 40px; }
+
+.hpimg-3 {
+  width: 100%;
+  height: 95vh;
+  background-image: linear-gradient(#FFFFFF);
+  top: 40px; }
+
+.hpimg-4 {
+  width: 100%;
+  height: 95vh;
+  background-image: linear-gradient(to right, #D4D3D3, #FDFCFC, #FDFCFC, #DBDADA);
+  top: 40px; }
+
+.hpimg-5 {
+  width: 100%;
+  top: 40px;
+  height: 95vh;
+  background-image: url("/assets/images/sadness-africa.jpg"); }
+
+.section2 {
+  padding: 3em 0;
+  position: relative; }
+
+.header {
+  margin-top: 0; }
+
+.text {
+  font-size: 1em;
+  margin-top: 5%;
+  padding-right: 10px;
+  position: absolute; }
+
+.bottomLine {
+  width: 100%;
+  height: 5px;
+  background-color: orange;
+  padding-right: 10px;
+  opacity: 0.90;
+  display: block;
+  margin-top: 30px; }
+
+#hptextimg-1, #hptextimg-2, #hptextimg-3 {
+  background-size: 100% 100%;
+  position: absolute; }
+
+#hptextimg-1 {
+  width: 60%;
+  height: 130px;
+  top: 172px;
+  background-image: url(/assets/images/african-orphan.jpg); }
+
+#hptextimg-2 {
+  width: 50%;
+  height: 112px;
+  top: 236px;
+  right: 14px;
+  background-image: url(/assets/images/india-kids.jpg); }
+
+#hptextimg-3 {
+  width: 90%;
+  height: 156px;
+  top: 146px;
+  right: 5%;
+  background-image: url(/assets/images/south_africa_support.jpg); }
+
+.textHP1 {
+  color: black;
+  padding-top: 23%;
+  padding-left: 10px; }
+
+.textHP2 {
+  color: white;
+  padding-top: 150px;
+  padding-left: 10px; }
+
+@media (min-width: 576px) {
+  .textHP1 {
+    padding-top: 33%; }
+
+  #hptextimg-1 {
+    width: 40%;
+    height: 100px;
+    top: 24%;
+    right: 0;
+    background-image: url("/assets/images/african-orphan.jpg"); }
+
+  #hptextimg-2 {
+    width: 32%;
+    height: 96px;
+    right: 0%;
+    top: 34%;
+    background-image: url("/assets/images/india-kids.jpg"); } }
+@media (min-width: 768px) {
+  #hptextimg-1 {
+    top: 28%; }
+
+  #hptextimg-2 {
+    top: 33%; }
+
+  .header {
+    margin-top: 105px; }
+
+  .text {
+    font-size: 1em;
+    width: 50%;
+    margin-top: 5%;
+    padding-right: 10px;
+    position: absolute; }
+
+  .textHP1 {
+    font-size: 26px; } }
+@media (min-width: 1200px) {
+  #orphan {
+    width: 30%;
+    top: 7%; }
+
+  #kids {
+    top: 15%; }
+
+  .text {
+    font-size: 30px; }
+
+  .textHP1 {
+    margin-top: 10%;
+    padding-top: 100px;
+    padding-left: 40px;
+    font-size: 26px; } }
+
+/*# sourceMappingURL=style.css.map */
