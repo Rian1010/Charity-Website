@@ -28,7 +28,7 @@ body {
 .hpimg-1 {
     width: 100%;
     top: 40px;
-    @include box(95vh,
+    @include box(100vh,
     url('/assets/images/sadness-africa.jpg'));
     @extend %background,
 }
@@ -36,7 +36,7 @@ body {
 
 .hpimg-2 {
     width: 100%;
-    @include box(95vh,
+    @include box(auto,
     linear-gradient(to right, #D4D3D3, #FDFCFC, #FDFCFC, #DBDADA));
     top: 40px;
     @extend %background,
@@ -44,7 +44,7 @@ body {
 
 .hpimg-3 {
     width: 100%;
-    @include box(95vh,
+    @include box(auto,
     linear-gradient(#FFFFFF));
     top: 40px;
     @extend %background,
@@ -52,8 +52,8 @@ body {
 
 .hpimg-4 {
     width: 100%;
-    @include box(95vh,
-    linear-gradient(to right, #D4D3D3, #FDFCFC, #FDFCFC, #DBDADA));
+    @include box(auto,
+    url('/assets/images/african-orphan.jpg'));
     top: 40px;
     @extend %background,
 }
@@ -68,20 +68,37 @@ body {
 
 
 
-.section2 {
-    padding: 3em 0;
+.section1 {
+    padding: 1em 0;
     position: relative;
 }
 
-.header {
-    margin-top: 0;
+.headerGDP {
+    color: white;
+    top: 7px;
 }
 
-.text {
+%textStyling {
     font-size: 1em;
     margin-top: 5%;
     padding-right: 10px;
-    position: absolute;
+    position: relative;
+}
+
+.text {
+    @extend %textStyling
+}
+
+.reactText {
+    margin: 0;
+    @extend %textStyling
+}
+
+.textGDP {
+    font-size: 1em;
+    top: 82px;
+    padding-right: 10px;
+    color: white;
 }
 
 .bottomLine {
@@ -96,39 +113,64 @@ body {
 
 
 
-@mixin box ($img-width, $img-height) {
+@mixin box ($img-width,
+$img-height) {
     width: $img-width;
     height: $img-height;
 }
 
 %regularBGSizeAndPos {
     background-size: 100% 100%;
-    position: absolute;
+    position: relative;
 }
 
 #hptextimg-1 {
     @include box(60%,
-    130px);
-    top: 172px;
-    background-image: url(/assets/images/african-orphan.jpg);
+    120px);
+    top: 66px;
+    background-image: url(/assets/images/Asia-poverty.jpg);
     @extend %regularBGSizeAndPos
 }
 
 #hptextimg-2 {
     @include box(50%,
     112px);
-    top: 236px;
-    right: 14px;
+    top: -145px;
+    right: -49%;
     background-image: url(/assets/images/india-kids.jpg);
     @extend %regularBGSizeAndPos
 }
 
 #hptextimg-3 {
-    @include box(90%,
-    156px);
-    top: 146px;
-    right: 5%;
-    background-image: url(/assets/images/south_africa_support.jpg);
+    @include box(60%,
+    130px);
+    top: -29px;
+    background-image: url('/assets/images/Starving -African-Child.jpg');
+    @extend %regularBGSizeAndPos
+}
+
+#hptextimg-4 {
+    @include box(50%,
+    112px);
+    top: -49px;
+    right: -49%;
+    background-image: url(/assets/images/starvation.jpg);
+    @extend %regularBGSizeAndPos
+}
+
+.MotherTeresaQuote {
+    top: 33px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.MotherTeresaImg {
+    @include box(50%,
+    100px);
+    left: 52%;
+    z-index: -0;
+    border-radius: 20px;
+    background-image: url(/assets/images/Mother-Teresa.jpg);
     @extend %regularBGSizeAndPos
 }
 
@@ -146,6 +188,12 @@ body {
     padding-left: 10px;
 }
 
+.jumbotron {
+    opacity: .5;
+    height: 500px;
+    position: relative;
+}
+
 
 
 @media (min-width: 576px) {
@@ -153,52 +201,142 @@ body {
         padding-top: 33%;
     }
 
-
-
     #hptextimg-1 {
-        width: 40%;
-        height: 100px;
+        @include box(47%,
+        156px);
+        left: 40px;
+        position: relative;
         top: 24%;
-        right: 0;
-        background-image: url('/assets/images/african-orphan.jpg');
+        z-index: 1;
     }
 
     #hptextimg-2 {
-        width: 32%;
-        height: 96px;
-        right: 0%;
-        top: 34%;
-        background-image: url('/assets/images/india-kids.jpg');
+        @include box(43%,
+        147px);
+        top: -176px;
+        position: relative;
+        z-index: 0;
     }
+
+    #hptextimg-3 {
+        @include box(47%,
+        156px);
+        left: 40px;
+        position: relative;
+        top: 24%;
+        z-index: 1;
+    }
+
+    #hptextimg-4 {
+        @include box(43%,
+        147px);
+        top: -8%;
+        position: relative;
+        z-index: 0;
+    }
+
+    .headerGDP {
+        color: white;
+        position: relative;
+        top: 56px;
+    }
+
+    .textGDP {
+        font-size: 26px;
+        padding-top: 0%;
+        position: relative;
+        padding-right: 10px;
+        color: white;
+    }
+
+    .MotherTeresaQuote {
+        top: 76px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: white;
+        position: relative;
+        padding-bottom: 37px;
+    }
+
+    .MotherTeresaImg {
+        @include box(32%,
+        129px);
+        top: 1px;
+        left: 70%;
+        border-radius: 20px;
+    }
+
 }
+
+
 
 
 
 @media (min-width: 768px) {
     #hptextimg-1 {
-        top: 28%;
+        height: 239px;
+        top: 38%;
+        left: 72px;
+        position: relative;
     }
+
 
     #hptextimg-2 {
-        top: 33%;
+        top: -53%;
+        height: 230px;
+        position: relative;
     }
-    
-    
+
+    #hptextimg-3 {
+        height: 239px;
+        top: 8%;
+        left: 72px;
+        position: relative;
+    }
+
+    #hptextimg-4 {
+        top: -15%;
+        height: 230px;
+        position: relative;
+    }
 
     .header {
-        margin-top: 105px;
+        margin-top: 9px;
     }
 
     .text {
-        font-size: 1em;
-        width: 50%;
+        font-size: 26px;
         margin-top: 5%;
         padding-right: 10px;
-        position: absolute;
+        position: relative;
     }
 
     .textHP1 {
         font-size: 26px;
+    }
+
+    .textGDP {
+        font-size: 26px;
+        top: 144px;
+        padding-right: 10px;
+        position: relative;
+        color: white;
+    }
+
+    .MotherTeresaQuote {
+        font-size: 26px;
+        position: relative;
+        top: 156px;
+        padding-bottom: 197px;
+    }
+
+
+    .MotherTeresaImg {
+        @include box(54%,
+        325px);
+        position: relative;
+        left: 57%;
+        top: -39px;
     }
 }
 
@@ -211,8 +349,8 @@ body {
     #kids {
         top: 15%;
     }
-    
-    
+
+
 
     .text {
         font-size: 30px;
