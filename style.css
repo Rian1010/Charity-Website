@@ -16,7 +16,7 @@ body {
   width: 100%;
   top: 40px;
   height: 100vh;
-  background-image: url("/assets/images/sadness-africa.jpg"); }
+  background-image: url("assets/images/sadness-africa.jpg"); }
 
 .hpimg-2 {
   width: 100%;
@@ -33,14 +33,14 @@ body {
 .hpimg-4 {
   width: 100%;
   height: auto;
-  background-image: url("/assets/images/african-orphan.jpg");
+  background-image: url("assets/images/african-orphan.jpg");
   top: 40px; }
 
 .hpimg-5 {
   width: 100%;
   top: 40px;
   height: 95vh;
-  background-image: url("/assets/images/sadness-africa.jpg"); }
+  background-image: url("assets/images/sadness-africa.jpg"); }
 
 .section1 {
   padding: 1em 0;
@@ -82,27 +82,27 @@ body {
   width: 60%;
   height: 120px;
   top: 66px;
-  background-image: url(/assets/images/Asia-poverty.jpg); }
+  background-image: url(assets/images/Asia-poverty.jpg); }
 
 #hptextimg-2 {
   width: 50%;
   height: 112px;
   top: -145px;
   right: -49%;
-  background-image: url(/assets/images/india-kids.jpg); }
+  background-image: url(assets/images/india-kids.jpg); }
 
 #hptextimg-3 {
   width: 60%;
   height: 130px;
   top: -29px;
-  background-image: url("/assets/images/Starving -African-Child.jpg"); }
+  background-image: url("assets/images/Starving -African-Child.jpg"); }
 
 #hptextimg-4 {
   width: 50%;
   height: 112px;
   top: -49px;
   right: -49%;
-  background-image: url(/assets/images/starvation.jpg); }
+  background-image: url(assets/images/starvation.jpg); }
 
 .MotherTeresaQuote {
   top: 33px;
@@ -115,7 +115,7 @@ body {
   left: 52%;
   z-index: -0;
   border-radius: 20px;
-  background-image: url(/assets/images/Mother-Teresa.jpg); }
+  background-image: url(assets/images/Mother-Teresa.jpg); }
 
 .textHP1 {
   color: black;
@@ -127,10 +127,8 @@ body {
   padding-top: 150px;
   padding-left: 10px; }
 
-.jumbotron {
-  opacity: .5;
-  height: 500px;
-  position: relative; }
+.more {
+  display: none; }
 
 @media (min-width: 576px) {
   .textHP1 {

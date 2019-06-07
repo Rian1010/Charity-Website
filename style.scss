@@ -29,7 +29,7 @@ body {
     width: 100%;
     top: 40px;
     @include box(100vh,
-    url('/assets/images/sadness-africa.jpg'));
+    url('assets/images/sadness-africa.jpg'));
     @extend %background,
 }
 
@@ -53,7 +53,7 @@ body {
 .hpimg-4 {
     width: 100%;
     @include box(auto,
-    url('/assets/images/african-orphan.jpg'));
+    url('assets/images/african-orphan.jpg'));
     top: 40px;
     @extend %background,
 }
@@ -62,7 +62,7 @@ body {
     width: 100%;
     top: 40px;
     @include box(95vh,
-    url('/assets/images/sadness-africa.jpg'));
+    url('assets/images/sadness-africa.jpg'));
     @extend %background,
 }
 
@@ -128,7 +128,7 @@ $img-height) {
     @include box(60%,
     120px);
     top: 66px;
-    background-image: url(/assets/images/Asia-poverty.jpg);
+    background-image: url(assets/images/Asia-poverty.jpg);
     @extend %regularBGSizeAndPos
 }
 
@@ -137,7 +137,7 @@ $img-height) {
     112px);
     top: -145px;
     right: -49%;
-    background-image: url(/assets/images/india-kids.jpg);
+    background-image: url(assets/images/india-kids.jpg);
     @extend %regularBGSizeAndPos
 }
 
@@ -145,7 +145,7 @@ $img-height) {
     @include box(60%,
     130px);
     top: -29px;
-    background-image: url('/assets/images/Starving -African-Child.jpg');
+    background-image: url('assets/images/Starving -African-Child.jpg');
     @extend %regularBGSizeAndPos
 }
 
@@ -154,7 +154,7 @@ $img-height) {
     112px);
     top: -49px;
     right: -49%;
-    background-image: url(/assets/images/starvation.jpg);
+    background-image: url(assets/images/starvation.jpg);
     @extend %regularBGSizeAndPos
 }
 
@@ -170,7 +170,7 @@ $img-height) {
     left: 52%;
     z-index: -0;
     border-radius: 20px;
-    background-image: url(/assets/images/Mother-Teresa.jpg);
+    background-image: url(assets/images/Mother-Teresa.jpg);
     @extend %regularBGSizeAndPos
 }
 
@@ -188,11 +188,15 @@ $img-height) {
     padding-left: 10px;
 }
 
-.jumbotron {
-    opacity: .5;
-    height: 500px;
-    position: relative;
+
+.more {
+    display: none;
 }
+
+#map {
+            height: 400px;
+            width: 100%;
+        }
 
 
 
