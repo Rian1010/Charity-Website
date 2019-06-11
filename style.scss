@@ -253,6 +253,9 @@ $img-height) {
     margin-left: 5px;
 }
 
+.symbol:after {
+    content: "\2796";
+}
 
 
 @media (min-width: 576px) {

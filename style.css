@@ -176,6 +176,9 @@ body {
   float: right;
   margin-left: 5px; }
 
+.symbol:after {
+  content: "\2796"; }
+
 @media (min-width: 576px) {
   .textHP1 {
     padding-top: 33%; }
