@@ -1,0 +1,43 @@
+.charitiesH1 {
+    padding-top: 50px;
+}
+
+.charity-1-collapse {
+    width: 100%;
+    font-size: 15px;
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+}
+
+.charity-1-collapse:hover {
+    background-color: blue;
+    transition: 0.2s ease-in-out;
+}
+
+.charity1-text {
+    padding: 0 18px;
+    white-space: pre-line;
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: max-height 0.2s ease-in-out;
+    background-color: #f1f1f1;
+}
+
+.charity-1-collapse:after {
+    content: '\02795';
+    font-size: 15px;
+    float: right;
+    margin-left: 5px;
+}
+
+.symbol:after {
+    content: "\2796";
+}
+
+.carousel-inner {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,87 @@
+@mixin box ($size, $background-image1) {
+    height: $size;
+    background-image: $background-image1;
+}
+
+.hpimg-1 {
+    width: 100%;
+    top: 40px;
+    @include box(100vh,
+    url('../images/sadness-africa.jpg'));
+}
+
+
+.hpimg-2 {
+    width: 100%;
+    @include box(auto,
+    linear-gradient(to right, #D4D3D3, #FDFCFC, #FDFCFC, #DBDADA));
+    top: 40px;
+}
+
+.hpimg-3 {
+    width: 100%;
+    @include box(auto,
+    linear-gradient(#FFFFFF));
+    top: 40px;
+}
+
+.hpimg-4 {
+    width: 100%;
+    @include box(auto,
+    url('../images/african-orphan.jpg'));
+    top: 40px;
+}
+
+.hpimg-5 {
+    width: 100%;
+    top: 40px;
+    @include box(95vh,
+    url('../images/sadness-africa.jpg'));
+}
+
+
+
+@mixin box ($img-width,
+$img-height) {
+    width: $img-width;
+    height: $img-height;
+}
+
+#hptextimg-1 {
+    @include box(60%,
+    120px);
+    top: 66px;
+    background-image: url(../images/Asia-poverty.jpg);
+}
+
+#hptextimg-2 {
+    @include box(50%,
+    112px);
+    top: -145px;
+    right: -49%;
+    background-image: url(../images/india-kids.jpg);
+}
+
+#hptextimg-3 {
+    @include box(60%,
+    130px);
+    top: -29px;
+    background-image: url('../images/Starving -African-Child.jpg');
+}
+
+#hptextimg-4 {
+    @include box(50%,
+    112px);
+    top: -49px;
+    right: -49%;
+    background-image: url(../images/starvation.jpg);
+}
+
+.MotherTeresaImg {
+    @include box(50%,
+    100px);
+    left: 52%;
+    z-index: -0;
+    border-radius: 20px;
+    background-image: url(../images/Mother-Teresa.jpg);
+}
