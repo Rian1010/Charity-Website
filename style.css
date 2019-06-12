@@ -179,6 +179,30 @@ body {
 .symbol:after {
   content: "\2796"; }
 
+.charityAsiaPic1 {
+  width: 100%;
+  height: 74vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("assets/images/Charity-Images/India-Poverty.jpg"); }
+
+.charityAfricaPic {
+  width: 100%;
+  height: 74vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("assets/images/Charity-Images/Children-Uganda.jpg"); }
+
+.charityAsiaPic2 {
+  width: 100%;
+  height: 74vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("assets/images/Charity-Images/Jakarta-Slum.jpeg"); }
+
+.carousel-inner {
+  margin-bottom: 30px; }
+
 @media (min-width: 576px) {
   .textHP1 {
     padding-top: 33%; }

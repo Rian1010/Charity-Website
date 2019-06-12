@@ -48,16 +48,52 @@
             </ul>
         </div>
     </nav>
-    <h1 class="charitiesH1 text-center">Charities</h1>
     <section>
+        <h1 class="charitiesH1 text-center">Charities</h1>
+    </section>
+    <section>
+        <div id="AsiaAfricaCharityCarouselIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#AsiaAfricaCharityCarouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#AsiaAfricaCharityCarouselIndicators" data-slide-to="1"></li>
+                <li data-target="#AsiaAfricaCharityCarouselIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-block w-100 charityAsiaPic1" alt="First slide">
+                        <!--https://pixabay.com/photos/poor-india-asia-poverty-people-2463625/-->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100 charityAfricaPic" alt="Second slide">
+                        <!--https://pixabay.com/photos/children-uganda-africa-poverty-663392/-->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100 charityAsiaPic2" alt="Third slide">
+                        <!--https://commons.wikimedia.org/wiki/File:Jakarta_slumlife71.JPG-->
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#AsiaAfricaCharityCarouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+             </a>
+            <a class="carousel-control-next" href="#AsiaAfricaCharityCarouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+    </section>
 
+    <section>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-6">
                     <div class="text-center">
-
                         <h2>Asia:</h2>
                     </div>
+
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -108,7 +144,8 @@
                                         <h3>SOS Childen's Villages International</h3>
                                         <p>Due to an unemployment rate of 70%, many people are caused to leave the country. The fact that Uzbekistan lost subsidies from Russia in 1991, caused their economy to decline drastically, as they are mostly based
                                             on exporting cotton. Educational reforms have been processed vary slowly and children often have to quit school, in order to work in the agricultural areas. As a result, many Western clothes producers have decided
-                                            to boycott cotton from there. </p>
+                                            to boycott cotton from there.
+                                        </p>
 
                                         <a type="button" href="https://www.sos-childrensvillages.org/where-we-help/asia/uzbekistan" value="SOSChildrensvallageUZ" target="_blank" class="btn">Donate here</a>
 
@@ -206,9 +243,11 @@
                                     <div class="charity1-text text-center">
                                         <h3>The Fred Hollows Foundation</h3>
                                         <p>
-                                            Around two million people in Pakistan are blind in both eyes, so this organisation tries to reach as many of them as possible, in order to cure their eyesights. They are currently working in four provinces of Pakist and, if you would like to donate or find out more, please click the button below! 
+                                            Around two million people in Pakistan are blind in both eyes, so this organisation tries to reach as many of them as possible, in order to cure their eyesights. They are currently working in four provinces of Pakist and, if you would like to donate or
+                                            find out more, please click the button below!
                                         </p>
-                                        <a type="button" href="https://www.hollows.org/au/what-we-do/where-we-work/south-asia/pakistan?gclid=Cj0KCQjwov3nBRDFARIsANgsdoE1Y0475e9NddjyxJi1CfwnKv1WTbiz2UFEmKg6DSXFR4sg3VP4d4UaAl3IEALw_wcB&gclsrc=aw.ds" value="TheFredHollowsFoundationPakistan" target="_blank" class="btn">Donate here</a>
+                                        <a type="button" href="https://www.hollows.org/au/what-we-do/where-we-work/south-asia/pakistan?gclid=Cj0KCQjwov3nBRDFARIsANgsdoE1Y0475e9NddjyxJi1CfwnKv1WTbiz2UFEmKg6DSXFR4sg3VP4d4UaAl3IEALw_wcB&gclsrc=aw.ds" value="TheFredHollowsFoundationPakistan" target="_blank"
+                                            class="btn">Donate here</a>
                                     </div>
                                     <div class="charity-1-img"></div>
                                 </div>
@@ -312,6 +351,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -331,6 +371,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -351,7 +392,7 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -371,7 +412,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -388,7 +429,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -409,8 +450,8 @@
                 </div>
             </div>
         </div>
-
     </section>
+
 
     <section>
         <div class="container-fluid">
@@ -689,22 +730,25 @@
     <script>
         var collapse = document.getElementsByClassName("charity-1-collapse");
         var i;
-        
-        for (i = 0; collapse.length; i++){
+
+        for (i = 0; collapse.length; i++) {
             collapse[i].addEventListener("click", function() {
                 this.classList.toggle("symbol");
+                console.log('the toggle for the symbol is working');
                 var content = this.nextElementSibling;
                 if (content.style.maxHeight) {
                     content.style.maxHeight = null;
+                    console.log('if is working');
                 }
+                /*
+                    The classList won't work on IE9!!! IE9 is an old version!!!
+                */
                 else {
                     content.style.maxHeight = content.scrollHeight + "px";
+                    console.log('else is working')
                 }
             });
         }
-    
-    
-        
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
