@@ -1,20 +1,9 @@
+#donateBody {
+    background-color: $donateBodyBlue;
+}
+
 .charitiesH1 {
-    padding-top: 50px;
-}
-
-.charity-1-collapse {
-    width: 100%;
-    font-size: 15px;
-    background-color: lightblue;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    border: none;
-}
-
-.charity-1-collapse:hover {
-    background-color: blue;
-    transition: 0.2s ease-in-out;
+    padding-top: 60px;
 }
 
 .charity1-text {
@@ -39,5 +28,5 @@
 }
 
 .carousel-inner {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }

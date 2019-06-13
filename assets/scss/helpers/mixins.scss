@@ -14,14 +14,14 @@
 .hpimg-2 {
     width: 100%;
     @include box(auto,
-    linear-gradient(to right, #D4D3D3, #FDFCFC, #FDFCFC, #DBDADA));
+    $HPBGgrey);
     top: 40px;
 }
 
 .hpimg-3 {
     width: 100%;
     @include box(auto,
-    linear-gradient(#FFFFFF));
+    linear-gradient($HPBGgrey));
     top: 40px;
 }
 

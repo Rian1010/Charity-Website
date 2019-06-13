@@ -7,7 +7,6 @@ $large-desktop-width: 1200px;
     @media (min-width: $phone-width) {
         /*Homepage*/
         .textHP1 {
-            
             padding-top: 33%;
         }
 
@@ -46,7 +45,7 @@ $large-desktop-width: 1200px;
         }
 
         .headerGDP {
-            color: white;
+            color: $white;
             position: relative;
             top: 56px;
         }
@@ -56,14 +55,14 @@ $large-desktop-width: 1200px;
             padding-top: 0%;
             position: relative;
             padding-right: 10px;
-            color: white;
+            color: $white;
         }
 
         .MotherTeresaQuote {
             top: 76px;
             font-size: 20px;
             text-transform: uppercase;
-            color: white;
+            color: $white;
             position: relative;
             padding-bottom: 37px;
         }
@@ -130,7 +129,7 @@ $large-desktop-width: 1200px;
             top: 144px;
             padding-right: 10px;
             position: relative;
-            color: white;
+            color: $white;
         }
 
         .MotherTeresaQuote {

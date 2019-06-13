@@ -1,0 +1,144 @@
+/*Homepage*/
+
+%background {
+    position: relative;
+    background: {
+        size: 132% 100%;
+        position: center;
+        attachment: fixed;
+        repeat: no-repeat;
+
+
+    }
+}
+
+.hpimg-1 {
+    @extend %background,
+}
+
+
+.hpimg-2 {
+    @extend %background,
+}
+
+.hpimg-3 {
+    @extend %background,
+}
+
+.hpimg-4 {
+    @extend %background,
+}
+
+.hpimg-5 {
+    @extend %background,
+}
+
+%textStyling {
+    font-size: 1em;
+    margin-top: 5%;
+    padding-right: 10px;
+    position: relative;
+}
+
+.text {
+    @extend %textStyling
+}
+
+%regularBGSizeAndPos {
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#hptextimg-1 {
+    @extend %regularBGSizeAndPos
+}
+
+#hptextimg-2 {
+    @extend %regularBGSizeAndPos
+}
+
+#hptextimg-3 {
+    @extend %regularBGSizeAndPos
+}
+
+#hptextimg-4 {
+    @extend %regularBGSizeAndPos
+}
+
+.MotherTeresaImg {
+    @extend %regularBGSizeAndPos
+}
+
+
+
+
+/*Statistics Page*/
+
+%chartMargin {
+    margin: 50px 10px
+}
+
+.chartStyling1 {
+    @extend %chartMargin
+}
+
+.statisticsHeading {
+    @extend %chartMargin
+}
+
+
+
+
+/*Charity Page*/
+
+%charityCarouselPics {
+    width: 100%;
+    height: 74vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.charityAsiaPic1 {
+    @extend %charityCarouselPics;
+    background-image: url('../images/Charity-Images/India-Poverty.jpg');
+
+}
+
+.charityAfricaPic {
+    @extend %charityCarouselPics;
+    background-image: url('../images/Charity-Images/Children-Uganda.jpg');
+}
+
+.charityAsiaPic2 {
+    @extend %charityCarouselPics;
+    background-image: url('../images/Charity-Images/Jakarta-Slum.jpeg');
+}
+
+.charityEuropePic1 {
+    @extend %charityCarouselPics;
+    background-position: bottom;
+    background-image: url('../images/Charity-Images/Refugee-Child.jpg');
+
+}
+
+.charitySAPic {
+    @extend %charityCarouselPics;
+    background-image: url('../images/Charity-Images/Haiti-Poverty.jpeg');
+
+}
+
+.charityEuropePic2 {
+    @extend %charityCarouselPics;
+    background-image: url('../images/Charity-Images/EuropeRefugees.jpg');
+
+}
+
+.charityRedCrossPic {
+    @extend %charityCarouselPics;
+    background-image: url('../images/Charity-Images/American-Red-Cross.jpg');
+}
+
+.disasterReliefRedCrossPic {
+    @extend %charityCarouselPics;
+    background-image: url('../images/Charity-Images/Disaster-Relief-Red-Cross.jpg');
+}

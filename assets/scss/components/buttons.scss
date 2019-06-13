@@ -1,0 +1,24 @@
+.charity-1-collapse {
+    width: 100%;
+    font-size: 15px;
+    background-color: $lightBlue;
+    color: $white;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+}
+
+.charity-1-collapse:hover {
+    background-color: $blue;
+    transition: 0.2s ease-in-out;
+}
+
+.donateButtonStyle {
+    background-color: $green;
+    color: $white;
+}
+
+.donateButtonStyle:hover {
+    background-color: $lightGreen;
+    color: $white;
+}

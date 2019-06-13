@@ -1,6 +1,3 @@
-.hvr-shutter-out-vertical {
-  background-color: #ffffff; }
-
 .hpimg-1 {
   width: 100%;
   top: 40px;
@@ -16,7 +13,7 @@
 .hpimg-3 {
   width: 100%;
   height: auto;
-  background-image: linear-gradient(#FFFFFF);
+  background-image: linear-gradient(linear-gradient(to right, #D4D3D3, #FDFCFC, #FDFCFC, #DBDADA));
   top: 40px; }
 
 .hpimg-4 {
@@ -101,7 +98,7 @@
     z-index: 0; }
 
   .headerGDP {
-    color: white;
+    color: #FFFFFF;
     position: relative;
     top: 56px; }
 
@@ -110,13 +107,13 @@
     padding-top: 0%;
     position: relative;
     padding-right: 10px;
-    color: white; }
+    color: #FFFFFF; }
 
   .MotherTeresaQuote {
     top: 76px;
     font-size: 20px;
     text-transform: uppercase;
-    color: white;
+    color: #FFFFFF;
     position: relative;
     padding-bottom: 37px; }
 
@@ -167,7 +164,7 @@
     top: 144px;
     padding-right: 10px;
     position: relative;
-    color: white; }
+    color: #FFFFFF; }
 
   .MotherTeresaQuote {
     font-size: 26px;
@@ -217,11 +214,11 @@
   position: relative; }
 
 /*Statistics Page*/
-.chartStyling1, .statisticsHeading, .chartText1 {
+.chartStyling1, .statisticsHeading {
   margin: 50px 10px; }
 
 /*Charity Page*/
-.charityAsiaPic1, .charityAfricaPic, .charityAsiaPic2 {
+.charityAsiaPic1, .charityAfricaPic, .charityAsiaPic2, .charityEuropePic1, .charitySAPic, .charityEuropePic2, .charityRedCrossPic, .disasterReliefRedCrossPic {
   width: 100%;
   height: 74vh;
   background-size: cover;
@@ -236,25 +233,54 @@
 .charityAsiaPic2 {
   background-image: url("../images/Charity-Images/Jakarta-Slum.jpeg"); }
 
-body {
-  padding: 0;
-  margin: 0; }
+.charityEuropePic1 {
+  background-position: bottom;
+  background-image: url("../images/Charity-Images/Refugee-Child.jpg"); }
 
-.charitiesH1 {
-  padding-top: 50px; }
+.charitySAPic {
+  background-image: url("../images/Charity-Images/Haiti-Poverty.jpeg"); }
+
+.charityEuropePic2 {
+  background-image: url("../images/Charity-Images/EuropeRefugees.jpg"); }
+
+.charityRedCrossPic {
+  background-image: url("../images/Charity-Images/American-Red-Cross.jpg"); }
+
+.disasterReliefRedCrossPic {
+  background-image: url("../images/Charity-Images/Disaster-Relief-Red-Cross.jpg"); }
 
 .charity-1-collapse {
   width: 100%;
   font-size: 15px;
-  background-color: lightblue;
-  color: white;
+  background-color: #01C3FE;
+  color: #FFFFFF;
   cursor: pointer;
   padding: 18px;
   border: none; }
 
 .charity-1-collapse:hover {
-  background-color: blue;
+  background-color: #0188FE;
   transition: 0.2s ease-in-out; }
+
+.donateButtonStyle {
+  background-color: #01FE55;
+  color: #FFFFFF; }
+
+.donateButtonStyle:hover {
+  background-color: #01FEA1;
+  color: #FFFFFF; }
+
+.hvr-shutter-out-vertical {
+  background-color: #FFFFFF; }
+
+.navbar-light {
+  background-color: #FFFFFF; }
+
+#donateBody {
+  background-color: #2098d1; }
+
+.charitiesH1 {
+  padding-top: 60px; }
 
 .charity1-text {
   padding: 0 18px;
@@ -275,26 +301,30 @@ body {
   content: "\2796"; }
 
 .carousel-inner {
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
+
+body {
+  padding: 0;
+  margin: 0; }
 
 .section1 {
   padding: 1em 0;
   position: relative; }
 
 .headerGDP {
-  color: white;
+  color: #FFFFFF;
   top: 7px; }
 
 .textGDP {
   font-size: 1em;
   top: 82px;
   padding-right: 10px;
-  color: white; }
+  color: #FFFFFF; }
 
 .bottomLine {
   width: 100%;
   height: 5px;
-  background-color: orange;
+  background-color: #FEB624;
   padding-right: 10px;
   opacity: 0.90;
   display: block;
@@ -303,15 +333,15 @@ body {
 .MotherTeresaQuote {
   top: 33px;
   text-transform: uppercase;
-  color: white; }
+  color: #FFFFFF; }
 
 .textHP1 {
-  color: black;
+  color: #000000;
   padding-top: 23%;
   padding-left: 10px; }
 
 .textHP2 {
-  color: white;
+  color: #FFFFFF;
   padding-top: 150px;
   padding-left: 10px; }
 
@@ -322,7 +352,29 @@ body {
   margin-left: 10%; }
 
 #map {
-  height: 400px;
-  width: 100%; }
+  height: 100vh;
+  width: 100%;
+  top: 40px; }
+
+.forms {
+  margin: auto;
+  padding: 20px 0; }
+
+.formsSubmit {
+  margin: 10px 44%; }
+
+.contactHeading {
+  padding-top: 100px; }
+
+.contactBG {
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  overflow: scroll;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/assets/images/Contact-Image/Hands-Charity.png"); }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,15 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .section1 {
     padding: 1em 0;
     position: relative;
 }
 
 .headerGDP {
-    color: white;
+    color: $white;
     top: 7px;
 }
 
@@ -12,13 +17,13 @@
     font-size: 1em;
     top: 82px;
     padding-right: 10px;
-    color: white;
+    color: $white;
 }
 
 .bottomLine {
     width: 100%;
     height: 5px;
-    background-color: orange;
+    background-color: $orange;
     padding-right: 10px;
     opacity: 0.90;
     display: block;
@@ -28,17 +33,17 @@
 .MotherTeresaQuote {
     top: 33px;
     text-transform: uppercase;
-    color: white;
+    color: $white;
 }
 
 .textHP1 {
-    color: black;
+    color: $black;
     padding-top: 23%;
     padding-left: 10px;
 }
 
 .textHP2 {
-    color: white;
+    color: $white;
     padding-top: 150px;
     padding-left: 10px;
 }
