@@ -11,6 +11,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     <nav class="navbar navbar-expand-sm  navbar-light fixed-top">
 
         <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
-        <a href="/" class="navbar-brand">Charity Base</a>
+        <a href="index.html" class="navbar-brand navBrandColor">Charity Base</a>
 
         <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="navbarNavDropdown" aria-controls="false">
   
@@ -48,125 +49,120 @@
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12">
                     <div class="statisticsHeading">
                         <h2>Lowest GDP Per Capita In The World (Projected).</h2>
                     </div>
                     <div class="chartStyling1">
                         <div id="gdp-per-capita-chart"></div>
+                        <div id="gdp-per-capita-chart-rank"></div>
+                        <p>DRC-Demcratic Republic of Congo, MZ-Mozambique, UG-Uganda, TJ-Tajikistan, YE-Yemen, HT-Haiti, ET-Ethopia, TZ-Tanzania, KG-Kyrgystan, UZ-Uzbekistan</p>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12">
                     <div class="chartText1">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quidem, numquam amet aliquam blanditiis quae error. Cupiditate veritatis sapiente dignissimos doloribus qui omnis officia excepturi praesentium voluptas consequuntur
-                            quas reprehenderit est laboriosam aspernatur ad autem consequatur ex quidem doloremque dolore aperiam totam, tempora enim! Atque officia optio corrupti, repudiandae repellat ipsa reprehenderit corporis nam culpa nihil numquam
-                            amet, saepe quod deserunt, aut assumenda molestias aspernatur temporibus, necessitatibus eos! Corrupti, voluptates, illo! Cupiditate at, recusandae voluptatibus nesciunt harum iusto ratione ad eligendi itaque corporis accusantium
-                            voluptate inventore beatae voluptas molestias quasi porro unde, eveniet consequatur, illo veniam deserunt! Reprehenderit, molestiae, sed.</p>
+                        <p class="text1">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quidem, numquam amet aliquam blanditiis quae error. Cupiditate veritatis sapiente dignissimos doloribus qui omnis officia excepturi praesentium voluptas consequuntur quas reprehenderit est
+                            laboriosam aspernatur ad autem consequatur ex quidem doloremque dolore aperiam totam, tempora enim! Atque officia optio corrupti, repudiandae repellat ipsa reprehenderit corporis nam culpa nihil numquam amet, saepe quod deserunt,
+                            aut assumenda molestias aspernatur temporibus, necessitatibus eos! Corrupti, voluptates, illo! Cupiditate at, recusandae voluptatibus nesciunt harum iusto ratione ad eligendi itaque corporis accusantium voluptate inventore
+                            beatae voluptas molestias quasi porro unde, eveniet consequatur, illo veniam deserunt! Reprehenderit, molestiae, sed.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
 
 
         <div class="chartStyling2">
             <h2>Costs of Food in Various Countries.</h2>
             <div id="costs-of-meals-chart"></div>
+            <p>NG-Nigeria, DRC-Democratic Republic of Congo, HT-Haiti, MZ-Mozambique, YE-Yemen, SO-Somalia, SoP-State of Palestine, BD-Bangladesh, SV-El Salvador, ID-Indonesia, JO-Jordan, NY, USA-New York, USA</p>
         </div>
 
         <div class="chartStyling3">
             <h2>Lowest Gini Index Estimates From the World Bank</h2>
             <div id="gini-index-chart"></div>
+            <p>ZA-South Africa, BW-Botswana, HT-Haiti, NM-Namibia, CA-Central African Republic</p>
         </div>
 
     </section>
 
     <script>
-        var gdpData = [
-            { "country": "DRC", "gdp": 475, rank: 1 },
-            { "country": "Mozambique", "gdp": 502, "rank": 2 },
-            { "country": "Uganda", "gdp": 759, "rank": 3 },
-            { "country": "Tajikistan", "gdp": 861, "rank": 4 },
-            { "country": "Yemen", "gdp": 913, "rank": 5 },
-            { "country": "Haiti", "gdp": 923, "rank": 6 },
-            { "country": "Ethopia", "gdp": 1122, "rank": 7 },
-            { "country": "Tanzania", "gdp": 1159, "rank": 8 },
-            { "country": "Kyrgystan", "gdp": 1266, "rank": 9 },
-            { "country": "Uzbekistan", "gdp": 1350, "rank": 10 }
-        ];
+        queue()
+            .defer(d3.json, 'assets/js/data.json')
+            .await(createDataVis);
 
-        var ndx = crossfilter(gdpData);
-        var name_dim = ndx.dimension(dc.pluck('country'));
-        var gdp_per_capita = name_dim.group().reduceSum(dc.pluck('gdp'));
-        dc.barChart('#gdp-per-capita-chart')
-            .width(600)
-            .height(250)
-            .margins({ top: 10, right: 50, bottom: 30, left: 50 })
-            .dimension(name_dim)
-            .group(gdp_per_capita)
-            .transitionDuration(500)
-            .x(d3.scale.ordinal())
-            .xUnits(dc.units.ordinal)
-            .xAxisLabel('Country')
-            .yAxisLabel('GDP Per Capita ($)')
-            .yAxis().ticks(4);
+        function createDataVis(error, gdpData) {
+            var ndx = crossfilter(gdpData);
+            var name_dim = ndx.dimension(dc.pluck('country'));
+            var draw_barchart_gdp_country = name_dim.group().reduceSum(dc.pluck('gdp'));
+            dc.barChart('#gdp-per-capita-chart')
+                .width(725)
+                .height(270)
+                .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+                .dimension(name_dim)
+                .group(draw_barchart_gdp_country)
+                .transitionDuration(500)
+                .x(d3.scale.ordinal())
+                .xUnits(dc.units.ordinal)
+                .xAxisLabel('Country')
+                .yAxisLabel('GDP Per Capita ($)')
+                .yAxis().ticks(4);
 
-        var costsData = [
-            { "country": "Nigeria", "price": 222.05, rank: 1 },
-            { "country": "DRC", "price": 82.10, rank: 2 },
-            { "country": "Haiti", "price": 72.65, rank: 3 },
-            { "country": "MZ", "price": 61.92, rank: 4 },
-            { "country": "Yemen, urban", "price": 46.30, rank: 5 },
-            { "country": "Somalia", "price": 42.12, rank: 6 },
-            { "country": "SoP", "costs": 12.19, rank: 7 },
-            { "country": "Bangladesh", "price": 11.25, rank: 8 },
-            { "country": "El Salvador", "price": 11.21, rank: 9 },
-            { "country": "Indonesia", "price": 5.50, rank: 10 },
-            { "country": "Jordan", "price": 4.71, rank: 11 },
-            { "country": "NY, USA", "price": 1.20, rank: 12 },
-        ];
+            var name_dim = ndx.dimension(dc.pluck('country'));
+            var draw_barchart_gdp_rank = name_dim.group().reduceSum(dc.pluck('rank'));
+            dc.barChart('#gdp-per-capita-chart-rank')
+                .width(725)
+                .height(270)
+                .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+                .dimension(name_dim)
+                .group(draw_barchart_gdp_rank)
+                .transitionDuration(500)
+                .x(d3.scale.ordinal())
+                .xUnits(dc.units.ordinal)
+                .xAxisLabel('Country')
+                .yAxisLabel('Rank')
+                .yAxis().ticks(4);
+            dc.renderAll();
 
-        var ndx = crossfilter(costsData);
-        var name_dim = ndx.dimension(dc.pluck('country'));
-        var costs_of_food = name_dim.group().reduceSum(dc.pluck('price'));
-        dc.barChart('#costs-of-meals-chart')
-            .width(1000)
-            .height(250)
-            .margins({ top: 10, right: 50, bottom: 30, left: 50 })
-            .dimension(name_dim)
-            .group(costs_of_food)
-            .transitionDuration(500)
-            .x(d3.scale.ordinal())
-            .xUnits(dc.units.ordinal)
-            .xAxisLabel('Country')
-            .yAxisLabel('Price of Food ($)')
-            .yAxis().ticks(4);
+            /*
+                        var ndx = crossfilter(costsData);
+                        var name_dim = ndx.dimension(dc.pluck('country'));
+                        var costs_of_food = name_dim.group().reduceSum(dc.pluck('price'));
 
-        var gini_index = [
-            { "country": "South African", "gini-index": "63.38", rank: 1 },
-            { "country": "Botswana", "gini-index": "60.46", rank: 1 },
-            { "country": "Haiti", "gini-index": "60.79", rank: 1 },
-            { "country": "Namibia", "gini-index": "60.97", rank: 1 },
-            { "country": "Central African Republic", "gini-index": "56.24", rank: 1 },
-        ]
+                        dc.barChart('#costs-of-meals-chart')
+                            .width(725)
+                            .height(270)
+                            .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+                            .dimension(name_dim)
+                            .group(costs_of_food)
+                            .transitionDuration(500)
+                            .x(d3.scale.ordinal())
+                            .xUnits(dc.units.ordinal)
+                            .xAxisLabel('Country')
+                            .yAxisLabel('Price of Food ($)')
+                            .yAxis().ticks(4);
 
-        var ndx = crossfilter(gini_index);
-        var name_dim = ndx.dimension(dc.pluck('country'));
-        var gini_coefficient = name_dim.group().reduceSum(dc.pluck('gini-index'));
-        dc.barChart('#gini-index-chart')
-            .width(1000)
-            .height(250)
-            .margins({ top: 10, right: 50, bottom: 30, left: 50 })
-            .dimension(name_dim)
-            .group(gini_coefficient)
-            .transitionDuration(500)
-            .x(d3.scale.ordinal())
-            .xUnits(dc.units.ordinal)
-            .xAxisLabel('Country')
-            .yAxisLabel('Gini Index (%)')
-            .yAxis().ticks(4);
+                       
 
-        dc.renderAll();
+                        var ndx = crossfilter(gini_index);
+                        var name_dim = ndx.dimension(dc.pluck('country'));
+                        var gini_coefficient = name_dim.group().reduceSum(dc.pluck('gini-index'));
+                        dc.barChart('#gini-index-chart')
+                            .width(725)
+                            .height(270)
+                            .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+                            .dimension(name_dim)
+                            .group(gini_coefficient)
+                            .transitionDuration(500)
+                            .x(d3.scale.ordinal())
+                            .xUnits(dc.units.ordinal)
+                            .xAxisLabel('Country')
+                            .yAxisLabel('Gini Index (%)')
+                            .yAxis().ticks(4);
+            */
+
+        }
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -179,3 +175,10 @@
 Gini Coefficient:
 https://www.theguardian.com/inequality/datablog/2017/apr/26/inequality-index-where-are-the-worlds-most-unequal-countries
 -->
+<!-- IMPORTANT SOURCES
+https://insight.wfp.org/where-do-you-think-you-would-find-the-most-expensive-plate-of-food-in-the-world-408ed2856108
+https://www.foodaidfoundation.org/world-hunger-statistics.html
+https://beta.grafiti.io/facts/557233-extreme-poverty-asia-2018
+
+statistics:
+https://beta.grafiti.io/facts/557233-extreme-poverty-asia-2018

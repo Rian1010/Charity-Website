@@ -31,15 +31,16 @@ body {
 }
 
 .MotherTeresaQuote {
-    top: 33px;
+    top: 115px;
     text-transform: uppercase;
     color: $white;
+    font-style: italic;
 }
 
 .textHP1 {
     color: $black;
-    padding-top: 23%;
     padding-left: 10px;
+    margin-top: 100px;
 }
 
 .textHP2 {
@@ -51,4 +52,20 @@ body {
 
 .more {
     display: none;
+}
+
+.hpimg-2 {
+    width: 100%;
+    height: auto;
+    top: 48px;
+}
+
+.hpimg-4 {
+    width: 100%;
+    height: auto;
+    top: 48px;
+}
+
+.underline {
+    text-decoration: underline;
 }

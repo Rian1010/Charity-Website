@@ -3,17 +3,18 @@
 }
 
 .charitiesH1 {
-    padding-top: 60px;
+    padding: 28px 0;
+    color: white;
 }
 
 .charity1-text {
     padding: 0 18px;
     white-space: pre-line;
     max-height: 0;
-    overflow: hidden;
+    overflow: scroll;
     margin-bottom: 10px;
     transition: max-height 0.2s ease-in-out;
-    background-color: #f1f1f1;
+    background-color: $white;
 }
 
 .charity-1-collapse:after {
@@ -28,5 +29,11 @@
 }
 
 .carousel-inner {
+    padding-top: 55px;
+
     margin-bottom: 10px;
+}
+
+.donatePageHeadings {
+    color: $white;
 }

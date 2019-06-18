@@ -8,6 +8,7 @@ $large-desktop-width: 1200px;
         /*Homepage*/
         .textHP1 {
             padding-top: 33%;
+            font-size: 26px;
         }
 
         #hptextimg-1 {
@@ -22,7 +23,7 @@ $large-desktop-width: 1200px;
         #hptextimg-2 {
             @include box(43%,
             147px);
-            top: -176px;
+            top: -166px;
             position: relative;
             z-index: 0;
         }
@@ -50,6 +51,10 @@ $large-desktop-width: 1200px;
             top: 56px;
         }
 
+        .text2 {
+            font-size: 26px;
+        }
+
         .textGDP {
             font-size: 26px;
             padding-top: 0%;
@@ -59,7 +64,7 @@ $large-desktop-width: 1200px;
         }
 
         .MotherTeresaQuote {
-            top: 76px;
+            top: 135px;
             font-size: 20px;
             text-transform: uppercase;
             color: $white;
@@ -76,6 +81,7 @@ $large-desktop-width: 1200px;
         }
     }
 }
+
 @include phone;
 
 
@@ -120,10 +126,6 @@ $large-desktop-width: 1200px;
             position: relative;
         }
 
-        .textHP1 {
-            font-size: 26px;
-        }
-
         .textGDP {
             font-size: 26px;
             top: 144px;
@@ -147,35 +149,65 @@ $large-desktop-width: 1200px;
             left: 57%;
             top: -39px;
         }
+        .textHP1 {
+            margin-top: 0;
+        }
+
+        .hpimg-2 {
+            top: 85px;
+        }
+
+        .hpimg-4 {
+            top: 85px;
+        }
     }
 }
+
 @include tablet;
 
 
 @mixin large-desktop {
     @media (min-width: $large-desktop-width) {
         /*Homepage*/
-        #orphan {
-            width: 30%;
-            top: 7%;
+        #hptextimg-1 {
+            height: 400px;
+            top: 41%;
+            left: 100px;
         }
 
-        #kids {
-            top: 15%;
+        #hptextimg-2 {
+            top: -50%;
+            height: 400px;
+            position: relative;
         }
-
-
 
         .text {
             font-size: 30px;
         }
 
+        .text2 {
+            font-size: 2em;
+        }
+
+        .textGDP {
+            font-size: 2em;
+        }
+
         .textHP1 {
-            margin-top: 10%;
             padding-top: 100px;
             padding-left: 40px;
             font-size: 26px;
+            margin-top: 100px;
+        }
+
+        #hptextimg-3 {
+            height: 400px;
+        }
+
+        #hptextimg-4 {
+            height: 400px;
         }
     }
 }
-@include large-desktop ;
+
+@include large-desktop;
