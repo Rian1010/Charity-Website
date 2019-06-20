@@ -5,13 +5,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/scss/style.css" type="text/css">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/dc.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.js"></script>
+
+    <script type="text/javascript" src="assets/js/d3.min.js"></script>
+    <script type="text/javascript" src="assets/js/crossfilter.min.js"></script>
+    <script type="text/javascript" src="assets/js/dc.min.js"></script>
+    <script type="text/javascript" src="assets/js/queue.min.js"></script>
+
+    <title>Charity Base: Statistics Page</title>
+
 </head>
 
 <body>
@@ -53,9 +57,10 @@
                     <div class="statisticsHeading">
                         <h2>Lowest GDP Per Capita In The World (Projected).</h2>
                     </div>
+                    <div id="country-selector"></div>
                     <div class="chartStyling1">
                         <div id="gdp-per-capita-chart"></div>
-                        <div id="gdp-per-capita-chart-rank"></div>
+                        <div id="gini-coefficient-chart"></div>
                         <p>DRC-Demcratic Republic of Congo, MZ-Mozambique, UG-Uganda, TJ-Tajikistan, YE-Yemen, HT-Haiti, ET-Ethopia, TZ-Tanzania, KG-Kyrgystan, UZ-Uzbekistan</p>
                     </div>
                 </div>
@@ -94,6 +99,23 @@
 
         function createDataVis(error, gdpData) {
             var ndx = crossfilter(gdpData);
+
+            show_country_selector(ndx);
+            show_gdps(ndx);
+
+            dc.renderAll();
+        }
+        
+        function show_country_selector(ndx) {
+            dim = ndx.dimension(dc.pluck('country'));
+            group = dim.group()
+            
+            dc.selectMenu("#country-selector")
+                .dimension(dim)
+                .group(group);
+        }
+
+        function show_gdps(ndx) {
             var name_dim = ndx.dimension(dc.pluck('country'));
             var draw_barchart_gdp_country = name_dim.group().reduceSum(dc.pluck('gdp'));
             dc.barChart('#gdp-per-capita-chart')
@@ -107,62 +129,83 @@
                 .xUnits(dc.units.ordinal)
                 .xAxisLabel('Country')
                 .yAxisLabel('GDP Per Capita ($)')
-                .yAxis().ticks(4);
-
-            var name_dim = ndx.dimension(dc.pluck('country'));
-            var draw_barchart_gdp_rank = name_dim.group().reduceSum(dc.pluck('rank'));
-            dc.barChart('#gdp-per-capita-chart-rank')
+                .yAxis().ticks(8);
+                
+            var gc_dim = ndx.dimension(dc.pluck('country'));
+            var draw_barchart_gc_country = gc_dim.group().reduceSum(dc.pluck('gini-coefficient'));
+            dc.barChart('#gini-coefficient-chart')
                 .width(725)
                 .height(270)
                 .margins({ top: 10, right: 50, bottom: 30, left: 50 })
-                .dimension(name_dim)
-                .group(draw_barchart_gdp_rank)
+                .dimension(gc_dim)
+                .group(draw_barchart_gc_country)
                 .transitionDuration(500)
                 .x(d3.scale.ordinal())
                 .xUnits(dc.units.ordinal)
                 .xAxisLabel('Country')
-                .yAxisLabel('Rank')
-                .yAxis().ticks(4);
-            dc.renderAll();
+                .yAxisLabel('Gini Coefficient')
+                .yAxis().ticks(8);
 
-            /*
-                        var ndx = crossfilter(costsData);
-                        var name_dim = ndx.dimension(dc.pluck('country'));
-                        var costs_of_food = name_dim.group().reduceSum(dc.pluck('price'));
-
-                        dc.barChart('#costs-of-meals-chart')
-                            .width(725)
-                            .height(270)
-                            .margins({ top: 10, right: 50, bottom: 30, left: 50 })
-                            .dimension(name_dim)
-                            .group(costs_of_food)
-                            .transitionDuration(500)
-                            .x(d3.scale.ordinal())
-                            .xUnits(dc.units.ordinal)
-                            .xAxisLabel('Country')
-                            .yAxisLabel('Price of Food ($)')
-                            .yAxis().ticks(4);
-
-                       
-
-                        var ndx = crossfilter(gini_index);
-                        var name_dim = ndx.dimension(dc.pluck('country'));
-                        var gini_coefficient = name_dim.group().reduceSum(dc.pluck('gini-index'));
-                        dc.barChart('#gini-index-chart')
-                            .width(725)
-                            .height(270)
-                            .margins({ top: 10, right: 50, bottom: 30, left: 50 })
-                            .dimension(name_dim)
-                            .group(gini_coefficient)
-                            .transitionDuration(500)
-                            .x(d3.scale.ordinal())
-                            .xUnits(dc.units.ordinal)
-                            .xAxisLabel('Country')
-                            .yAxisLabel('Gini Index (%)')
-                            .yAxis().ticks(4);
-            */
-
+            var name_dim = ndx.dimension(dc.pluck('country'));
+            var draw_barchart_gdp_country_pie = name_dim.group().reduceSum(dc.pluck('gini-coefficient'));
+            dc.pieChart('#gdp-per-capita-pie-chart')
+                .height(330)
+                .radius(90)
+                .transitionDuration(1500)
+                .dimension(name_dim)
+                .group(draw_barchart_gdp_country_pie);
         }
+        /*var name_dim = ndx.dimension(dc.pluck('country'));
+        var draw_barchart_gdp_rank = name_dim.group().reduceSum(dc.pluck('rank'));
+        dc.barChart('#gdp-per-capita-chart-rank')
+            .width(725)
+            .height(270)
+            .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+            .dimension(name_dim)
+            .group(draw_barchart_gdp_rank)
+            .transitionDuration(500)
+            .x(d3.scale.ordinal())
+            .xUnits(dc.units.ordinal)
+            .xAxisLabel('Country')
+            .yAxisLabel('Rank')
+            .yAxis().ticks(4);*/
+
+        /*
+                    var ndx = crossfilter(costsData);
+                    var name_dim = ndx.dimension(dc.pluck('country'));
+                    var costs_of_food = name_dim.group().reduceSum(dc.pluck('price'));
+
+                    dc.barChart('#costs-of-meals-chart')
+                        .width(725)
+                        .height(270)
+                        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+                        .dimension(name_dim)
+                        .group(costs_of_food)
+                        .transitionDuration(500)
+                        .x(d3.scale.ordinal())
+                        .xUnits(dc.units.ordinal)
+                        .xAxisLabel('Country')
+                        .yAxisLabel('Price of Food ($)')
+                        .yAxis().ticks(4);
+
+                   
+
+                    var ndx = crossfilter(gini_index);
+                    var name_dim = ndx.dimension(dc.pluck('country'));
+                    var gini_coefficient = name_dim.group().reduceSum(dc.pluck('gini-index'));
+                    dc.barChart('#gini-index-chart')
+                        .width(725)
+                        .height(270)
+                        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+                        .dimension(name_dim)
+                        .group(gini_coefficient)
+                        .transitionDuration(500)
+                        .x(d3.scale.ordinal())
+                        .xUnits(dc.units.ordinal)
+                        .xAxisLabel('Country')
+                        .yAxisLabel('Gini Index (%)')
+                        .yAxis().ticks(4);
+        */
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -173,6 +216,8 @@
 </html>
 <!--IMPORTANT SOURCES
 Gini Coefficient:
+https://data.worldbank.org/indicator/SI.POV.GINI?view=map
+https://www.focus-economics.com/blog/the-poorest-countries-in-the-world
 https://www.theguardian.com/inequality/datablog/2017/apr/26/inequality-index-where-are-the-worlds-most-unequal-countries
 -->
 <!-- IMPORTANT SOURCES

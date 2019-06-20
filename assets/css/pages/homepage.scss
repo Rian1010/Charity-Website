@@ -3,10 +3,11 @@ body {
     margin: 0;
 }
 
-.section1 {
-    padding: 1em 0;
-    position: relative;
+
+.section2 {
+        height: 770px;
 }
+
 
 .headerGDP {
     color: $white;
@@ -49,23 +50,21 @@ body {
     padding-left: 10px;
 }
 
-
 .more {
     display: none;
 }
 
-.hpimg-2 {
-    width: 100%;
-    height: auto;
-    top: 48px;
-}
-
-.hpimg-4 {
-    width: 100%;
-    height: auto;
-    top: 48px;
-}
-
 .underline {
     text-decoration: underline;
+}
+
+.donateButtonStyleHP {
+    height: 74px;
+    font-size: 35px;
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+.donateButtonStyleHP:hover {
+    opacity: 1;
 }

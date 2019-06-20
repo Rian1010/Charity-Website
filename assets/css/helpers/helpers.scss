@@ -39,24 +39,43 @@
     position: relative;
 }
 
+
+%sectionStyle {
+    margin: 15px 0;
+    padding: 1em 0;
+    position: relative;
+    color: white;
+    top: 12%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2%;
+}
+
+.section {
+    @extend %sectionStyle
+}
+
+.section2 {
+    @extend %sectionStyle
+}
+
 .text {
     @extend %textStyling
 }
 
+.text2 {
+    @extend %textStyling
+}
+
 %regularBGSizeAndPos {
-    background-size: 100% 100%;
+    left: 25%;
+    background-size: cover;
     position: relative;
+    background-position: center;
+    border-radius: 3%;
+
 }
 
 #hptextimg-1 {
-    @extend %regularBGSizeAndPos
-}
-
-#hptextimg-2 {
-    @extend %regularBGSizeAndPos
-}
-
-#hptextimg-3 {
     @extend %regularBGSizeAndPos
 }
 

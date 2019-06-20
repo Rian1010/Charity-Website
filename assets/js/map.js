@@ -170,16 +170,16 @@ function initMap() {
         '<h2 id="markerInfoHeading">Syria</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         `<p>Syria is going through the world's largest humanitarian crisis of all time. You could help to make a change! </p>` +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
     var contentString2 = '<div id="content">' +
         '</div>' +
         '<h2 id="markerInfoHeading">South Africa</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>South Africa requires your support to improve economic growth and development!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
     var contentString3 = '<div id="content">' +
@@ -187,8 +187,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Indonesia</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>As there is political instability, in Indonesia and after going through a lot of natural disasters, Indonesia needs your help, in order to lead a happier and healthier life!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
     var contentString4 = '<div id="content">' +
@@ -196,8 +196,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Uzbekistan</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>Since Uzbekistan lost subsidies from Russia in 1991, their economy is suffering. However, you could help them to live better lives, decrease child labour and get better education!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
     var contentString5 = '<div id="content">' +
@@ -205,8 +205,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Yemen</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>Yemen seems like it is going through the worst humanitarian crisisin 50 years, as war and horrific human right abuses still continue! Please donate to help people, whose lives are at risk!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -215,8 +215,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Kyrgystan</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>Kyrgystan is one of the poorest countries in Asia. Please help them overcome poverty and limited economic growth by donating!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -225,8 +225,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Bangladesh</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>You could help Bangladesh against various kinds of violence, conflicts and more by donating!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -235,8 +235,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Tajikistan</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>Caritas is an organisation from a Catholic Church that helps people around the world, including Tajikistan to have clean water and better treatments against various illnesses.</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -245,8 +245,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Pakistan</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>Around two million people in Pakistan are blind in both eyes. Please donate to "The Fred Hallows Foundation", in order to help them! </p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -255,8 +255,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">India</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>The organisation called "Educate for Life" provides education, healthcare and community work. Please find out more by clicking the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -265,8 +265,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Democratic Republic of Congo</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>The Democratic Republic of Congo has the lowest GDP per capita in the world! You could help them to improve their education, decrease child labour and decrease poverty by donating!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -275,8 +275,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Mozambique</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>In Mozambique, 27% of children cannot get education, 22% are engaged in child labour, 55% of girls have problems reading or writing and 46% of the people live in poverty! You could help them by donating!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -285,8 +285,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Nigeria</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>The organisation called "Child Voice" helps people in Nigeria, Uganda and South Sudan by giving them education, counselling and more! Find out more by clicking the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -295,8 +295,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Uganda</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>The organisation called "Child Voice" helps people in Nigeria, Uganda and South Sudan by giving them education, counselling and more! Find out more by clicking the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -305,8 +305,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">South Sudan</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>The organisation called "Child Voice" helps people in Nigeria, Uganda and South Sudan by giving them education, counselling and more! Find out more by clicking the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -315,8 +315,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Zimbabwe</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>Zimbabwe is suffering from natural disasters. Help them to have a better future by donating! For more information, please click the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -325,8 +325,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Malawi</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>Support Malawi to have greater education, improved health care, greater better conservation by donating to the organisation, "Ripple Africa"! Find out more by clicking on the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -335,8 +335,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Somalia</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>Around 49% of children are caught in child labour and cannot receive education! Help children survive and help the education in Somalia to be improved, through donating! Please click the button below for more information!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -345,8 +345,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Botswana</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>Orphans and parents in Botswana need your support, as AIDS and poverty havs been a big problem, in Botswana. Please find out more by clicking the button below and donate!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -355,8 +355,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Bolivia</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>With 39% of people living in poverty and child labour still going on, Bolivia is the poorest country in South America. Please find out more by clicking on the button below and donate!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#SAEuropeSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -365,8 +365,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Guyana</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>Due to a shortage of dollars, people in Guyana require medical assistance. Find out more by clicking on the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#SAEuropeSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -375,8 +375,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Ecuador</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>People in Ecuador, including indigenous people, need more access to clean water, education, health care and more! Please help them by donating and find more information, through clicking the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#SAEuropeSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -385,8 +385,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Haiti</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>The organisation called "Haiti-Now" helps people in Haiti against extreme poverty and social isolation, and supports them to have education. To find out more, please click the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#SAEuropeSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -395,8 +395,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Brazil</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>"Action Aid" educates children in slums, helps against drought and protect girls in Brazil. Find out more by clicking on the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#SAEuropeSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -405,8 +405,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Moldova</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>People in Moldova require gives orphans parental support, educates children, offers rehabilitation services and more. Find out more by clicking the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#SAEuropeSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -415,8 +415,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Ukraine</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>"Ukraine Charity" helps young adults, orphans and underprivilagessd children in Ukraine. For more information, please click on the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#SAEuropeSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -425,8 +425,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Kosovo, Serbia</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         `<p>"SOS Children's Villages offers kindergartens, family-based care and social centers in the capital city of Pristina. For more information, please click the button below!</p>` +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#SAEuropeSection" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -435,8 +435,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Mexico</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>Children and orphans, who got abused, neglected, abandoned and or went through extreme poverty in Mexico, get help by "Misión Mèxico". Please find out more by clicking the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#NAAusCharities" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -445,8 +445,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Detroit, MI, USA</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>"McLaren" helps girls and parents, give education and more! Please click on the button below, in order to find out more!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#NAAusCharities" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -455,8 +455,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">United States</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>People that got affected by natural disasters receive help from "American Red Cross". In order to find out more, please click on the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#NAAusCharities" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -465,8 +465,8 @@ function initMap() {
         '<h2 id="markerInfoHeading">Australia</h2>' +
         '<div id="mapmarkerInfoBodyContent">' +
         '<p>Families and people with illnesses and injuries receive from organisations that help them to get treatment and stay close. For more information, please click on the button below!</p>' +
-        '<a href="donate.html">' +
-        'Donate/a> ' +
+        '<a href="donate.html#NAAusCharities" class="btn donateButtonStyle">' +
+        'Donate</a> ' +
         '</div>';
 
 
@@ -498,156 +498,130 @@ function initMap() {
         maxWidth: 200
     });
 
-
     var infowindow6 = new google.maps.InfoWindow({
         content: contentString6,
         maxWidth: 200
     });
-
 
     var infowindow7 = new google.maps.InfoWindow({
         content: contentString7,
         maxWidth: 200
     });
 
-
     var infowindow8 = new google.maps.InfoWindow({
         content: contentString8,
         maxWidth: 200
     });
-
 
     var infowindow9 = new google.maps.InfoWindow({
         content: contentString9,
         maxWidth: 200
     });
 
-
     var infowindow10 = new google.maps.InfoWindow({
         content: contentString10,
         maxWidth: 200
     });
-
 
     var infowindow11 = new google.maps.InfoWindow({
         content: contentString11,
         maxWidth: 200
     });
 
-
     var infowindow12 = new google.maps.InfoWindow({
         content: contentString12,
         maxWidth: 200
     });
-
 
     var infowindow13 = new google.maps.InfoWindow({
         content: contentString13,
         maxWidth: 200
     });
 
-
     var infowindow14 = new google.maps.InfoWindow({
         content: contentString14,
         maxWidth: 200
     });
-
 
     var infowindow15 = new google.maps.InfoWindow({
         content: contentString15,
         maxWidth: 200
     });
 
-
     var infowindow16 = new google.maps.InfoWindow({
         content: contentString16,
         maxWidth: 200
     });
-
 
     var infowindow17 = new google.maps.InfoWindow({
         content: contentString17,
         maxWidth: 200
     });
 
-
     var infowindow18 = new google.maps.InfoWindow({
         content: contentString18,
         maxWidth: 200
     });
-
 
     var infowindow19 = new google.maps.InfoWindow({
         content: contentString19,
         maxWidth: 200
     });
 
-
     var infowindow20 = new google.maps.InfoWindow({
         content: contentString20,
         maxWidth: 200
     });
-
 
     var infowindow21 = new google.maps.InfoWindow({
         content: contentString21,
         maxWidth: 200
     });
 
-
     var infowindow22 = new google.maps.InfoWindow({
         content: contentString22,
         maxWidth: 200
     });
-
 
     var infowindow23 = new google.maps.InfoWindow({
         content: contentString23,
         maxWidth: 200
     });
 
-
     var infowindow24 = new google.maps.InfoWindow({
         content: contentString24,
         maxWidth: 200
     });
-
 
     var infowindow25 = new google.maps.InfoWindow({
         content: contentString25,
         maxWidth: 200
     });
 
-
     var infowindow26 = new google.maps.InfoWindow({
         content: contentString26,
         maxWidth: 200
     });
-
 
     var infowindow27 = new google.maps.InfoWindow({
         content: contentString27,
         maxWidth: 200
     });
 
-
     var infowindow28 = new google.maps.InfoWindow({
         content: contentString28,
         maxWidth: 200
     });
-
 
     var infowindow29 = new google.maps.InfoWindow({
         content: contentString29,
         maxWidth: 200
     });
 
-
     var infowindow30 = new google.maps.InfoWindow({
         content: contentString30,
         maxWidth: 200
     });
-
 
     var infowindow31 = new google.maps.InfoWindow({
         content: contentString31,
