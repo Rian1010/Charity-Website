@@ -37,6 +37,10 @@ $large-desktop-width: 1200px;
             font-size: 26px;
         }
 
+        .section2 {
+            height: 700px;
+        }
+
         .textGDP {
             font-size: 26px;
             padding-top: 0%;
@@ -71,14 +75,20 @@ $large-desktop-width: 1200px;
     @media (min-width: $tablet-width) {
         /*Homepage*/
         .hpimg-2 {
-            width: 100%;
-            height: 900px;
+            height: 975px;
         }
 
+        .hpimg-3 {
+            height: 975px;
+        }
+
+        .hpimg-4 {
+            height: 975px;
+        }
         #hptextimg-1 {
             height: 200px;
-            top: 330px;
-            left: 72px;
+            top: 75px;
+            left: 30%;
         }
 
         #hptextimg-2 {
@@ -94,7 +104,8 @@ $large-desktop-width: 1200px;
         }
 
         #hptextimg-4 {
-            top: -15%;
+            top: 3%;
+            left: 30%;
             height: 230px;
             position: relative;
         }
@@ -133,22 +144,27 @@ $large-desktop-width: 1200px;
 
 
         .MotherTeresaImg {
-            @include box(54%,
-            325px);
+            @include box(35%,
+            167px);
             position: relative;
-            left: 57%;
-            top: -39px;
+            left: 64%;
+            top: -60px;
         }
         .textHP1 {
             margin-top: 0;
         }
 
-        .hpimg-2 {
-            top: 85px;
+        .section {
+            height: 168%;
         }
 
-        .hpimg-4 {
-            top: 85px;
+        .section2 {
+            height: 91%;
+            top: -1%;
+        }
+
+        .section3 {
+            height: 100%;
         }
     }
 }
@@ -161,14 +177,24 @@ $large-desktop-width: 1200px;
         /*Homepage*/
         .hpimg-2 {
             width: 100%;
-            height: 900px;
-            top: 48px;
+            height: 1000px;
+            top: 40px;
+        }
+
+        .hpimg-3 {
+            width: 100%;
+            height: 1000px;
+            top: 40px;
+        }
+
+        .hpimg-4 {
+            height: 1000px;
         }
 
         #hptextimg-1 {
-            height: 400px;
-            top: 41%;
-            left: 100px;
+            height: 200px;
+            top: 75px;
+            left: 30%;
         }
 
         #hptextimg-2 {
@@ -201,7 +227,21 @@ $large-desktop-width: 1200px;
         }
 
         #hptextimg-4 {
-            height: 400px;
+            height: 360px;
+            width: 30%;
+            left: 36%;
+        }
+
+        .section {
+            height: 166%
+        }
+
+        .MotherTeresaImg {
+            @include box(35%,
+            250px);
+            position: relative;
+            left: 64%;
+            top: -60px;
         }
     }
 }

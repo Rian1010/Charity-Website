@@ -64,7 +64,7 @@
   padding-right: 10px;
   position: relative; }
 
-.section, .section2 {
+.section, .section2, .section3 {
   margin: 15px 0;
   padding: 1em 0;
   position: relative;
@@ -185,7 +185,7 @@ body {
   margin: 0; }
 
 .section2 {
-  height: 770px; }
+  height: 620px; }
 
 .headerGDP {
   color: #FFFFFF;
@@ -229,13 +229,16 @@ body {
   text-decoration: underline; }
 
 .donateButtonStyleHP {
-  height: 74px;
+  height: 70px;
   font-size: 35px;
-  opacity: 0.9;
+  opacity: 0.7;
+  border: solid #FFF;
+  border-radius: 10px;
   transition: 0.2s; }
 
 .donateButtonStyleHP:hover {
-  opacity: 1; }
+  opacity: 1;
+  border: solid #FFF; }
 
 .chartText1 {
   margin-left: 10%; }
@@ -298,6 +301,9 @@ body {
   .text2 {
     font-size: 26px; }
 
+  .section2 {
+    height: 700px; }
+
   .textGDP {
     font-size: 26px;
     padding-top: 0%;
@@ -322,13 +328,18 @@ body {
 @media (min-width: 768px) {
   /*Homepage*/
   .hpimg-2 {
-    width: 100%;
-    height: 900px; }
+    height: 975px; }
+
+  .hpimg-3 {
+    height: 975px; }
+
+  .hpimg-4 {
+    height: 975px; }
 
   #hptextimg-1 {
     height: 200px;
-    top: 330px;
-    left: 72px; }
+    top: 75px;
+    left: 30%; }
 
   #hptextimg-2 {
     top: -56px;
@@ -341,7 +352,8 @@ body {
     position: relative; }
 
   #hptextimg-4 {
-    top: -15%;
+    top: 3%;
+    left: 30%;
     height: 230px;
     position: relative; }
 
@@ -373,31 +385,43 @@ body {
     padding-bottom: 197px; }
 
   .MotherTeresaImg {
-    width: 54%;
-    height: 325px;
+    width: 35%;
+    height: 167px;
     position: relative;
-    left: 57%;
-    top: -39px; }
+    left: 64%;
+    top: -60px; }
 
   .textHP1 {
     margin-top: 0; }
 
-  .hpimg-2 {
-    top: 85px; }
+  .section {
+    height: 168%; }
 
-  .hpimg-4 {
-    top: 85px; } }
+  .section2 {
+    height: 91%;
+    top: -1%; }
+
+  .section3 {
+    height: 100%; } }
 @media (min-width: 1200px) {
   /*Homepage*/
   .hpimg-2 {
     width: 100%;
-    height: 900px;
-    top: 48px; }
+    height: 1000px;
+    top: 40px; }
+
+  .hpimg-3 {
+    width: 100%;
+    height: 1000px;
+    top: 40px; }
+
+  .hpimg-4 {
+    height: 1000px; }
 
   #hptextimg-1 {
-    height: 400px;
-    top: 41%;
-    left: 100px; }
+    height: 200px;
+    top: 75px;
+    left: 30%; }
 
   #hptextimg-2 {
     top: -56%;
@@ -423,6 +447,18 @@ body {
     height: 400px; }
 
   #hptextimg-4 {
-    height: 400px; } }
+    height: 360px;
+    width: 30%;
+    left: 36%; }
+
+  .section {
+    height: 166%; }
+
+  .MotherTeresaImg {
+    width: 35%;
+    height: 250px;
+    position: relative;
+    left: 64%;
+    top: -60px; } }
 
 /*# sourceMappingURL=style.css.map */
