@@ -44,23 +44,3 @@ readBtn2.addEventListener('click', () => {
 
 
 
-/*document.getElementById("readBtn").addEventListener("click", Read());
-
-function Read() {
-    var dots = document.getElementById("dots");
-    var ReadText = document.getElementById("more");
-    var btnText = document.getElementById("readBtn");
-
-    if (ReadText.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read More";
-        ReadText.style.display = "none";
-    }
-    else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read Less";
-        ReadText.style.display = "inline";
-    }
-}
-
-return Read();*/
