@@ -1,6 +1,6 @@
 const readBtn = document.querySelector('#readBtn1');
-const more = document.querySelector('.more1');
-const dots = document.querySelector('.dots1');
+const more = document.querySelector('#more1');
+const dots = document.querySelector('#dots1');
 
 
 
@@ -26,7 +26,7 @@ const dots2 = document.querySelector('#dots2');
 
 
 
-more.style.display = 'none';
+more2.style.display = 'none';
 
 readBtn2.addEventListener('click', () => {
     if (more2.style.display == 'none') {
