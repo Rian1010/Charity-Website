@@ -116,6 +116,14 @@
 .disasterReliefRedCrossPic {
   background-image: url("../images/Charity-Images/Disaster-Relief-Red-Cross.jpg"); }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%; }
+
 .charity-collapse {
   width: 100%;
   font-size: 15px;
@@ -240,6 +248,14 @@ body {
   opacity: 1;
   border: solid #FFF; }
 
+.section2-text {
+  animation: fadeEffect 3s; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .chartText1 {
   margin-left: 10%; }
 
@@ -271,7 +287,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-image: url("/assets/images/Contact-Image/Hands-Charity.png"); }
+  background-image: url("../images/Contact-Image/Hands-Charity.png"); }
 
 @media (min-width: 576px) {
   /*Homepage*/

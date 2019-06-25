@@ -1,6 +1,6 @@
-const readBtn = document.querySelector('.readBtn');
-const more = document.querySelector('.more');
-const dots = document.querySelector('.dots');
+const readBtn = document.querySelector('#readBtn1');
+const more = document.querySelector('.more1');
+const dots = document.querySelector('.dots1');
 
 
 
@@ -44,3 +44,12 @@ readBtn2.addEventListener('click', () => {
 
 
 
+window.addEventListener("scroll", function() {showFunction()});
+
+function showFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("section2-text").style.display = "block";
+    } else {
+        document.getElementById("section2-text").style.display = "none";
+    }
+}
