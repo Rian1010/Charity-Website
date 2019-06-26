@@ -43,8 +43,10 @@ readBtn2.addEventListener('click', () => {
 });
 
 
-
+/*
 window.addEventListener("scroll", function() {showFunction()});
+window.addEventListener("scroll", function() {showFunction2()});
+window.addEventListener("scroll", function() {showFunction3()});
 
 function showFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -53,3 +55,19 @@ function showFunction() {
         document.getElementById("section2-text").style.display = "none";
     }
 }
+
+function showFunction2() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("section3-text").style.display = "block";
+    } else {
+        document.getElementById("section3-text").style.display = "none";
+    }
+}
+
+function showFunction3() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("section4-text").style.display = "block";
+    } else {
+        document.getElementById("section4-text").style.display = "none";
+    }
+}*/

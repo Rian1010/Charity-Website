@@ -183,5 +183,26 @@
 
 .carousel-control-next-icon {
     @extend %carouselArrows;
+}
 
+
+%fadeEffect {
+    animation: fadeEffect 0.2s;
+}
+
+.section2-text {
+    @extend %fadeEffect;
+}
+
+.section3-text {
+    @extend %fadeEffect;
+}
+
+.section4-text {
+    @extend %fadeEffect;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }

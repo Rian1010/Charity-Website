@@ -72,11 +72,3 @@ body {
     border: solid #FFF;
 }
 
-.section2-text {
-    animation: fadeEffect 3s;
-}
-
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}

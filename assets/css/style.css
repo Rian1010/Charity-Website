@@ -124,6 +124,14 @@
   background-size: 100%, 100%;
   border-radius: 50%; }
 
+.section2-text, .section3-text, .section4-text {
+  animation: fadeEffect 0.2s; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .charity-collapse {
   width: 100%;
   font-size: 15px;
@@ -248,14 +256,6 @@ body {
   opacity: 1;
   border: solid #FFF; }
 
-.section2-text {
-  animation: fadeEffect 3s; }
-
-@keyframes fadeEffect {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
 .chartText1 {
   margin-left: 10%; }
 
