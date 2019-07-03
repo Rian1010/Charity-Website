@@ -1,7 +1,7 @@
 //unfinished
 
 queue()
-    .defer(d3.json, 'assets/js/data.json')
+    .defer(d3.json, 'data/data.json')
     .await(createDataVis);
 
 function createDataVis(error, gdpData) {
