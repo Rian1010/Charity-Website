@@ -24,7 +24,11 @@ function show_country_selector(ndx) {
         .group(group);
 }
 
+
 function show_country_data(ndx) {
+    
+    /* GDP per Capita Chart */
+    
     var name_dim = ndx.dimension(dc.pluck('country'));
     var draw_barchart_gdp_country = name_dim.group().reduceSum(dc.pluck('gdp'));
     dc.barChart('#gdp-per-capita-chart')
@@ -39,6 +43,8 @@ function show_country_data(ndx) {
         .xAxisLabel('Country')
         .yAxisLabel('GDP Per Capita ($)')
         .yAxis().ticks(8);
+        
+    /* Gini Coefficient Chart */
 
     var gc_dim = ndx.dimension(dc.pluck('country'));
     var draw_barchart_gc_country = gc_dim.group().reduceSum(dc.pluck('gini-coefficient'));
@@ -55,6 +61,8 @@ function show_country_data(ndx) {
         .yAxisLabel('Gini Coefficient')
         .yAxis().ticks(8);
 
+    /* Unemployment Rate */
+
     var unemp_rate_dim = ndx.dimension(dc.pluck('country'));
     var draw_barchart_unemployment_rate_pie = gc_dim.group().reduceSum(dc.pluck('unemployment-rate'));
     var minRate = unemp_rate_dim.bottom(1)[0].date;
@@ -68,12 +76,12 @@ function show_country_data(ndx) {
 
 
 
+    /* Female Unemployment Rate */
 
-
-    var unemp_rate_year_dim = ndx.dimension(dc.pluck('country'));
+    var unemp_rate_year_dim = ndx.dimension(dc.pluck('year'));
     var unemp_rate_genders_dim = unemp_rate_year_dim.group().reduceSum(dc.pluck('female-unemployment-rate-2015'));
 
-    function spend_by_country(country) {
+    function female_unemployment_rate_by_country(country) {
         return function(d) {
             if (d.country === country) {
                 return +d.country;
@@ -83,33 +91,60 @@ function show_country_data(ndx) {
             }
         }
     }
-    var femaleUnempRate2015 = unemp_rate_year_dim.group().reduceSum(spend_by_name('female-unemployment-rate-2015'));
-    var femaleUnempRate2016 = unemp_rate_year_dim.group().reduceSum(spend_by_name('female-unemployment-rate-2016'));
-    var femaleUnempRate2017 = unemp_rate_year_dim.group().reduceSum(spend_by_name('female-unemployment-rate-2017'));
-    var femaleUnempRate2018 = unemp_rate_year_dim.group().reduceSum(spend_by_name('female-unemployment-rate-2018'));
-    var femaleUnempRateChart = dc.compositeChart('#unemployment-rate-female');
+    var femaleUnempRateDRC = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('DRC'));
+    var femaleUnempRateMZ = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('MZ'));
+    var femaleUnempRateUG = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('UG'));
+    var femaleUnempRateTJ = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('TJ'));
+    var femaleUnempRateYE = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('YE'));
+    var femaleUnempRateHT = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('HT'));
+    var femaleUnempRateET = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('ET'));
+    var femaleUnempRateTZ = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('TZ'));
+    var femaleUnempRateKG = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('KG'));
+    var femaleUnempRateUZ = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('UZ'));
+
+
+    var compositeChart = dc.compositeChart('#unemployment-rate-female');
 
     compositeChart
         .width(990)
-        .height(200)
+        .height(400)
         .dimension(unemp_rate_year_dim)
-        .x(d3.time.scale().domain())
-        .yAxisLabel("Spend")
-        .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
+        .x(d3.time.scale())
+        .yAxisLabel("Female Unemployment Rate")
+
+        .legend(dc.legend().x(800).y(10).itemHeight(13).gap(5))
         .renderHorizontalGridLines(true)
         .compose([
             dc.lineChart(compositeChart)
             .colors('green')
-            .group(femUnempRate15, 'female-unemployment-rate-2015'),
+            .group(femaleUnempRateDRC, 'Democratic Republic of Congo'),
             dc.lineChart(compositeChart)
             .colors('red')
-            .group(femUnempRate16, 'female-unemployment-rate-2016'),
+            .group(femaleUnempRateMZ, 'Mozambique'),
+            dc.lineChart(compositeChart)
+            .colors('yellow')
+            .group(femaleUnempRateUG, 'Uganda'),
             dc.lineChart(compositeChart)
             .colors('blue')
-            .group(femUnempRate17, 'female-unemployment-rate-2017'),
+            .group(femaleUnempRateTJ, 'Tajikistan'),
             dc.lineChart(compositeChart)
             .colors('orange')
-            .group(femUnempRate18, 'female-unemployment-rate-2017')
+            .group(femaleUnempRateYE, 'Yemen'),
+            dc.lineChart(compositeChart)
+            .colors('lightblue')
+            .group(femaleUnempRateHT, 'Haiti'),
+            dc.lineChart(compositeChart)
+            .colors('black')
+            .group(femaleUnempRateET, 'Ethopia'),
+            dc.lineChart(compositeChart)
+            .colors('brown')
+            .group(femaleUnempRateTZ, 'Tanzania'),
+            dc.lineChart(compositeChart)
+            .colors('purple')
+            .group(femaleUnempRateKG, 'Kyrgyzstan'),
+            dc.lineChart(compositeChart)
+            .colors('pink')
+            .group(femaleUnempRateUZ, 'Uzbekistan'),
         ])
         .brushOn(false)
         .render();
