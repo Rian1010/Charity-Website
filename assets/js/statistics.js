@@ -149,6 +149,10 @@ function show_country_data(ndx) {
         .brushOn(false)
         .render();
 }
+
+
+
+
 /*var name_dim = ndx.dimension(dc.pluck('country'));
 var draw_barchart_gdp_rank = name_dim.group().reduceSum(dc.pluck('rank'));
 dc.barChart('#gdp-per-capita-chart-rank')

@@ -42,6 +42,19 @@ readBtn2.addEventListener('click', () => {
     }
 });
 
+function scrollAppear (){
+    var textEffect = document.querySelector('.text-effect');
+    var textPosition = textEffect.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 0.6;
+
+    if(textPosition < screenPosition) {
+        textEffect.classList.add('.text-appear');
+        console.log('This is working!');
+    }
+}
+
+window.addEventListener('scroll', scrollAppear);
+
 
 /*
 window.addEventListener("scroll", function() {showFunction()});
