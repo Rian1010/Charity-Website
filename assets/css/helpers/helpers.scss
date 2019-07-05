@@ -1,0 +1,208 @@
+/*Homepage*/
+
+%background {
+    position: relative;
+    background: {
+        position: center;
+        attachment: fixed;
+        repeat: no-repeat;
+
+
+    }
+}
+
+.hpimg-1 {
+    @extend %background,
+}
+
+
+.hpimg-2 {
+    @extend %background,
+}
+
+.hpimg-3 {
+    @extend %background,
+}
+
+.hpimg-4 {
+    @extend %background,
+}
+
+.hpimg-5 {
+    @extend %background,
+}
+
+%textStyling {
+    font-size: 1em;
+    margin-top: 5%;
+    padding-right: 10px;
+    position: relative;
+}
+
+
+%sectionStyle {
+    margin: 15px 0;
+    padding: 1em 0;
+    position: relative;
+    color: white;
+    top: 12%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 2%;
+}
+
+.section {
+    @extend %sectionStyle
+}
+
+.section2 {
+    @extend %sectionStyle
+}
+
+.section3 {
+    @extend %sectionStyle
+}
+
+.text {
+    @extend %textStyling
+}
+
+.text2 {
+    @extend %textStyling
+}
+
+%regularBGSizeAndPos {
+    left: 25%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    border-radius: 3%;
+
+}
+
+#hptextimg-1 {
+    @extend %regularBGSizeAndPos
+}
+
+#hptextimg-4 {
+    @extend %regularBGSizeAndPos
+}
+
+.MotherTeresaImg {
+    @extend %regularBGSizeAndPos
+}
+
+
+
+
+/*Statistics Page*/
+
+%chartMargin {
+    margin: 50px 10px
+}
+
+.chartStyling1 {
+    @extend %chartMargin
+}
+
+.statisticsHeading {
+    @extend %chartMargin
+}
+
+
+
+
+/*Charity Page*/
+
+%charityCarouselPics {
+    width: 100%;
+    height: 74vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.charityAsiaPic1 {
+    @extend %charityCarouselPics;
+    background-image: url('../images/Charity-Images/India-Poverty.jpg');
+
+}
+
+.charityAfricaPic {
+    @extend %charityCarouselPics;
+    background-image: url('../images/Charity-Images/Children-Uganda.jpg');
+}
+
+.charityAsiaPic2 {
+    @extend %charityCarouselPics;
+    background-image: url('../images/Charity-Images/Jakarta-Slum.jpeg');
+}
+
+.charityEuropePic1 {
+    @extend %charityCarouselPics;
+    background-position: bottom;
+    background-image: url('../images/Charity-Images/Refugee-Child.jpg');
+
+}
+
+.charitySAPic {
+    @extend %charityCarouselPics;
+    background-image: url('../images/Charity-Images/Haiti-Poverty.jpeg');
+
+}
+
+.charityEuropePic2 {
+    @extend %charityCarouselPics;
+    background-image: url('../images/Charity-Images/EuropeRefugees.jpg');
+
+}
+
+.charityRedCrossPic {
+    @extend %charityCarouselPics;
+    background-image: url('../images/Charity-Images/American-Red-Cross.jpg');
+}
+
+.disasterReliefRedCrossPic {
+    @extend %charityCarouselPics;
+    background-image: url('../images/Charity-Images/Disaster-Relief-Red-Cross.jpg');
+}
+
+
+
+
+%carouselArrows {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+    @extend %carouselArrows;
+}
+
+.carousel-control-next-icon {
+    @extend %carouselArrows;
+}
+
+
+%fadeEffect {
+    animation: fadeEffect 0.2s;
+}
+
+.section2-text {
+    @extend %fadeEffect;
+}
+
+.section3-text {
+    @extend %fadeEffect;
+}
+
+.section4-text {
+    @extend %fadeEffect;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

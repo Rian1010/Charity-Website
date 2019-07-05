@@ -1,0 +1,40 @@
+#donateBody {
+    background-color: $donateBodyBlue;
+}
+
+.charitiesH1 {
+    padding: 28px 0;
+    color: white;
+}
+
+.charity-text {
+    padding: 0 18px;
+    white-space: pre-line;
+    max-height: 0;
+    overflow: scroll;
+    margin-bottom: 10px;
+    transition: max-height 0.2s ease-in-out;
+    background-color: $white;
+}
+
+.charity-collapse:after {
+    content: '\02795';
+    font-size: 15px;
+    float: right;
+    margin-left: 5px;
+}
+
+.symbol:after {
+    content: "\2796";
+}
+
+.carousel-inner {
+    padding-top: 55px;
+
+    margin-bottom: 10px;
+}
+
+.donatePageHeadings {
+    color: $white;
+}
+
