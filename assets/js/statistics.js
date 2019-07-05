@@ -152,9 +152,9 @@ function show_country_data(ndx) {
 
 queue()
     .defer(d3.json, 'data/data2.json')
-    .await(createDataVis);
+    .await(createDataVis2);
 
-function createDataVis(error, costData) {
+function createDataVis2(error, costData) {
     var ndx = crossfilter(costData);
 
     show_country_data2(ndx);
