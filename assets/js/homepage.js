@@ -42,18 +42,20 @@ readBtn2.addEventListener('click', () => {
     }
 });
 
-function scrollAppear (){
-    var textEffect = document.querySelector('.text-effect');
-    var textPosition = textEffect.getBoundingClientRect().top;
-    var screenPosition = window.innerHeight / 0.6;
+window.onload = function() {
+    function scrollAppear() {
+        var textEffect = document.querySelector('.text-effect');
+        var textPosition = textEffect.getBoundingClientRect().top;
+        var screenPosition = window.innerHeight / 1.4;
 
-    if(textPosition < screenPosition) {
-        textEffect.classList.add('.text-appear');
-        console.log('This is working!');
+        if (textPosition < screenPosition) {
+            textEffect.classList.add('.text-appear');
+            console.log('This is working!');
+        }
     }
+    window.addEventListener('scroll', scrollAppear);
 }
 
-window.addEventListener('scroll', scrollAppear);
 
 
 /*

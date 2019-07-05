@@ -2,83 +2,67 @@
   width: 100%;
   top: 40px;
   height: 98vh;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(1, 1, 1, 0.2)), color-stop(rgba(1, 1, 1, 0)), to(rgba(1, 1, 1, 0.2))), url("../images/sadness-africa.jpg");
   background-image: linear-gradient(to right, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.2)), url("../images/sadness-africa.jpg");
-  background-size: 132% 100%;
-}
+  background-size: 132% 100%; }
 
 .hpimg-2 {
   width: 100%;
   height: 900px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(1, 1, 1, 0.4)), color-stop(rgba(1, 1, 1, 0)), to(rgba(1, 1, 1, 0.4))), url("../images/india-kids.jpg");
   background-image: linear-gradient(to right, rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.4)), url("../images/india-kids.jpg");
   top: 40px;
   background-size: cover;
-  background-attachment: fixed;
-}
+  background-attachment: fixed; }
 
 .hpimg-3 {
   width: 100%;
   height: 900px;
   background-image: url("../images/african-orphan.jpg");
   top: 40px;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .hpimg-4 {
   width: 100%;
   height: 775px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(1, 1, 1, 0.2)), color-stop(rgba(1, 1, 1, 0)), to(rgba(1, 1, 1, 0.2))), url("../images/Starving -African-Child.jpg");
   background-image: linear-gradient(to right, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.2)), url("../images/Starving -African-Child.jpg");
   top: 40px;
   background-attachment: fixed;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .hpimg-5 {
   width: 100%;
   top: 40px;
   height: 97vh;
   background-image: url("../images/sadness-africa.jpg");
-  background-size: 132% 100%;
-}
+  background-size: 132% 100%; }
 
 #hptextimg-1 {
   width: 120px;
   height: 142px;
   width: 53%;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(1, 1, 1, 0.2)), color-stop(rgba(1, 1, 1, 0)), to(rgba(1, 1, 1, 0.2))), url(../images/Asia-poverty.jpg);
-  background-image: linear-gradient(to right, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.2)), url(../images/Asia-poverty.jpg);
-}
+  background-image: linear-gradient(to right, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.2)), url(../images/Asia-poverty.jpg); }
 
 #hptextimg-4 {
   width: 50%;
   height: 142px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(1, 1, 1, 0.2)), color-stop(rgba(1, 1, 1, 0)), to(rgba(1, 1, 1, 0.2))), url(../images/starvation.jpg);
-  background-image: linear-gradient(to right, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.2)), url(../images/starvation.jpg);
-}
+  background-image: linear-gradient(to right, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.2)), url(../images/starvation.jpg); }
 
 .MotherTeresaImg {
   width: 50%;
   height: 142px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(1, 1, 1, 0.3)), color-stop(rgba(1, 1, 1, 0)), to(rgba(1, 1, 1, 0.3))), url(../images/Mother-Teresa.jpg);
-  background-image: linear-gradient(to right, rgba(1, 1, 1, 0.3), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.3)), url(../images/Mother-Teresa.jpg);
-}
+  background-image: linear-gradient(to right, rgba(1, 1, 1, 0.3), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.3)), url(../images/Mother-Teresa.jpg); }
 
 /*Homepage*/
 .hpimg-1, .hpimg-2, .hpimg-3, .hpimg-4, .hpimg-5 {
   position: relative;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 .text, .text2 {
   font-size: 1em;
   margin-top: 5%;
   padding-right: 10px;
-  position: relative;
-}
+  position: relative; }
 
 .section, .section2, .section3 {
   margin: 15px 0;
@@ -87,62 +71,50 @@
   color: white;
   top: 12%;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 2%;
-}
+  border-radius: 2%; }
 
 #hptextimg-1, #hptextimg-4, .MotherTeresaImg {
   left: 25%;
   background-size: cover;
   position: relative;
   background-position: center;
-  border-radius: 3%;
-}
+  border-radius: 3%; }
 
 /*Statistics Page*/
 .chartStyling1, .statisticsHeading {
-  margin: 50px 10px;
-}
+  margin: 50px 10px; }
 
 /*Charity Page*/
 .charityAsiaPic1, .charityAfricaPic, .charityAsiaPic2, .charityEuropePic1, .charitySAPic, .charityEuropePic2, .charityRedCrossPic, .disasterReliefRedCrossPic {
   width: 100%;
   height: 74vh;
   background-size: cover;
-  background-position: center;
-}
+  background-position: center; }
 
 .charityAsiaPic1 {
-  background-image: url("../images/Charity-Images/India-Poverty.jpg");
-}
+  background-image: url("../images/Charity-Images/India-Poverty.jpg"); }
 
 .charityAfricaPic {
-  background-image: url("../images/Charity-Images/Children-Uganda.jpg");
-}
+  background-image: url("../images/Charity-Images/Children-Uganda.jpg"); }
 
 .charityAsiaPic2 {
-  background-image: url("../images/Charity-Images/Jakarta-Slum.jpeg");
-}
+  background-image: url("../images/Charity-Images/Jakarta-Slum.jpeg"); }
 
 .charityEuropePic1 {
   background-position: bottom;
-  background-image: url("../images/Charity-Images/Refugee-Child.jpg");
-}
+  background-image: url("../images/Charity-Images/Refugee-Child.jpg"); }
 
 .charitySAPic {
-  background-image: url("../images/Charity-Images/Haiti-Poverty.jpeg");
-}
+  background-image: url("../images/Charity-Images/Haiti-Poverty.jpeg"); }
 
 .charityEuropePic2 {
-  background-image: url("../images/Charity-Images/EuropeRefugees.jpg");
-}
+  background-image: url("../images/Charity-Images/EuropeRefugees.jpg"); }
 
 .charityRedCrossPic {
-  background-image: url("../images/Charity-Images/American-Red-Cross.jpg");
-}
+  background-image: url("../images/Charity-Images/American-Red-Cross.jpg"); }
 
 .disasterReliefRedCrossPic {
-  background-image: url("../images/Charity-Images/Disaster-Relief-Red-Cross.jpg");
-}
+  background-image: url("../images/Charity-Images/Disaster-Relief-Red-Cross.jpg"); }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
   height: 100px;
@@ -150,82 +122,54 @@
   outline: black;
   background-color: rgba(0, 0, 0, 0.3);
   background-size: 100%, 100%;
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 
 .section2-text, .section3-text, .section4-text {
-  -webkit-animation: fadeEffect 0.2s;
-          animation: fadeEffect 0.2s;
-}
-
-@-webkit-keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+  animation: fadeEffect 0.2s; }
 
 @keyframes fadeEffect {
   from {
-    opacity: 0;
-  }
+    opacity: 0; }
   to {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 .charity-collapse {
   width: 100%;
   font-size: 15px;
   background-color: #01C3FE;
   color: #FFFFFF;
   padding: 18px;
-  border: none;
-}
+  border: none; }
 
 .charity-collapse:hover {
   background-color: #0188FE;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
+  transition: 0.2s ease-in-out; }
 
 .donateButtonStyle {
   background-color: #8ffe00;
   margin-bottom: 10px;
-  color: #FFFFFF;
-}
+  color: #FFFFFF; }
 
 .donateButtonStyle:hover {
   background-color: #11fe00;
-  -webkit-transition: 0.2 ease-in-out;
   transition: 0.2 ease-in-out;
-  color: #FFFFFF;
-}
+  color: #FFFFFF; }
 
 .hvr-shutter-out-vertical {
-  background-color: #FFFFFF;
-}
+  background-color: #FFFFFF; }
 
 .navbar-light {
-  background-color: #FFFFFF;
-}
+  background-color: #FFFFFF; }
 
 .navBrandColor:hover {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
-  color: #007bff !important;
-}
+  color: #007bff !important; }
 
 #donateBody {
-  background-color: #2098d1;
-}
+  background-color: #2098d1; }
 
 .charitiesH1 {
   padding: 28px 0;
-  color: white;
-}
+  color: white; }
 
 .charity-text {
   padding: 0 18px;
@@ -233,51 +177,41 @@
   max-height: 0;
   overflow: scroll;
   margin-bottom: 10px;
-  -webkit-transition: max-height 0.2s ease-in-out;
   transition: max-height 0.2s ease-in-out;
-  background-color: #FFFFFF;
-}
+  background-color: #FFFFFF; }
 
 .charity-collapse:after {
   content: '\02795';
   font-size: 15px;
   float: right;
-  margin-left: 5px;
-}
+  margin-left: 5px; }
 
 .symbol:after {
-  content: "\2796";
-}
+  content: "\2796"; }
 
 .carousel-inner {
   padding-top: 55px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .donatePageHeadings {
-  color: #FFFFFF;
-}
+  color: #FFFFFF; }
 
 body {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 .section2 {
-  height: 620px;
-}
+  height: 620px; }
 
 .headerGDP {
   color: #FFFFFF;
-  top: 7px;
-}
+  top: 7px; }
 
 .textGDP {
   font-size: 1em;
   top: 82px;
   padding-right: 10px;
-  color: #FFFFFF;
-}
+  color: #FFFFFF; }
 
 .bottomLine {
   width: 100%;
@@ -286,35 +220,29 @@ body {
   padding-right: 10px;
   opacity: 0.90;
   display: block;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
 .MotherTeresaQuote {
   top: 115px;
   text-transform: uppercase;
   color: #FFFFFF;
-  font-style: italic;
-}
+  font-style: italic; }
 
 .textHP1 {
   color: #000000;
   padding-left: 10px;
-  margin-top: 100px;
-}
+  margin-top: 100px; }
 
 .textHP2 {
   color: #FFFFFF;
   padding-top: 150px;
-  padding-left: 10px;
-}
+  padding-left: 10px; }
 
 .more {
-  display: none;
-}
+  display: none; }
 
 .underline {
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 .donateButtonStyleHP {
   height: 70px;
@@ -322,56 +250,42 @@ body {
   opacity: 0.7;
   border: solid #FFF;
   border-radius: 10px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
+  transition: 0.2s; }
 
 .donateButtonStyleHP:hover {
   opacity: 1;
-  border: solid #FFF;
-}
+  border: solid #FFF; }
 
 .text-effect {
   opacity: 0;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-  -webkit-transition: 0.5s all ease-in-out;
-  transition: 0.5s all ease-in-out;
-}
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out; }
 
 .text-appear {
   opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
+  transform: translateY(0px); }
 
 .chartText1 {
-  margin-left: 10%;
-}
+  margin-left: 10%; }
 
 #gdp-per-capita-chart {
-  clear: left;
-}
+  clear: left; }
 
 #map {
   height: 100vh;
   width: 100%;
   top: 40px;
-  margin-top: -40px;
-}
+  margin-top: -40px; }
 
 .forms {
   margin: auto;
-  padding: 20px 0;
-}
+  padding: 20px 0; }
 
 .formsSubmit {
-  margin: 10px 44%;
-}
+  margin: 10px 44%; }
 
 .contactHeading {
-  padding-top: 100px;
-}
+  padding-top: 100px; }
 
 .contactBG {
   width: 100%;
@@ -382,202 +296,194 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-image: url("../images/Contact-Image/Hands-Charity.png");
-}
+  background-image: url("../images/Contact-Image/Hands-Charity.png"); }
 
 @media (min-width: 576px) {
   /*Homepage*/
   .textHP1 {
     padding-top: 33%;
-    font-size: 26px;
-  }
+    font-size: 26px; }
+
   #hptextimg-1 {
     width: 350px;
     height: 185px;
     position: relative;
     top: 24%;
-    z-index: 1;
-  }
+    z-index: 1; }
+
   #hptextimg-4 {
     width: 350px;
     height: 185px;
     top: -8%;
     position: relative;
-    z-index: 0;
-  }
+    z-index: 0; }
+
   .headerGDP {
     color: #FFFFFF;
     position: relative;
-    top: 56px;
-  }
+    top: 56px; }
+
   .text2 {
-    font-size: 26px;
-  }
+    font-size: 26px; }
+
   .section2 {
-    height: 700px;
-  }
+    height: 700px; }
+
   .textGDP {
     font-size: 26px;
     padding-top: 0%;
     position: relative;
     padding-right: 10px;
-    color: #FFFFFF;
-  }
+    color: #FFFFFF; }
+
   .MotherTeresaQuote {
     top: 135px;
     font-size: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
     position: relative;
-    padding-bottom: 37px;
-  }
+    padding-bottom: 37px; }
+
   .MotherTeresaImg {
     width: 32%;
     height: 129px;
     top: 94px;
     left: 67%;
-    border-radius: 20px;
-  }
-}
-
+    border-radius: 20px; } }
 @media (min-width: 768px) {
   /*Homepage*/
   .hpimg-2 {
-    height: 975px;
-  }
+    height: 975px; }
+
   .hpimg-3 {
-    height: 975px;
-  }
+    height: 975px; }
+
   .hpimg-4 {
-    height: 975px;
-  }
+    height: 975px; }
+
   #hptextimg-1 {
     height: 200px;
     top: 75px;
-    left: 30%;
-  }
+    left: 30%; }
+
   #hptextimg-2 {
     top: -56px;
-    height: 204px;
-  }
+    height: 204px; }
+
   #hptextimg-3 {
     height: 239px;
     top: 8%;
     left: 72px;
-    position: relative;
-  }
+    position: relative; }
+
   #hptextimg-4 {
     top: 3%;
     left: 30%;
     height: 230px;
-    position: relative;
-  }
+    position: relative; }
+
   .header {
-    margin-top: 9px;
-  }
+    margin-top: 9px; }
+
   .text {
     font-size: 26px;
     margin-top: 5%;
     padding-right: 10px;
-    position: relative;
-  }
+    position: relative; }
+
   .section1 {
     bottom: 20px;
     padding-top: 10%;
-    position: relative;
-  }
+    position: relative; }
+
   .textGDP {
     font-size: 26px;
     top: 144px;
     padding-right: 10px;
     position: relative;
-    color: #FFFFFF;
-  }
+    color: #FFFFFF; }
+
   .MotherTeresaQuote {
     font-size: 26px;
     position: relative;
     top: 156px;
-    padding-bottom: 197px;
-  }
+    padding-bottom: 197px; }
+
   .MotherTeresaImg {
     width: 35%;
     height: 167px;
     position: relative;
     left: 64%;
-    top: -60px;
-  }
+    top: -60px; }
+
   .textHP1 {
-    margin-top: 0;
-  }
+    margin-top: 0; }
+
   .section {
-    height: 168%;
-  }
+    height: 168%; }
+
   .section2 {
     height: 91%;
-    top: -1%;
-  }
-  .section3 {
-    height: 100%;
-  }
-}
+    top: -1%; }
 
+  .section3 {
+    height: 100%; } }
 @media (min-width: 1200px) {
   /*Homepage*/
   .hpimg-2 {
     width: 100%;
     height: 1000px;
-    top: 40px;
-  }
+    top: 40px; }
+
   .hpimg-3 {
     width: 100%;
     height: 1000px;
-    top: 40px;
-  }
+    top: 40px; }
+
   .hpimg-4 {
-    height: 1000px;
-  }
+    height: 1000px; }
+
   #hptextimg-1 {
     height: 200px;
     top: 75px;
-    left: 30%;
-  }
+    left: 30%; }
+
   #hptextimg-2 {
     top: -56%;
     height: 400px;
-    position: relative;
-  }
+    position: relative; }
+
   .text {
-    font-size: 30px;
-  }
+    font-size: 30px; }
+
   .text2 {
-    font-size: 2em;
-  }
+    font-size: 2em; }
+
   .textGDP {
-    font-size: 2em;
-  }
+    font-size: 2em; }
+
   .textHP1 {
     padding-top: 100px;
     padding-left: 40px;
     font-size: 26px;
-    margin-top: 100px;
-  }
+    margin-top: 100px; }
+
   #hptextimg-3 {
-    height: 400px;
-  }
+    height: 400px; }
+
   #hptextimg-4 {
     height: 360px;
     width: 30%;
-    left: 36%;
-  }
+    left: 36%; }
+
   .section {
-    height: 166%;
-  }
+    height: 166%; }
+
   .MotherTeresaImg {
     width: 35%;
     height: 250px;
     position: relative;
     left: 64%;
-    top: -60px;
-  }
-}
+    top: -60px; } }
+
 /*# sourceMappingURL=style.css.map */

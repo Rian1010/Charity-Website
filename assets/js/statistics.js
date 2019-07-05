@@ -26,9 +26,9 @@ function show_country_selector(ndx) {
 
 
 function show_country_data(ndx) {
-    
+
     /* GDP per Capita Chart */
-    
+
     var name_dim = ndx.dimension(dc.pluck('country'));
     var draw_barchart_gdp_country = name_dim.group().reduceSum(dc.pluck('gdp'));
     dc.barChart('#gdp-per-capita-chart')
@@ -43,7 +43,7 @@ function show_country_data(ndx) {
         .xAxisLabel('Country')
         .yAxisLabel('GDP Per Capita ($)')
         .yAxis().ticks(8);
-        
+
     /* Gini Coefficient Chart */
 
     var gc_dim = ndx.dimension(dc.pluck('country'));
@@ -150,7 +150,36 @@ function show_country_data(ndx) {
         .render();
 }
 
+queue()
+    .defer(d3.json, 'data/data2.json')
+    .await(createDataVis);
 
+function createDataVis(error, costData) {
+    var ndx = crossfilter(costData);
+
+    show_country_data2(ndx);
+
+    dc.renderAll();
+}
+
+function show_country_data2(ndx) {
+    // var ndx = crossfilter(costsData);
+    var name_dim = ndx.dimension(dc.pluck('countryCostsData'));
+    var costs_of_food = name_dim.group().reduceSum(dc.pluck('price'));
+
+    dc.barChart('#costs-of-meals-chart')
+        .width(725)
+        .height(270)
+        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+        .dimension(name_dim)
+        .group(costs_of_food)
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .xAxisLabel('Country')
+        .yAxisLabel('Price of Food ($)')
+        .yAxis().ticks(4);
+}
 
 
 /*var name_dim = ndx.dimension(dc.pluck('country'));
