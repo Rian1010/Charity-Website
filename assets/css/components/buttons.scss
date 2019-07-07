@@ -16,11 +16,42 @@
     background-color: $green;
     margin-bottom: 10px;
     color: $white;
-    
+
 }
 
 .donateButtonStyle:hover {
     background-color: $darkerGreen;
     transition: 0.2 ease-in-out;
     color: $white;
+}
+
+
+// Calculator
+.buttons {
+    padding: 0.25rem 0;
+
+}
+
+.calcBtnStyle {
+    transition: all 0.5s ease-in-out;
+}
+
+.calcBtnStyle:hover {
+    background: $blue;
+}
+
+.calcBtnYellow {
+    background: $lightYellow;
+}
+
+.calcBtnGrey {
+    background: $grey;
+}
+
+.calcBtnGreen {
+    background: $green;
+}
+
+.calcBtnRed {
+    background: $red;
 }

@@ -43,17 +43,22 @@ readBtn2.addEventListener('click', () => {
 });
 
 window.onload = function() {
+
+    var textEffect = document.querySelector('.text-effect');
+    var textPosition = textEffect.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.4;
+
+    window.addEventListener('scroll', scrollAppear);
+
     function scrollAppear() {
-        var textEffect = document.querySelector('.text-effect');
-        var textPosition = textEffect.getBoundingClientRect().top;
-        var screenPosition = window.innerHeight / 1.4;
+
 
         if (textPosition < screenPosition) {
             textEffect.classList.add('.text-appear');
             console.log('This is working!');
         }
     }
-    window.addEventListener('scroll', scrollAppear);
+
 }
 
 

@@ -154,6 +154,27 @@
   transition: 0.2 ease-in-out;
   color: #FFFFFF; }
 
+.buttons {
+  padding: 0.25rem 0; }
+
+.calcBtnStyle {
+  transition: all 0.5s ease-in-out; }
+
+.calcBtnStyle:hover {
+  background: #0188FE; }
+
+.calcBtnYellow {
+  background: #FEF9B4; }
+
+.calcBtnGrey {
+  background: #e0e0e0; }
+
+.calcBtnGreen {
+  background: #8ffe00; }
+
+.calcBtnRed {
+  background: #FE7979; }
+
 .hvr-shutter-out-vertical {
   background-color: #FFFFFF; }
 

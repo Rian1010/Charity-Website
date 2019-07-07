@@ -78,8 +78,8 @@ function show_country_data(ndx) {
 
     /* Female Unemployment Rate */
 
-    var unemp_rate_year_dim = ndx.dimension(dc.pluck('year'));
-    var unemp_rate_genders_dim = unemp_rate_year_dim.group().reduceSum(dc.pluck('female-unemployment-rate-2015'));
+    var unemp_rate_genders_dim = ndx.dimension(dc.pluck('female-unemployment-rate-2015'));
+    var unemp_rate_year_dim = unemp_rate_genders_dim.group().reduceSum(dc.pluck('year'));
 
     function female_unemployment_rate_by_country(country) {
         return function(d) {
@@ -91,16 +91,16 @@ function show_country_data(ndx) {
             }
         }
     }
-    var femaleUnempRateDRC = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('DRC'));
-    var femaleUnempRateMZ = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('MZ'));
-    var femaleUnempRateUG = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('UG'));
-    var femaleUnempRateTJ = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('TJ'));
-    var femaleUnempRateYE = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('YE'));
-    var femaleUnempRateHT = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('HT'));
-    var femaleUnempRateET = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('ET'));
-    var femaleUnempRateTZ = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('TZ'));
-    var femaleUnempRateKG = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('KG'));
-    var femaleUnempRateUZ = unemp_rate_year_dim.group().reduceSum(female_unemployment_rate_by_country('UZ'));
+    var femaleUnempRateDRC = unemp_rate_genders_dim.group().reduceSum(female_unemployment_rate_by_country('DRC'));
+    var femaleUnempRateMZ = unemp_rate_genders_dim.group().reduceSum(female_unemployment_rate_by_country('MZ'));
+    var femaleUnempRateUG = unemp_rate_genders_dim.group().reduceSum(female_unemployment_rate_by_country('UG'));
+    var femaleUnempRateTJ = unemp_rate_genders_dim.group().reduceSum(female_unemployment_rate_by_country('TJ'));
+    var femaleUnempRateYE = unemp_rate_genders_dim.group().reduceSum(female_unemployment_rate_by_country('YE'));
+    var femaleUnempRateHT = unemp_rate_genders_dim.group().reduceSum(female_unemployment_rate_by_country('HT'));
+    var femaleUnempRateET = unemp_rate_genders_dim.group().reduceSum(female_unemployment_rate_by_country('ET'));
+    var femaleUnempRateTZ = unemp_rate_genders_dim.group().reduceSum(female_unemployment_rate_by_country('TZ'));
+    var femaleUnempRateKG = unemp_rate_genders_dim.group().reduceSum(female_unemployment_rate_by_country('KG'));
+    var femaleUnempRateUZ = unemp_rate_genders_dim.group().reduceSum(female_unemployment_rate_by_country('UZ'));
 
 
     var compositeChart = dc.compositeChart('#unemployment-rate-female');
