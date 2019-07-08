@@ -164,7 +164,8 @@ function createDataVis3(error, unemploymentData) {
         .height(200)
         .dimension(unemp_rate_genders_dim)
         .x(d3.time.scale().domain([minDate, maxDate]))
-        .yAxisLabel("Spend")
+        .yAxisLabel("Female Unemployment Rate")
+        .xAxisLabel("Year")
         .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
         .renderHorizontalGridLines(true)
         .compose([
