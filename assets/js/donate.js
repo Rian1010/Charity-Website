@@ -194,13 +194,15 @@ window.onload = function() {
     const screenTotal = document.querySelector('.screenTotal');
     const screenTotal2 = document.querySelector('.screenTotal2');
     const equalBtn7 = document.querySelector('.btn-equal7');
+    const clearBtn7 = document.querySelector('.btn-clear7');
+    const clearBtn8 = document.querySelector('.btn-clear8');
 
     equalBtn.addEventListener('click', function() {
         let value = eval(screen.value);
         screenTotal.value += value;
-        
-        if(screenTotal = value){
-            screenTotal.value+"+";
+
+        if (screenTotal = value) {
+            screenTotal.value + "+";
         }
     });
 
@@ -232,6 +234,18 @@ window.onload = function() {
     equalBtn7.addEventListener('click', function() {
         let value = eval(screenTotal.value);
         screenTotal2.value += value;
+
+        if (screenTotal.value.length > 0) {
+            screenTotal.value.innerHTML += "+";
+        }
+    });
+
+    clearBtn7.addEventListener('click', function() {
+        screenTotal.value = '';
+    });
+    
+    clearBtn8.addEventListener('click', function() {
+        screenTotal2.value = '';
     });
 
 };
