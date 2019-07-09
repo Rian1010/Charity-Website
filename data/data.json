@@ -8,5 +8,17 @@
     { "country": "ET", "gdp": 1122, "rank": 7, "gini-coefficient": 39.1, "gini-coefficient-year": 2015, "unemployment-rate": 19.10, "unemployment-rate-year": 2018 },
     { "country": "TZ", "gdp": 1159, "rank": 8, "gini-coefficient": 37.8, "gini-coefficient-year": 2011, "unemployment-rate": 10.30, "unemployment-rate-year": 2014 },
     { "country": "KG", "gdp": 1266, "rank": 9, "gini-coefficient": 27.3, "gini-coefficient-year": 2017, "unemployment-rate": 3.20, "unemployment-rate-year": 2019 },
-    { "country": "UZ", "gdp": 1350, "rank": 10, "gini-coefficient": 35.3, "gini-coefficient-year": 2003, "unemployment-rate": 6.90, "unemployment-rate-year": 2018 }
+    { "country": "UZ", "gdp": 1350, "rank": 10, "gini-coefficient": 35.3, "gini-coefficient-year": 2003, "unemployment-rate": 6.90, "unemployment-rate-year": 2018 },
+    { "year": 2015, "unemployment-rate-country": "DRC", "female-unemployment-rate": 4.37, "male-unemployment-rate": 3.05},
+    { "year": 2015, "unemployment-rate-country": "MZ", "female-unemployment-rate": 27.14, "male-unemployment-rate": 23.06},
+    { "year": 2015, "unemployment-rate-country": "UG", "female-unemployment-rate": 2.49, "male-unemployment-rate": 1.37},
+    { "year": 2016, "unemployment-rate-country": "DRC", "female-unemployment-rate": 4.33, "male-unemployment-rate": 3.06},
+    { "year": 2016, "unemployment-rate-country": "MZ", "female-unemployment-rate": 26.97, "male-unemployment-rate": 22.94},
+    { "year": 2016, "unemployment-rate-country": "UG", "female-unemployment-rate": 2.65, "male-unemployment-rate": 1.42},
+    { "year": 2017, "unemployment-rate-country": "DRC", "female-unemployment-rate": 4.33, "male-unemployment-rate": 3.08},
+    { "year": 2017, "unemployment-rate-country": "MZ", "female-unemployment-rate": 26.85, "male-unemployment-rate": 22.84},
+    { "year": 2017, "unemployment-rate-country": "UG", "female-unemployment-rate": 2.81, "male-unemployment-rate": 1.45},
+    { "year": 2018, "unemployment-rate-country": "DRC", "female-unemployment-rate": 4.3, "male-unemployment-rate": 3.1},
+    { "year": 2018, "unemployment-rate-country": "MZ", "female-unemployment-rate": 26.72, "male-unemployment-rate": 22.74},
+    { "year": 2018, "unemployment-rate-country": "UG", "female-unemployment-rate": 2.96, "male-unemployment-rate": 1.48}
 ]
