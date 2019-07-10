@@ -146,6 +146,29 @@ dc.lineChart(compositeChart)
     { "year": 2018, "unemployment-rate-country": "TZ", "female-unemployment-rate": 2.87, "male-unemployment-rate-2015": 1.68},
     { "year": 2018, "unemployment-rate-country": "KG", "female-unemployment-rate": 8.92, "male-unemployment-rate-2015": 6.32},
     { "year": 2018, "unemployment-rate-country": "UZ", "female-unemployment-rate": 6.86, "male-unemployment-rate-2015": 6.94}
+    
+    { "country": "DRC", "gdp": 475, "rank": 1, "gini-coefficient": 45.7, "gini-coefficient-year": 2016, "unemployment-rate": 46.10, "unemployment-rate-year": 2013 },
+    { "country": "MZ", "gdp": 502, "rank": 2, "gini-coefficient": 54.0, "gini-coefficient-year": 2014, "unemployment-rate": 25.04, "unemployment-rate-year": 2017 },
+    { "country": "UG", "gdp": 759, "rank": 3, "gini-coefficient": 42.8, "gini-coefficient-year": 2016, "unemployment-rate": 2.10, "unemployment-rate-year": 2017 },
+    { "country": "TJ", "gdp": 861, "rank": 4, "gini-coefficient": 34.0, "gini-coefficient-year": 2015, "unemployment-rate": 2.30, "unemployment-rate-year": 2018 },
+    { "country": "YE", "gdp": 913, "rank": 5, "gini-coefficient": 36.7, "gini-coefficient-year": 2014, "unemployment-rate": 12.90, "unemployment-rate-year": 2018 },
+    { "country": "HT", "gdp": 923, "rank": 6, "gini-coefficient": 41.1, "gini-coefficient-year": 2012, "unemployment-rate": 14.00, "unemployment-rate-year": 2017 },
+    { "country": "ET", "gdp": 1122, "rank": 7, "gini-coefficient": 39.1, "gini-coefficient-year": 2015, "unemployment-rate": 19.10, "unemployment-rate-year": 2018 },
+    { "country": "TZ", "gdp": 1159, "rank": 8, "gini-coefficient": 37.8, "gini-coefficient-year": 2011, "unemployment-rate": 10.30, "unemployment-rate-year": 2014 },
+    { "country": "KG", "gdp": 1266, "rank": 9, "gini-coefficient": 27.3, "gini-coefficient-year": 2017, "unemployment-rate": 3.20, "unemployment-rate-year": 2019 },
+    { "country": "UZ", "gdp": 1350, "rank": 10, "gini-coefficient": 35.3, "gini-coefficient-year": 2003, "unemployment-rate": 6.90, "unemployment-rate-year": 2018 },
+    { "unemployment-rate-country": "DRC", "year": 2015, "female-unemployment-rate": 4.37, "male-unemployment-rate": 3.05},
+    { "unemployment-rate-country": "MZ", "year": 2015, "female-unemployment-rate": 27.14, "male-unemployment-rate": 23.06},
+    { "unemployment-rate-country": "UG", "year": 2015, "female-unemployment-rate": 2.49, "male-unemployment-rate": 1.37},
+    { "unemployment-rate-country": "DRC", "year": 2016, "female-unemployment-rate": 4.33, "male-unemployment-rate": 3.06},
+    { "unemployment-rate-country": "MZ", "year": 2016, "female-unemployment-rate": 26.97, "male-unemployment-rate": 22.94},
+    { "unemployment-rate-country": "UG", "year": 2016, "female-unemployment-rate": 2.65, "male-unemployment-rate": 1.42},
+    { "unemployment-rate-country": "DRC", "year": 2017, "female-unemployment-rate": 4.33, "male-unemployment-rate": 3.08},
+    { "unemployment-rate-country": "MZ", "year": 2017, "female-unemployment-rate": 26.85, "male-unemployment-rate": 22.84},
+    { "unemployment-rate-country": "UG", "year": 2017, "female-unemployment-rate": 2.81, "male-unemployment-rate": 1.45},
+    { "unemployment-rate-country": "DRC", "year": 2018,  "female-unemployment-rate": 4.3, "male-unemployment-rate": 3.1},
+    { "unemployment-rate-country": "MZ", "year": 2018, "female-unemployment-rate": 26.72, "male-unemployment-rate": 22.74},
+    { "unemployment-rate-country": "UG", "year": 2018, "female-unemployment-rate": 2.96, "male-unemployment-rate": 1.48}
     */
 
 
@@ -153,21 +176,21 @@ queue()
     .defer(d3.json, "data/data.json")
     .defer(d3.json, "data/data2.json")
     .await(createDataVis)
-
-function createDataVis(error, countriesData, costData) {
+/*
+function createDataVis(error, countriesData, countriesData2, countriesData3, costData) {
 
 
     show_country_data(error, countriesData);
     show_country_data2(error, costData);
 
-    /*show_country_selector(ndx);*/
-    /*show_country_data(ndx);
-    show_country_data2(ndx);*/
+    //show_country_selector(ndx);
+    //show_country_data(ndx);
+    //show_country_data2(ndx);
 
 
     dc.renderAll();
 }
-/*
+
 function show_country_selector(ndx) {
     dim = ndx.dimension(dc.pluck('country'));
     group = dim.group()
@@ -177,12 +200,12 @@ function show_country_selector(ndx) {
         .group(group);
 }*/
 
-
+/*
 function show_country_data(error, countriesData) {
 
     var ndx = crossfilter(countriesData);
     var country_dim = ndx.dimension(dc.pluck('country'));
-    var unemp_rate_dim = ndx.dimension(dc.pluck('unemployment-rate-country'));
+    var unemp_rate_dim = ndx.dimension(dc.pluck('gdp'));
 
     // GDP per Capita Chart 
 
@@ -315,7 +338,68 @@ function show_country_data2(error, costData) {
         .xAxisLabel('Country')
         .yAxisLabel('Price of Food ($)')
         .yAxis().ticks(4);
+}*/
+
+function createDataVis(error, countriesData, countriesData2) {
+
+
+    show_country_data(error, countriesData);
+    show_country_data2(error, countriesData2);
+
+
+    //show_country_selector(ndx);
+    //show_country_data(ndx);
+    //show_country_data2(ndx);
+
+
+    dc.renderAll();
 }
+
+function show_country_data(error, countriesData) {
+
+    var ndx = crossfilter(countriesData);
+    var country_dim = ndx.dimension(dc.pluck('country'));
+
+    // GDP per Capita Chart 
+
+    var draw_barchart_gdp_country = country_dim.group().reduceSum(dc.pluck('gdp'));
+    dc.barChart('#gdp-per-capita-chart')
+        .width(725)
+        .height(270)
+        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+        .dimension(country_dim)
+        .group(draw_barchart_gdp_country)
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .xAxisLabel('Country')
+        .yAxisLabel('GDP Per Capita ($)')
+        .yAxis().ticks(8);
+}
+
+function show_country_data2(error, countriesData2) {
+
+    var ndx = crossfilter(countriesData2);
+    var country2_dim = ndx.dimension(dc.pluck('country'));
+    var gini_coefficient_dim = country2_dim.group().reduceSum(dc.pluck('gini-coefficient'));
+
+    // Gini Coefficient Chart 
+
+    dc.barChart('#gini-coefficient-chart')
+        .width(725)
+        .height(270)
+        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+        .dimension(country2_dim)
+        .group(gini_coefficient_dim)
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .xAxisLabel('Country')
+        .yAxisLabel('Gini Coefficient')
+        .yAxis().ticks(8);
+
+}
+
 
 // Costs of Meals Chart
 
