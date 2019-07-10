@@ -344,7 +344,7 @@ function createDataVis(error, countriesData, countriesData2) {
 
 
     show_country_data(error, countriesData);
-    show_country_data2(error, countriesData2);
+    //show_country_data2(error, countriesData2);
 
 
     //show_country_selector(ndx);
@@ -359,10 +359,10 @@ function show_country_data(error, countriesData) {
 
     var ndx = crossfilter(countriesData);
     var country_dim = ndx.dimension(dc.pluck('country'));
+    var draw_barchart_gdp_country = country_dim.group().reduceSum(dc.pluck('gdp'));
 
     // GDP per Capita Chart 
 
-    var draw_barchart_gdp_country = country_dim.group().reduceSum(dc.pluck('gdp'));
     dc.barChart('#gdp-per-capita-chart')
         .width(725)
         .height(270)
@@ -375,13 +375,9 @@ function show_country_data(error, countriesData) {
         .xAxisLabel('Country')
         .yAxisLabel('GDP Per Capita ($)')
         .yAxis().ticks(8);
-}
 
-function show_country_data2(error, countriesData2) {
-
-    var ndx = crossfilter(countriesData2);
-    var country2_dim = ndx.dimension(dc.pluck('country'));
-    var gini_coefficient_dim = country2_dim.group().reduceSum(dc.pluck('gini-coefficient'));
+    var country_dim = ndx.dimension(dc.pluck('country'));
+    var gini_coefficient_dim = country_dim.group().reduceSum(dc.pluck('gini-coefficient'));
 
     // Gini Coefficient Chart 
 
@@ -389,7 +385,7 @@ function show_country_data2(error, countriesData2) {
         .width(725)
         .height(270)
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })
-        .dimension(country2_dim)
+        .dimension(country_dim)
         .group(gini_coefficient_dim)
         .transitionDuration(500)
         .x(d3.scale.ordinal())
@@ -398,8 +394,42 @@ function show_country_data2(error, countriesData2) {
         .yAxisLabel('Gini Coefficient')
         .yAxis().ticks(8);
 
-}
+    // Unemployment Rate Pie Chart
 
+    var draw_unemployment_rate_pie = country_dim.group().reduceSum(dc.pluck('unemployment-rate'));
+    var minRate = country_dim.bottom(1)[0].date;
+    var maxRate = country_dim.top(1)[0].date;
+    dc.pieChart('#unemployment-rate-pie-chart')
+        .height(330)
+        .radius(90)
+        .transitionDuration(1500)
+        .dimension(country_dim)
+        .group(draw_unemployment_rate_pie);
+
+}
+/*
+function show_country_data2(error, countriesData) {
+
+    var ndx = crossfilter(countriesData);
+    var country_dim = ndx.dimension(dc.pluck('country'));
+    var gini_coefficient_dim = country_dim.group().reduceSum(dc.pluck('gini-coefficient'));
+
+    // Gini Coefficient Chart 
+
+    dc.barChart('#gini-coefficient-chart')
+        .width(725)
+        .height(270)
+        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+        .dimension(country_dim)
+        .group(gini_coefficient_dim)
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .xAxisLabel('Country')
+        .yAxisLabel('Gini Coefficient')
+        .yAxis().ticks(8);
+}
+*/
 
 // Costs of Meals Chart
 
