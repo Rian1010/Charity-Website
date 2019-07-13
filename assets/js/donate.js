@@ -69,7 +69,6 @@ window.onload = function() {
             else {
                 let value = eval(screen2.value);
                 screen2.value = value;
-                //screenTotal2.value = value + "+";
             }
         });
 
@@ -82,14 +81,13 @@ window.onload = function() {
     const equalBtn3 = document.querySelector('.btn-equal3');
     const clearBtn3 = document.querySelector('.btn-clear3');
     const screen3 = document.querySelector('.screen3');
-    const screenTotal3 = document.querySelector('.screenTotal');
 
 
     for (let i = 0; i < btns3.length; i++) {
         btns3[i].addEventListener('click', function() {
             let number = btns3[i].getAttribute('data-num3');
             screen3.value += number;
-        })
+        });
 
         equalBtn3.addEventListener('click', function() {
             if (screen3.value === '') {
@@ -98,7 +96,6 @@ window.onload = function() {
             else {
                 let value = eval(screen3.value);
                 screen3.value = value;
-                //screenTotal3.value = value + "+";
             }
         });
 
@@ -111,13 +108,12 @@ window.onload = function() {
     const equalBtn4 = document.querySelector('.btn-equal4');
     const clearBtn4 = document.querySelector('.btn-clear4');
     const screen4 = document.querySelector('.screen4');
-    const screenTotal4 = document.querySelector('.screenTotal');
 
     for (let i = 0; i < btns4.length; i++) {
         btns4[i].addEventListener('click', function() {
             let number = btns4[i].getAttribute('data-num4');
             screen4.value += number;
-        })
+        });
 
         equalBtn4.addEventListener('click', function() {
             if (screen4.value === '') {
@@ -126,7 +122,6 @@ window.onload = function() {
             else {
                 let value = eval(screen4.value);
                 screen4.value = value;
-                //screenTotal4.value = value + "+";
             }
         });
 
@@ -139,13 +134,12 @@ window.onload = function() {
     const equalBtn5 = document.querySelector('.btn-equal5');
     const clearBtn5 = document.querySelector('.btn-clear5');
     const screen5 = document.querySelector('.screen5');
-    const screenTotal5 = document.querySelector('.screenTotal');
 
     for (let i = 0; i < btns5.length; i++) {
         btns5[i].addEventListener('click', function() {
             let number = btns5[i].getAttribute('data-num5');
             screen5.value += number;
-        })
+        });
 
         equalBtn5.addEventListener('click', function() {
             if (screen5.value === '') {
@@ -167,13 +161,12 @@ window.onload = function() {
     const equalBtn6 = document.querySelector('.btn-equal6');
     const clearBtn6 = document.querySelector('.btn-clear6');
     const screen6 = document.querySelector('.screen6');
-    const screenTotal6 = document.querySelector('.screenTotal');
 
     for (let i = 0; i < btns6.length; i++) {
         btns6[i].addEventListener('click', function() {
             let number = btns6[i].getAttribute('data-num6');
             screen6.value += number;
-        })
+        });
 
         equalBtn6.addEventListener('click', function() {
             if (screen6.value === '') {
@@ -191,7 +184,7 @@ window.onload = function() {
         });
     }
 
-    const screenTotal = document.querySelector('.screenTotal');
+    const screenTotal = document.querySelector('.TotalScreen');
     const screenTotal2 = document.querySelector('.screenTotal2');
     const equalBtn7 = document.querySelector('.btn-equal7');
     const clearBtn7 = document.querySelector('.btn-clear7');
@@ -201,51 +194,106 @@ window.onload = function() {
         let value = eval(screen.value);
         screenTotal.value += value;
 
-        if (screenTotal = value) {
-            screenTotal.value + "+";
+        if (screenTotal.value === '') {
+            alert('Input is empty.');
+        }
+        else {
+            let value = eval(screenTotal.value);
+            screenTotal.value = value+"+";
         }
     });
 
     equalBtn2.addEventListener('click', function() {
         let value = eval(screen2.value);
         screenTotal.value += value;
+        
+        if (screenTotal.value === '') {
+            alert('Input is empty.');
+        }
+        else {
+            let value = eval(screenTotal.value);
+            screenTotal.value = value+"+";
+        }
     });
 
     equalBtn3.addEventListener('click', function() {
         let value = eval(screen3.value);
         screenTotal.value += value;
+        
+        if (screenTotal.value === '') {
+            alert('Input is empty.');
+        }
+        else {
+            let value = eval(screenTotal.value);
+            screenTotal.value = value+"+";
+        }
     });
 
     equalBtn4.addEventListener('click', function() {
         let value = eval(screen4.value);
         screenTotal.value += value;
+        
+        if (screenTotal.value === '') {
+            alert('Input is empty.');
+        }
+        else {
+            let value = eval(screenTotal.value);
+            screenTotal.value = value+"+";
+        }
     });
 
     equalBtn5.addEventListener('click', function() {
         let value = eval(screen5.value);
         screenTotal.value += value;
+        
+        if (screenTotal.value === '') {
+            alert('Input is empty.');
+        }
+        else {
+            let value = eval(screenTotal.value);
+            screenTotal.value = value+"+";
+        }
     });
 
     equalBtn6.addEventListener('click', function() {
         let value = eval(screen6.value);
         screenTotal.value += value;
-    });
-
-    equalBtn7.addEventListener('click', function() {
-        let value = eval(screenTotal.value);
-        screenTotal2.value += value;
-
-        if (screenTotal.value.length > 0) {
-            screenTotal.value.innerHTML += "+";
+        
+        if (screenTotal.value === '') {
+            alert('Input is empty.');
+        }
+        else {
+            let value = eval(screenTotal.value);
+            screenTotal.value = value+"+";
         }
     });
+
+    /*equalBtn7.addEventListener('click', function() {
+        let value = eval(screenTotal.value);
+        screenTotal2.value += value;
+    });*/
 
     clearBtn7.addEventListener('click', function() {
         screenTotal.value = '';
     });
     
-    clearBtn8.addEventListener('click', function() {
+    /*clearBtn8.addEventListener('click', function() {
         screenTotal2.value = '';
-    });
+    });*/
+    
+    
+    
+    //var totalScreen = document.querySelector('.TotalScreen');
+    //var totalInput = document.querySelector('.totalInput');
+
+   /* totalScreen.addEventListener('input', function () {
+        if (totalScreen.value === '') {
+            alert('Input is empty.');
+        }
+        else {
+            let value = eval(totalScreen.value);
+            totalScreen.value = value+"+";
+        }
+    });*/
 
 };
