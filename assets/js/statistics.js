@@ -169,6 +169,85 @@ dc.lineChart(compositeChart)
     { "unemployment-rate-country": "DRC", "year": 2018,  "female-unemployment-rate": 4.3, "male-unemployment-rate": 3.1},
     { "unemployment-rate-country": "MZ", "year": 2018, "female-unemployment-rate": 26.72, "male-unemployment-rate": 22.74},
     { "unemployment-rate-country": "UG", "year": 2018, "female-unemployment-rate": 2.96, "male-unemployment-rate": 1.48}
+    
+    { 
+        "unemploymentRateCountry": "DRC", 
+        "year": 2015, 
+        "femaleUnempRate": 4.37, 
+        "male-unemployment-rate": 3.05 
+    },
+    { 
+        "unemploymentRateCountry": "MZ", 
+        "year": 2015, 
+        "femaleUnempRate": 27.14, 
+        "male-unemployment-rate": 23.06
+    },
+    { 
+        "unemploymentRateCountry": "UG", 
+        "year": 2015, 
+        "femaleUnempRate": 2.49, 
+        "male-unemployment-rate": 1.37
+    },
+    { 
+        "unemploymentRateCountry": "DRC", 
+        "year": 2016, 
+        "femaleUnempRate": 4.33, 
+        "male-unemployment-rate": 3.06
+    },
+    { 
+        "unemploymentRateCountry": "MZ", 
+        "year": 2016, 
+        "femaleUnempRate": 26.97, 
+        "male-unemployment-rate": 22.94
+    },
+    { 
+        "unemploymentRateCountry": "UG", 
+        "year": 2016, 
+        "femaleUnempRate": 2.65, 
+        "male-unemployment-rate": 1.42
+    },
+    { 
+        "unemploymentRateCountry": "DRC", 
+        "year": 2017, 
+        "femaleUnempRate": 4.33, 
+        "male-unemployment-rate": 3.08
+        
+    },
+    { 
+        "unemploymentRateCountry": "MZ", 
+        "year": 2017, 
+        "femaleUnempRate": 26.85, 
+        "male-unemployment-rate": 22.84
+        
+    },
+    { 
+        "unemploymentRateCountry": "UG", 
+        "year": 2017, 
+        "femaleUnempRate": 2.81, 
+        "male-unemployment-rate": 1.45
+        
+    },
+    { 
+        "unemploymentRateCountry": "DRC", 
+        "year": 2018,  
+        "femaleUnempRate": 4.3, 
+        "male-unemployment-rate": 3.1
+        
+    },
+    { 
+        "unemploymentRateCountry": "MZ", 
+        "year": 2018, 
+        "femaleUnempRate": 26.72, 
+        "male-unemployment-rate": 22.74
+        
+    },
+    { 
+        "unemploymentRateCountry": "UG", 
+        "year": 2018, 
+        "femaleUnempRate": 2.96, 
+        "male-unemployment-rate": 1.48
+        
+    }
     */
 
 
@@ -176,6 +255,8 @@ queue()
     .defer(d3.json, "data/data.json")
     .defer(d3.json, "data/data2.json")
     .await(createDataVis)
+    //.await(createDataVis2)
+
 /*
 function createDataVis(error, countriesData, countriesData2, countriesData3, costData) {
 
@@ -340,14 +421,14 @@ function show_country_data2(error, costData) {
         .yAxis().ticks(4);
 }*/
 
-function createDataVis(error, countriesData) {
+function createDataVis(error, countriesData, countriesData2) {
 
 
     show_country_data(error, countriesData);
-
+    //show_country_data2(error, countriesData2);
     //show_country_selector(ndx);
     //show_country_data(ndx);
-    //show_country_data2(ndx);
+
 
 
     dc.renderAll();
@@ -410,23 +491,27 @@ function show_country_data(error, countriesData) {
 
 
     //Female Unemployment Rate
-    /*
-        var parseDate = d3.time.format("%Y").parse;
-        countriesData.forEach(function(d) {
-            var datedYears = new Date(d.year);
-            d.year = datedYears;
-        });
 
-        var unemp_rate_year_dim = ndx.dimension(dc.pluck('unemployment-rate-country')),
-            femaleUnempRateDRC = unemp_rate_year_dim.group().reduceCount(dc.pluck('DRC')),
-            femaleUnempRateMZ = unemp_rate_year_dim.group().reduceCount(dc.pluck('MZ')),
-            femaleUnempRateUG = unemp_rate_year_dim.group().reduceCount(dc.pluck('UG'));
+    var parseDate = d3.time.format("%Y").parse;
+    countriesData.forEach(function(d) {
+        var datedYears = new Date(d.year);
+        d.year = datedYears;
+    });
+
+    var unemp_rate_year_dim = ndx.dimension(dc.pluck('femaleUnempRateDRC')),
+        femaleUnempRateDRC = unemp_rate_year_dim.group().reduceCount(dc.pluck('DRC'));
+
+    var unemp_rate_year_dim = ndx.dimension(dc.pluck('femaleUnempRateMZ')),
+        femaleUnempRateMZ = unemp_rate_year_dim.group().reduceCount(dc.pluck('MZ'));
+
+    var unemp_rate_year_dim = ndx.dimension(dc.pluck('femaleUnempRateUG')),
+        femaleUnempRateUG = unemp_rate_year_dim.group().reduceCount(dc.pluck('UG'));
 
 
-        var minDate = unemp_rate_year_dim.bottom(1)[0].date;
-        var maxDate = unemp_rate_year_dim.top(1)[0].date;
-        
-        composite
+    var minDate = unemp_rate_year_dim.bottom(1)[0].date;
+    var maxDate = unemp_rate_year_dim.top(1)[0].date;
+
+    composite
         .width(768)
         .height(480)
         .x(d3.scale.linear().domain([2015, 2018]))
@@ -454,8 +539,63 @@ function show_country_data(error, countriesData) {
 
         .brushOn(false)
         .render();
-    */
-    function rate_by_year(unemploymentRateCountry) {
+
+    var country_dim = ndx.dimension(dc.pluck('country'));
+    var gini_coefficient_dim = country_dim.group().reduceSum(dc.pluck('gini-coefficient'));
+
+    // Gini Coefficient Chart 
+
+    dc.barChart('#gini-coefficient-chart')
+        .width(725)
+        .height(270)
+        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+        .dimension(country_dim)
+        .group(gini_coefficient_dim)
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .xAxisLabel('Country')
+        .yAxisLabel('Gini Coefficient')
+        .yAxis().ticks(8);
+}
+
+
+
+/*function show_country_data2(error, countriesData) {
+
+    var ndx = crossfilter(countriesData);
+    var country_dim = ndx.dimension(dc.pluck('country'));
+    var gini_coefficient_dim = country_dim.group().reduceSum(dc.pluck('gini-coefficient'));
+
+    // Gini Coefficient Chart 
+
+    dc.barChart('#gini-coefficient-chart')
+        .width(725)
+        .height(270)
+        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+        .dimension(country_dim)
+        .group(gini_coefficient_dim)
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .xAxisLabel('Country')
+        .yAxisLabel('Gini Coefficient')
+        .yAxis().ticks(8);
+}*/
+
+
+// Costs of Meals Chart
+
+
+/*function createDataVis2(error, costData) {
+    var ndx = crossfilter(costData);
+
+    show_country_data2(ndx);
+
+    dc.renderAll();
+}*/
+
+/*function rate_by_year(unemploymentRateCountry) {
         return function(d) {
             if (d.unemploymentRateCountry === unemploymentRateCountry) {
                 return +d.femaleUnempRate;
@@ -519,7 +659,7 @@ function show_country_data(error, countriesData) {
 
         .brushOn(false)
         .render();
-}
+}*/
 /*
     var femaleUnemploymentRateDRC = unemp_rate_year_dim.group().reduceCount(function(d) {
         if (d.name === 'DRC') {
@@ -575,40 +715,7 @@ function show_country_data(error, countriesData) {
         .render();*/
 
 
-/*
-function show_country_data2(error, countriesData) {
 
-    var ndx = crossfilter(countriesData);
-    var country_dim = ndx.dimension(dc.pluck('country'));
-    var gini_coefficient_dim = country_dim.group().reduceSum(dc.pluck('gini-coefficient'));
-
-    // Gini Coefficient Chart 
-
-    dc.barChart('#gini-coefficient-chart')
-        .width(725)
-        .height(270)
-        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
-        .dimension(country_dim)
-        .group(gini_coefficient_dim)
-        .transitionDuration(500)
-        .x(d3.scale.ordinal())
-        .xUnits(dc.units.ordinal)
-        .xAxisLabel('Country')
-        .yAxisLabel('Gini Coefficient')
-        .yAxis().ticks(8);
-}
-*/
-
-// Costs of Meals Chart
-
-
-/*function createDataVis2(error, costData) {
-    var ndx = crossfilter(costData);
-
-    show_country_data2(ndx);
-
-    dc.renderAll();
-}*/
 
 
 
