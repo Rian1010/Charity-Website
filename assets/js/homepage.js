@@ -75,7 +75,7 @@ window.onload = function() {
         }
         else {
             textEffect2.style.opacity = '0';
-            textEffect2.style.transform = 'translateX(50px)';
+            textEffect2.style.transform = 'translateX(-20px)';
         }
     }
     scrollByPage2();
@@ -94,7 +94,7 @@ window.onload = function() {
         }
         else {
             textEffect3.style.opacity = '0';
-            textEffect3.style.transform = 'translateX(50px)';
+            textEffect3.style.transform = 'translateX(-20px)';
         }
     }
     scrollByPage3();
@@ -114,7 +114,7 @@ window.onload = function() {
         }
         else {
             textEffect4.style.opacity = '0';
-            textEffect4.style.transform = 'translateX(50px)';
+            textEffect4.style.transform = 'translateX(-20px)';
         }
     }
     scrollByPage4();
@@ -133,7 +133,7 @@ window.onload = function() {
         }
         else {
             textEffect5.style.opacity = '0';
-            textEffect5.style.transform = 'translateX(50px)';
+            textEffect5.style.transform = 'translateX(-20px)';
         }
     }
     scrollByPage5();
