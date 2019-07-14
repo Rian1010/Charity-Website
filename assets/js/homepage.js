@@ -49,7 +49,7 @@ window.onload = function() {
     function scrollByPage() {
         if (window.scrollY >= 0) {
             textEffect.style.opacity = '1';
-            textEffect.style.transform = 'translateX(-50px)';
+            textEffect.style.transform = 'translateX(20px)';
             textEffect.style.transition = '1s ease-in-out';
             console.log('The scroll effect 1 is working!');
         } /*else {
