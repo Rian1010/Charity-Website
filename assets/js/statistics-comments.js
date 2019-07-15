@@ -912,4 +912,89 @@ UZ M: https://www.theglobaleconomy.com/Uzbekistan/Male_unemployment/
 
     
         
+        
+        
+        
+        var unemp_rate_female_dim = ndx.dimension(dc.pluck('year')),
+
+        femaleUnempRateDRC = unemp_rate_female_dim.group().reduceCount(function(d) {
+            if (d.unemploymentRateCountry === 'DRC') {
+                return +d.femaleUnemploymentRate;
+            }
+            else {
+                return 0;
+            }
+        }),
+        femaleUnempRateMZ = unemp_rate_female_dim.group().reduceSum(function(d) {
+            if (d.unemploymentRateCountry === 'MZ') {
+                return +d.femaleUnemploymentRate;
+            }
+            else {
+                return 0;
+            }
+        }),
+        femaleUnempRateUG = unemp_rate_female_dim.group().reduceSum(function(d) {
+            if (d.unemploymentRateCountry === 'UG') {
+                return +d.femaleUnemploymentRate;
+            }
+            else {
+                return 0;
+            }
+        }),
+        femaleUnempRateTJ = unemp_rate_female_dim.group().reduceSum(function(d) {
+            if (d.unemploymentRateCountry === 'TJ') {
+                return +d.femaleUnemploymentRate;
+            }
+            else {
+                return 0;
+            }
+        }),
+        femaleUnempRateYE = unemp_rate_female_dim.group().reduceSum(function(d) {
+            if (d.unemploymentRateCountry === 'YE') {
+                return +d.femaleUnemploymentRate;
+            }
+            else {
+                return 0;
+            }
+        }),
+        femaleUnempRateHT = unemp_rate_female_dim.group().reduceSum(function(d) {
+            if (d.unemploymentRateCountry === 'HT') {
+                return +d.femaleUnemploymentRate;
+            }
+            else {
+                return 0;
+            }
+        }),
+        femaleUnempRateET = unemp_rate_female_dim.group().reduceSum(function(d) {
+            if (d.unemploymentRateCountry === 'ET') {
+                return +d.femaleUnemploymentRate;
+            }
+            else {
+                return 0;
+            }
+        }),
+        femaleUnempRateTZ = unemp_rate_female_dim.group().reduceSum(function(d) {
+            if (d.unemploymentRateCountry === 'TZ') {
+                return +d.femaleUnemploymentRate;
+            }
+            else {
+                return 0;
+            }
+        }),
+        femaleUnempRateKG = unemp_rate_female_dim.group().reduceSum(function(d) {
+            if (d.unemploymentRateCountry === 'KG') {
+                return +d.femaleUnemploymentRate;
+            }
+            else {
+                return 0;
+            }
+        }),
+        femaleUnempRateUZ = unemp_rate_female_dim.group().reduceSum(function(d) {
+            if (d.unemploymentRateCountry === 'UZ') {
+                return +d.femaleUnemploymentRate;
+            }
+            else {
+                return 0;
+            }
+        });
         */
