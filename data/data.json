@@ -9,7 +9,6 @@
     { "country": "TZ", "gdp": 1159, "rank": 8, "gini-coefficient": 37.8, "unemployment-rate": 10.30, "unemployment-rate-year": 2014 },
     { "country": "KG", "gdp": 1266, "rank": 9, "gini-coefficient": 27.3, "unemployment-rate": 3.20, "unemployment-rate-year": 2019 },
     { "country": "UZ", "gdp": 1350, "rank": 10, "gini-coefficient": 35.3, "unemployment-rate": 6.90, "unemployment-rate-year": 2018 },
-    
     {
         "year": 2015,
         "femaleUnempRateDRC": 4.37, 
