@@ -7,11 +7,13 @@ queue()
 
 
 
-function createDataVis(error, countriesData, countriesData2) {
+function createDataVis(error, countriesData, countriesData2, countriesData3) {
 
 
     show_country_data(error, countriesData);
     show_country_data2(error, countriesData2);
+    show_country_data3(error, countriesData3);
+
     //show_country_selector(ndx);
     //show_country_data(ndx);
 
@@ -62,7 +64,9 @@ function show_country_data(error, countriesData) {
     var draw_unemployment_rate_pie = country_dim.group().reduceSum(dc.pluck('unemployment-rate'));
     var minRate = country_dim.bottom(1)[0].date;
     var maxRate = country_dim.top(1)[0].date;
-    dc.pieChart('#unemployment-rate-pie-chart')
+    var pieChart1 = dc.pieChart('#unemployment-rate-pie-chart');
+
+    pieChart1
         .height(330)
         .radius(90)
         .transitionDuration(1500)
@@ -381,27 +385,30 @@ function show_country_data(error, countriesData) {
 
         .brushOn(false)
         .render();
-
-
-
-
-    var gender_dim = ndx.dimension(dc.pluck('totalFemaleUnemploymentRate'));
-    var draw_gender_unemployment_rate_pie = gender_dim.group().reduceSum(dc.pluck('totalMaleUnemploymentRate'));
-    var minRate2 = gender_dim.bottom(1)[0].date;
-    var maxRate2 = gender_dim.top(1)[0].date;
-    dc.pieChart('#gender-unemployment-rate-pie-chart')
-        .height(330)
-        .radius(90)
-        .transitionDuration(1500)
-        .dimension(gender_dim)
-        .group(draw_gender_unemployment_rate_pie);
-
-
+        
+        
 }
 
 function show_country_data2(error, countriesData2) {
-
     var ndx = crossfilter(countriesData2);
+    var gender_dim = ndx.dimension(function(d) { return [d.totalFemaleUnemploymentRate, d.totalMaleUnemploymentRate] });
+    var draw_gender_unemployment_rate_pie = gender_dim.group();
+    var pieChart2 = dc.pieChart("#gender-unemployment-rate-pie-chart");
+
+    pieChart2
+        .height(330)
+        .radius(90)
+        .slicesCap(4)
+        .innerRadius(50)
+        .transitionDuration(1500)
+        .dimension(gender_dim)
+        .group(draw_gender_unemployment_rate_pie);
+}
+
+
+function show_country_data3(error, countriesData3) {
+
+    var ndx = crossfilter(countriesData3);
     var name_dim = ndx.dimension(dc.pluck('countryCostsData'));
     var costs_of_food = name_dim.group().reduceSum(dc.pluck('price'));
 
