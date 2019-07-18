@@ -402,7 +402,7 @@ function show_country_data(error, countriesData) {
 
 
 
-function show_country_data2(error, countriesData32) {
+function show_country_data2(error, countriesData2) {
 
     var ndx = crossfilter(countriesData2);
     var name_dim = ndx.dimension(dc.pluck('countryCostsData'));
