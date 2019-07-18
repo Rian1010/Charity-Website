@@ -7,11 +7,11 @@ queue()
 
 
 
-function createDataVis(error, countriesData, countriesData3) {
+function createDataVis(error, countriesData, countriesData2, countriesData3) {
 
 
     show_country_data(error, countriesData);
-    //show_country_data2(error, countriesData2);
+    show_country_data2(error, countriesData2);
     show_country_data3(error, countriesData3);
 
     //show_country_selector(ndx);
