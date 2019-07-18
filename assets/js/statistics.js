@@ -7,12 +7,11 @@ queue()
 
 
 
-function createDataVis(error, countriesData, countriesData2, countriesData3) {
+function createDataVis(error, countriesData, countriesData2) {
 
 
     show_country_data(error, countriesData);
     show_country_data2(error, countriesData2);
-    show_country_data3(error, countriesData3);
 
     //show_country_selector(ndx);
     //show_country_data(ndx);
@@ -326,10 +325,10 @@ function show_country_data(error, countriesData) {
     var minDate2 = unemp_rate_male_dim.bottom(1)[0].date;
     var maxDate2 = unemp_rate_male_dim.top(1)[0].date;
 
-    var composite = dc.compositeChart('#unemployment-rate-male');
+    var composite2 = dc.compositeChart('#unemployment-rate-male');
     console.log(composite);
 
-    composite
+    composite2
         .width(768)
         .height(480)
         .x(d3.scale.linear().domain([2015, 2018]))
@@ -385,12 +384,7 @@ function show_country_data(error, countriesData) {
 
         .brushOn(false)
         .render();
-        
-        
-}
 
-function show_country_data2(error, countriesData2) {
-    var ndx = crossfilter(countriesData2);
     var gender_dim = ndx.dimension(function(d) { return [d.totalFemaleUnemploymentRate, d.totalMaleUnemploymentRate] });
     var draw_gender_unemployment_rate_pie = gender_dim.group();
     var pieChart2 = dc.pieChart("#gender-unemployment-rate-pie-chart");
@@ -403,12 +397,14 @@ function show_country_data2(error, countriesData2) {
         .transitionDuration(1500)
         .dimension(gender_dim)
         .group(draw_gender_unemployment_rate_pie);
+
 }
 
 
-function show_country_data3(error, countriesData3) {
 
-    var ndx = crossfilter(countriesData3);
+function show_country_data2(error, countriesData32) {
+
+    var ndx = crossfilter(countriesData2);
     var name_dim = ndx.dimension(dc.pluck('countryCostsData'));
     var costs_of_food = name_dim.group().reduceSum(dc.pluck('price'));
 
