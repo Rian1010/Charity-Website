@@ -1,19 +1,4 @@
 [
-    { "countryCostsData": "NG", "price": 222.05, "rank": 1 },
-    { "countryCostsData": "DRC", "price": 82.10, "rank": 2 },
-    { "countryCostsData": "HT", "price": 72.65, "rank": 3 },
-    { "countryCostsData": "MZ", "price": 61.92, "rank": 4 },
-    { "countryCostsData": "YE, urban", "price": 46.30, "rank": 5 },
-    { "countryCostsData": "SO", "price": 42.12, "rank": 6 },
-    { "countryCostsData": "SoP", "price": 12.19, "rank": 7 },
-    { "countryCostsData": "BD", "price": 11.25, "rank": 8 },
-    { "countryCostsData": "SV", "price": 11.21, "rank": 9 },
-    { "countryCostsData": "ID", "price": 5.50, "rank": 10 },
-    { "countryCostsData": "JO", "price": 4.71, "rank": 11 },
-    { "countryCostsData": "NY, USA", "price": 1.20, "rank": 12 },
-    { "countryGiniIndex": "ZA", "gini-index": "63.38" },
-    { "countryGiniIndex": "BW", "gini-index": "60.46" },
-    { "countryGiniIndex": "HT", "gini-index": "60.79" },
-    { "countryGiniIndex": "NM", "gini-index": "60.97" },
-    { "countryGiniIndex": "CA", "gini-index": "56.24" }
+    { "gender": "Female", "totalUnemploymentRate": 460.40 },
+    { "gender": "Male", "totalUnemploymentRate": 317.46 }
 ]
