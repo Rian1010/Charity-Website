@@ -63,7 +63,8 @@ function show_country_data(error, countriesData) {
     var draw_unemployment_rate_pie = country_dim.group().reduceSum(dc.pluck('unemployment-rate'));
     var minRate = country_dim.bottom(1)[0].date;
     var maxRate = country_dim.top(1)[0].date;
-    var pieChart1 = dc.pieChart('#unemployment-rate-pie-chart');
+    var pieChart1 = dc.pieChart("#unemployment-rate-pie-chart");
+
 
     pieChart1
         .height(330)
@@ -385,7 +386,7 @@ function show_country_data(error, countriesData) {
         .brushOn(false)
         .render();
 
-    var gender_dim = ndx.dimension(function(d) { return [d.totalFemaleUnemploymentRate, d.totalMaleUnemploymentRate] });
+    var gender_dim = ndx.dimension(function(d) { return [d.gender, d.totalUnemploymentRate] });
     var draw_gender_unemployment_rate_pie = gender_dim.group();
     var pieChart2 = dc.pieChart("#gender-unemployment-rate-pie-chart");
 

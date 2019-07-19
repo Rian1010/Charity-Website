@@ -49,5 +49,6 @@
     { "year": 2018, "unemploymentRateCountry": "TZ", "femaleUnemploymentRate": 2.87, "maleUnemploymentRate": 1.68 },
     { "year": 2018, "unemploymentRateCountry": "KG", "femaleUnemploymentRate": 8.92, "maleUnemploymentRate": 6.32 },
     { "year": 2018, "unemploymentRateCountry": "UZ", "femaleUnemploymentRate": 6.86, "maleUnemploymentRate": 6.94 },
-    { "totalFemaleUnemploymentRate": 460.4, "totalMaleUnemploymentRate": 317.46 }
+    { "gender": "Female", "totalUnemploymentRate": 460.4 },
+    { "gender": "Male", "totalUnemploymentRate": 317.46 }
 ]
