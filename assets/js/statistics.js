@@ -119,7 +119,6 @@ function show_country_data3(error, countriesData3) {
 function show_country_data4(error, countriesData4) {
     var ndx = crossfilter(countriesData4);
     
-    var parseDate = d3.time.format("%Y").parse;
     countriesData4.forEach(function(d) {
         var datedYears = new Date(d.year);
         d.year = datedYears;
@@ -277,7 +276,6 @@ function show_country_data4(error, countriesData4) {
 
     //Male Unemployment Rates
 
-    var parseDate = d3.time.format("%Y").parse;
     countriesData4.forEach(function(d) {
         var datedYears = new Date(d.year);
         d.year = datedYears;
@@ -428,6 +426,4 @@ function show_country_data4(error, countriesData4) {
 
         .brushOn(false)
         .render();
-
-
 }
