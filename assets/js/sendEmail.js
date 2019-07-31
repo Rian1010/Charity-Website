@@ -10,8 +10,9 @@ function sendMail(contactForm) {
             },
             function(error) {
                 console.log("FAILED", error);
-
             });
+            
+        return false;
 }
 
 window.onload = function() {
@@ -30,7 +31,7 @@ window.onload = function() {
         console.log(emailContent);
         console.log(MsgContent);
 
-        if (nameContent=== '') {
+        if (nameContent === '') {
             alert('Please fill in the input field for your name.');
         }
         else if (emailContent === '') {
