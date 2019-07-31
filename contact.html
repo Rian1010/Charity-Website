@@ -19,7 +19,7 @@
     <script type="text/javascript">
         (function() {
             emailjs.init("user_jBNHynPWhUv5jwDizH0QT");
-            emailjs.send("gmail", "first_template", { name: "Rian", notes: "The charity that I would like to include to this website is ..." });
+            //emailjs.send("gmail", "first_template", { name: "Rian", notes: "The charity that I would like to include to this website is ..." });
         })();
     </script>
 
@@ -28,43 +28,45 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-sm  navbar-light fixed-top">
+    <header>
+        <nav class="navbar navbar-expand-sm  navbar-light fixed-top">
 
-        <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
-        <a href="index.html" class="navbar-brand navBrandColor">Charity Base</a>
+            <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+            <a href="index.html" class="navbar-brand navBrandColor">Charity Base</a>
 
-        <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="navbarNavDropdown" aria-controls="false">
+            <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="navbarNavDropdown" aria-controls="false">
   
             <span class="navbar-toggler-icon"></span></button>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a href="index.html" class="nav-link hvr-shutter-out-vertical">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="map.html" class="nav-link hvr-shutter-out-vertical">Map</a>
-                </li>
-                <li class="nav-item">
-                    <a href="statistics.html" class="nav-link hvr-shutter-out-vertical">Statistics</a>
-                </li>
-                <li class="nav-item">
-                    <a href="donate.html" class="nav-link hvr-shutter-out-vertical">Donate</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link hvr-shutter-out-vertical">Contacts</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="contactBG">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link hvr-shutter-out-vertical">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="map.html" class="nav-link hvr-shutter-out-vertical">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="statistics.html" class="nav-link hvr-shutter-out-vertical">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html" class="nav-link hvr-shutter-out-vertical">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link hvr-shutter-out-vertical">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <article class="contactBG">
         <div class="container-fluid text-center contactHeading">
             <h1>Got Any Questions Or Causes That You Would Like To Be Included Onto This Website?</h1>
             <h2>Please contact me by filling in the form below!</h2>
         </div>
 
         <div class="container-fluid">
-            <form onsubmit="return sendMail(this);">
+            <form onsubmit="return sendMail(this);" method="POST">
 
                 <div class="row">
                     <div class="forms center-form">
@@ -90,7 +92,7 @@
                 </div>
             </form>
         </div>
-    </section>
+    </article>
     <script type="text/javascript" src="assets/js/sendEmail.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

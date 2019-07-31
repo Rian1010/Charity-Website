@@ -33,10 +33,10 @@ window.onload = function() {
         if (nameContent=== '') {
             alert('Please fill in the input field for your name.');
         }
-        if (emailContent === '') {
+        else if (emailContent === '') {
             alert('Please fill in the input field for your email address.');
         }
-        if (MsgContent === '') {
+        else if (MsgContent === '') {
             alert('Please fill in the input field for your message.');
         }
         else {

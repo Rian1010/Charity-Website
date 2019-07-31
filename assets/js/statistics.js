@@ -32,6 +32,7 @@ function show_country_data(error, countriesData) {
 
 
     // GDP per Capita Chart 
+    
     var draw_barchart_gdp_country = country_dim.group().reduceSum(dc.pluck('gdp'));
     dc.barChart('#gdp-per-capita-chart')
         .width(725)
@@ -48,7 +49,9 @@ function show_country_data(error, countriesData) {
 
 
     // Gini Coefficient Chart 
-    var gini_coefficient_dim = country_dim.group().reduceSum(dc.pluck('gini-coefficient'));
+    
+    var country_dim2 = ndx.dimension(dc.pluck('country'));
+    var gini_coefficient_dim = country_dim2.group().reduceSum(dc.pluck('gini-coefficient'));
     dc.barChart('#gini-coefficient-chart')
         .width(725)
         .height(270)
@@ -64,7 +67,8 @@ function show_country_data(error, countriesData) {
 
     // Total Unemployment Rate Pie Chart
 
-    var draw_unemployment_rate_pie = country_dim.group().reduceSum(dc.pluck('unemployment-rate'));
+    var country_dim3 = ndx.dimension(dc.pluck('country'));
+    var draw_unemployment_rate_pie = country_dim3.group().reduceSum(dc.pluck('unemployment-rate'));
     var pieChart1 = dc.pieChart("#unemployment-rate-pie-chart");
 
 
@@ -118,7 +122,7 @@ function show_country_data3(error, countriesData3) {
 
 function show_country_data4(error, countriesData4) {
     var ndx = crossfilter(countriesData4);
-    
+
     countriesData4.forEach(function(d) {
         var datedYears = new Date(d.year);
         d.year = datedYears;
