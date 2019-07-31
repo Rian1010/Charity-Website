@@ -4,16 +4,18 @@ queue()
     .defer(d3.json, "data/data.json")
     .defer(d3.json, "data/data2.json")
     .defer(d3.json, "data/data3.json")
+    .defer(d3.json, "data/data4.json")
     .await(createDataVis)
 
 
 
-function createDataVis(error, countriesData, countriesData2, countriesData3) {
+function createDataVis(error, countriesData, countriesData2, countriesData3, countriesData4) {
 
 
     show_country_data(error, countriesData);
     show_country_data2(error, countriesData2);
     show_country_data3(error, countriesData3);
+    show_country_data4(error, countriesData4);
 
     //show_country_selector(ndx);
     //show_country_data(ndx);
@@ -60,7 +62,7 @@ function show_country_data(error, countriesData) {
         .yAxisLabel('Gini Coefficient')
         .yAxis().ticks(8);
 
-    // Unemployment Rate Pie Chart
+    // Total Unemployment Rate Pie Chart
 
     var draw_unemployment_rate_pie = country_dim.group().reduceSum(dc.pluck('unemployment-rate'));
     var pieChart1 = dc.pieChart("#unemployment-rate-pie-chart");
@@ -72,12 +74,53 @@ function show_country_data(error, countriesData) {
         .transitionDuration(1500)
         .dimension(country_dim)
         .group(draw_unemployment_rate_pie);
+}
 
 
-    //Female Unemployment Rates
+function show_country_data2(error, countriesData2) {
 
+    var ndx = crossfilter(countriesData2);
+    var gender_dim = ndx.dimension(dc.pluck('gender'));
+    var draw_gender_unemployment_rate_pie = gender_dim.group().reduceSum(dc.pluck('totalUnemploymentRate'));
+    var pieChart2 = dc.pieChart("#gender-unemployment-rate-pie-chart");
+
+    pieChart2
+        .height(330)
+        .radius(90)
+        .transitionDuration(1500)
+        .dimension(gender_dim)
+        .group(draw_gender_unemployment_rate_pie);
+
+}
+
+function show_country_data3(error, countriesData3) {
+
+    var ndx = crossfilter(countriesData3);
+    var name_dim = ndx.dimension(dc.pluck('countryCostsData'));
+    var costs_of_food = name_dim.group().reduceSum(dc.pluck('price'));
+
+    dc.barChart('#costs-of-meals-chart')
+        .width(725)
+        .height(270)
+        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+        .dimension(name_dim)
+        .group(costs_of_food)
+        .transitionDuration(500)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .xAxisLabel('Country')
+        .yAxisLabel('Price of Food ($)')
+        .yAxis().ticks(4);
+}
+
+
+//Female Unemployment Rates
+
+function show_country_data4(error, countriesData4) {
+    var ndx = crossfilter(countriesData4);
+    
     var parseDate = d3.time.format("%Y").parse;
-    countriesData.forEach(function(d) {
+    countriesData4.forEach(function(d) {
         var datedYears = new Date(d.year);
         d.year = datedYears;
     });
@@ -235,7 +278,7 @@ function show_country_data(error, countriesData) {
     //Male Unemployment Rates
 
     var parseDate = d3.time.format("%Y").parse;
-    countriesData.forEach(function(d) {
+    countriesData4.forEach(function(d) {
         var datedYears = new Date(d.year);
         d.year = datedYears;
     });
@@ -387,41 +430,4 @@ function show_country_data(error, countriesData) {
         .render();
 
 
-}
-
-
-function show_country_data2(error, countriesData2) {
-
-    var ndx = crossfilter(countriesData2);
-    var gender_dim = ndx.dimension(dc.pluck('gender'));
-    var draw_gender_unemployment_rate_pie = gender_dim.group().reduceSum(dc.pluck('totalUnemploymentRate'));
-    var pieChart2 = dc.pieChart("#gender-unemployment-rate-pie-chart");
-
-    pieChart2
-        .height(330)
-        .radius(90)
-        .transitionDuration(1500)
-        .dimension(gender_dim)
-        .group(draw_gender_unemployment_rate_pie);
-
-}
-
-function show_country_data3(error, countriesData3) {
-
-    var ndx = crossfilter(countriesData3);
-    var name_dim = ndx.dimension(dc.pluck('countryCostsData'));
-    var costs_of_food = name_dim.group().reduceSum(dc.pluck('price'));
-
-    dc.barChart('#costs-of-meals-chart')
-        .width(725)
-        .height(270)
-        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
-        .dimension(name_dim)
-        .group(costs_of_food)
-        .transitionDuration(500)
-        .x(d3.scale.ordinal())
-        .xUnits(dc.units.ordinal)
-        .xAxisLabel('Country')
-        .yAxisLabel('Price of Food ($)')
-        .yAxis().ticks(4);
 }
