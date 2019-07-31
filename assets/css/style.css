@@ -80,10 +80,6 @@
   background-position: center;
   border-radius: 3%; }
 
-/*Statistics Page*/
-.chartStyling1, .statisticsHeading {
-  margin: 50px 10px; }
-
 /*Charity Page*/
 .charityAsiaPic1, .charityAfricaPic, .charityAsiaPic2, .charityEuropePic1, .charitySAPic, .charityEuropePic2, .charityRedCrossPic, .disasterReliefRedCrossPic {
   width: 100%;
@@ -294,6 +290,18 @@ body {
 #gdp-per-capita-chart {
   clear: left; }
 
+.chartStyling1 {
+  margin: 50px 10px; }
+
+.statisticsHeading {
+  margin-left: 10px;
+  margin-top: 90px;
+  margin-bottom: 50px;
+  color: #FFFFFF; }
+
+.graph-color {
+  color: #FFFFFF; }
+
 #map {
   height: 100vh;
   width: 100%;
@@ -457,7 +465,13 @@ body {
 
   .chartStyling {
     background-color: #FFFFFF;
-    margin: 0; } }
+    margin: 0; }
+
+  .graph-color {
+    color: #000000; }
+
+  .statisticsHeading {
+    color: #000000; } }
 @media (min-width: 1200px) {
   /*Homepage*/
   .hpimg-2 {

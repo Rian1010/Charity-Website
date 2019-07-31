@@ -94,23 +94,6 @@
 
 
 
-/*Statistics Page*/
-
-%chartMargin {
-    margin: 50px 10px
-}
-
-.chartStyling1 {
-    @extend %chartMargin
-}
-
-.statisticsHeading {
-    @extend %chartMargin
-}
-
-
-
-
 /*Charity Page*/
 
 %charityCarouselPics {

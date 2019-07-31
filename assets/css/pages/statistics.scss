@@ -3,9 +3,21 @@
     color: $white;
 }
 
-#gdp-per-capita-chart{
+#gdp-per-capita-chart {
     clear: left;
 }
 
+.chartStyling1 {
+    margin: 50px 10px
+}
 
+.statisticsHeading {
+    margin-left: 10px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    color: $white;
+}
 
+.graph-color {
+    color: $white;
+}

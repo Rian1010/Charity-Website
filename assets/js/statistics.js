@@ -183,17 +183,17 @@ function show_country_data(error, countriesData) {
             dc.lineChart(composite)
             .dimension(unemp_rate_female_dim)
             .colors('orange')
-            .group(femaleUnempRateDRC, "DRC")
+            .group(femaleUnempRateDRC, "Democratic Republic of Congo")
             .dashStyle([2, 2]),
             dc.lineChart(composite)
             .dimension(unemp_rate_female_dim)
             .colors('blue')
-            .group(femaleUnempRateMZ, "MZ")
+            .group(femaleUnempRateMZ, "Mozambique")
             .dashStyle([5, 5]),
             dc.lineChart(composite)
             .dimension(unemp_rate_female_dim)
             .colors('grey')
-            .group(femaleUnempRateUG, "UG")
+            .group(femaleUnempRateUG, "Uganda")
             .dashStyle([8, 8]),
             dc.lineChart(composite)
             .colors('blue')
@@ -341,17 +341,17 @@ function show_country_data(error, countriesData) {
             dc.lineChart(composite)
             .dimension(unemp_rate_male_dim)
             .colors('orange')
-            .group(maleUnempRateDRC, "DRC")
+            .group(maleUnempRateDRC, "Democratic Republic of Congo")
             .dashStyle([2, 2]),
             dc.lineChart(composite)
             .dimension(unemp_rate_male_dim)
             .colors('blue')
-            .group(maleUnempRateMZ, "MZ")
+            .group(maleUnempRateMZ, "Mozambique")
             .dashStyle([5, 5]),
             dc.lineChart(composite)
             .dimension(unemp_rate_male_dim)
             .colors('grey')
-            .group(maleUnempRateUG, "UG")
+            .group(maleUnempRateUG, "Uganda")
             .dashStyle([8, 8]),
             dc.lineChart(composite)
             .colors('blue')
