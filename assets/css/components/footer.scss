@@ -1,0 +1,19 @@
+#footer {
+    width: 100%;
+    height: 150px;
+    margin-top: 58px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    color: $black;
+}
+
+.footer-link {
+    color: $black!important;
+}
+
+.footer-link:hover {
+    text-decoration: none !important;
+}

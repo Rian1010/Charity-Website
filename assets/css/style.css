@@ -68,6 +68,7 @@
   margin: 15px 0;
   padding: 1em 0;
   position: relative;
+  margin-left: 44px;
   color: white;
   top: 12%;
   background-color: rgba(0, 0, 0, 0.3);
@@ -128,6 +129,9 @@
     opacity: 0; }
   to {
     opacity: 1; } }
+.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram {
+  margin-left: -14px; }
+
 .charity-collapse {
   width: 100%;
   font-size: 15px;
@@ -181,6 +185,69 @@
   transition: 0.2s;
   color: #007bff !important; }
 
+#footer {
+  width: 100%;
+  height: 150px;
+  margin-top: 58px; }
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  color: #000000; }
+
+.footer-link {
+  color: #000000 !important; }
+
+.footer-link:hover {
+  text-decoration: none !important; }
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.social-media-button {
+  position: fixed;
+  top: 50%;
+  width: 5.5%;
+  transform: translateY(-50%); }
+
+/* Style the icon bar links */
+.social-media-button a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-size: 23px; }
+
+/* Style the social media icons with color, if you want */
+.facebook:hover {
+  background-color: rgba(59, 89, 152, 0.8); }
+
+.twitter:hover {
+  background-color: rgba(85, 172, 238, 0.8); }
+
+.instagram:hover {
+  background-color: rgba(253, 89, 73, 0.8); }
+
+.youtube:hover {
+  background-color: rgba(187, 0, 0, 0.8); }
+
+.facebook {
+  background: #3B5998;
+  color: #FFFFFF; }
+
+.twitter {
+  background: #55ACEE;
+  color: #FFFFFF; }
+
+.instagram {
+  background: #fd5949;
+  color: #FFFFFF; }
+
+.youtube {
+  background: #bb0000;
+  color: #FFFFFF; }
+
 #bodyColor {
   background-color: #2098d1; }
 
@@ -218,7 +285,7 @@ body {
   margin: 0; }
 
 .section2 {
-  height: 620px; }
+  height: 668px; }
 
 .headerGDP {
   color: #FFFFFF;
@@ -248,12 +315,13 @@ body {
 .textHP1 {
   color: #000000;
   padding-left: 10px;
-  margin-top: 100px; }
+  margin-top: 100px;
+  margin-left: 18px; }
 
 .textHP2 {
   color: #FFFFFF;
   padding-top: 150px;
-  padding-left: 10px; }
+  padding-left: 60px; }
 
 .more {
   display: none; }
@@ -358,7 +426,7 @@ body {
     font-size: 26px; }
 
   .section2 {
-    height: 700px; }
+    height: 722px; }
 
   .textGDP {
     font-size: 26px;
@@ -380,7 +448,10 @@ body {
     height: 129px;
     top: 94px;
     left: 67%;
-    border-radius: 20px; } }
+    border-radius: 20px; }
+
+  .footer {
+    height: 110px; } }
 @media (min-width: 768px) {
   /*Homepage*/
   .hpimg-2 {
@@ -455,7 +526,8 @@ body {
 
   .section2 {
     height: 91%;
-    top: -1%; }
+    top: -1%;
+    margin-left: 44px; }
 
   .section3 {
     height: 100%; }
@@ -523,11 +595,40 @@ body {
   .section {
     height: 166%; }
 
+  .section, .section2, .section3 {
+    margin-left: 120px; }
+
+  .textHP2 {
+    padding-left: 130px; }
+
   .MotherTeresaImg {
     width: 35%;
     height: 250px;
     position: relative;
     left: 64%;
-    top: -60px; } }
+    top: -60px; }
+
+  .social-media-button {
+    left: -24px; }
+
+  /* Style the icon bar links */
+  .social-media-button a {
+    text-align: right; }
+
+  .facebook:hover {
+    background-color: rgba(59, 89, 152, 0.8);
+    transform: translateX(23px); }
+
+  .twitter:hover {
+    background-color: rgba(85, 172, 238, 0.8);
+    transform: translateX(23px); }
+
+  .instagram:hover {
+    background-color: rgba(253, 89, 73, 0.8);
+    transform: translateX(23px); }
+
+  .youtube:hover {
+    background-color: rgba(187, 0, 0, 0.8);
+    transform: translateX(23px); } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss
+
+Backtrace:
+/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `read'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/bin/sass:23:in `load'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/bin/sass:23:in `<main>'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/bin/ruby_executable_hooks:24:in `eval'
+/home/ubuntu/.rvm/gems/ruby-2.6.3/bin/ruby_executable_hooks:24:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss"; }

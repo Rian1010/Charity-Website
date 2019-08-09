@@ -44,6 +44,7 @@
     margin: 15px 0;
     padding: 1em 0;
     position: relative;
+    margin-left: 44px;
     color: white;
     top: 12%;
     background-color: rgba(0, 0, 0, 0.3);
@@ -186,6 +187,31 @@
 }
 
 @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+%asideMargins {
+    margin-left: -14px;
+}
+
+.fa-facebook {
+    @extend %asideMargins
+}
+
+.fa-twitter {
+    @extend %asideMargins
+}
+
+.fa-youtube {
+    @extend %asideMargins
+}
+
+.fa-instagram {
+    @extend %asideMargins
 }
