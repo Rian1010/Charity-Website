@@ -200,18 +200,46 @@
     margin-left: -14px;
 }
 
-.fa-facebook {
+.facebook-aside {
     @extend %asideMargins
 }
 
-.fa-twitter {
+.twitter-aside {
     @extend %asideMargins
 }
 
-.fa-youtube {
+.youtube-aside {
     @extend %asideMargins
 }
 
-.fa-instagram {
+.instagram-aside {
     @extend %asideMargins
+}
+
+
+%footericons {
+    width: 40px;
+    height: 40px;
+    list-style: none;
+    line-height: 40px;
+    font-size: 20px;
+    border: 1px solid blue;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.facebook-footer {
+    @extend %footericons
+}
+
+.twitter-footer {
+    @extend %footericons
+}
+
+.youtube-footer {
+    @extend %footericons
+}
+
+.instagram-footer {
+    @extend %footericons
 }

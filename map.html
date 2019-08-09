@@ -11,41 +11,89 @@
 </head>
 
 <body id="bodyColor">
-    <nav class="navbar navbar-expand-sm navbar-light">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light">
 
-        <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
-        <a href="index.html" class="navbar-brand navBrandColor">Charity Base</a>
+            <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+            <a href="index.html" class="navbar-brand navBrandColor">Charity Base</a>
 
-        <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="navbarNavDropdown" aria-controls="false">
+            <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="navbarNavDropdown" aria-controls="false">
   
             <span class="navbar-toggler-icon"></span></button>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a href="index.html" class="nav-link hvr-shutter-out-vertical">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="map.html" class="nav-link hvr-shutter-out-vertical">Map</a>
-                </li>
-                <li class="nav-item">
-                    <a href="statistics.html" class="nav-link hvr-shutter-out-vertical">Statistics</a>
-                </li>
-                <li class="nav-item">
-                    <a href="donate.html" class="nav-link hvr-shutter-out-vertical">Donate</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link hvr-shutter-out-vertical">Contacts</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link hvr-shutter-out-vertical">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="map.html" class="nav-link hvr-shutter-out-vertical">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="statistics.html" class="nav-link hvr-shutter-out-vertical">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html" class="nav-link hvr-shutter-out-vertical">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link hvr-shutter-out-vertical">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <div class="text-center">
+            <h1>Landmap</h1>
+            <h2>Use the map below, in order to have a general overview of what countries require help and find quick informations about them by clicking on the markers.</h2>
         </div>
-    </nav>
-    
-    <div class="text-center">
-        <h1>Landmap</h1>
-        <h2>Use the map below, in order to have a general overview of what countries require help and find quick informations about them by clicking on the markers.</h2>
-    </div>
-    <div id="map"></div>
+        <div id="map"></div>
+    </article>
+
+    <aside>
+        <div class="social-media-button">
+            <li class="facebook-aside"><a href="http://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a></li>
+            <li class="twitter-aside"><a href="http://www.twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li class="youtube-aside"><a href="http://www.youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a></li>
+            <li class="instagram-aside"><a href="http://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+        </div>
+    </aside>
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 text-center">
+                    <h2>Contact Me</h2>
+                    <ul class="footer-list">
+                        <li>Phone number: 1234</li>
+                        <li><a href="contact.html" class="footer-link">Send Me a Message</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 text-center">
+                    <h2>Find out how to donate</h2>
+                    <ul class="footer-list">
+                        <li><a href="dontate.html" class="footer-link">Donate</a></li>
+                        <li><a href="map.html" class="footer-link">Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="social-media-icons-footer">
+                        <li class="facebook-footer"><a href="facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li class="twitter-footer"><a href="twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li class="youtube-footer"><a href="youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li class="instagram-footer"><a href="instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
