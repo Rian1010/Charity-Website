@@ -1,4 +1,4 @@
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+/* Fixed Icon */
 
 .social-media-button {
   position: fixed;
@@ -7,7 +7,7 @@
   transform: translateY(-50%);
 }
 
-/* Style the icon bar links */
+/* Icon links */
 
 .social-media-button a {
   display: block;
@@ -20,40 +20,40 @@
   font-size: 23px;
 }
 
-/* Style the social media icons with color, if you want */
+/* Social Media Icons*/
 
 .facebook:hover {
-  background-color: rgba(59, 89, 152, .8);
+  background-color: $facebookHover;
 }
 
 .twitter:hover {
-  background-color: rgba(85, 172, 238, .8);
+  background-color: $twitterHover;
 }
 
 .instagram:hover {
-  background-color: rgba(253, 89, 73, .8);
+  background-color: $instagramHover;
 }
 
 .youtube:hover {
-  background-color: rgba(187, 0, 0, .8);
+  background-color: $youtubeHover;
 }
 
 .facebook {
-  background: #3B5998;
+  background: $facebookBGColor;
   color: $white;
 }
 
 .twitter {
-  background: #55ACEE;
+  background: $twitterBGColor;
   color: $white;
 }
 
 .instagram {
-  background: #fd5949;
+  background: $instagramBGColor;
   color: $white;
 }
 
 .youtube {
-  background: #bb0000;
+  background: $youtubeBGColor;
   color: $white;
 }

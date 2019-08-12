@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,800&display=swap');
+
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -72,14 +75,3 @@ body {
     opacity: 1;
     border: solid #FFF;
 }
-
-/*.text-effect {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 0.5s all ease-in-out;
-} 
-
-.text-appear {
-    opacity: 1;
-    transform: translateY(0px)
-}*/

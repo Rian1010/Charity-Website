@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,800&display=swap");
 .hpimg-1 {
   width: 100%;
   top: 40px;
@@ -113,6 +114,7 @@
 .disasterReliefRedCrossPic {
   background-image: url("../images/Charity-Images/Disaster-Relief-Red-Cross.jpg"); }
 
+/*Charity Page Carousel Arrows*/
 .carousel-control-prev-icon, .carousel-control-next-icon {
   height: 100px;
   width: 100px;
@@ -121,17 +123,11 @@
   background-size: 100%, 100%;
   border-radius: 50%; }
 
-.section2-text, .section3-text, .section4-text {
-  animation: fadeEffect 0.2s; }
-
-@keyframes fadeEffect {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+/*Aside Social Media Buttons*/
 .facebook-aside, .twitter-aside, .youtube-aside, .instagram-aside {
   margin-left: -14px; }
 
+/*Footer Social Media Icons*/
 .facebook-footer, .twitter-footer, .youtube-footer, .instagram-footer {
   width: 40px;
   height: 40px;
@@ -224,14 +220,14 @@
 .facebook-footer {
   color: white; }
 
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+/* Fixed Icon */
 .social-media-button {
   position: fixed;
   top: 50%;
   width: 10%;
   transform: translateY(-50%); }
 
-/* Style the icon bar links */
+/* Icon links */
 .social-media-button a {
   display: block;
   text-align: center;
@@ -242,7 +238,7 @@
   border-bottom-right-radius: 50px;
   font-size: 23px; }
 
-/* Style the social media icons with color, if you want */
+/* Social Media Icons*/
 .facebook:hover {
   background-color: rgba(59, 89, 152, 0.8); }
 
@@ -305,7 +301,8 @@
 
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; }
 
 .section2 {
   height: 668px; }
@@ -364,25 +361,9 @@ body {
   opacity: 1;
   border: solid #FFF; }
 
-/*.text-effect {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 0.5s all ease-in-out;
-} 
-
-.text-appear {
-    opacity: 1;
-    transform: translateY(0px)
-}*/
 .chartText {
   margin-left: 10%;
   color: #FFFFFF; }
-
-#gdp-per-capita-chart {
-  clear: left; }
-
-.chartStyling1 {
-  margin: 50px 10px; }
 
 .statisticsHeading {
   margin-left: 10px;
@@ -392,6 +373,9 @@ body {
 
 .graph-color {
   color: #FFFFFF; }
+
+#statistics-article {
+  padding-left: 50px; }
 
 #map {
   height: 100vh;
@@ -621,7 +605,9 @@ body {
   .section {
     height: 166%; }
 
-  .section, .section2, .section3 {
+  .section,
+  .section2,
+  .section3 {
     margin-left: 120px; }
 
   .textHP2 {
@@ -637,7 +623,6 @@ body {
   .social-media-button {
     left: -25px; }
 
-  /* Style the icon bar links */
   .social-media-button a {
     text-align: right; }
 
@@ -655,6 +640,9 @@ body {
 
   .youtube:hover {
     background-color: rgba(187, 0, 0, 0.8);
-    transform: translateX(23px); } }
+    transform: translateX(23px); }
+
+  #statistics-article {
+    padding-right: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

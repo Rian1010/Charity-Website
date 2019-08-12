@@ -1,6 +1,5 @@
 $phone-width: 576px;
 $tablet-width: 768px;
-$desktop-width: 992px;
 $large-desktop-width: 1200px;
 
 @mixin phone {
@@ -64,12 +63,10 @@ $large-desktop-width: 1200px;
             top: 94px;
             left: 67%;
             border-radius: 20px;
-        }
-        
+        } //Aside Social Media Buttons
         .social-media-button {
             width: 5.5%;
-        }
-        
+        } //Footers
         .footer {
             height: 110px
         }
@@ -175,8 +172,7 @@ $large-desktop-width: 1200px;
 
         .section3 {
             height: 100%;
-        }
-
+        } //Statistics Page
         .chartText {
             text-align: center;
         }
@@ -262,11 +258,13 @@ $large-desktop-width: 1200px;
         .section {
             height: 166%
         }
-        
-        .section, .section2, .section3 {
+
+        .section,
+        .section2,
+        .section3 {
             margin-left: 120px
         }
-        
+
         .textHP2 {
             padding-left: 130px
         }
@@ -277,13 +275,11 @@ $large-desktop-width: 1200px;
             position: relative;
             left: 64%;
             top: -60px;
-        }
-        
+        } //Aside Social Media Buttons
         .social-media-button {
             left: -25px;
         }
 
-        /* Style the icon bar links */
         .social-media-button a {
             text-align: right;
         }
@@ -306,6 +302,9 @@ $large-desktop-width: 1200px;
         .youtube:hover {
             background-color: rgba(187, 0, 0, .8);
             transform: translateX(23px);
+        } //Statistics Page 
+        #statistics-article {
+            padding-right: 50px;
         }
     }
 }

@@ -150,7 +150,7 @@
 }
 
 
-
+/*Charity Page Carousel Arrows*/
 
 %carouselArrows {
     height: 100px;
@@ -170,31 +170,11 @@
 }
 
 
-%fadeEffect {
-    animation: fadeEffect 0.2s;
-}
 
-.section2-text {
-    @extend %fadeEffect;
-}
 
-.section3-text {
-    @extend %fadeEffect;
-}
 
-.section4-text {
-    @extend %fadeEffect;
-}
 
-@keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
+/*Aside Social Media Buttons*/
 
 %asideMargins {
     margin-left: -14px;
@@ -215,6 +195,8 @@
 .instagram-aside {
     @extend %asideMargins
 }
+
+/*Footer Social Media Icons*/
 
 
 %footericons {
