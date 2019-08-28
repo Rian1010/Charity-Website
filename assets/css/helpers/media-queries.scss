@@ -63,11 +63,17 @@ $large-desktop-width: 1200px;
             top: 94px;
             left: 67%;
             border-radius: 20px;
+        } //Statistics Texts
+        .chartText {
+            margin-left: 10%;
+        }
+        #statistics-article {
+            padding-left: 50px;
         } //Aside Social Media Buttons
         .social-media-button {
             width: 5.5%;
         } //Footers
-        .footer {
+        #footer {
             height: 110px
         }
     }

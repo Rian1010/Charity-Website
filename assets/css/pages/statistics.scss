@@ -1,6 +1,9 @@
 .chartText {
-    margin-left: 10%;
     color: $white;
+}
+
+.no-content-BG {
+    background: $white;
 }
 
 .statisticsHeading {
@@ -14,6 +17,3 @@
     color: $white;
 }
 
-#statistics-article {
-    padding-left: 50px;
-}

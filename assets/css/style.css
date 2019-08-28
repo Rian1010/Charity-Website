@@ -362,8 +362,10 @@ body {
   border: solid #FFF; }
 
 .chartText {
-  margin-left: 10%;
   color: #FFFFFF; }
+
+.no-content-BG {
+  background: #FFFFFF; }
 
 .statisticsHeading {
   margin-left: 10px;
@@ -373,9 +375,6 @@ body {
 
 .graph-color {
   color: #FFFFFF; }
-
-#statistics-article {
-  padding-left: 50px; }
 
 #map {
   height: 100vh;
@@ -457,10 +456,16 @@ body {
     left: 67%;
     border-radius: 20px; }
 
+  .chartText {
+    margin-left: 10%; }
+
+  #statistics-article {
+    padding-left: 50px; }
+
   .social-media-button {
     width: 5.5%; }
 
-  .footer {
+  #footer {
     height: 110px; } }
 @media (min-width: 768px) {
   /*Homepage*/
