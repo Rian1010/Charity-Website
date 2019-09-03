@@ -27,31 +27,63 @@
 
 
 // Calculator
+
+
+//new
+
+.calcTextBG {
+    cursor: move;
+    background-color: lightblue;
+    border: 1px solid blue;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.screen {
+    width: 100%;
+    font-size: 1.5rem;
+    background: rgb(41, 41, 56);
+    color: white;
+    border: none;
+
+}
+
 .buttons {
-    
-    padding: 0.25rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.5s linear;
+}
+
+.btn-equal {
+    width: 100%;
+    font-size: 1.5rem;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .calcBtnStyle {
+    flex: 0 0 25%;
+    border: 1px solid black;
+    padding: 2px 0;
     transition: all 0.5s ease-in-out;
 }
 
 .calcBtnStyle:hover {
-    background: $blue;
+    background: blue;
 }
 
 .calcBtnYellow {
-    background: $lightYellow;
+    background: lightYellow;
 }
 
 .calcBtnGrey {
-    background: $grey;
+    background: grey;
 }
 
 .calcBtnGreen {
-    background: $green;
+    background: green;
 }
 
 .calcBtnRed {
-    background: $red;
+    background: red;
 }

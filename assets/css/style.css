@@ -160,26 +160,51 @@
   transition: 0.2 ease-in-out;
   color: #FFFFFF; }
 
+.calcTextBG {
+  cursor: move;
+  background-color: lightblue;
+  border: 1px solid blue;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px; }
+
+.screen {
+  width: 100%;
+  font-size: 1.5rem;
+  background: #292938;
+  color: white;
+  border: none; }
+
 .buttons {
-  padding: 0.25rem 0; }
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.5s linear; }
+
+.btn-equal {
+  width: 100%;
+  font-size: 1.5rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px; }
 
 .calcBtnStyle {
+  flex: 0 0 25%;
+  border: 1px solid black;
+  padding: 2px 0;
   transition: all 0.5s ease-in-out; }
 
 .calcBtnStyle:hover {
-  background: #0188FE; }
+  background: blue; }
 
 .calcBtnYellow {
-  background: #FEF9B4; }
+  background: lightYellow; }
 
 .calcBtnGrey {
-  background: #e0e0e0; }
+  background: grey; }
 
 .calcBtnGreen {
-  background: #8ffe00; }
+  background: green; }
 
 .calcBtnRed {
-  background: #FE7979; }
+  background: red; }
 
 .hvr-shutter-out-vertical {
   background-color: #FFFFFF; }
