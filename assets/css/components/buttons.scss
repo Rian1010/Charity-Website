@@ -28,8 +28,13 @@
 
 // Calculator
 
+#calculatorSection {
+    z-index: 9;
+}
 
-//new
+#calculatorSectionHeader {
+    z-index: 10;
+}
 
 .calcTextBG {
     cursor: move;
