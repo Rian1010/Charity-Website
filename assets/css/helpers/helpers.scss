@@ -180,6 +180,10 @@
     margin-left: -14px;
 }
 
+.calculator-aside {
+    @extend %asideMargins
+}
+
 .facebook-aside {
     @extend %asideMargins
 }
@@ -196,8 +200,28 @@
     @extend %asideMargins
 }
 
-/*Footer Social Media Icons*/
 
+%asideStyles {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: $white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-size: 23px;
+    text-align: right;
+}
+
+.social-media-button a {
+    @extend %asideStyles
+}
+
+.social-media-button div {
+    @extend %asideStyles
+}
+
+/*Footer Social Media Icons*/
 
 %footericons {
     width: 40px;

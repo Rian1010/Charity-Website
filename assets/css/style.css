@@ -124,8 +124,19 @@
   border-radius: 50%; }
 
 /*Aside Social Media Buttons*/
-.facebook-aside, .twitter-aside, .youtube-aside, .instagram-aside {
+.calculator-aside, .facebook-aside, .twitter-aside, .youtube-aside, .instagram-aside {
   margin-left: -14px; }
+
+.social-media-button a, .social-media-button div {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: #FFFFFF;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-size: 23px;
+  text-align: right; }
 
 /*Footer Social Media Icons*/
 .facebook-footer, .twitter-footer, .youtube-footer, .instagram-footer {
@@ -159,6 +170,12 @@
   background-color: #11fe00;
   transition: 0.2 ease-in-out;
   color: #FFFFFF; }
+
+#calculatorSection {
+  z-index: 9; }
+
+#calculatorSectionHeader {
+  z-index: 10; }
 
 .calcTextBG {
   cursor: move;
@@ -252,18 +269,10 @@
   width: 10%;
   transform: translateY(-50%); }
 
-/* Icon links */
-.social-media-button a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: white;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  font-size: 23px; }
-
 /* Social Media Icons*/
+.sideCalculator:hover {
+  background-color: rgba(102, 51, 153, 0.8); }
+
 .facebook:hover {
   background-color: rgba(59, 89, 152, 0.8); }
 
@@ -291,6 +300,11 @@
 .youtube {
   background: #bb0000;
   color: #FFFFFF; }
+
+.sideCalculator {
+  transform: translateY(-50%);
+  background-color: #663399;
+  color: white; }
 
 #bodyColor {
   background-color: #2098d1; }
@@ -653,8 +667,8 @@ body {
   .social-media-button {
     left: -25px; }
 
-  .social-media-button a {
-    text-align: right; }
+  .sideCalculator:hover {
+    transform: translateX(23px) translateY(-50%); }
 
   .facebook:hover {
     background-color: rgba(59, 89, 152, 0.8);
