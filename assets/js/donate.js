@@ -68,62 +68,51 @@ window.onload = function() {
             screen.value = '';
         });
     }
-
-    dragCalculator(document.getElementById("calculatorSection"));
-
-
-    function dragCalculator(drag) {
-        var pos1 = 0,
-            pos2 = 0,
-            pos3 = 0,
-            pos4 = 0;
-
-        //Where the calculator is moved from 
-        if (document.getElementById(drag.id + "Header")) {
-            document.getElementById(drag.id + "Header").onmousedown = dragMouseDown;
-            console.log(1)
-        }
-
-        //Move the calculator from anywhere else
-        else {
-            drag.onmousedown = dragMouseDown;
-            console.log(2)
-        }
-
-
-        function dragMouseDown(e) {
-            e = e || window.event;
-            e.preventDefault();
-            //Get the startup of the mouseposition
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-            document.onmouseup = closeDragCalculator;
-            //Call a function whenever the cursor moves
-            document.onmousemove = calculatorDrag;
-            console.log(3)
-        }
-
-        function calculatorDrag(e) {
-            e = e || window.event;
-            e.preventDefault();
-
-            //New cursor position
-            pos1 = pos3 - e.clientX;
-            pos2 = pos4 - e.clientY;
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-
-            //Set the new position
-            drag.style.top = (drag.offsetTop - pos2) + "px;";
-            drag.style.left = (drag.offsetLeft - pos1) + "px";
-            console.log(4)
-        }
-
-        function closeDragCalculator() {
-            //When the button is released, stop moving
-            document.onmouseup = null;
-            document.onmousemove = null;
-            console.log(5)
-        }
-    }
 };
+
+dragElement(document.getElementById("calculatorSection"));
+
+function dragElement(elmnt) {
+    var pos1 = 0,
+        pos2 = 0,
+        pos3 = 0,
+        pos4 = 0;
+    if (document.getElementById(elmnt.id + "header")) {
+        // if present, the header is where you move the DIV from:
+        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    }
+    else {
+        // otherwise, move the DIV from anywhere inside the DIV:
+        elmnt.onmousedown = dragMouseDown;
+    }
+
+    function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElement() {
+        // stop moving when mouse button is released:
+        document.onmouseup = null;
+        document.onmousemove = null;
+    }
+}
