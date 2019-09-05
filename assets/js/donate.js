@@ -31,7 +31,6 @@ window.onload = function() {
     calculatorBtn.addEventListener('click', () => {
         if (theCalculator.style.display == 'none') {
             theCalculator.style.display = 'block';
-            console.log('this is working');
         }
         else {
             theCalculator.style.display = 'none';
@@ -39,7 +38,7 @@ window.onload = function() {
     });
 
     //Calculator
-
+    
     const btns = document.querySelectorAll('.calcBtn');
     const equalBtn = document.querySelector('.btn-equal');
     const clearBtn = document.querySelector('.btn-clear');

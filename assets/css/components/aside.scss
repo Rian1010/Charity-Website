@@ -3,7 +3,7 @@
 .social-media-button {
   position: fixed;
   top: 50%;
-  width: 10%;
+  width: 50%;
   transform: translateY(-50%);
 }
 
@@ -58,4 +58,9 @@
   transform: translateY(-50%);
   background-color: $sideCalculatorColor;
   color: white;
+}
+
+.asideCalcText {
+    font-size: 12px;
+    vertical-align: middle;
 }

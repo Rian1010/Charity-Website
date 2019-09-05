@@ -75,6 +75,9 @@ $large-desktop-width: 1200px;
         } //Footers
         #footer {
             height: 110px
+        } // Contact Page
+        .text-box-length {
+            width: 500px;
         }
     }
 }
@@ -194,6 +197,9 @@ $large-desktop-width: 1200px;
 
         .statisticsHeading {
             color: $black;
+        } // Contact Page
+        .text-box-length {
+            width: 650px;
         }
     }
 }
@@ -283,34 +289,38 @@ $large-desktop-width: 1200px;
             top: -60px;
         } //Aside Social Media Buttons
         .social-media-button {
-            left: -25px;
+            left: -35px;
         }
 
         .sideCalculator:hover {
+            background-color: $sideCalculatorHover;
             transform: translateX(23px) translateY(-50%);
         }
 
         .facebook:hover {
-            background-color: rgba(59, 89, 152, .8);
+            background-color: $facebookHover;
             transform: translateX(23px);
         }
 
         .twitter:hover {
-            background-color: rgba(85, 172, 238, .8);
+            background-color: $twitterHover;
             transform: translateX(23px);
         }
 
         .instagram:hover {
-            background-color: rgba(253, 89, 73, .8);
+            background-color: $instagramHover;
             transform: translateX(23px);
         }
 
         .youtube:hover {
-            background-color: rgba(187, 0, 0, .8);
+            background-color: $youtubeHover;
             transform: translateX(23px);
         } //Statistics Page 
         #statistics-article {
             padding-right: 50px;
+        } // Contact Page
+        .text-box-length {
+            width: 1100px;
         }
     }
 }

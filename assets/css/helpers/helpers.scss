@@ -169,37 +169,7 @@
     @extend %carouselArrows;
 }
 
-
-
-
-
-
-/*Aside Social Media Buttons*/
-
-%asideMargins {
-    margin-left: -14px;
-}
-
-.calculator-aside {
-    @extend %asideMargins
-}
-
-.facebook-aside {
-    @extend %asideMargins
-}
-
-.twitter-aside {
-    @extend %asideMargins
-}
-
-.youtube-aside {
-    @extend %asideMargins
-}
-
-.instagram-aside {
-    @extend %asideMargins
-}
-
+/*Aside Styles*/
 
 %asideStyles {
     display: block;
