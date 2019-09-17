@@ -101,4 +101,10 @@
 
 .calcBtnRed {
     background: red;
+} //Contact Page
+#submitBtn {
+    background-color: $blue;
+    color: $white;
+    display: flex;
+    align-content: flex-end;
 }

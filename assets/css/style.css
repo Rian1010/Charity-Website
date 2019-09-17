@@ -215,6 +215,12 @@
 .calcBtnRed {
   background: red; }
 
+#submitBtn {
+  background-color: #0188FE;
+  color: #FFFFFF;
+  display: flex;
+  align-content: flex-end; }
+
 .hvr-shutter-out-vertical {
   background-color: #FFFFFF; }
 
@@ -415,6 +421,10 @@ body {
   width: 100%;
   top: 40px;
   margin-top: -40px; }
+
+.mapInstruction {
+  padding: 10% 0;
+  color: #FFFFFF; }
 
 .forms {
   margin: auto;
