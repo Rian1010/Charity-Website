@@ -15,7 +15,6 @@
     @extend %background,
 }
 
-
 .hpimg-2 {
     @extend %background,
 }
@@ -45,7 +44,7 @@
     padding: 1em 0;
     position: relative;
     color: white;
-    top: 12%;
+    top: 20%;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 2%;
     height: auto;
@@ -181,6 +180,7 @@
     border-bottom-right-radius: 50px;
     font-size: 23px;
     text-align: right;
+    margin: 20px 0;
 }
 
 .social-media-button a {

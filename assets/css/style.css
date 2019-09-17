@@ -54,7 +54,7 @@
   padding: 1em 0;
   position: relative;
   color: white;
-  top: 12%;
+  top: 20%;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 2%;
   height: auto; }
@@ -117,7 +117,8 @@
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   font-size: 23px;
-  text-align: right; }
+  text-align: right;
+  margin: 20px 0; }
 
 /*Footer Social Media Icons*/
 .facebook-footer, .twitter-footer, .youtube-footer, .instagram-footer {
@@ -309,6 +310,15 @@
   padding: 28px 0;
   color: white; }
 
+#AsiaAfricaSection {
+  padding: 5% 0; }
+
+#SAEuropeCharities {
+  padding: 10% 0; }
+
+#NAAusCharities {
+  padding: 12% 0; }
+
 .charity-text {
   padding: 0 18px;
   white-space: pre-line;
@@ -366,8 +376,7 @@ body {
 
 .textHP2 {
   color: #FFFFFF;
-  padding-top: 150px;
-  padding-left: 60px; }
+  padding-top: 150px; }
 
 .more {
   display: none; }
@@ -396,7 +405,6 @@ body {
 .statisticsHeading {
   margin-left: 10px;
   margin-top: 90px;
-  margin-bottom: 50px;
   color: #FFFFFF; }
 
 .graph-color {
@@ -479,7 +487,10 @@ body {
     height: 110px; }
 
   .text-box-length {
-    width: 500px; } }
+    width: 500px; }
+
+  .textHP2 {
+    padding-left: 60px; } }
 @media (min-width: 768px) {
   /*Homepage*/
   .hpimg-2 {
@@ -530,12 +541,9 @@ body {
 
   .chartStyling {
     background-color: #FFFFFF;
-    margin: 0; }
+    margin: 7% 0; }
 
   .graph-color {
-    color: #000000; }
-
-  .statisticsHeading {
     color: #000000; }
 
   .text-box-length {

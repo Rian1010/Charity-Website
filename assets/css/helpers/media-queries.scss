@@ -57,6 +57,9 @@ $large-desktop-width: 1200px;
         .text-box-length {
             width: 500px;
         }
+        .textHP2 {
+            padding-left: 60px;
+        }
     }
 }
 
@@ -124,14 +127,10 @@ $large-desktop-width: 1200px;
 
         .chartStyling {
             background-color: $white;
-            margin: 0;
+            margin: 7% 0;
         }
 
         .graph-color {
-            color: $black;
-        }
-
-        .statisticsHeading {
             color: $black;
         } // Contact Page
         .text-box-length {
