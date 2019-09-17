@@ -23,7 +23,7 @@ window.onload = function() {
 
     //Aside Calculator Button
     const calculatorBtn = document.querySelector('#calcBtn');
-    const theCalculator = document.querySelector('#calculatorSection')
+    const theCalculator = document.querySelector('#calculator-wrapper')
 
 
     theCalculator.style.display = 'none';
@@ -38,7 +38,7 @@ window.onload = function() {
     });
 
     //Calculator
-    
+
     const btns = document.querySelectorAll('.calcBtn');
     const equalBtn = document.querySelector('.btn-equal');
     const clearBtn = document.querySelector('.btn-clear');
@@ -69,7 +69,7 @@ window.onload = function() {
     }
 };
 
-dragElement(document.getElementById("calculatorSection"));
+dragElement(document.getElementById("calculator-wrapper"));
 
 function dragElement(elmnt) {
     var pos1 = 0,

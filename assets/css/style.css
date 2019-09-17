@@ -152,19 +152,24 @@
   transition: 0.2 ease-in-out;
   color: #FFFFFF; }
 
-#calculatorSection {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  z-index: 9;
+#calculator-wrapper {
+  position: fixed;
+  z-index: 999;
   width: 20%;
-  left: 70px; }
+  left: 40%;
+  bottom: 70%; }
+
+.calculatorSection {
+  position: absolute; }
 
 #calculatorSectionHeader {
   z-index: 10; }
 
 .calcTextBG {
   cursor: move;
+  padding: 0;
+  width: 91%;
+  left: 5%;
   background-color: lightblue;
   border: 1px solid blue;
   border-top-right-radius: 10px;
