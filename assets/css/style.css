@@ -131,6 +131,27 @@
   border-radius: 50%;
   text-align: center; }
 
+.donateButtonStyleHP {
+  height: 70px;
+  font-size: 35px;
+  opacity: 0.7;
+  border: solid #FFF;
+  border-radius: 10px;
+  transition: 0.2s;
+  background-image: linear-gradient(#17a2b8, #01557b);
+  color: #FFFFFF;
+  border: none; }
+
+.donateButtonStyleHP:hover {
+  opacity: 1;
+  border: solid #FFF;
+  color: #FFFFFF; }
+
+.readBtn {
+  background-image: linear-gradient(#17a2b8, #01557b);
+  color: white;
+  border: none; }
+
 .charity-collapse {
   width: 100%;
   font-size: 15px;
@@ -216,7 +237,7 @@
   background: red; }
 
 #submitBtn {
-  background-color: #0188FE;
+  background-image: linear-gradient(#17a2b8, #01557b);
   color: #FFFFFF;
   display: flex;
   align-content: flex-end; }
@@ -389,18 +410,6 @@ body {
 
 .underline {
   text-decoration: underline; }
-
-.donateButtonStyleHP {
-  height: 70px;
-  font-size: 35px;
-  opacity: 0.7;
-  border: solid #FFF;
-  border-radius: 10px;
-  transition: 0.2s; }
-
-.donateButtonStyleHP:hover {
-  opacity: 1;
-  border: solid #FFF; }
 
 .chartText {
   color: #FFFFFF; }

@@ -50,17 +50,3 @@ body {
 .underline {
     text-decoration: underline;
 }
-
-.donateButtonStyleHP {
-    height: 70px;
-    font-size: 35px;
-    opacity: 0.7;
-    border: solid #FFF;
-    border-radius: 10px;
-    transition: 0.2s;
-}
-
-.donateButtonStyleHP:hover {
-    opacity: 1;
-    border: solid #FFF;
-}
