@@ -8,7 +8,7 @@ body {
 
 
 .section2 {
-    height: 668px;
+    height: auto;
 }
 
 
@@ -22,16 +22,6 @@ body {
     top: 82px;
     padding-right: 10px;
     color: $white;
-}
-
-.bottomLine {
-    width: 100%;
-    height: 5px;
-    background-color: $orange;
-    padding-right: 10px;
-    opacity: 0.90;
-    display: block;
-    margin-top: 30px;
 }
 
 .MotherTeresaQuote {

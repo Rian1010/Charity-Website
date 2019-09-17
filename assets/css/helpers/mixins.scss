@@ -44,30 +44,3 @@
     url('../images/sadness-africa.jpg'));
     background-size: 132% 100%;
 }
-
-
-
-@mixin box ($img-width,
-$img-height) {
-    width: $img-width;
-    height: $img-height;
-}
-
-#hptextimg-1 {
-    @include box(120px,
-    142px);
-    width: 53%;
-    background-image: linear-gradient(to right, rgba(1, 1, 1, .2), rgba(1, 1, 1, 0), rgba(1, 1, 1, .2)), url(../images/Asia-poverty.jpg);
-}
-
-#hptextimg-4 {
-    @include box(50%,
-    142px);
-    background-image: linear-gradient(to right, rgba(1, 1, 1, .2), rgba(1, 1, 1, 0), rgba(1, 1, 1, .2)), url(../images/starvation.jpg);
-}
-
-.MotherTeresaImg {
-    @include box(50%,
-    142px);
-    background-image: linear-gradient(to right, rgba(1, 1, 1, .3), rgba(1, 1, 1, 0), rgba(1, 1, 1, .3)), url(../images/Mother-Teresa.jpg);
-}

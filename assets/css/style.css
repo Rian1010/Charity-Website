@@ -36,22 +36,6 @@
   background-image: url("../images/sadness-africa.jpg");
   background-size: 132% 100%; }
 
-#hptextimg-1 {
-  width: 120px;
-  height: 142px;
-  width: 53%;
-  background-image: linear-gradient(to right, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.2)), url(../images/Asia-poverty.jpg); }
-
-#hptextimg-4 {
-  width: 50%;
-  height: 142px;
-  background-image: linear-gradient(to right, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.2)), url(../images/starvation.jpg); }
-
-.MotherTeresaImg {
-  width: 50%;
-  height: 142px;
-  background-image: linear-gradient(to right, rgba(1, 1, 1, 0.3), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.3)), url(../images/Mother-Teresa.jpg); }
-
 /*Homepage*/
 .hpimg-1, .hpimg-2, .hpimg-3, .hpimg-4, .hpimg-5 {
   position: relative;
@@ -69,11 +53,11 @@
   margin: 15px 0;
   padding: 1em 0;
   position: relative;
-  margin-left: 44px;
   color: white;
   top: 12%;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 2%; }
+  border-radius: 2%;
+  height: auto; }
 
 #hptextimg-1, #hptextimg-4, .MotherTeresaImg {
   left: 25%;
@@ -269,7 +253,8 @@
   position: fixed;
   top: 50%;
   width: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  list-style-type: none; }
 
 /* Social Media Icons*/
 .sideCalculator:hover {
@@ -350,7 +335,7 @@ body {
   font-family: 'Open Sans', sans-serif; }
 
 .section2 {
-  height: 668px; }
+  height: auto; }
 
 .headerGDP {
   color: #FFFFFF;
@@ -361,15 +346,6 @@ body {
   top: 82px;
   padding-right: 10px;
   color: #FFFFFF; }
-
-.bottomLine {
-  width: 100%;
-  height: 5px;
-  background-color: #FEB624;
-  padding-right: 10px;
-  opacity: 0.90;
-  display: block;
-  margin-top: 30px; }
 
 .MotherTeresaQuote {
   top: 115px;
@@ -457,19 +433,10 @@ body {
     padding-top: 33%;
     font-size: 26px; }
 
-  #hptextimg-1 {
-    width: 350px;
-    height: 185px;
-    position: relative;
-    top: 24%;
-    z-index: 1; }
-
-  #hptextimg-4 {
-    width: 350px;
-    height: 185px;
-    top: -8%;
-    position: relative;
-    z-index: 0; }
+  .section,
+  .section2,
+  .section3 {
+    margin-left: 44px; }
 
   .headerGDP {
     color: #FFFFFF;
@@ -478,9 +445,6 @@ body {
 
   .text2 {
     font-size: 26px; }
-
-  .section2 {
-    height: 722px; }
 
   .textGDP {
     font-size: 26px;
@@ -496,13 +460,6 @@ body {
     color: #FFFFFF;
     position: relative;
     padding-bottom: 37px; }
-
-  .MotherTeresaImg {
-    width: 32%;
-    height: 129px;
-    top: 94px;
-    left: 67%;
-    border-radius: 20px; }
 
   .chartText {
     margin-left: 10%; }
@@ -528,27 +485,6 @@ body {
 
   .hpimg-4 {
     height: 975px; }
-
-  #hptextimg-1 {
-    height: 200px;
-    top: 75px;
-    left: 30%; }
-
-  #hptextimg-2 {
-    top: -56px;
-    height: 204px; }
-
-  #hptextimg-3 {
-    height: 239px;
-    top: 8%;
-    left: 72px;
-    position: relative; }
-
-  #hptextimg-4 {
-    top: 3%;
-    left: 30%;
-    height: 230px;
-    position: relative; }
 
   .header {
     margin-top: 9px; }
@@ -577,26 +513,12 @@ body {
     top: 156px;
     padding-bottom: 197px; }
 
-  .MotherTeresaImg {
-    width: 35%;
-    height: 167px;
-    position: relative;
-    left: 64%;
-    top: -60px; }
-
   .textHP1 {
     margin-top: 0; }
 
-  .section {
-    height: 168%; }
-
   .section2 {
-    height: 91%;
     top: -1%;
     margin-left: 44px; }
-
-  .section3 {
-    height: 100%; }
 
   .chartText {
     text-align: center; }
@@ -628,16 +550,6 @@ body {
   .hpimg-4 {
     height: 1000px; }
 
-  #hptextimg-1 {
-    height: 200px;
-    top: 75px;
-    left: 30%; }
-
-  #hptextimg-2 {
-    top: -56%;
-    height: 400px;
-    position: relative; }
-
   .text {
     font-size: 30px; }
 
@@ -653,17 +565,6 @@ body {
     font-size: 26px;
     margin-top: 100px; }
 
-  #hptextimg-3 {
-    height: 400px; }
-
-  #hptextimg-4 {
-    height: 360px;
-    width: 30%;
-    left: 36%; }
-
-  .section {
-    height: 166%; }
-
   .section,
   .section2,
   .section3 {
@@ -671,13 +572,6 @@ body {
 
   .textHP2 {
     padding-left: 130px; }
-
-  .MotherTeresaImg {
-    width: 35%;
-    height: 250px;
-    position: relative;
-    left: 64%;
-    top: -60px; }
 
   .social-media-button {
     left: -35px; }
