@@ -59,8 +59,8 @@ window.onload = function() {
     }
     scrollByPage();
     console.log(window.scrollY);
-    
-    
+
+
 
     const textEffect2 = document.getElementById("textEffect2");
 
@@ -80,7 +80,7 @@ window.onload = function() {
     }
     scrollByPage2();
 
-    
+
     const textEffect3 = document.getElementById("textEffect3");
 
     window.addEventListener("scroll", scrollByPage3);
@@ -98,9 +98,9 @@ window.onload = function() {
         }
     }
     scrollByPage3();
-    
-    
-    
+
+
+
     const textEffect4 = document.getElementById("textEffect4");
 
     window.addEventListener("scroll", scrollByPage4);
@@ -118,8 +118,8 @@ window.onload = function() {
         }
     }
     scrollByPage4();
-    
-    
+
+
     const textEffect5 = document.getElementById("textEffect5");
 
     window.addEventListener("scroll", scrollByPage5);

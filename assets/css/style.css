@@ -389,9 +389,7 @@ body {
 
 .textHP1 {
   color: #000000;
-  padding-left: 10px;
   margin-top: 68px;
-  margin-left: 18px;
   font-weight: 600; }
 
 .textHP2 {
@@ -474,7 +472,9 @@ body {
   .textHP1 {
     padding-top: 33%;
     font-size: 26px;
-    margin-top: 100px; }
+    margin-top: 100px;
+    margin-left: 18px;
+    padding-left: 10px; }
 
   .section,
   .section2,
@@ -497,7 +497,7 @@ body {
     color: #FFFFFF; }
 
   .MotherTeresaQuote {
-    top: 135px;
+    top: 75px;
     font-size: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -562,9 +562,15 @@ body {
   .textHP1 {
     margin-top: 0; }
 
+  .section {
+    top: 40%; }
+
   .section2 {
-    top: -1%;
+    top: 8%;
     margin-left: 44px; }
+
+  .section3 {
+    top: 60%; }
 
   .chartText {
     text-align: center; }
