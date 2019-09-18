@@ -140,7 +140,9 @@
   transition: 0.2s;
   background-image: linear-gradient(#17a2b8, #01557b);
   color: #FFFFFF;
-  border: none; }
+  border: none;
+  margin: 5% 0;
+  font-weight: 600; }
 
 .donateButtonStyleHP:hover {
   opacity: 1;
@@ -238,9 +240,7 @@
 
 #submitBtn {
   background-image: linear-gradient(#17a2b8, #01557b);
-  color: #FFFFFF;
-  display: flex;
-  align-content: flex-end; }
+  color: #FFFFFF; }
 
 .hvr-shutter-out-vertical {
   background-color: #FFFFFF; }
@@ -379,31 +379,41 @@ body {
 .section2 {
   height: auto; }
 
+.header {
+  font-weight: 800; }
+
 .headerGDP {
   color: #FFFFFF;
-  top: 7px; }
+  top: 7px;
+  font-weight: 800; }
+
+.textHP1 {
+  color: #000000;
+  padding-left: 10px;
+  margin-top: 68px;
+  margin-left: 18px;
+  font-weight: 600; }
+
+.textHP2 {
+  color: #FFFFFF;
+  padding-top: 150px;
+  font-weight: 600; }
+
+.text2 {
+  font-weight: 600; }
 
 .textGDP {
   font-size: 1em;
   top: 82px;
   padding-right: 10px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  font-weight: 600; }
 
 .MotherTeresaQuote {
   top: 115px;
   text-transform: uppercase;
   color: #FFFFFF;
   font-style: italic; }
-
-.textHP1 {
-  color: #000000;
-  padding-left: 10px;
-  margin-top: 100px;
-  margin-left: 18px; }
-
-.textHP2 {
-  color: #FFFFFF;
-  padding-top: 150px; }
 
 .more {
   display: none; }
@@ -463,7 +473,8 @@ body {
   /*Homepage*/
   .textHP1 {
     padding-top: 33%;
-    font-size: 26px; }
+    font-size: 26px;
+    margin-top: 100px; }
 
   .section,
   .section2,
