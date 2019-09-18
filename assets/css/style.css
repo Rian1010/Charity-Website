@@ -4,7 +4,8 @@
   top: 40px;
   height: 98vh;
   background-image: linear-gradient(to right, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.2)), url("../images/sadness-africa.jpg");
-  background-size: 132% 100%; }
+  background-position: right;
+  background-size: cover; }
 
 .hpimg-2 {
   width: 100%;
@@ -34,12 +35,12 @@
   top: 40px;
   height: 97vh;
   background-image: url("../images/sadness-africa.jpg");
-  background-size: 132% 100%; }
+  background-size: cover;
+  background-position: right; }
 
 /*Homepage*/
 .hpimg-1, .hpimg-2, .hpimg-3, .hpimg-4, .hpimg-5 {
   position: relative;
-  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat; }
 
@@ -49,15 +50,17 @@
   padding-right: 10px;
   position: relative; }
 
-.section, .section2, .section3 {
+.top-section, .section, .section2, .section3 {
   margin: 15px 0;
   padding: 1em 0;
   position: relative;
   color: white;
-  top: 20%;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 2%;
   height: auto; }
+
+.section, .section2, .section3 {
+  top: 20%; }
 
 #hptextimg-1, #hptextimg-4, .MotherTeresaImg {
   left: 25%;
@@ -379,8 +382,8 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif; }
 
-.section2 {
-  height: auto; }
+.top-section {
+  top: 10%; }
 
 .header {
   font-weight: 800; }
@@ -391,7 +394,6 @@ body {
   font-weight: 800; }
 
 .textHP1 {
-  color: #000000;
   margin-top: 68px;
   font-weight: 600; }
 
@@ -476,7 +478,6 @@ body {
 @media (min-width: 576px) {
   /*Homepage*/
   .textHP1 {
-    padding-top: 33%;
     font-size: 26px;
     margin-top: 100px;
     margin-left: 18px;
@@ -621,10 +622,8 @@ body {
     font-size: 2em; }
 
   .textHP1 {
-    padding-top: 100px;
     padding-left: 40px;
-    font-size: 26px;
-    margin-top: 100px; }
+    font-size: 26px; }
 
   .section,
   .section2,

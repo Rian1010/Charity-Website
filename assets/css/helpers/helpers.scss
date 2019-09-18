@@ -3,11 +3,8 @@
 %background {
     position: relative;
     background: {
-        position: center;
         attachment: fixed;
         repeat: no-repeat;
-
-
     }
 }
 
@@ -44,26 +41,36 @@
     padding: 1em 0;
     position: relative;
     color: white;
-    top: 20%;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 2%;
     height: auto;
 }
 
+%sectionTop {
+    top: 20%;
+}
+
+.top-section {
+    @extend %sectionStyle;
+}
+
 .section {
-    @extend %sectionStyle
+    @extend %sectionStyle;
+    @extend %sectionTop;
 }
 
 .section2 {
-    @extend %sectionStyle
+    @extend %sectionStyle;
+    @extend %sectionTop;
 }
 
 .section3 {
-    @extend %sectionStyle
+    @extend %sectionStyle;
+    @extend %sectionTop;
 }
 
 .text {
-    @extend %textStyling
+    @extend %textStyling;
 }
 
 .text2 {

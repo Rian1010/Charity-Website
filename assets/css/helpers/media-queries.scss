@@ -6,7 +6,6 @@ $large-desktop-width: 1200px;
     @media (min-width: $phone-width) {
         /*Homepage*/
         .textHP1 {
-            padding-top: 33%;
             font-size: 26px;
             margin-top: 100px;
             margin-left: 18px;
@@ -191,10 +190,8 @@ $large-desktop-width: 1200px;
         }
 
         .textHP1 {
-            padding-top: 100px;
             padding-left: 40px;
             font-size: 26px;
-            margin-top: 100px;
         }
 
         .section,
