@@ -152,7 +152,8 @@
 .readBtn {
   background-image: linear-gradient(#17a2b8, #01557b);
   color: white;
-  border: none; }
+  border: none;
+  font-weight: 600; }
 
 .charity-collapse {
   width: 100%;
@@ -240,7 +241,9 @@
 
 #submitBtn {
   background-image: linear-gradient(#17a2b8, #01557b);
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  position: absolute;
+  right: 8em; }
 
 .hvr-shutter-out-vertical {
   background-color: #FFFFFF; }
@@ -443,6 +446,9 @@ body {
   padding: 10% 0;
   color: #FFFFFF; }
 
+.contactForm {
+  position: relative; }
+
 .forms {
   margin: auto;
   padding: 20px 0; }
@@ -520,7 +526,10 @@ body {
     width: 500px; }
 
   .textHP2 {
-    padding-left: 60px; } }
+    padding-left: 60px; }
+
+  #submitBtn {
+    right: 8em; } }
 @media (min-width: 768px) {
   /*Homepage*/
   .hpimg-2 {
@@ -583,7 +592,10 @@ body {
     color: #000000; }
 
   .text-box-length {
-    width: 650px; } }
+    width: 650px; }
+
+  #submitBtn {
+    right: 12em; } }
 @media (min-width: 1200px) {
   /*Homepage*/
   .hpimg-2 {
@@ -649,6 +661,9 @@ body {
     padding-right: 50px; }
 
   .text-box-length {
-    width: 1100px; } }
+    width: 1100px; }
+
+  #submitBtn {
+    right: 40em; } }
 
 /*# sourceMappingURL=style.css.map */
