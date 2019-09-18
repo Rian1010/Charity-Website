@@ -53,8 +53,10 @@ window.onload = function() {
         });
 
         equalBtn.addEventListener('click', function() {
+
             if (screen.value === '') {
-                alert('Input is empty.');
+                screen.value = '0'
+
             }
             else {
                 let value = eval(screen.value);
