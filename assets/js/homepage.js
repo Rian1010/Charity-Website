@@ -148,7 +148,7 @@ var count = 0;
 document.addEventListener("DOMContentLoaded", countSeconds());
 
 function countSeconds() {
-    seconds += 1;
+    seconds++;
     COUNTER.innerHTML = "<p>You've been here for " + seconds + " seconds.</p>";
 }
 
