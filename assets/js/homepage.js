@@ -140,28 +140,29 @@ window.onload = function() {
 };
 
 
-const COUNTER = document.getElementById("counter");
-const DEATHS = document.getElementById("death");
-var seconds = 0;
-var count = 0;
+        const COUNTER = document.getElementById("counter");
+        const DEATHS = document.getElementById("death");
+        var seconds = 0;
+        var count = 0;
 
-document.addEventListener("DOMContentLoaded", countSeconds())
+        document.addEventListener("DOMContentLoaded", countSeconds());
 
-function countSeconds() {
-    seconds += 1;
-    COUNTER.innerHTML = "You have been on this web page for " + seconds + " seconds."
-}
+        function countSeconds() {
+            seconds += 1;
+            COUNTER.innerHTML = "You have been on this web page for " + seconds + " seconds."
+        }
 
-var time = setInterval(countSeconds, 1000);
+        var time = setInterval(countSeconds, 1000);
 
-document.addEventListener("DOMContentLoaded", deaths())
+        document.addEventListener("DOMContentLoaded", deaths());
 
-function deaths() {
-    count += 1;
-    COUNTER.innerHTML = "It is estimated that " + count + "people have passed away, since you entered this web page."
-}
+        function deaths() {
+            count += 2;
+            DEATHS.innerHTML = "It is estimated that " + count + " people have passed away, since you entered this web page."
+        }
 
-var deathtimer = setInterval(countSeconds, 15000);
+        var deathtimer = setInterval(deaths, 1000);
+
 
 /*
 window.onload = function() {
