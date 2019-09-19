@@ -7,8 +7,22 @@ body {
 }
 
 
+.red-count {
+    color: red;
+    font-weight: 600;
+    font-size: 36px;
+}
+
 .top-section {
     top: 10%;
+}
+
+.top-section-counter-BG {
+    background-color:  rgba(0, 0, 0, 0.3);
+    border-radius: 2%;
+    color: $white;
+    position: relative;
+    top: 32%;
 }
 
 .header {
@@ -21,7 +35,6 @@ body {
 }
 
 .textHP1 {
-    margin-top: 68px;
     font-weight: 600;
 }
 

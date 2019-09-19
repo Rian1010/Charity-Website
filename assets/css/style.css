@@ -385,8 +385,21 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif; }
 
+.red-count {
+  color: red;
+  font-weight: 600;
+  font-size: 36px; }
+
 .top-section {
   top: 10%; }
+
+.top-section-counter-BG {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 2%;
+  color: #FFFFFF;
+  position: relative;
+  top: 68%;
+  right: 20px; }
 
 .header {
   font-weight: 800; }
@@ -397,7 +410,6 @@ body {
   font-weight: 800; }
 
 .textHP1 {
-  margin-top: 68px;
   font-weight: 600; }
 
 .textHP2 {
@@ -482,9 +494,12 @@ body {
   /*Homepage*/
   .textHP1 {
     font-size: 26px;
-    margin-top: 100px;
-    margin-left: 18px;
+    margin-left: 36px;
     padding-left: 10px; }
+
+  .top-section {
+    top: 2%;
+    padding: 0; }
 
   .section,
   .section2,

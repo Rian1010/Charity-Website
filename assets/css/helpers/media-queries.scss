@@ -1,5 +1,6 @@
 $phone-width: 576px;
 $tablet-width: 768px;
+$desktop-width: 992px;
 $large-desktop-width: 1200px;
 
 @mixin phone {
@@ -7,9 +8,13 @@ $large-desktop-width: 1200px;
         /*Homepage*/
         .textHP1 {
             font-size: 26px;
-            margin-top: 100px;
             margin-left: 36px;
             padding-left: 10px;
+        }
+
+        .top-section {
+            top: 2%;
+            padding: 0;
         }
 
         .section,
@@ -152,11 +157,30 @@ $large-desktop-width: 1200px;
          #submitBtn {
             right:  12em;
         }
+
+        .top-section {
+            top: 26%;
+            padding: 0;
+        }
+        .top-section-counter-BG {
+            top: 68%;
+            right: 20px;
+        }
     }
 }
 
 @include tablet;
 
+@mixin desktop {
+    @media(min-width: $desktop-width) {
+        .top-section-counter-BG {
+            top: 32%;
+            left: 0;
+        }
+    }
+}
+
+@include desktop;
 
 @mixin large-desktop {
     @media (min-width: $large-desktop-width) {
