@@ -139,38 +139,12 @@ window.onload = function() {
     scrollByPage5();
 };
 
-
-const COUNTER = document.getElementById("counter");
-const DEATHS = document.getElementById("death");
-var seconds = 0;
-var count = 0;
-
-document.addEventListener("DOMContentLoaded", countSeconds());
-
-function countSeconds() {
-    seconds++;
-    COUNTER.innerHTML = "<p>You've been here for <span class='blue-seconds'>" + seconds + "</span> seconds.</p>";
-}
-
-
-var time = setInterval(countSeconds, 1000);
-
-document.addEventListener("DOMContentLoaded", deaths());
-
-function deaths() {
-    count += 2;
-    DEATHS.innerHTML = "<p>Estimated amount of people that passed away: <span class='red-count'>" + count + "</span></p>"
-}
-
-var deathtimer = setInterval(deaths, 1000);
-
-
+/* ---------------------Death Counter--------------------- */
 
 const COUNTER2 = document.getElementById("counter2");
 const DEATHS2 = document.getElementById("death2");
 var seconds2 = 0;
 var count2 = 0;
-
 
 document.addEventListener("DOMContentLoaded", countSeconds2());
 
@@ -191,6 +165,46 @@ function deaths2() {
 
 var deathtimer2 = setInterval(deaths2, 1000);
 
+
+
+
+
+
+const COUNTER = document.getElementById("counter");
+const DEATHS = document.getElementById("death");
+
+var theMinutes = 0;
+var seconds = 0;
+var timeZero = 0;
+
+var count = 0;
+
+document.addEventListener("DOMContentLoaded", countSeconds());
+
+function countSeconds() {
+
+    COUNTER.innerHTML = "<p>You've been here for <span class='blue-seconds'>" + theMinutes + ":" + seconds + "</span> minutes.</p>";
+    DEATHS.innerHTML = "<p>Estimated amount of people that passed away: <span class='red-count'>" + count + "</span></p>"
+
+    seconds++;
+    count += 2;
+
+    if (seconds % 60 == 0) {
+        seconds = 0;
+        theMinutes++;
+        if (theMinutes < 10) {
+            theMinutes = "0" + theMinutes;
+        }
+    }
+    if (seconds < 10 || seconds == 0) {
+        seconds = "0" + seconds;
+    }
+}
+
+
+var time = setInterval(countSeconds, 1000);
+
+var deathtimer = setInterval(deaths, 1000);
 
 /*
 window.onload = function() {
@@ -219,10 +233,8 @@ window.addEventListener("scroll", function() {showFunction()});
 window.addEventListener("scroll", function() {showFunction2()});
 window.addEventListener("scroll", function() {showFunction3()});
 
-function showFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.getElementById("section2-text").style.display = "block";
-    } else {
+function showFunction()seconds, minutes {mentById("section2-text").style.display = "block";
+    mse {
         document.getElementById("section2-text").style.display = "none";
     }
 }
@@ -230,7 +242,7 @@ function showFunction() {
 function showFunction2() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         document.getElementById("section3-text").style.display = "block";
-    } else {
+    } else {m
         document.getElementById("section3-text").style.display = "none";
     }
 }
@@ -240,8 +252,8 @@ function showFunction3() {
         document.getElementById("section4-text").style.display = "block";
     } else {
         document.getElementById("section4-text").style.display = "none";
-    }
+    }.minutes
+.seconds
 }*/
-
 
 
