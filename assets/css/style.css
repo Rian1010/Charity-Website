@@ -114,7 +114,7 @@
   border-radius: 50%; }
 
 /*Aside Styles*/
-.social-media-button a {
+.social-media-button a, .social-media-button div {
   display: block;
   text-align: center;
   padding: 10px 5px 10px;
