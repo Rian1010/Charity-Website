@@ -59,42 +59,55 @@
         </nav>
     </header>
     <article class="contactBG">
-        <div class="container-fluid text-center contactHeading">
-            <h1>Got Any Questions to Ask Me or Causes That You Would Like to Be Included Onto This Website?</h1>
-            <h2>Please contact me by filling in the form below!</h2>
-        </div>
+        <div class="container text-center contactHeading">
+            <div class="row">
+                <div class="col-12 col-md-5 col-lg-4 contactMeBulletPoints" >
+                    <h1 class="header">Contact Me!</h1>
+                    <div class="d-block d-md-none">
+                        <h2 class="header2">For Any Requests or Questions, Please Fill In the Form, Below.</h2>
+                    </div>
+                    <ul class="contact-list d-none d-md-block">
+                        <li>Please contact me by filling in the form below!</li>
+                        <li>Ask me any questions that you have about the charities.</li>
+                        <li>Feel free to request me to include causes that you would know, onto this website.</li>
+                        <li>Receive a reply in under 24 hours!</li>
+                    </ul>
+                </div>
 
-        <div class="container-fluid contactForm">
-            <form onsubmit="return sendMail(this);">
-                <div class="row">
-                    <div class="forms center-form">
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" class="form-control text-box-length" maxlength="20" required />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="forms center-form">
-                        <label for="email">Email Address:</label>
-                        <input type="text" name="email" id="email" class="form-control text-box-length" cols="100" rows=" 5" required />
-                    </div>
-                </div>
-                <div class="row">
+                <div class="col-12 col-md-7 col-lg-8">
+                    <div class="contactForm">
+                        <form onsubmit="return sendMail(this);">
+                            <div class="row">
+                                <div class="forms center-form">
+                                    <label for="name">Name:</label>
+                                    <input type="text" name="name" id="name" class="form-control text-box-length" maxlength="20" required />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="forms center-form">
+                                    <label for="email">Email Address:</label>
+                                    <input type="text" name="email" id="email" class="form-control text-box-length" cols="100" rows=" 5" required />
+                                </div>
+                            </div>
+                            <div class="row">
 
-                    <div class="forms center-form">
-                        <label for="contactMessage">Please Enter A Message Below:</label>
-                        <textarea name="Message" id="contactMessage" class="form-control text-box-length" rows="5" required></textarea>
+                                <div class="forms center-form">
+                                    <label for="contactMessage">Please Enter A Message Below:</label>
+                                    <textarea name="Message" id="contactMessage" class="form-control text-box-length" rows="5" required></textarea>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="container">
+                            <div class="row">
+                                <div class="formsSubmit center-form">
+                                    <input type="submit" value="Submit" id="submitBtn" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </form>
-            <div class="container">
-                <div class="row">
-                    <div class="formsSubmit center-form">
-                        <input type="submit" value="Submit" id="submitBtn" />
-                    </div>
-               </div>
             </div>
         </div>
-
     </article>
 
 

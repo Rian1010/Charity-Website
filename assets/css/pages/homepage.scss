@@ -10,11 +10,12 @@ body {
 .red-count {
     color: red;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 27px;
 }
 
 .top-section {
-    top: 10%;
+    /*top: 10%;*/
+    top: 0;
 }
 
 .top-section-counter-BG {
@@ -23,7 +24,8 @@ body {
     border: 2px solid;
     color: $white;
     position: relative;
-    top: 32%;
+    top: -15%;
+    /*top: 32%;*/
 }
 
 .header {

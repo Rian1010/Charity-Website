@@ -165,6 +165,33 @@ function deaths() {
 var deathtimer = setInterval(deaths, 1000);
 
 
+
+const COUNTER2 = document.getElementById("counter2");
+const DEATHS2 = document.getElementById("death2");
+var seconds2 = 0;
+var count2 = 0;
+
+
+document.addEventListener("DOMContentLoaded", countSeconds2());
+
+function countSeconds2() {
+    seconds2++;
+    COUNTER2.innerHTML = "<p>You've been here for " + seconds2 + " seconds.</p>";
+}
+
+
+var time2 = setInterval(countSeconds2, 1000);
+
+document.addEventListener("DOMContentLoaded", deaths2());
+
+function deaths2() {
+    count2 += 2;
+    DEATHS2.innerHTML = "<p>Estimated amount of people that passed away: <span class='red-count'>" + count2 + "</span></p>"
+}
+
+var deathtimer2 = setInterval(deaths2, 1000);
+
+
 /*
 window.onload = function() {
 

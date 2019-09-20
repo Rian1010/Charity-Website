@@ -114,10 +114,10 @@
   border-radius: 50%; }
 
 /*Aside Styles*/
-.social-media-button a, .social-media-button div {
+.social-media-button a {
   display: block;
   text-align: center;
-  padding: 16px;
+  padding: 10px 5px 10px;
   transition: all 0.3s ease;
   color: #FFFFFF;
   border-top-right-radius: 50px;
@@ -140,7 +140,6 @@
 .donateButtonStyleHP {
   height: 70px;
   font-size: 35px;
-  opacity: 0.7;
   border: solid #FFF;
   border-radius: 10px;
   transition: 0.2s;
@@ -265,7 +264,8 @@
   width: 100%;
   height: 300px;
   margin-top: 58px;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  position: static; }
 
 .footer-list {
   list-style: none;
@@ -388,18 +388,20 @@ body {
 .red-count {
   color: red;
   font-weight: 600;
-  font-size: 36px; }
+  font-size: 27px; }
 
 .top-section {
-  top: 10%; }
+  /*top: 10%;*/
+  top: 0; }
 
 .top-section-counter-BG {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(225, 0, 0, 0.3);
   border-radius: 2%;
+  border: 2px solid;
   color: #FFFFFF;
   position: relative;
-  top: 68%;
-  right: 20px; }
+  top: -15%;
+  /*top: 32%;*/ }
 
 .header {
   font-weight: 800; }
@@ -479,6 +481,15 @@ body {
 .contactHeading {
   padding-top: 100px; }
 
+/*.contactBackground {
+    background-color: $BodyBlue;
+    width: 100%;
+    height: 45vh;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    overflow: hidden;
+}*/
 .contactBG {
   width: 100%;
   height: 100vh;
@@ -489,6 +500,13 @@ body {
   background-position: center;
   background-size: cover;
   background-image: url("../images/Contact-Image/Hands-Charity.png"); }
+
+.contact-list {
+  list-style: none;
+  padding: 0px; }
+
+.header2 {
+  font-weight: 600; }
 
 @media (min-width: 576px) {
   /*Homepage*/
@@ -529,6 +547,9 @@ body {
     position: relative;
     padding-bottom: 37px; }
 
+  .top-section-counter-BG {
+    top: 0; }
+
   .chartText {
     margin-left: 10%; }
 
@@ -542,7 +563,8 @@ body {
     height: 110px; }
 
   .text-box-length {
-    width: 500px; }
+    width: 300px;
+    margin-left: 5px; }
 
   .textHP2 {
     padding-left: 60px; }
@@ -600,6 +622,14 @@ body {
   .section3 {
     top: 60%; }
 
+  .top-section {
+    top: 10%;
+    padding: 0; }
+
+  .top-section-counter-BG {
+    top: 68%;
+    right: 20px; }
+
   .chartText {
     text-align: center; }
 
@@ -611,10 +641,28 @@ body {
     color: #000000; }
 
   .text-box-length {
-    width: 650px; }
+    width: 400px; }
 
   #submitBtn {
-    right: 12em; } }
+    right: 12em; }
+
+  .contactMeBulletPoints {
+    border: 2px solid;
+    box-shadow: -10px 10px;
+    height: 300px;
+    top: 3em;
+    background-color: rgba(255, 250, 250, 0.7); }
+
+  .contact-list {
+    list-style: square;
+    padding-left: 40px; } }
+@media (min-width: 992px) {
+  .top-section-counter-BG {
+    top: 5%;
+    left: 0; }
+
+  .top-section {
+    top: 4%; } }
 @media (min-width: 1200px) {
   /*Homepage*/
   .hpimg-2 {
@@ -678,7 +726,7 @@ body {
     padding-right: 50px; }
 
   .text-box-length {
-    width: 1100px; }
+    width: 780px; }
 
   #submitBtn {
     right: 40em; } }
