@@ -1,26 +1,34 @@
 const COUNTER = document.getElementById("counterStats");
 const DEATHS = document.getElementById("deathStats");
+
+var theMinutes = 0;
 var seconds = 0;
+
 var count = 0;
 
 document.addEventListener("DOMContentLoaded", countSeconds());
 
 function countSeconds() {
-    seconds++;
-    COUNTER.innerHTML = "<p>You've been here for <span class='blue-seconds-statistics'>" + seconds + "</span> seconds.</p><br/>";
-}
 
+    COUNTER.innerHTML = "<p>You've been here for <span class='blue-seconds'>" + theMinutes + ":" + seconds + "</span> minutes.</p>";
+    DEATHS.innerHTML = "<p>Estimated amount of people that passed away: <span class='red-count'>" + count + "</span></p>"
+
+    seconds++;
+    count += 2;
+
+    if (seconds % 60 == 0) {
+        seconds = 0;
+        theMinutes++;
+        if (theMinutes < 10) {
+            theMinutes = "0" + theMinutes;
+        }
+    }
+    if (seconds < 10 || seconds == 0) {
+        seconds = "0" + seconds;
+    }
+}
 
 var time = setInterval(countSeconds, 1000);
-
-document.addEventListener("DOMContentLoaded", deaths());
-
-function deaths() {
-    count += 2;
-    DEATHS.innerHTML = "<br/><p>Estimated amount of people that passed away: <span class='red-count-statistics'>" + count + "</span></p>"
-}
-
-var deathtimer = setInterval(deaths, 1000);
 
 
 queue()

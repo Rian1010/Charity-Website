@@ -141,41 +141,11 @@ window.onload = function() {
 
 /* ---------------------Death Counter--------------------- */
 
-const COUNTER2 = document.getElementById("counter2");
-const DEATHS2 = document.getElementById("death2");
-var seconds2 = 0;
-var count2 = 0;
-
-document.addEventListener("DOMContentLoaded", countSeconds2());
-
-function countSeconds2() {
-    seconds2++;
-    COUNTER2.innerHTML = "<p>You've been here for <span class='blue-seconds'>" + seconds2 + "</span> seconds.</p>";
-}
-
-
-var time2 = setInterval(countSeconds2, 1000);
-
-document.addEventListener("DOMContentLoaded", deaths2());
-
-function deaths2() {
-    count2 += 2;
-    DEATHS2.innerHTML = "<p>Estimated amount of people that passed away: <span class='red-count'>" + count2 + "</span></p>"
-}
-
-var deathtimer2 = setInterval(deaths2, 1000);
-
-
-
-
-
-
 const COUNTER = document.getElementById("counter");
 const DEATHS = document.getElementById("death");
 
 var theMinutes = 0;
 var seconds = 0;
-var timeZero = 0;
 
 var count = 0;
 
@@ -202,6 +172,44 @@ function countSeconds() {
 }
 
 var time = setInterval(countSeconds, 1000);
+
+
+
+/* ---------------------Second Death Counter--------------------- */
+
+
+
+const COUNTER2 = document.getElementById("counter2");
+const DEATHS2 = document.getElementById("death2");
+
+var theMinutes2 = 0;
+var seconds2 = 0;
+
+var count2 = 0;
+
+document.addEventListener("DOMContentLoaded", countSeconds2());
+
+function countSeconds2() {
+
+    COUNTER2.innerHTML = "<p>You've been here for <span class='blue-seconds'>" + theMinutes2 + ":" + seconds2 + "</span> minutes.</p>";
+    DEATHS2.innerHTML = "<p>Estimated amount of people that passed away: <span class='red-count'>" + count2 + "</span></p>"
+
+    seconds2++;
+    count2 += 2;
+
+    if (seconds2 % 60 == 0) {
+        seconds2 = 0;
+        theMinutes2++;
+        if (theMinutes2 < 10) {
+            theMinutes2 = "0" + theMinutes2;
+        }
+    }
+    if (seconds2 < 10 || seconds2 == 0) {
+        seconds2 = "0" + seconds2;
+    }
+}
+
+var time2 = setInterval(countSeconds2, 1000);
 
 /*
 window.onload = function() {
