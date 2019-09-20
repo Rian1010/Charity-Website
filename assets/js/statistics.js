@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", countSeconds());
 function countSeconds() {
 
     COUNTER.innerHTML = "<p>You've been here for <span class='blue-seconds'>" + theMinutes + ":" + seconds + "</span> minutes.</p>";
-    DEATHS.innerHTML = "<p>Estimated amount of people that passed away: <span class='red-count'>" + count + "</span></p>"
+    DEATHS.innerHTML = "<p>Estimated amount of people that passed away: <span class='red-count-statistics'>" + count + "</span></p>"
 
     seconds++;
     count += 2;
