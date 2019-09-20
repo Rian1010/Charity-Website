@@ -201,10 +201,7 @@ function countSeconds() {
     }
 }
 
-
 var time = setInterval(countSeconds, 1000);
-
-var deathtimer = setInterval(deaths, 1000);
 
 /*
 window.onload = function() {
