@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,800&display=swap');
+
 .chartText {
     color: $white;
 }
@@ -12,7 +14,50 @@
     color: $white;
 }
 
+.death-seconds {
+    text-align: center;
+    color: $white;
+    font-weight: 600;
+}
+
 .graph-color {
     color: $white;
 }
 
+#statsBox {
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/african-orphan.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(1, 1, 1, 0), rgba(0, 0, 0, 0.5));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.theCounters {
+    color: white;
+    text-align: center;
+    position: absolute;
+    display: flex;
+}
+
+#counterStats {
+    padding: 40px;
+    font-size: 18px;
+}
+
+#deathStats {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.red-count-statistics {
+    color: red;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.blue-seconds-statistics {
+    color: blue;
+    font-weight: 600;
+}

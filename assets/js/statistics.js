@@ -1,4 +1,27 @@
-//unfinished
+const COUNTER = document.getElementById("counterStats");
+const DEATHS = document.getElementById("deathStats");
+var seconds = 0;
+var count = 0;
+
+document.addEventListener("DOMContentLoaded", countSeconds());
+
+function countSeconds() {
+    seconds++;
+    COUNTER.innerHTML = "<p>You've been here for <span class='blue-seconds-statistics'>" + seconds + "</span> seconds.</p><br/>";
+}
+
+
+var time = setInterval(countSeconds, 1000);
+
+document.addEventListener("DOMContentLoaded", deaths());
+
+function deaths() {
+    count += 2;
+    DEATHS.innerHTML = "<br/><p>Estimated amount of people that passed away: <span class='red-count-statistics'>" + count + "</span></p>"
+}
+
+var deathtimer = setInterval(deaths, 1000);
+
 
 queue()
     .defer(d3.json, "data/data.json")
@@ -31,8 +54,8 @@ function show_country_data(error, countriesData) {
     var country_dim = ndx.dimension(dc.pluck('country'));
 
 
-    // GDP per Capita Chart 
-    
+    // GDP per Capita Chart
+
     var draw_barchart_gdp_country = country_dim.group().reduceSum(dc.pluck('gdp'));
     dc.barChart('#gdp-per-capita-chart')
         .width(725)
@@ -48,8 +71,8 @@ function show_country_data(error, countriesData) {
         .yAxis().ticks(8);
 
 
-    // Gini Coefficient Chart 
-    
+    // Gini Coefficient Chart
+
     var country_dim2 = ndx.dimension(dc.pluck('country'));
     var gini_coefficient_dim = country_dim2.group().reduceSum(dc.pluck('gini-coefficient'));
     dc.barChart('#gini-coefficient-chart')

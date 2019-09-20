@@ -164,7 +164,17 @@ $large-desktop-width: 1200px;
 
         .graph-color {
             color: $black;
-        } // Contact Page
+        }
+        #statsBox {
+            height: 300px;
+        }
+        #counterStats {
+            font-size: 27px;
+        }
+        #deathStats {
+            font-size: 27px;
+        }
+// Contact Page
         .text-box-length {
             width: 400px;
         }
@@ -277,6 +287,21 @@ $large-desktop-width: 1200px;
         } //Statistics Page
         #statistics-article {
             padding-right: 50px;
+        }
+        .theCounters {
+            top: 0%;
+        }
+        #statsBox {
+            height: 600px;
+        }
+        #counterStats {
+            font-size: 62px;
+        }
+        #deathStats {
+            font-size: 62px;
+        }
+        .red-count-statistics {
+            font-size: 65px;
         } // Contact Page
         .text-box-length {
             width: 780px;

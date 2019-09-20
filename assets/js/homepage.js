@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", countSeconds());
 
 function countSeconds() {
     seconds++;
-    COUNTER.innerHTML = "<p>You've been here for " + seconds + " seconds.</p>";
+    COUNTER.innerHTML = "<p>You've been here for <span class='blue-seconds'>" + seconds + "</span> seconds.</p>";
 }
 
 
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", countSeconds2());
 
 function countSeconds2() {
     seconds2++;
-    COUNTER2.innerHTML = "<p>You've been here for " + seconds2 + " seconds.</p>";
+    COUNTER2.innerHTML = "<p>You've been here for <span class='blue-seconds'>" + seconds2 + "</span> seconds.</p>";
 }
 
 
