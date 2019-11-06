@@ -62,6 +62,30 @@ about specific countries and get linked to the 'Donate' page to find a charity o
     - Allows a user to send the developer any questions or suggestions that one may have about the website
 
 ## Logic
+The logic of this project is contained in all of the JavaScript files, which are located in the js folder that is in the assets folder.
+
+Various JavaScript effects have been implemented into this project in order to provide a pleasant user experience and make
+user interactions visually appealing and satisfactory. As for the homepage, I have used multiple functions to include the desired functionalities.
+
+One example for it is that I used the constants, readBtn, more and dots to let a user trigger events on the web page. I connected the readBtn variable to an event listener called 'click' and
+concatenated each of the three variables to innerText or style with a property, which I set equal to a variable to accomplish the effect that I wanted to bring forth. Furthermore,
+I repeated the same procedure for another section. The purpose of this was to let the user be able to press a button, in order to show or hide texts.
+
+Secondly, I used the constant called, textEffect and the window object with scrollY, so that most of the texts and buttons would only fade in, while sliding in from the left, on scroll.
+I attached the window object to the 'scroll' event listener to automatically use the scrollByPage() function in order to change the styles through an if statement. This process was repeated multiple
+times for sections at different scrolling positions and added else statements to those.
+
+Thirdly, I made a death counter per second. One line of text, is supposed to show the amount of time that has passed, since a user has entered the page and another line is meant to display the amount of
+people that are estimated to have passed away each second. The way I did this was to use 'document.addEventListener("DOMContentLoaded", countSeconds());' to have the counts start when the page has loaded and
+connect it to the countSeconds() function.
+The 'COUNTER' and 'DEATHS' constants are used to implement the desired text on the homepage. Moreover, the 'seconds' variable is set as 'seconds++', inside the function to increment numbers by one
+and the 'count' variable is set to be incremented by two each second.
+The if statements make sure that once the the seconds have counted up to 60, it immediately changes to '00'. Additionally, the seconds and minutes got set to display a '0'
+in front of any number under 10, through the 'seconds' and 'theMinutes' variables in the if statements. Finally, the time variable is set to 'setInterval(countSeconds, 1000);', so that the displayed numbers
+get incremented by each second to show the time and number of deaths. In addition, I have done the exact same thing for the time and death counters at the top of the 'Statistics' page.
+
+
+
 
 ## Style and Layout
 -__Overall Style__-
@@ -107,6 +131,7 @@ Shows social media buttons on phone screen sizes that link to social media pages
 #### Style
 
 #### Logic
+
 
 ## Testing
 #### User Stories
