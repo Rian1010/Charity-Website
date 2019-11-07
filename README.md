@@ -85,7 +85,32 @@ in front of any number under 10, through the 'seconds' and 'theMinutes' variable
 get incremented by each second to show the time and number of deaths. In addition, I have done the exact same thing for the time and death counters at the top of the 'Statistics' page.
 
 
+In the donate.js file, I started off by adding the functionality of opening the collapsible sections for the charity organisations on the 'Donate' page.
 
+The variables that were utilised are the following:
+- var collapse - a targetted class name, which is use to add the 'click' event listener on to connect it to a function
+- var i - used to iterate through all of the elements with the same class of the 'collapse' variable
+- var content - used to target the next sibling element to cause the collapsible bars to open up, when clicked and close again, if clicked again
+
+A for loop was used to iterate through all of the elements with the same class. The collapse variable was connected to a 'click' event listener with the 'i' variable to
+represent index numbers inside of it. Then, the symbol class was targeted to replace the 'charity-collapse' class, so that the plus symbol would change to a minus symbol when clicked,
+and back to a plus sign, after being clicked again. Through the if and else statement, I edited the style of the content to cause the scrollHeight property to appear and disappear to make it
+look like the collapsible bars open, when clicked and close, if clicked again.
+
+
+Furthermore, for the calculator to work, the following constants were used:
+- const btns - connected it to each of the buttons with the, 'calcBtn' class
+- const equalBtn - connected to the equal button of the calculator
+- const clearBtn - connected to the clear button on the calculator
+- const screen - connected to the box at the top of the calculator, which is supposed to display the calculations
+
+A for loop was used to iterate through each if the elements with a class of 'calcBtn'. A 'click' event listener was used to trigger a function that targets all the buttons with the attributes
+called 'data-num' and used 'screen.value += number;' to show the clicked numbers and calculation appear inside of the box at the top of the calculator.
+
+The equal button was also given an event listener called, 'click' and triggered a function that consists of if and else statements. The state that if the value of the screen is empty, then the result
+should be 0. Otherwise, if numbers have been inputed, these will be evaluated and calculated.
+
+The clear button has
 
 ## Style and Layout
 -__Overall Style__-
