@@ -112,6 +112,9 @@ should be 0. Otherwise, if numbers have been inputed, these will be evaluated an
 
 The clear button has
 
+
+Finally, the dragElement
+
 ## Style and Layout
 -__Overall Style__-
 The website should have four different web pages

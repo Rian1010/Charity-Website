@@ -51,24 +51,25 @@ window.onload = function() {
             screen.value += number;
 
         });
-
-        equalBtn.addEventListener('click', function() {
-
-            if (screen.value === '') {
-                screen.value = '0'
-
-            }
-            else {
-                let value = eval(screen.value);
-                screen.value = value;
-                //screenTotal.value = value + "+";
-            }
-        });
-
-        clearBtn.addEventListener('click', function() {
-            screen.value = '';
-        });
     }
+
+    equalBtn.addEventListener('click', function() {
+
+        if (screen.value === '') {
+            screen.value = '0'
+        }
+
+        else {
+            let value = eval(screen.value);
+            screen.value = value;
+            //screenTotal.value = value + "+";
+        }
+    });
+
+    clearBtn.addEventListener('click', function() {
+        screen.value = '';
+    });
+
 };
 
 dragElement(document.getElementById("calculator-wrapper"));
