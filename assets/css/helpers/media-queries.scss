@@ -9,6 +9,7 @@ $large-desktop-width: 1200px;
         .textHP1 {
             font-size: 26px;
             margin-left: 36px;
+            margin-top: 36px;
             padding-left: 10px;
         }
 
@@ -27,6 +28,10 @@ $large-desktop-width: 1200px;
             color: $white;
             position: relative;
             top: 56px;
+        }
+
+        .text {
+            font-size: 26px;
         }
 
         .text2 {
@@ -106,6 +111,10 @@ $large-desktop-width: 1200px;
             position: relative;
         }
 
+        .text2 {
+            font-size: 26px;
+        }
+
         .section1 {
             bottom: 20px;
             padding-top: 10%;
@@ -127,10 +136,6 @@ $large-desktop-width: 1200px;
             padding-bottom: 197px;
         }
 
-        .textHP1 {
-            margin-top: 0;
-        }
-
         .section {
             top: 40%;
         }
@@ -146,7 +151,7 @@ $large-desktop-width: 1200px;
 
         .top-section {
             top: 10%;
-            padding: 0;
+            padding-top: 3%;
         }
 
         .top-section-counter-BG {
@@ -231,15 +236,15 @@ $large-desktop-width: 1200px;
         }
 
         .text {
-            font-size: 30px;
+            font-size: 28px;
         }
 
         .text2 {
-            font-size: 2em;
+            font-size: 28px;
         }
 
         .textGDP {
-            font-size: 2em;
+            font-size: 28px;
         }
 
         .textHP1 {

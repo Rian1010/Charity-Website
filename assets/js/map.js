@@ -160,7 +160,7 @@ function initMap() {
     });
 
 
-    var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var contentString = '<div id="content">' +
         '</div>' +
         '<h2 id="markerInfoHeading">Syria</h2>' +
@@ -988,6 +988,6 @@ function initMap() {
     marker31.addListener('click', function() {
         infowindow31.open(map, marker31);
     });
-    
+
 }
 initMap();

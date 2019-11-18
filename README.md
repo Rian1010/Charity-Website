@@ -110,10 +110,22 @@ called 'data-num' and used 'screen.value += number;' to show the clicked numbers
 The equal button was also given an event listener called, 'click' and triggered a function that consists of if and else statements. The state that if the value of the screen is empty, then the result
 should be 0. Otherwise, if numbers have been inputed, these will be evaluated and calculated.
 
-The clear button has
+The clear button has an 'click' event listener, which is connected to a function that turns the value of the calculator screen empty. So, once the button is clicked, the screen turns empty.
+
+Finally, the dragElement has the following variables:
+- var pos1 = 0,
+        pos2 = 0,
+        pos3 = 0,
+        pos4 = 0;
 
 
-Finally, the dragElement
+
+For the Google Maps API, on the 'Map' page, the JavaScript code is in the map.js file.
+
+The initMap() function contains all of the code for the displayed map. Inside of it, variables with the names of each marked country have been added. The serve the purpose of latitudes and longitudes of each
+country. Furthermore, the map variable causes the initial zoom to be at 2.5 and its center to be at the position of syria, as it is close to the middle of the map. In addition, "var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';" was used
+as an array in order to label the markers on the map. Then, variables called contentString were used to use html for the text in the window boxes of the markers.  Numbers got attached in their variable names to indicate that
+different info boxes have been targeted. The variables with the name of 'infowindow' in them, enabled the contentString variables to be the displayed content of the info windows and a max width of 200 has been given to the each of them.
 
 ## Style and Layout
 -__Overall Style__-
@@ -157,6 +169,10 @@ Shows social media buttons on phone screen sizes that link to social media pages
 
 ## Project approach and difficulties
 #### Style
+In order to come up with a style for it, I had to think about the topic, I wanted to work on and what functionalities there are that could be added with JavaScript to deliver enough information about the topic in 
+a way that gives users a good user experience. So, I aimed to let people know what the website was all about on the cover of the homepage. In order to make one's experience unique, I caused each background image to be 
+fixed, as one scrolls down and included a linear-gradient on top of the pictures to make them look better. Furthermore, the death counter and the box it is in are red to visually represent something bad, as this colour is 
+often used for danger or unpleasant things. 
 
 #### Logic
 

@@ -21,6 +21,7 @@ body {
 .top-section {
     /*top: 10%;*/
     top: 0;
+    padding: 1em 0.5em 0;
 }
 
 .top-section-counter-BG {
@@ -29,7 +30,7 @@ body {
     border: 2px solid;
     color: $white;
     position: relative;
-    top: -15%;
+    top: -9%;
     /*top: 32%;*/
 }
 
@@ -53,6 +54,12 @@ body {
 }
 
 .text2 {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.text2 {
+    font-size: 1em;
     font-weight: 600;
 }
 

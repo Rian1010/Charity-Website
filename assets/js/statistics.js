@@ -6,7 +6,7 @@ var seconds = 0;
 
 var count = 0;
 
-document.addEventListener("DOMContentLoaded", countSeconds());
+document.addEventListener("DOMContentLoaded", countSeconds);
 
 function countSeconds() {
 
@@ -30,7 +30,6 @@ function countSeconds() {
 
 var time = setInterval(countSeconds, 1000);
 
-
 queue()
     .defer(d3.json, "data/data.json")
     .defer(d3.json, "data/data2.json")
@@ -47,11 +46,6 @@ function createDataVis(error, countriesData, countriesData2, countriesData3, cou
     show_country_data2(error, countriesData2);
     show_country_data3(error, countriesData3);
     show_country_data4(error, countriesData4);
-
-    //show_country_selector(ndx);
-    //show_country_data(ndx);
-
-
 
     dc.renderAll();
 }
