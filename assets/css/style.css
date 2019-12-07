@@ -594,6 +594,10 @@ body {
     padding-right: 10px;
     color: #FFFFFF; }
 
+  .donateButtonStyleHP {
+    font-size: 25px;
+    height: 49px; }
+
   .MotherTeresaQuote {
     top: 75px;
     font-size: 20px;

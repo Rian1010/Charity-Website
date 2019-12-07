@@ -174,17 +174,50 @@ a way that gives users a good user experience. So, I aimed to let people know wh
 fixed, as one scrolls down and included a linear-gradient on top of the pictures to make them look better. Furthermore, the death counter and the box it is in are red to visually represent something bad, as this colour is 
 often used for danger or unpleasant things. 
 
+Moreover, the map page has a simple style with the only purpose of displaying an interactive maps with simple instructions and a heading above it.
+
 #### Logic
 
 
 ## Testing
 #### User Stories
+1. As a person who is visiting the website, I want to know how I could help people in need and why they need my help. 
+> - Scroll through the homepage to receive quick information about how countries fall into poverty or war and find out how one could help 
+2. As a person who is visiting the website, I want to know what countries are offered to be donated to on the website with quick information about them
+> - Click on the 'Map' button in the navigation bar to find an interactive map with markers all over it, each providing short details of why the country currently requires help
+3. As a person who is visiting the website, I want know see data and explanation of that data in order to compare the conditions of countries that need help 
+> - Click on the 'Statistics' button in the navigation bar to find interactive graphs with explanation beneath them and click on the chart bars to compare (The graphs are not available on mobile or tablet devices)
+4. As a person who is visiting the website, I want to have a wide selection of good charity organisations to choose from to help the country/countries that I want to help and keep track of how much I am donating
+> - Click on the 'Donate' button in the navigation bar to find information of various countries in need with buttons that link to websites of charity organisations
+> - Click on the calculator button in the fixed aside section, to the left to calculate how much you want to donate
+5. As a person who is visiting the website, I want to be able to contact to creator of the website to ask questions about the countries in need or request to more charity organisations, if I have some in mind
+> - Click on the 'Contact' button in the navigation bar to send me an email and information of who you are and how I can contact you back
+6. As a person who is visiting the website, I want to follow this page through social media to see the creator's work for charity organisations
+> - Click on the social media icons in the footer on mobile and tablet or in the aside bar on desktop
+
 
 #### Different browsers, mobile, desktop
 
 #### Code validation
 
 ## Deployment
+The site that it has been deployed on on GitHub pages can be viewed here: [live preview of project](https://rian1010.github.io/Charity-Website/) 
+
+#### Steps on how to push it:
+git add .
+git status (to check if the correct file/s were added or not)
+git commit -m "a short description of what has been updated"
+git remote add origin
+git push -u origin master
+Insert Github username
+Insert Github password
+
+#### Steps on the final deployment:
+Go to the github repository
+Click on 'Settings'
+Scroll down to the 'Github Pages' section
+Set the source to 'master branch'
+The link, at which the site is published should appear
 
 ## Content
 #### Images

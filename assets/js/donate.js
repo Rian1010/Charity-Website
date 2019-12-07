@@ -4,7 +4,6 @@ var i;
 for (i = 0; i < collapse.length; i++) {
     collapse[i].addEventListener("click", function () {
         this.classList.toggle("symbol");
-        console.log('the toggle for the symbol is working');
         var content = this.nextElementSibling;
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
@@ -61,7 +60,6 @@ equalBtn.addEventListener('click', function () {
     else {
         let value = eval(screen.value);
         screen.value = value;
-        //screenTotal.value = value + "+";
     }
 });
 
@@ -79,7 +77,7 @@ function dragElement(elmnt) {
         pos3 = 0,
         pos4 = 0;
     if (document.getElementById(elmnt.id + "header")) {
-        // if present, the header is where you move the DIV from:
+        // if present, the header is where one moves the DIV from:
         document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
     }
     else {
