@@ -3,27 +3,28 @@
 .donateButtonStyleHP {
     height: 41px;
     font-size: 20px;
-    border: solid #FFF;
-    border-radius: 10px;
-    transition: 0.2s;
-    background-image: linear-gradient(#17a2b8, #01557b);
-    color: $white;
     border: none;
+    border-radius: 10px;
+    background-image: $buttonBG;
+    color: $white;
     margin: 5% 0;
     font-weight: 600;
 }
 
 .donateButtonStyleHP:hover {
-    opacity: 1;
-    border: solid #FFF;
     color: $white;
+    background-image: $buttonHoverBG;
 }
 
 .readBtn {
-    background-image: linear-gradient(#17a2b8, #01557b);
+    background-image: $buttonBG;
     color: white;
     border: none;
     font-weight: 600;
+}
+
+.readBtn:hover {
+    background-image: $buttonHoverBG;
 }
 
 //Donate Page

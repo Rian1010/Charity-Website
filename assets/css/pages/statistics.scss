@@ -20,6 +20,19 @@
     font-weight: 600;
 }
 
+.row-flex {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: $noticeYellow;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.notice-text {
+    margin: 0;
+}
+
 .graph-color {
     color: $black;
 }

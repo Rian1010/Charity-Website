@@ -19,19 +19,16 @@ body {
 }
 
 .top-section {
-    /*top: 10%;*/
     top: 0;
     padding: 1em 0.5em 0;
 }
 
 .top-section-counter-BG {
-    background-color:  rgba(225, 0, 0, 0.3);
-    border-radius: 2%;
+    background-color:  $counterBG;
     border: 2px solid;
     color: $white;
     position: relative;
     top: -9%;
-    /*top: 32%;*/
 }
 
 .header {
@@ -84,5 +81,4 @@ body {
 
 .underline {
     text-decoration: underline;
-
 }

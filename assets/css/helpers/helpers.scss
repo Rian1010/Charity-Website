@@ -42,7 +42,6 @@
     position: relative;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 2%;
     height: auto;
 }
 
@@ -76,30 +75,6 @@
 .text2 {
     @extend %textStyling
 }
-
-%regularBGSizeAndPos {
-    left: 25%;
-    background-size: cover;
-    position: relative;
-    background-position: center;
-    border-radius: 3%;
-
-}
-
-#hptextimg-1 {
-    @extend %regularBGSizeAndPos
-}
-
-#hptextimg-4 {
-    @extend %regularBGSizeAndPos
-}
-
-.MotherTeresaImg {
-    @extend %regularBGSizeAndPos
-}
-
-
-
 
 /*Charity Page*/
 
