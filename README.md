@@ -248,6 +248,40 @@ The images in index.html were obtained from the following websites:
 #### Images on statistics.html
 - [pxhere](https://pxhere.com/en/photo/1053497)
 
+#### Content information on donate.html
+- [Muslim Global Relief](https://www.muslimglobalrelief.org/syria-emergency-appeal/?gclid=Cj0KCQjw3PLnBRCpARIsAKaUbgvUScWalFRhKSaO9QfHb4Yqc6ELL2ZnKetlWrllvhLzkHA6GlKolYoaAh5HEALw_wcB)
+- [Save the Children](https://www.savethechildren.org/us/what-we-do/where-we-work/asia/indonesia)
+- [SOS Children's Village](https://www.sos-childrensvillages.org/where-we-help/asia/uzbekistan)
+- [Muslim Global Relief](https://www.muslimglobalrelief.org/yemen-appeal/?gclid=Cj0KCQjw3PLnBRCpARIsAKaUbgvNFvUQUUdqdHrAim-qYZFtI6PKp01Pg_wEmg5umdZLj-Z_PG3wj3waAkYiEALw_wcB)
+- [Mercy Corps](https://www.mercycorps.org.uk/countries/kyrgyzstan)
+- [Safer World](https://www.saferworld.org.uk/bangladesh/bangladesh?gclid=Cj0KCQjw3PLnBRCpARIsAKaUbgvOdMX2IhVG6Mf2eu34327kK0FJ6bFemejU_f3AIDNUi65qwB7FZTQaAhUbEALw_wcB)
+- [Caritas](https://www.caritas.org/where-caritas-work/asia/tajikistan/)
+- [Educate for Life](https://www.educateforlife.org.uk/?gclid=Cj0KCQjwov3nBRDFARIsANgsdoHuIokzfAvWhEunEczs1grnd4VH6rh0tflLgN2qm_stAsozX9pVWR8aApWpEALw_wcB)
+- [Save the Children](https://www.savethechildren.org/us/what-we-do/where-we-work/africa/democratic-republic-of-congo)
+- [Save the Children](https://www.savethechildren.org/us/what-we-do/where-we-work/africa/mozambique)
+- [Care](https://www.care.org/country/mozambique)
+- [Aid for Africa](https://www.aidforafrica.org/?cat=120&type=member-charities)
+- [Child Voice](https://childvoice.org/where/?gclid=Cj0KCQjw3PLnBRCpARIsAKaUbgsudzI2Kw11ir_0bA5hQE_BUiYRBA0573u7A-5d6rHbzD73Xn0X5SQaAnezEALw_wcB#nigeria)
+- [International Rescue Committee](https://www.rescue-uk.org/country/zimbabwe?gclid=CjwKCAjw__fnBRANEiwAuFxETzsg0b6hsHly42kNSUhj5sHudZnrvFQmF1xaWccGOKwNjubah3RAgBoC8xEQAvD_BwE)
+- [Ripple Africa](https://www.rippleafrica.org/)
+- [Save the Children](https://www.savethechildren.org/us/what-we-do/where-we-work/africa/somalia)
+- [Greater Good SA](http://www.greatergoodsa.co.za/)
+- [SOS Childrens Villages](https://www.sos-childrensvillages.org/where-we-help/africa/botswana)
+- [Charity Water](https://www.charitywater.org/our-projects/south-america/bolivia)
+- [Save the Children](https://www.savethechildren.org/us/what-we-do/where-we-work/latin-america/bolivia)
+- [Guyana Medical Relief](https://guyanamedicalrelief.com/)
+- [We](https://www.we.org/we-villages/where-we-work/ecuador/)
+- [Haiti Now](https://www.haiti-now.org/?gclid=CjwKCAjw__fnBRANEiwAuFxET2zCLeE2kcl3GCy02NX7mQCljwT0KdOlE_0BkoV2Wk1QZ-ocFomxcBoCosQQAvD_BwE)
+- [Action Aid](https://www.actionaid.org.uk/about-us/where-we-work/brazil)
+- [Outreach Moldova](https://www.outreachmoldova.org/)
+- [Ukraine Charity](https://www.ukrainecharity.org/)
+- [SOS Children's Villages](https://www.sos-childrensvillages.org/where-we-help/europe/kosovo)
+- [Love Life Hope](http://lovelifehope.com/)
+- [DETROIT MOM](https://detroit.citymomsblog.com/detroit-charities/)
+- [American Red Cross](https://www.redcross.org/)
+- [Ronald McDonald House Charities](http://www.rmhc.org.au/tax2019?gclsrc=aw.ds&gclid=Cj0KCQjwov3nBRDFARIsANgsdoGNpLUkE8DFjiOWXXlHrwg68jQDcvTxap9pOu77qWQIL04nghRgHhgaAvZVEALw_wcB&gclsrc=aw.ds)
+- [Australian Red Cross](https://www.redcross.org.au/)
+
 #### Images on donate.html
 - [flickr](https://www.flickr.com/photos/syriafreedom/21076307990)
 - [Pixabay](https://pixabay.com/photos/children-uganda-africa-poverty-663392/)
@@ -255,10 +289,8 @@ The images in index.html were obtained from the following websites:
 - [Blogspot](http://mad2145651.blogspot.com/2018/11/blog-post-9-influential-image.html)
 - [Wikipedia](https://de.wikipedia.org/wiki/Datei:Gona%C3%AFves,_Haiti.JPG)
 - [Cardiff Uni's Student Paper](https://cardiffstudentmedia.co.uk/gairrhydd/the-european-refugee-crisis-protagonists-failures-and-controversies/)
-
-
-
-#### Audio
+- [Wikimedia](https://commons.wikimedia.org/wiki/File:Katrina-14501.jpg)
+- [flickr](https://www.flickr.com/photos/elainevigneault/351169448)
 
 ## Acknowldgements
 I was inspired to do this project from [Code Institute](https://www.codeinstitute.net/).
