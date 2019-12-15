@@ -220,8 +220,47 @@ Set the source to 'master branch'
 The link, at which the site is published should appear
 
 ## Content
-#### Images
+#### Content on index.html 
+- [Food Aid Foundation](https://www.foodaidfoundation.org/)
+- [Investopedia](https://www.investopedia.com/terms/p/poverty-trap.asp)
+- [Federal Reserve Bank of St. Louis](https://www.stlouisfed.org/education/economic-lowdown-podcast-series/episode-2-factors-of-production)
+- [Insight](https://insight.wfp.org/where-do-you-think-you-would-find-the-most-expensive-plate-of-food-in-the-world-408ed2856108)
+- [World Food Program](https://cdn.wfp.org/2018/plate-of-food/)
+- [the balance](https://www.thebalance.com/gdp-per-capita-formula-u-s-compared-to-highest-and-lowest-3305848)
+
+#### Images index.html
+The images in index.html were obtained from the following websites: 
+- [Max Pixels](https://www.maxpixel.net/Disease-Africa-Sick-Poverty-Young-Face-Sadness-1783794)
+- [pxhere](https://pxhere.com/en/photo/1053497)
+- [Harry S. Trueman](https://www.trumanlibrary.gov/photograph-records/61-102)
+- [Starving Children In Africa](https://sites.google.com/site/starvingchildreninafrica777/)
+
+#### Content on statistics.html
+- [Grafiti](https://beta.grafiti.io/facts/557233-extreme-poverty-asia-2018)
+- [Statistics Times](http://statisticstimes.com/economy/countries-by-projected-gdp-capita.php)
+- [Medium](https://insight.wfp.org/where-do-you-think-you-would-find-the-most-expensive-plate-of-food-in-the-world-408ed2856108)
+- [Food Aid Foundation](https://www.foodaidfoundation.org/world-hunger-statistics.html)
+- [The World Bank](https://data.worldbank.org/indicator/SI.POV.GINI?view=map)
+- [FOCUS ECONOMICS](https://www.focus-economics.com/blog/the-poorest-countries-in-the-world)
+- [The Guardian](https://www.theguardian.com/inequality/datablog/2017/apr/26/inequality-index-where-are-the-worlds-most-unequal-countries)
+- [Trading Economics](https://tradingeconomics.com/country-list/unemployment-rate)
+
+#### Images on statistics.html
+- [pxhere](https://pxhere.com/en/photo/1053497)
+
+#### Images on donate.html
+- [flickr](https://www.flickr.com/photos/syriafreedom/21076307990)
+- [Pixabay](https://pixabay.com/photos/children-uganda-africa-poverty-663392/)
+- [Wikimedia](https://commons.wikimedia.org/wiki/File:Jakarta_slumlife71.JPG)
+- [Blogspot](http://mad2145651.blogspot.com/2018/11/blog-post-9-influential-image.html)
+- [Wikipedia](https://de.wikipedia.org/wiki/Datei:Gona%C3%AFves,_Haiti.JPG)
+- [Cardiff Uni's Student Paper](https://cardiffstudentmedia.co.uk/gairrhydd/the-european-refugee-crisis-protagonists-failures-and-controversies/)
+
+
 
 #### Audio
 
 ## Acknowldgements
+I was inspired to do this project from [Code Institute](https://www.codeinstitute.net/).
+Thank you to my mentor, Antonija Simic to guide me throughout the process of the project
+Thank you to the tutors, Haley, Tim, Xavier, Stephan, Kevin, Michael, Samantha and Niel for helping me with the problems I encountered 
