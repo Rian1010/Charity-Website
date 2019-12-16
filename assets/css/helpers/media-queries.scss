@@ -120,7 +120,6 @@ $large-desktop-width: 1200px;
 
         .textGDP {
             font-size: 26px;
-            // top: 144px;
             padding-right: 10px;
             position: relative;
             color: $white;
@@ -140,6 +139,9 @@ $large-desktop-width: 1200px;
             background-color: $white;
             margin: 7% 0;
             padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .graph-color {
@@ -154,7 +156,11 @@ $large-desktop-width: 1200px;
         #deathStats {
             font-size: 27px;
         }
-// Contact Page
+        //Statistics Page
+        .row-flex {
+            margin-bottom: 0; 
+        }
+        // Contact Page
         .text-box-length {
             width: 400px;
         }
@@ -182,13 +188,10 @@ $large-desktop-width: 1200px;
 
 @mixin desktop {
     @media(min-width: $desktop-width) {
-        .top-section-counter-BG {
-            top: 5%;
-            left: 0;
-        }
-
-        .top-section {
-            top: 4%;
+        //Statistics Page
+        div.dc-chart {
+            float: none;
+            text-align: center;
         }
     }
 }

@@ -24,6 +24,7 @@
     display: flex;
     justify-content: center;
     padding: 20px 0;
+    margin-bottom: 30px;
     background-color: $noticeYellow;
     font-size: 20px;
     font-weight: 700;
@@ -45,6 +46,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .theCounters {
@@ -55,7 +58,6 @@
 }
 
 #counterStats {
-    padding: 40px;
     font-size: 18px;
 }
 

@@ -16,7 +16,6 @@
   height: 900px;
   background-image: linear-gradient(to right, rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.4)), url("../images/starvation.jpg");
   top: 40px;
-  background-attachment: fixed;
   background-position: center; }
 
 .hpimg-3 {
@@ -24,7 +23,6 @@
   height: 900px;
   background-image: url("../images/Starving -African-Child.jpg");
   top: 40px;
-  background-attachment: fixed;
   background-position: center;
   background-size: cover; }
 
@@ -33,7 +31,6 @@
   height: 775px;
   background-image: linear-gradient(to right, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.2)), url("../images/india-kids.jpg");
   top: 40px;
-  background-attachment: fixed;
   background-position: center; }
 
 .hpimg-5 {
@@ -48,6 +45,7 @@
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   justify-content: left;
   align-items: center; }
@@ -459,6 +457,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  margin-bottom: 30px;
   background-color: #ffff8a;
   font-size: 20px;
   font-weight: 700; }
@@ -476,7 +475,9 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  display: flex;
+  justify-content: center; }
 
 .theCounters {
   color: #FFFFFF;
@@ -485,7 +486,6 @@ body {
   display: flex; }
 
 #counterStats {
-  padding: 40px;
   font-size: 18px; }
 
 #deathStats {
@@ -655,7 +655,10 @@ body {
   .chartStyling {
     background-color: #FFFFFF;
     margin: 7% 0;
-    padding: 40px 20px; }
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
   .graph-color {
     color: #000000; }
@@ -668,6 +671,9 @@ body {
 
   #deathStats {
     font-size: 27px; }
+
+  .row-flex {
+    margin-bottom: 0; }
 
   .text-box-length {
     width: 400px; }
@@ -688,12 +694,9 @@ body {
   .social-media-button a, .social-media-button div {
     transform: translateX(-77px); } }
 @media (min-width: 992px) {
-  .top-section-counter-BG {
-    top: 5%;
-    left: 0; }
-
-  .top-section {
-    top: 4%; } }
+  div.dc-chart {
+    float: none;
+    text-align: center; } }
 @media (min-width: 1200px) {
   /*Homepage*/
   .top-section-counter-BG {
