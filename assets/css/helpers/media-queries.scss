@@ -278,22 +278,22 @@ $large-desktop-width: 1200px;
 
         .facebook:hover {
             background-color: $facebookHover;
-            transform: translateX(23px);
+            transform: translateX(-20px);
         }
 
         .twitter:hover {
             background-color: $twitterHover;
-            transform: translateX(23px);
+            transform: translateX(-20px);
         }
 
         .instagram:hover {
             background-color: $instagramHover;
-            transform: translateX(23px);
+            transform: translateX(-20px);
         }
 
         .youtube:hover {
             background-color: $youtubeHover;
-            transform: translateX(23px);
+            transform: translateX(-20px);
         } //Statistics Page
         #statistics-article {
             padding-right: 50px;

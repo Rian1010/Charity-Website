@@ -154,7 +154,8 @@
 
 %asideStyles {
     display: block;
-    text-align: center;
+    transform: translateX(-48px);
+    width: 83px;
     padding: 10px 5px 10px;
     transition: all 0.3s ease;
     color: $white;

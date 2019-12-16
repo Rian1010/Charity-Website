@@ -112,7 +112,8 @@
 /*Aside Styles*/
 .social-media-button a, .social-media-button div {
   display: block;
-  text-align: center;
+  transform: translateX(-48px);
+  width: 83px;
   padding: 10px 5px 10px;
   transition: all 0.3s ease;
   color: #FFFFFF;
@@ -767,19 +768,19 @@ body {
 
   .facebook:hover {
     background-color: rgba(59, 89, 152, 0.8);
-    transform: translateX(23px); }
+    transform: translateX(-20px); }
 
   .twitter:hover {
     background-color: rgba(85, 172, 238, 0.8);
-    transform: translateX(23px); }
+    transform: translateX(-20px); }
 
   .instagram:hover {
     background-color: rgba(253, 89, 73, 0.8);
-    transform: translateX(23px); }
+    transform: translateX(-20px); }
 
   .youtube:hover {
     background-color: rgba(187, 0, 0, 0.8);
-    transform: translateX(23px); }
+    transform: translateX(-20px); }
 
   #statistics-article {
     padding-right: 50px; }

@@ -197,6 +197,7 @@ Moreover, the map page has a simple style with the only purpose of displaying an
 
 
 #### Different browsers, mobile, desktop
+In order to check the responsiveness, the live preview was utilised in order to check different screen sizes in the devtools.
 
 #### Code validation
 
