@@ -13,11 +13,6 @@ $large-desktop-width: 1200px;
             padding-left: 10px;
         }
 
-        .top-section {
-            top: 2%;
-            padding: 0;
-        }
-
         .section,
         .section2,
         .section3 {
@@ -58,10 +53,7 @@ $large-desktop-width: 1200px;
             color: $white;
             position: relative;
             padding-bottom: 37px;
-        }
-        .top-section-counter-BG {
-            top: 0;
-        } //Statistics Texts
+        }//Statistics Texts
         .chartText {
             margin-left: 10%;
         }
@@ -79,7 +71,7 @@ $large-desktop-width: 1200px;
             margin-left: 5px;
         }
         .textHP2 {
-            padding-left: 60px;
+            text-align: center;
         }
         #submitBtn {
             right:  8em;
@@ -128,7 +120,7 @@ $large-desktop-width: 1200px;
 
         .textGDP {
             font-size: 26px;
-            top: 144px;
+            // top: 144px;
             padding-right: 10px;
             position: relative;
             color: $white;
@@ -140,29 +132,6 @@ $large-desktop-width: 1200px;
             top: 156px;
             padding-bottom: 197px;
         }
-
-        .section {
-            top: 40%;
-        }
-
-        .section2 {
-            top: 8%;
-            margin-left: 44px;
-        }
-
-        .section3 {
-            top: 60%;
-        }
-
-        .top-section {
-            top: 10%;
-            padding-top: 3%;
-        }
-
-        .top-section-counter-BG {
-            top: 68%;
-            right: 20px;
-        } //Statistics Page
         .chartText {
             text-align: center;
         }
@@ -202,6 +171,10 @@ $large-desktop-width: 1200px;
             list-style: square;
             padding-left: 40px;
         }
+        //Aside
+        .social-media-button a, .social-media-button div {
+            transform: translateX(-77px);
+        }
     }
 }
 
@@ -225,6 +198,9 @@ $large-desktop-width: 1200px;
 @mixin large-desktop {
     @media (min-width: $large-desktop-width) {
         /*Homepage*/
+        .top-section-counter-BG {
+            padding-right: 29px;
+        }
         .hpimg-2 {
             width: 100%;
             height: 1000px;
@@ -261,12 +237,8 @@ $large-desktop-width: 1200px;
         .section,
         .section2,
         .section3 {
-            margin-left: 120px
-        }
-
-        .textHP2 {
-            padding-left: 130px
-        } //Aside Social Media Buttons
+            margin-left: 40px;
+        }//Aside Social Media Buttons
         .social-media-button {
             left: -35px;
         }
@@ -274,6 +246,10 @@ $large-desktop-width: 1200px;
         .sideCalculator:hover {
             background-color: $sideCalculatorHover;
             transform: translateX(23px) translateY(-50%);
+        }
+
+        .social-media-button a, .social-media-button div {
+            transform: translateX(-48px);
         }
 
         .facebook:hover {

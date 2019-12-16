@@ -3,9 +3,12 @@
 %background {
     position: relative;
     background: {
-        attachment: fixed;
         repeat: no-repeat;
+        size: cover;
     }
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .hpimg-1 {
@@ -45,27 +48,20 @@
     height: auto;
 }
 
-%sectionTop {
-    top: 20%;
-}
-
 .top-section {
     @extend %sectionStyle;
 }
 
 .section {
     @extend %sectionStyle;
-    @extend %sectionTop;
 }
 
 .section2 {
     @extend %sectionStyle;
-    @extend %sectionTop;
 }
 
 .section3 {
     @extend %sectionStyle;
-    @extend %sectionTop;
 }
 
 .text {
@@ -154,7 +150,6 @@
 
 %asideStyles {
     display: block;
-    transform: translateX(-48px);
     width: 83px;
     padding: 10px 5px 10px;
     transition: all 0.3s ease;

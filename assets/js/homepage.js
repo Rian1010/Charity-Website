@@ -45,7 +45,7 @@ const textEffect = document.getElementById("textEffect");
 
 window.addEventListener("DOMContentLoaded", scrollByPage);
 function scrollByPage() {
-    textEffect.style.transform = 'translateX(20px)';
+    textEffect.style.marginLeft = '20px';
     textEffect.style.transition = '1s ease-in-out';
 }
 scrollByPage();

@@ -19,7 +19,7 @@ body {
 }
 
 .top-section {
-    top: 0;
+    // top: 0;
     padding: 1em 0.5em 0;
 }
 
@@ -28,7 +28,7 @@ body {
     border: 2px solid;
     color: $white;
     position: relative;
-    top: -9%;
+    // top: -9%;
 }
 
 .header {
@@ -46,7 +46,6 @@ body {
 
 .textHP2 {
     color: $white;
-    padding-top: 150px;
     font-weight: 600;
 }
 

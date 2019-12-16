@@ -16,7 +16,6 @@
   height: 900px;
   background-image: linear-gradient(to right, rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.4)), url("../images/starvation.jpg");
   top: 40px;
-  background-size: cover;
   background-attachment: fixed;
   background-position: center; }
 
@@ -25,8 +24,9 @@
   height: 900px;
   background-image: url("../images/Starving -African-Child.jpg");
   top: 40px;
-  background-size: cover;
-  background-position: center; }
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
 
 .hpimg-4 {
   width: 100%;
@@ -34,7 +34,6 @@
   background-image: linear-gradient(to right, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.2)), url("../images/india-kids.jpg");
   top: 40px;
   background-attachment: fixed;
-  background-size: cover;
   background-position: center; }
 
 .hpimg-5 {
@@ -42,14 +41,16 @@
   top: 40px;
   height: 97vh;
   background-image: url("../images/sadness-africa.jpg");
-  background-size: cover;
   background-position: right; }
 
 /*Homepage*/
 .hpimg-1, .hpimg-2, .hpimg-3, .hpimg-4, .hpimg-5 {
   position: relative;
-  background-attachment: fixed;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: center; }
 
 .text, .text2 {
   font-size: 1em;
@@ -64,9 +65,6 @@
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
   height: auto; }
-
-.section, .section2, .section3 {
-  top: 20%; }
 
 /*Charity Page*/
 .charityAsiaPic1, .charityAfricaPic, .charityAsiaPic2, .charityEuropePic1, .charitySAPic, .charityEuropePic2, .charityRedCrossPic, .disasterReliefRedCrossPic {
@@ -112,7 +110,6 @@
 /*Aside Styles*/
 .social-media-button a, .social-media-button div {
   display: block;
-  transform: translateX(-48px);
   width: 83px;
   padding: 10px 5px 10px;
   transition: all 0.3s ease;
@@ -392,15 +389,13 @@ body {
   font-weight: 600; }
 
 .top-section {
-  top: 0;
   padding: 1em 0.5em 0; }
 
 .top-section-counter-BG {
   background-color: rgba(225, 0, 0, 0.3);
   border: 2px solid;
   color: #FFFFFF;
-  position: relative;
-  top: -9%; }
+  position: relative; }
 
 .header {
   font-weight: 800; }
@@ -415,7 +410,6 @@ body {
 
 .textHP2 {
   color: #FFFFFF;
-  padding-top: 150px;
   font-weight: 600; }
 
 .text2 {
@@ -559,10 +553,6 @@ body {
     margin-top: 36px;
     padding-left: 10px; }
 
-  .top-section {
-    top: 2%;
-    padding: 0; }
-
   .section,
   .section2,
   .section3 {
@@ -598,9 +588,6 @@ body {
     position: relative;
     padding-bottom: 37px; }
 
-  .top-section-counter-BG {
-    top: 0; }
-
   .chartText {
     margin-left: 10%; }
 
@@ -618,7 +605,7 @@ body {
     margin-left: 5px; }
 
   .textHP2 {
-    padding-left: 60px; }
+    text-align: center; }
 
   #submitBtn {
     right: 8em; } }
@@ -652,7 +639,6 @@ body {
 
   .textGDP {
     font-size: 26px;
-    top: 144px;
     padding-right: 10px;
     position: relative;
     color: #FFFFFF; }
@@ -662,24 +648,6 @@ body {
     position: relative;
     top: 156px;
     padding-bottom: 197px; }
-
-  .section {
-    top: 40%; }
-
-  .section2 {
-    top: 8%;
-    margin-left: 44px; }
-
-  .section3 {
-    top: 60%; }
-
-  .top-section {
-    top: 10%;
-    padding-top: 3%; }
-
-  .top-section-counter-BG {
-    top: 68%;
-    right: 20px; }
 
   .chartText {
     text-align: center; }
@@ -715,7 +683,10 @@ body {
 
   .contact-list {
     list-style: square;
-    padding-left: 40px; } }
+    padding-left: 40px; }
+
+  .social-media-button a, .social-media-button div {
+    transform: translateX(-77px); } }
 @media (min-width: 992px) {
   .top-section-counter-BG {
     top: 5%;
@@ -725,6 +696,9 @@ body {
     top: 4%; } }
 @media (min-width: 1200px) {
   /*Homepage*/
+  .top-section-counter-BG {
+    padding-right: 29px; }
+
   .hpimg-2 {
     width: 100%;
     height: 1000px;
@@ -754,10 +728,7 @@ body {
   .section,
   .section2,
   .section3 {
-    margin-left: 120px; }
-
-  .textHP2 {
-    padding-left: 130px; }
+    margin-left: 40px; }
 
   .social-media-button {
     left: -35px; }
@@ -765,6 +736,9 @@ body {
   .sideCalculator:hover {
     background-color: rgba(102, 51, 153, 0.8);
     transform: translateX(23px) translateY(-50%); }
+
+  .social-media-button a, .social-media-button div {
+    transform: translateX(-48px); }
 
   .facebook:hover {
     background-color: rgba(59, 89, 152, 0.8);
