@@ -6,8 +6,9 @@
 .hpimg-1 {
     width: 100%;
     top: 40px;
-    @include box(98vh,
+    @include box(auto,
     (linear-gradient(to right, rgba(1, 1, 1, .2), rgba(1, 1, 1, 0), rgba(1, 1, 1, .2)), url('../images/sadness-africa.jpg')));
+    padding: 60px 0;
     background-position: right;
     background-size: cover;
     

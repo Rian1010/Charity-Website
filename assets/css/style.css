@@ -6,8 +6,9 @@
 .hpimg-1 {
   width: 100%;
   top: 40px;
-  height: 98vh;
+  height: auto;
   background-image: linear-gradient(to right, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.2)), url("../images/sadness-africa.jpg");
+  padding: 60px 0;
   background-position: right;
   background-size: cover; }
 
@@ -158,20 +159,20 @@
   background-color: #01C3FE;
   color: #FFFFFF;
   padding: 18px;
-  border: none; }
+  border: none;
+  transition: 0.2s ease-in-out; }
 
 .charity-collapse:hover {
-  background-color: #0188FE;
-  transition: 0.2s ease-in-out; }
+  background-color: #0188FE; }
 
 .donateButtonStyle {
   background-color: #8ffe00;
   margin-bottom: 10px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  transition: 0.2s ease-in-out; }
 
 .donateButtonStyle:hover {
   background-color: #11fe00;
-  transition: 0.2 ease-in-out;
   color: #FFFFFF; }
 
 #calculator-wrapper {
@@ -286,6 +287,8 @@
 .social-media-button {
   position: fixed;
   top: 50%;
+  padding: 0 !important;
+  left: -35px;
   width: 50%;
   transform: translateY(-50%);
   list-style-type: none; }
@@ -508,7 +511,8 @@ body {
   margin-top: -40px; }
 
 .mapInstruction {
-  padding: 10% 0;
+  padding-top: 25%;
+  padding-bottom: 10%;
   color: #000000; }
 
 .contactForm {
@@ -588,6 +592,9 @@ body {
     position: relative;
     padding-bottom: 37px; }
 
+  .mapInstruction {
+    padding-top: 17%; }
+
   .chartText {
     margin-left: 10%; }
 
@@ -611,6 +618,9 @@ body {
     right: 8em; } }
 @media (min-width: 768px) {
   /*Homepage*/
+  .hpimg-1 {
+    padding: 164px 0; }
+
   .hpimg-2 {
     height: 975px; }
 
@@ -692,15 +702,27 @@ body {
     padding-left: 40px; }
 
   .social-media-button a, .social-media-button div {
-    transform: translateX(-77px); } }
+    transform: translateX(-77px); }
+
+  .social-media-button {
+    padding-left: 40px !important;
+    left: 0; } }
 @media (min-width: 992px) {
+  .hpimg-1 {
+    padding: 100px 0 350px 0; }
+
+  .mapInstruction {
+    padding-top: 13%; }
+
   div.dc-chart {
     float: none;
     text-align: center; } }
 @media (min-width: 1200px) {
-  /*Homepage*/
   .top-section-counter-BG {
     padding-right: 29px; }
+
+  .hpimg-1 {
+    padding: 120px 0; }
 
   .hpimg-2 {
     width: 100%;

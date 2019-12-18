@@ -53,7 +53,12 @@ $large-desktop-width: 1200px;
             color: $white;
             position: relative;
             padding-bottom: 37px;
-        }//Statistics Texts
+        }
+        //Map Page
+        .mapInstruction {
+            padding-top: 17%
+        }
+        //Statistics Texts
         .chartText {
             margin-left: 10%;
         }
@@ -85,6 +90,9 @@ $large-desktop-width: 1200px;
 @mixin tablet {
     @media (min-width: $tablet-width) {
         /*Homepage*/
+        .hpimg-1 {
+            padding: 164px 0;
+        }
         .hpimg-2 {
             height: 975px;
         }
@@ -181,6 +189,10 @@ $large-desktop-width: 1200px;
         .social-media-button a, .social-media-button div {
             transform: translateX(-77px);
         }
+        .social-media-button {
+            padding-left: 40px !important;
+            left: 0;
+        }
     }
 }
 
@@ -188,6 +200,14 @@ $large-desktop-width: 1200px;
 
 @mixin desktop {
     @media(min-width: $desktop-width) {
+        // Homepage
+        .hpimg-1 {
+            padding: 100px 0 350px 0;
+        }
+        //Map Page
+        .mapInstruction {
+            padding-top: 13%
+        }
         //Statistics Page
         div.dc-chart {
             float: none;
@@ -200,9 +220,13 @@ $large-desktop-width: 1200px;
 
 @mixin large-desktop {
     @media (min-width: $large-desktop-width) {
-        /*Homepage*/
+        //Homepage
         .top-section-counter-BG {
             padding-right: 29px;
+        }
+
+        .hpimg-1 {
+            padding: 120px 0;
         }
         .hpimg-2 {
             width: 100%;

@@ -3,6 +3,8 @@
 .social-media-button {
   position: fixed;
   top: 50%;
+  padding: 0 !important;
+  left: -35px;
   width: 50%;
   transform: translateY(-50%);
   list-style-type: none;

@@ -35,23 +35,24 @@
     color: $white;
     padding: 18px;
     border: none;
+    transition: 0.2s ease-in-out;
+
 }
 
 .charity-collapse:hover {
     background-color: $blue;
-    transition: 0.2s ease-in-out;
 }
 
 .donateButtonStyle {
     background-color: $green;
     margin-bottom: 10px;
     color: $white;
+    transition: 0.2s ease-in-out;
 
 }
 
 .donateButtonStyle:hover {
     background-color: $darkerGreen;
-    transition: 0.2 ease-in-out;
     color: $white;
 }
 
