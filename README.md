@@ -172,9 +172,30 @@ Shows social media buttons on phone screen sizes that link to social media pages
 In order to come up with a style for it, I had to think about the topic, I wanted to work on and what functionalities there are that could be added with JavaScript to deliver enough information about the topic in 
 a way that gives users a good user experience. So, I aimed to let people know what the website was all about on the cover of the homepage. In order to make one's experience unique, I caused each background image to be 
 fixed, as one scrolls down and included a linear-gradient on top of the pictures to make them look better. Furthermore, the death counter and the box it is in are red to visually represent something bad, as this colour is 
-often used for danger or unpleasant things. 
+often used for danger or unpleasant things. As the user scrolls through the homepage to read about how countries end up in poverty, they want to see statistics, which they can be directed to through a linked text in the second
+section or the 'Statistics' link in the navbar.  
 
-Moreover, the map page has a simple style with the only purpose of displaying an interactive maps with simple instructions and a heading above it.
+On the statistics page, they see another death counter again because it is estimated statistics of how many people have died live, since the web page was opened. As one scrolls down, a yellow banner grabs one's attention to 
+let one know that he or she can compare the data, by clicking on the bars of the first chart and comparing the selected bars with the data in the charts below. The background of each chart is white, while the background of 
+the rest of the page's content is light blue, so that the areas for texts can be visually distinguished with the areas for the chats. 
+
+Moreover, the map page has a simple style, which only serves the purpose of displaying an interactive Google world map with simple instructions and a heading above it. When people click on the markers that are displayed
+in the map, they get to read short and quick information about why a country is in need. If they are interested, they can either click on the donate button in the marker window, or in the navigation bar to go to the donation page.
+However, clicking the donate button in a country's marker window enables a user to be directed to the section of the donate page that the country is in.
+
+Furthermore, on the donate page has a light blue background and starts off with a picture carousel that consists of three images, which show poverty in Asia and Africa. Below it there is text, which clarifies that I do not personally
+offer donation services and that they can use a calculator from the aside icons to keep track of how much they are donating in total. I made the calculator colorful to make it not look boring and to visually distinguish the different
+sections in it. So, I made sure that a user could easily tell numbers, symbols, the screen and the clear button apart. Also, the calculator can be dragged everywhere across the page for simplicity and comfort, when one utilises it. 
+Further below, there are sections for each continent that contains accordions for each country, which the page offers help for, with information about one or more charities. There is a slight hover effect as one hovers over the 
+accordion title, which gives its background a darker blue to make it look appealing to the eye. The backgrounds of the information inside of them are white and there are one or more green donate buttons, as call to action to encourage users 
+to donate on the charity organisations' pages. It is green because it is a colour that often shows something good. As one scrolls further down the page, one can see a picture carousel over more accordions for countries of other two continents, which 
+is a style that repeats two more times.
+
+Finally, there is a contact page, which specifies what a user can contact me about and assures a reply from me under 24 hours. This list is highlighted inside of a box on desktop sizes next to a form. The list is not in a box on phone and tablet sizes
+and it is placed above the form on those device sizes. The form allows a user to contact me with one's names and email address. Moreover, as background image there are hands of different colours, which metaphorically shows users to have a 
+giving hand for people all around the world. 
+
+The navbar and the footer are both white with black texts because I wanted to keep the website bright. The navbar has blue hover effects, as the most of the pages' colors are blue as well.
 
 #### Logic
 
@@ -208,13 +229,13 @@ The two websites that I used to validate the HTML and CSS codes are:
 The site that it has been deployed on on GitHub pages can be viewed here: [live preview of project](https://rian1010.github.io/Charity-Website/) 
 
 #### Steps on how to push it:
-git add .
-git status (to check if the correct file/s were added or not)
-git commit -m "a short description of what has been updated"
-git remote add origin
-git push -u origin master
-Insert Github username
-Insert Github password
+- git add .
+- git status (to check if the correct file/s were added or not)
+- git commit -m "a short description of what has been updated"
+- git remote add origin
+- git push -u origin master
+- Insert Github username
+- Insert Github password
 
 #### Steps on the final deployment:
 Go to the github repository
