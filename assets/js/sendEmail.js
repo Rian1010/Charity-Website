@@ -1,17 +1,19 @@
-function sendMail(contactForm) {
+function sendMail(name, email, message) {
     emailjs.send("gmail", "first_template", {
-            "from_name": contactForm.name.value,
-            "from_email": contactForm.email.value,
-            "project_request": contactForm.Message.value,
+            "from_name": name,
+            "from_email": email,
+            "project_request": message,
         })
         .then(
             function(response) {
-                console.log("SUCCESS", response);
+                let form = document.getElementById("contact_form");
+                let replacement = form.innerHTML = "<h2>Thank you for your message! It has been sent!</h2>";
             },
             function(error) {
-                console.log("FAILED", error);
+                let form = document.getElementById("contact_form");
+
+                form.innerHTML = "<h2>There has been an error sending the message.</h2>";
             });
-            
         return false;
 }
 
@@ -41,7 +43,7 @@ window.onload = function() {
             alert('Please fill in the input field for your message.');
         }
         else {
-            alert('Thank you for your message! It will be sent now.');
+            sendMail(nameContent, emailContent, MsgContent);
         }
     }
 }

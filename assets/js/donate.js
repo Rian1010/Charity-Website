@@ -54,7 +54,7 @@ for (let i = 0; i < btns.length; i++) {
 equalBtn.addEventListener('click', function () {
 
     if (screen.value === '') {
-        screen.value = '0'
+        screen.value = '0';
     }
 
     else {

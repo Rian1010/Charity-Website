@@ -236,9 +236,6 @@ function show_country_data4(error, countriesData4) {
             }
         });
 
-    var minDate = unemp_rate_female_dim.bottom(1)[0].date;
-    var maxDate = unemp_rate_female_dim.top(1)[0].date;
-
     var composite = dc.compositeChart('#unemployment-rate-female');
     console.log(composite);
 
@@ -392,10 +389,7 @@ function show_country_data4(error, countriesData4) {
                 return 0;
             }
         });
-
-    var minDate2 = unemp_rate_male_dim.bottom(1)[0].date;
-    var maxDate2 = unemp_rate_male_dim.top(1)[0].date;
-
+        
     var composite2 = dc.compositeChart('#unemployment-rate-male');
     console.log(composite);
 

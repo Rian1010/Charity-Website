@@ -200,6 +200,9 @@ Moreover, the map page has a simple style with the only purpose of displaying an
 In order to check the responsiveness, the live preview was utilised in order to check different screen sizes in the devtools.
 
 #### Code validation
+The two websites that I used to validate the HTML and CSS codes are:
+[HTML Validator](https://validator.w3.org/nu/)
+[CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 ## Deployment
 The site that it has been deployed on on GitHub pages can be viewed here: [live preview of project](https://rian1010.github.io/Charity-Website/) 

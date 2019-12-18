@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
     <!--EmailJS-->
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script>
         (function() {
             emailjs.init("user_jBNHynPWhUv5jwDizH0QT");
         })();
@@ -67,16 +67,16 @@
                         <h2 class="header2">For Any Requests or Questions, Please Fill In the Form, Below.</h2>
                     </div>
                     <ul class="contact-list d-none d-md-block">
-                        <li>Please contact me by filling in the form below!</li>
-                        <li>Ask me any questions that you have about the charities.</li>
-                        <li>Feel free to request me to include causes that you would know, onto this website.</li>
-                        <li>Receive a reply in under 24 hours!</li>
+                        <li>Please contact me by filling in the form</li>
+                        <li>Ask me any questions that you have about the charities</li>
+                        <li>Feel free to request an inclusion to the website of charities that you know</li>
+                        <li>Receive a reply in under 24 hours</li>
                     </ul>
                 </div>
 
                 <div class="col-12 col-md-7 col-lg-8">
-                    <div class="contactForm">
-                        <form onsubmit="return sendMail(this);">
+                    <div class="contactForm" id="contact_form">
+                        <form>
                             <div class="row">
                                 <div class="forms center-form">
                                     <input type="text" name="name" id="name" class="form-control text-box-length" placeholder="Name" maxlength="20" required />
@@ -84,7 +84,7 @@
                             </div>
                             <div class="row">
                                 <div class="forms center-form">
-                                    <input type="text" name="email" id="email" class="form-control text-box-length" placeholder="Email Address" cols="100" rows=" 5" required />
+                                    <input type="email" name="email" id="email" class="form-control text-box-length" placeholder="Email Address" required />
                                 </div>
                             </div>
                             <div class="row">
@@ -159,7 +159,7 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="assets/js/sendEmail.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
