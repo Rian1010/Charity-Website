@@ -29,9 +29,6 @@ window.onload = function() {
         let nameContent = nameBox.value;
         let emailContent = emailBox.value;
         let MsgContent = MsgBox.value;
-        console.log(nameContent);
-        console.log(emailContent);
-        console.log(MsgContent);
 
         if (nameContent === '') {
             alert('Please fill in the input field for your name.');

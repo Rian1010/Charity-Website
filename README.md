@@ -97,7 +97,6 @@ represent index numbers inside of it. Then, the symbol class was targeted to rep
 and back to a plus sign, after being clicked again. Through the if and else statement, I edited the style of the content to cause the scrollHeight property to appear and disappear to make it
 look like the collapsible bars open, when clicked and close, if clicked again.
 
-
 Furthermore, for the calculator to work, the following constants were used:
 - const btns - connected it to each of the buttons with the, 'calcBtn' class
 - const equalBtn - connected to the equal button of the calculator
@@ -112,11 +111,13 @@ should be 0. Otherwise, if numbers have been inputed, these will be evaluated an
 
 The clear button has an 'click' event listener, which is connected to a function that turns the value of the calculator screen empty. So, once the button is clicked, the screen turns empty.
 
+
 Finally, the dragElement has the following variables:
 - var pos1 = 0,
         pos2 = 0,
         pos3 = 0,
         pos4 = 0;
+
 These are initialised values to work with throughout the functions beneath it. Then, the functions named dragMouseDown, elementDrag and closeDragElement are used.
 
 - e = e || window.event;
@@ -125,28 +126,28 @@ e.preventDefault();
 In function dragMouseDown, the code above either triggers a mouse event is or window.event. The second line of the code is used to prevent any disruption to stop the item's ability of being dragged throughout the page. 
 Then, the function uses the following code to get the position of the item at the startup and to connect to the functions below it: 
 
-pos3 = e.clientX;
+- pos3 = e.clientX;
 pos4 = e.clientY;
 
-document.onmouseup = closeDragElement;
+- document.onmouseup = closeDragElement;
 document.onmousemove = elementDrag;
-
 
 The function calle closeDragElement gets stops the process of dragging the caluclator, when the mouse is released, whereas the function elementDrag, gets triggered through the movement of the mouse. It keeps the process of dragging the item consistent by adding the lines, e = e || window.event; and e.preventDefault(); too, in order to prevent other things from stopping the procedure. Afterwards, 
 the following code enables the item to be dragger around: 
 
-pos1 = pos3 - e.clientX;
+- pos1 = pos3 - e.clientX;
 pos2 = pos4 - e.clientY;
 pos3 = e.clientX;
 pos4 = e.clientY;
         
-elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+- elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
 elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
 
 It gets the position of the item, calculates its new position when dragged and enables the calculator to be moved by subtracting elmnt.offsetTop by pos2 and elmnt.offsetTop by pos1, using pixels for the unit of the result. 
 
 Finally, the closeDragElement function uses the following codes to stop the process, once the mouse is released:
-document.onmouseup = null;
+
+- document.onmouseup = null;
 document.onmousemove = null;
 
 
@@ -156,6 +157,24 @@ The initMap() function contains all of the code for the displayed map. Inside of
 country. Furthermore, the map variable causes the initial zoom to be at 2.5 and its center to be at the position of syria, as it is close to the middle of the map. In addition, "var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';" was used
 as an array in order to label the markers on the map. Then, variables called contentString were used to use html for the text in the window boxes of the markers.  Numbers got attached in their variable names to indicate that
 different info boxes have been targeted. The variables with the name of 'infowindow' in them, enabled the contentString variables to be the displayed content of the info windows and a max width of 200 has been given to the each of them.
+
+
+As for the contact page, Email.JS was used to enable users to contact me. The JavaScript codes are in the sendEmail.js file. Three parameters were used in the sendMail function, name, email and message.
+
+- emailjs.send("gmail", "first_template", {
+            "from_name": name,
+            "from_email": email,
+            "project_request": message,
+        })
+
+The code above, is used to set values to the stored properties in the Email.JS template, which are first_template, from_name, from_email and project_request. Afterwards, there are two functions in a then statement that display a thank you and confirmation message, if
+a user's message got sent. However, the second function in the then statement gets triggered instead, if an error occurs, so that it displays a text, which lets one know that an error.
+
+The sendMail function gets called in the sendMsg function, which is located inside of another function. That other function, also makes sure that an alarm pops up, in case a user forgets to fill in a required field, before clicking on the submit button.
+
+
+
+All JavaScript codes were tested through the console in the dev tools by using console.log to check if the codes work or not.
 
 ## Style and Layout
 -__Overall Style__-
