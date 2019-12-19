@@ -72,21 +72,17 @@ clearBtn.addEventListener('click', function () {
 dragElement(document.getElementById("calculator-wrapper"));
 
 function dragElement(elmnt) {
+    // Initial values to work with them throughout next funtions
     var pos1 = 0,
         pos2 = 0,
         pos3 = 0,
         pos4 = 0;
-    if (document.getElementById(elmnt.id + "header")) {
-        // if present, the header is where one moves the DIV from:
-        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-    }
-    else {
-        // otherwise, move the DIV from anywhere inside the DIV:
-        elmnt.onmousedown = dragMouseDown;
-    }
+    
 
     function dragMouseDown(e) {
+        // use either the mouse event or the window event
         e = e || window.event;
+        // prevents the default action from stopping the drag
         e.preventDefault();
         // get the mouse cursor position at startup:
         pos3 = e.clientX;
@@ -97,8 +93,12 @@ function dragElement(elmnt) {
     }
 
     function elementDrag(e) {
+        // use either the mouse event or the window event
         e = e || window.event;
+        // prevents the default action from stopping the drag
         e.preventDefault();
+        // pos3 and pos4 are the new positions 
+        // pos1 and pos2 are the distance/difference from the old position
         // calculate the new cursor position:
         pos1 = pos3 - e.clientX;
         pos2 = pos4 - e.clientY;

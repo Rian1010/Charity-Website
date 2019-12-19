@@ -117,7 +117,37 @@ Finally, the dragElement has the following variables:
         pos2 = 0,
         pos3 = 0,
         pos4 = 0;
+These are initialised values to work with throughout the functions beneath it. Then, the functions named dragMouseDown, elementDrag and closeDragElement are used.
 
+- e = e || window.event;
+e.preventDefault();
+
+In function dragMouseDown, the code above either triggers a mouse event is or window.event. The second line of the code is used to prevent any disruption to stop the item's ability of being dragged throughout the page. 
+Then, the function uses the following code to get the position of the item at the startup and to connect to the functions below it: 
+
+pos3 = e.clientX;
+pos4 = e.clientY;
+
+document.onmouseup = closeDragElement;
+document.onmousemove = elementDrag;
+
+
+The function calle closeDragElement gets stops the process of dragging the caluclator, when the mouse is released, whereas the function elementDrag, gets triggered through the movement of the mouse. It keeps the process of dragging the item consistent by adding the lines, e = e || window.event; and e.preventDefault(); too, in order to prevent other things from stopping the procedure. Afterwards, 
+the following code enables the item to be dragger around: 
+
+pos1 = pos3 - e.clientX;
+pos2 = pos4 - e.clientY;
+pos3 = e.clientX;
+pos4 = e.clientY;
+        
+elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+
+It gets the position of the item, calculates its new position when dragged and enables the calculator to be moved by subtracting elmnt.offsetTop by pos2 and elmnt.offsetTop by pos1, using pixels for the unit of the result. 
+
+Finally, the closeDragElement function uses the following codes to stop the process, once the mouse is released:
+document.onmouseup = null;
+document.onmousemove = null;
 
 
 For the Google Maps API, on the 'Map' page, the JavaScript code is in the map.js file.
