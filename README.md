@@ -7,8 +7,8 @@ This was made for the seconds milestone project for the full stack developer cou
 ## Table of Contents
 
 ## Team
--__Author__- Rian Sunthbocus
--__Mentor__- Antonija Šimić
+- -__Author__- Rian Sunthbocus
+- -__Mentor__- Antonija Šimić
 
 ## UX
 The aim of this website is to let users know of some of the problems that are happening around the world
@@ -264,9 +264,6 @@ and it is placed above the form on those device sizes. The form allows a user to
 giving hand for people all around the world. 
 
 The navbar and the footer are both white with black texts because I wanted to keep the website bright. The navbar has blue hover effects, as the most of the pages' colors are blue as well.
-
-#### Logic
-
 
 ## Testing
 #### User Stories
