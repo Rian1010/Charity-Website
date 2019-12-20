@@ -1,9 +1,11 @@
 function sendMail(name, email, message) {
+    // Records a user's name, email address and message for the receiver to see this information in an email
     emailjs.send("gmail", "first_template", {
             "from_name": name,
             "from_email": email,
             "project_request": message,
         })
+        // Let users know, if the message was successfully sent or not
         .then(
             function(response) {
                 let form = document.getElementById("contact_form");
@@ -30,6 +32,7 @@ window.onload = function() {
         let emailContent = emailBox.value;
         let MsgContent = MsgBox.value;
 
+        // Alerts to pop up, if a required field has not been filled in, before pressing on the submit
         if (nameContent === '') {
             alert('Please fill in the input field for your name.');
         }
@@ -39,6 +42,7 @@ window.onload = function() {
         else if (MsgContent === '') {
             alert('Please fill in the input field for your message.');
         }
+        // The sendMail function gets called, if each of the required fields on the page have been filled
         else {
             sendMail(nameContent, emailContent, MsgContent);
         }

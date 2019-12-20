@@ -30,6 +30,7 @@ function countSeconds() {
 
 var time = setInterval(countSeconds, 1000);
 
+// Connects to the JSON files that store the required data
 queue()
     .defer(d3.json, "data/data.json")
     .defer(d3.json, "data/data2.json")
@@ -41,7 +42,6 @@ queue()
 
 function createDataVis(error, countriesData, countriesData2, countriesData3, countriesData4) {
 
-
     show_country_data(error, countriesData);
     show_country_data2(error, countriesData2);
     show_country_data3(error, countriesData3);
@@ -50,13 +50,14 @@ function createDataVis(error, countriesData, countriesData2, countriesData3, cou
     dc.renderAll();
 }
 
-function show_country_data(error, countriesData) {
 
+function show_country_data(error, countriesData) {
+    // Enable the crossfilter
     var ndx = crossfilter(countriesData);
     var country_dim = ndx.dimension(dc.pluck('country'));
 
 
-    // GDP per Capita Chart
+    // Show the GDP per Capita Chart
 
     var draw_barchart_gdp_country = country_dim.group().reduceSum(dc.pluck('gdp'));
     dc.barChart('#gdp-per-capita-chart')
@@ -73,7 +74,7 @@ function show_country_data(error, countriesData) {
         .yAxis().ticks(8);
 
 
-    // Gini Coefficient Chart
+    // Show the Gini Coefficient Chart
 
     var country_dim2 = ndx.dimension(dc.pluck('country'));
     var gini_coefficient_dim = country_dim2.group().reduceSum(dc.pluck('gini-coefficient'));
@@ -90,7 +91,7 @@ function show_country_data(error, countriesData) {
         .yAxisLabel('Gini Coefficient')
         .yAxis().ticks(8);
 
-    // Total Unemployment Rate Pie Chart
+    // Show the Total Unemployment Rate Pie Chart
 
     var country_dim3 = ndx.dimension(dc.pluck('country'));
     var draw_unemployment_rate_pie = country_dim3.group().reduceSum(dc.pluck('unemployment-rate'));
@@ -105,7 +106,7 @@ function show_country_data(error, countriesData) {
         .group(draw_unemployment_rate_pie);
 }
 
-
+// A second function for charts with data of total unemployment rates
 function show_country_data2(error, countriesData2) {
 
     var ndx = crossfilter(countriesData2);
@@ -113,6 +114,7 @@ function show_country_data2(error, countriesData2) {
     var draw_gender_unemployment_rate_pie = gender_dim.group().reduceSum(dc.pluck('totalUnemploymentRate'));
     var pieChart2 = dc.pieChart("#gender-unemployment-rate-pie-chart");
 
+    // Display Chart
     pieChart2
         .height(330)
         .radius(90)
@@ -122,6 +124,7 @@ function show_country_data2(error, countriesData2) {
 
 }
 
+// A third function for charts with data of the costs of meals in different countries
 function show_country_data3(error, countriesData3) {
 
     var ndx = crossfilter(countriesData3);
@@ -154,7 +157,6 @@ function show_country_data4(error, countriesData4) {
     });
 
     var unemp_rate_female_dim = ndx.dimension(dc.pluck('year')),
-
         femaleUnempRateDRC = unemp_rate_female_dim.group().reduceCount(function(d) {
             if (d.unemploymentRateCountry === 'DRC') {
                 return +d.femaleUnemploymentRate;
@@ -236,8 +238,8 @@ function show_country_data4(error, countriesData4) {
             }
         });
 
+    // Displays the graph
     var composite = dc.compositeChart('#unemployment-rate-female');
-    console.log(composite);
 
     composite
         .width(768)
@@ -389,9 +391,9 @@ function show_country_data4(error, countriesData4) {
                 return 0;
             }
         });
-        
+    
+    // Displays the graph
     var composite2 = dc.compositeChart('#unemployment-rate-male');
-    console.log(composite);
 
     composite2
         .width(768)

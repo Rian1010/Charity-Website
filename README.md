@@ -21,6 +21,24 @@ for a country in the list and another button, so one gets linked to the 'Statist
 The 'Map' web page has a map that was made with a Google Maps API. On the map, one can click on the markers, in order to get short and quick information
 about specific countries and get linked to the 'Donate' page to find a charity organisation.
 
+The 'Donate' page offers a number of accordions that contain information of one or more charity organisations in various countries of six continents. If one 
+decides to donate, the user gets lead to the charity organisation's website. Also, if one wants to keep track of how much they are donating, a calculator in 
+the aside section is available, which displays a calculator, if clicked. 
+
+If one wants to see statistics about which countries need the most help at the moment, the user can go on the 'Statistics' page, which is linked in the navigation bar,
+to find interactive charts with explanations.
+
+In case, someone wants to contact me about the website, one can go to the 'Contact' page in through a button in the navigation bar or the footer. On there, one can
+send me an email to ask questions or suggest other charities that could be added to this website.
+
+I was inspired to do this website because I have learned a lot about countries in need before and often see of political or economical instability in the news, which cause
+war, hatred and poverty. Also, in the country I live in there are lots of refugees from countries that are or were in war, so I got to here lots of their stories in school, 
+courses and the media. Furthermore, a few friends of mine live in countries that do not have a good economy, so I get to know of things that people in their countries struggle
+with a lot and how different their conditions are to people in countries with much better politics and a good economy. 
+
+So, I tried to make the website easy to utilise for users because it would encourage them to help people in a simple way with a wide variety of options. The aim was to provide
+clear statistics, informations and donation possibilities for people, who choose to help and want to know more about this topic. 
+
 #### Users Stories
 1. As a person who is visiting the website, I want to read why I should donate to any organisation
 2. As a person who is visiting the website, I want to easily find good charity organisations and know how my part of donation could help people in need
@@ -30,7 +48,7 @@ about specific countries and get linked to the 'Donate' page to find a charity o
 6. As someone who is interested in helping people in need or just gathering knowledge about the world, I would like to find data and statistics about the economic situations
 7. As someone who wants to find a good charity organisation, I want to have a wide range of options to donate to
 8. As someone who wants to donate, I want to be able to keep track of how much I want to spend and therefore, have the option to use an online calculator on the same web page
-9. As someone who cares about helping people in need, I want to spread awareness about it and contact the developer of the website, to request to include information about a certain charity organisation to the website
+9. As someone who cares about helping people in need, I want to spread awareness about a charity that has not been included on the website yet, and contact the developer to request to add information about that certain charity organisation to the website
 10. As someone who wants to find out more information about the website or charity organisations, I want to contact the web developer to ask questions
 
 #### Wireframes
@@ -172,7 +190,8 @@ a user's message got sent. However, the second function in the then statement ge
 
 The sendMail function gets called in the sendMsg function, which is located inside of another function. That other function, also makes sure that an alarm pops up, in case a user forgets to fill in a required field, before clicking on the submit button.
 
-
+As for the 'Statistics' page, crossfilter.JS, D3.JS and DC.JS were used to create interactive charts. The queue is used to connect to the JSON files and the createDataVis function connects to the each function below it and 
+renders all of them. The show_country_data function displays three charts that are connected, so that users can visually compare the given data. Below this function, there are three further functions that display other graphs with different kinds of data to be show to a user. 
 
 All JavaScript codes were tested through the console in the dev tools by using console.log to check if the codes work or not.
 
@@ -205,7 +224,7 @@ Shows social media buttons on phone screen sizes that link to social media pages
     - Used for responsiveness, styling and grids
 - JavaScript
     - Used for DOM manipulation, in order to add functionalities to the website
-- D3 and DC
+- D3.JS, DC.JS and Crossfliter.JS
     - Used to show data through interactive charts
 - Email.JS
     - Used to allow users to send me messages for enquiries

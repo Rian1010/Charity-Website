@@ -1,4 +1,5 @@
 function initMap() {
+    // Set up the location of each country
     var syria = {
         lat: 35.009778,
         lng: 38.459732
@@ -153,13 +154,13 @@ function initMap() {
         lat: -24.972577,
         lng: 134.742806
     };
-
+    // Set up the initial zoomed in position on the map
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 2.5,
         center: syria
     });
 
-
+    // Information windows texts
     var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var contentString = '<div id="content">' +
         '</div>' +
@@ -169,6 +170,7 @@ function initMap() {
         '<a href="donate.html#AsiaAfricaSection" class="btn donateButtonStyle">' +
         'Donate</a> ' +
         '</div>';
+
     var contentString2 = '<div id="content">' +
         '</div>' +
         '<h2 id="markerInfoHeading">South Africa</h2>' +
@@ -467,7 +469,7 @@ function initMap() {
 
 
 
-
+    // Set up the infowindows to be available, if the markers are clicked
 
     var infowindow = new google.maps.InfoWindow({
         content: contentString,
@@ -627,7 +629,7 @@ function initMap() {
 
 
 
-
+    // Set up markers for each country's position
 
     var marker = new google.maps.Marker({
         position: syria,
@@ -843,7 +845,7 @@ function initMap() {
 
 
 
-
+    // Open markers on click
 
     marker.addListener('click', function() {
         infowindow.open(map, marker);

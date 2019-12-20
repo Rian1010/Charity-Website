@@ -1,17 +1,18 @@
+// Cause 'Read More' buttons to show more text and 'Read Less' buttons to show less text
 const readBtn = document.querySelector('#readBtn1');
 const more = document.querySelector('#more1');
 const dots = document.querySelector('#dots1');
 
-
-
 more.style.display = 'none';
 
 readBtn.addEventListener('click', () => {
+    // Display more text and a 'Read Less' button
     if (more.style.display == 'none') {
         dots.style.display = 'none';
         more.style.display = 'block';
         readBtn.innerText = 'Read Less';
     }
+    // Display less text and a 'Read More' button
     else {
         dots.style.display = 'inline';
         more.style.display = 'none';
@@ -28,11 +29,13 @@ const dots2 = document.querySelector('#dots2');
 more2.style.display = 'none';
 
 readBtn2.addEventListener('click', () => {
+    // Display more text and a 'Read Less' button
     if (more2.style.display == 'none') {
         dots2.style.display = 'none';
         more2.style.display = 'block';
         readBtn2.innerText = 'Read Less';
     }
+    // Display less text and a 'Read More' button
     else {
         dots2.style.display = 'inline';
         more2.style.display = 'none';
@@ -41,6 +44,7 @@ readBtn2.addEventListener('click', () => {
 });
 
 
+// Causes the first text section of the homepage to appear on load
 const textEffect = document.getElementById("textEffect");
 
 window.addEventListener("DOMContentLoaded", scrollByPage);
@@ -51,7 +55,7 @@ function scrollByPage() {
 scrollByPage();
 
 
-
+// Causes the text sections of the homepage to appear on certain scroll positions
 const textEffect2 = document.getElementById("textEffect2");
 
 window.addEventListener("scroll", scrollByPage2);
@@ -125,7 +129,7 @@ function scrollByPage5() {
 scrollByPage5();
 
 
-/* ---------------------Death Counter--------------------- */
+// Death Counter
 
 const COUNTER = document.getElementById("counter");
 const DEATHS = document.getElementById("death");
@@ -138,13 +142,15 @@ var count = 0;
 document.addEventListener("DOMContentLoaded", countSeconds());
 
 function countSeconds() {
-
+    // Display text for the counters
     COUNTER.innerHTML = "<p>You've been here for <span class='blue-seconds'>" + theMinutes + ":" + seconds + "</span> minutes.</p>";
     DEATHS.innerHTML = "<p>Estimated amount of people that passed away: <span class='red-count'>" + count + "</span></p>";
-
+    // Count up by one
     seconds++;
+    // Count up by two
     count += 2;
 
+    // Set up the timer
     if (seconds % 60 == 0) {
         seconds = 0;
         theMinutes++;
@@ -156,5 +162,5 @@ function countSeconds() {
         seconds = "0" + seconds;
     }
 }
-
+// cause the function to work after each 1000 miliseconds
 var time = setInterval(countSeconds, 1000);
