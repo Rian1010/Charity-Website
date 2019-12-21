@@ -257,6 +257,7 @@
   width: 100%;
   height: 300px;
   margin-top: 58px;
+  padding: 30px 0;
   background-color: #FFFFFF;
   position: static; }
 
@@ -528,19 +529,15 @@ body {
 .formsSubmit {
   margin: 10px 44%; }
 
-.contactHeading {
-  padding-top: 100px; }
+.contactWrap {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 40px 0px;
+  background-color: #FFFFFF;
+  width: 80%; }
 
 .contactBG {
-  width: 100%;
-  height: 100vh;
-  min-height: 100%;
-  overflow: scroll;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../images/Contact-Image/Hands-Charity.png"); }
+  background-color: #f0fbff; }
 
 .contact-list {
   list-style: none;
@@ -692,14 +689,11 @@ body {
     right: 12em; }
 
   .contactMeBulletPoints {
-    border: 2px solid;
     height: 300px;
-    top: 3em;
-    background-color: rgba(255, 250, 250, 0.7); }
+    top: 3em; }
 
   .contact-list {
-    list-style: square;
-    padding-left: 40px; }
+    list-style: none; }
 
   .social-media-button a, .social-media-button div {
     transform: translateX(-77px); }

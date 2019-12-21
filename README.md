@@ -230,7 +230,7 @@ Shows social media buttons on phone screen sizes that link to social media pages
     - Used to allow users to send me messages for enquiries
 - Google fonts
     - To give the scripture of the texts on the website a better style, than the default one
-- Google Maps Api
+- Google Maps API
     - Used to have a map on a web page and to get information from it
 - Git and GitHub
     - Used for the project's control and deployment
@@ -260,8 +260,7 @@ to donate on the charity organisations' pages. It is green because it is a colou
 is a style that repeats two more times.
 
 Finally, there is a contact page, which specifies what a user can contact me about and assures a reply from me under 24 hours. This list is highlighted inside of a box on desktop sizes next to a form. The list is not in a box on phone and tablet sizes
-and it is placed above the form on those device sizes. The form allows a user to contact me with one's names and email address. Moreover, as background image there are hands of different colours, which metaphorically shows users to have a 
-giving hand for people all around the world. 
+and it is placed above the form on those device sizes. The form allows a user to contact me with one's names and email address. 
 
 The navbar and the footer are both white with black texts because I wanted to keep the website bright. The navbar has blue hover effects, as the most of the pages' colors are blue as well.
 

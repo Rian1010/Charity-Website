@@ -176,14 +176,11 @@ $large-desktop-width: 1200px;
             right:  12em;
         }
         .contactMeBulletPoints {
-            border: 2px solid;
             height: 300px;
             top: 3em;
-            background-color: rgba(255, 250, 250, 0.7);
         }
         .contact-list {
-            list-style: square;
-            padding-left: 40px;
+            list-style: none;
         }
         //Aside
         .social-media-button a, .social-media-button div {

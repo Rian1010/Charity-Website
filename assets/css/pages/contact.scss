@@ -18,20 +18,16 @@
     margin: 10px 44%;
 }
 
-.contactHeading {
-    padding-top: 100px;
+.contactWrap {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 40px 0px;
+    background-color: #FFFFFF;
+    width: 80%;
 }
 
 .contactBG {
-    width: 100%;
-    height: 100vh;
-    min-height: 100%;
-    overflow: scroll;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-image: url('../images/Contact-Image/Hands-Charity.png');
+    background-color: $BodyBlue;
 }
 
 .contact-list {
