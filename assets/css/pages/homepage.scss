@@ -10,61 +10,35 @@ body {
 .red-count {
     color: red;
     font-weight: 600;
-    font-size: 27px;
 }
 
 .blue-seconds {
     color: blue;
-    font-weight: 600;
 }
 
 .top-section {
-    // top: 0;
     padding: 1em 0.5em 0;
 }
 
 .top-section-counter-BG {
     background-color:  $counterBG;
-    border: 2px solid;
     color: $white;
     position: relative;
-    // top: -9%;
 }
 
-.header {
-    font-weight: 800;
-}
 .headerGDP {
     color: $white;
     top: 7px;
-    font-weight: 800;
-}
-
-.textHP1 {
-    font-weight: 600;
 }
 
 .textHP2 {
     color: $white;
-    font-weight: 600;
-}
-
-.text2 {
-    font-size: 1em;
-    font-weight: 600;
-}
-
-.text2 {
-    font-size: 1em;
-    font-weight: 600;
 }
 
 .textGDP {
-    font-size: 1em;
     top: 82px;
     padding-right: 10px;
     color: $white;
-    font-weight: 600;
 }
 
 .MotherTeresaQuote {

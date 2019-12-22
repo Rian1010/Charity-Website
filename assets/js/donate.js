@@ -74,11 +74,12 @@ clearBtn.addEventListener('click', function () {
 dragElement(document.getElementById("calculator-wrapper"));
 
 function dragElement(elmnt) {
+    // Initial values to work with them throughout next funtions
     var pos1 = 0,
         pos2 = 0,
         pos3 = 0,
         pos4 = 0;
-
+        
     if (document.getElementById(elmnt.id + "header")) {
         document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
     }
@@ -87,26 +88,37 @@ function dragElement(elmnt) {
     }
 
     function dragMouseDown(e) {
+        // use either the mouse event or the window event
         e = e || window.event;
+        // prevents the default action from stopping the drag
         e.preventDefault();
+        // get the mouse cursor position at startup
         pos3 = e.clientX;
         pos4 = e.clientY;
         document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves
         document.onmousemove = elementDrag;
     }
 
     function elementDrag(e) {
+        // use either the mouse event or the window event
         e = e || window.event;
+        // prevents the default action from stopping the drag
         e.preventDefault();
+        // pos3 and pos4 are the new positions 
+        // pos1 and pos2 are the distance/difference from the old position
+        // calculate the new cursor position:
         pos1 = pos3 - e.clientX;
         pos2 = pos4 - e.clientY;
         pos3 = e.clientX;
         pos4 = e.clientY;
+        // set the element's new position:
         elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
         elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
     }
 
     function closeDragElement() {
+        // stop moving when mouse button is released:
         document.onmouseup = null;
         document.onmousemove = null;
     }

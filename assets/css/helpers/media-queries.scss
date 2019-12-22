@@ -7,7 +7,6 @@ $large-desktop-width: 1200px;
     @media (min-width: $phone-width) {
         /*Homepage*/
         .textHP1 {
-            font-size: 26px;
             margin-left: 36px;
             margin-top: 36px;
             padding-left: 10px;
@@ -25,16 +24,7 @@ $large-desktop-width: 1200px;
             top: 56px;
         }
 
-        .text {
-            font-size: 26px;
-        }
-
-        .text2 {
-            font-size: 26px;
-        }
-
         .textGDP {
-            font-size: 26px;
             padding-top: 0%;
             position: relative;
             padding-right: 10px;
@@ -42,7 +32,6 @@ $large-desktop-width: 1200px;
         }
 
         .donateButtonStyleHP {
-            font-size: 25px;
             height: 49px;
         }
 
@@ -60,11 +49,27 @@ $large-desktop-width: 1200px;
         }
         //Statistics Texts
         .chartText {
-            margin-left: 10%;
+            margin: 0 10%;
+            text-align: center;
         }
-        #statistics-article {
-            padding-left: 50px;
-        } //Aside Social Media Buttons
+
+        .chartStyling {
+            background-color: $white;
+            margin: 70px 0px 70px 0px;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading-margin {
+            margin-left: 230px;
+        }
+        .chart-margin{
+            margin-left: 230px;
+        }//Aside Social Media Buttons
+        .social-media-button a, .social-media-button div {
+            transform: translateX(-15px);
+        }
         .social-media-button {
             width: 5.5%;
         } //Footers
@@ -89,6 +94,18 @@ $large-desktop-width: 1200px;
 
 @mixin tablet {
     @media (min-width: $tablet-width) {
+        h1 {
+            font-size: 50px;
+        }
+        h2 {
+            font-size: 35px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        p {
+            font-size: 22px;
+        }
         /*Homepage*/
         .hpimg-1 {
             padding: 164px 0;
@@ -110,14 +127,9 @@ $large-desktop-width: 1200px;
         }
 
         .text {
-            font-size: 26px;
             margin-top: 5%;
             padding-right: 10px;
             position: relative;
-        }
-
-        .text2 {
-            font-size: 26px;
         }
 
         .section1 {
@@ -127,7 +139,6 @@ $large-desktop-width: 1200px;
         }
 
         .textGDP {
-            font-size: 26px;
             padding-right: 10px;
             position: relative;
             color: $white;
@@ -139,32 +150,20 @@ $large-desktop-width: 1200px;
             top: 156px;
             padding-bottom: 197px;
         }
-        .chartText {
-            text-align: center;
-        }
-
-        .chartStyling {
-            background-color: $white;
-            margin: 7% 0;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
 
         .graph-color {
             color: $black;
         }
-        #statsBox {
-            height: 300px;
-        }
-        #counterStats {
-            font-size: 27px;
-        }
-        #deathStats {
-            font-size: 27px;
-        }
         //Statistics Page
+        #statsBox {
+            height: 500px;
+        }
+        .heading-margin {
+            margin-left: 0;
+        }
+        .chart-margin{
+            margin-left: 0px;
+        }
         .row-flex {
             margin-bottom: 0; 
         }
@@ -184,7 +183,7 @@ $large-desktop-width: 1200px;
         }
         //Aside
         .social-media-button a, .social-media-button div {
-            transform: translateX(-77px);
+            transform: translateX(-90px);
         }
         .social-media-button {
             padding-left: 40px !important;
@@ -197,6 +196,9 @@ $large-desktop-width: 1200px;
 
 @mixin desktop {
     @media(min-width: $desktop-width) {
+        p {
+            font-size: 18px;
+        }
         // Homepage
         .hpimg-1 {
             padding: 100px 0 350px 0;
@@ -205,11 +207,39 @@ $large-desktop-width: 1200px;
         .mapInstruction {
             padding-top: 13%
         }
+        .stats-banner-text{
+            font-size: 26px;
+        }
         //Statistics Page
         div.dc-chart {
             float: none;
             text-align: center;
         }
+        //Aside buttons
+        .sideCalculator:hover {
+            background-color: $sideCalculatorHover;
+            transform: translateX(-20px);
+        }
+
+        .facebook:hover {
+            background-color: $facebookHover;
+            transform: translateX(-20px);
+        }
+
+        .twitter:hover {
+            background-color: $twitterHover;
+            transform: translateX(-20px);
+        }
+
+        .instagram:hover {
+            background-color: $instagramHover;
+            transform: translateX(-20px);
+        }
+
+        .youtube:hover {
+            background-color: $youtubeHover;
+            transform: translateX(-20px);
+        } 
     }
 }
 
@@ -241,21 +271,8 @@ $large-desktop-width: 1200px;
             height: 1000px;
         }
 
-        .text {
-            font-size: 28px;
-        }
-
-        .text2 {
-            font-size: 28px;
-        }
-
-        .textGDP {
-            font-size: 28px;
-        }
-
         .textHP1 {
             padding-left: 40px;
-            font-size: 26px;
         }
 
         .section,
@@ -263,56 +280,18 @@ $large-desktop-width: 1200px;
         .section3 {
             margin-left: 40px;
         }//Aside Social Media Buttons
+        .social-media-button a, .social-media-button div {
+            transform: translateX(-53px);
+        }
         .social-media-button {
             left: -35px;
-        }
-
-        .sideCalculator:hover {
-            background-color: $sideCalculatorHover;
-            transform: translateX(23px) translateY(-50%);
-        }
-
-        .social-media-button a, .social-media-button div {
-            transform: translateX(-48px);
-        }
-
-        .facebook:hover {
-            background-color: $facebookHover;
-            transform: translateX(-20px);
-        }
-
-        .twitter:hover {
-            background-color: $twitterHover;
-            transform: translateX(-20px);
-        }
-
-        .instagram:hover {
-            background-color: $instagramHover;
-            transform: translateX(-20px);
-        }
-
-        .youtube:hover {
-            background-color: $youtubeHover;
-            transform: translateX(-20px);
-        } //Statistics Page
-        #statistics-article {
-            padding-right: 50px;
-        }
-        .theCounters {
-            top: 0%;
-        }
+        }//Statistics Page
         #statsBox {
             height: 600px;
-        }
-        #counterStats {
-            font-size: 62px;
-        }
-        #deathStats {
-            font-size: 62px;
-        }
-        .red-count-statistics {
-            font-size: 65px;
-        } // Contact Page
+        } 
+        .stats-banner-text {
+            font-size: 30px;
+        }// Contact Page
         .text-box-length {
             width: 780px;
         }

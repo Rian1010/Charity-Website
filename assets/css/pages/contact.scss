@@ -35,6 +35,14 @@
     padding: 0px;
 }
 
-.header2 {
-    font-weight: 600;
+.contact-cta {
+    height: 60vh;
+    background-image: url('../images/sadness-africa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

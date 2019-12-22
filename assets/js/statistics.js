@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", countSeconds);
 
 function countSeconds() {
 
-    COUNTER.innerHTML = "<p>You've been here for <span class='blue-seconds'>" + theMinutes + ":" + seconds + "</span> minutes.</p>";
-    DEATHS.innerHTML = "<p>Estimated amount of people that passed away: <span class='red-count-statistics'>" + count + "</span></p>"
+    COUNTER.innerHTML = "<p class='stats-banner-text'>You've been here for <span class='blue-seconds'>" + theMinutes + ":" + seconds + "</span> minutes.</p>";
+    DEATHS.innerHTML = "<p class='stats-banner-text'>Estimated amount of people that passed away: <span class='red-count-statistics'>" + count + "</span></p>"
 
     seconds++;
     count += 2;

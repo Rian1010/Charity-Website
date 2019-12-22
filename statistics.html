@@ -1,336 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/dc.min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="assets/css/dc.min.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
 
-    <title>Charity Base: Statistics Page</title>
+	<title>Charity Base: Statistics Page</title>
 
 </head>
 
 <body id="bodyColor">
-    <header>
-        <nav class="navbar navbar-expand-sm  navbar-light fixed-top">
+	<header>
+		<nav class="navbar navbar-expand-sm  navbar-light fixed-top">
 
-            <a href="index.html" class="navbar-brand navBrandColor">Charity Base</a>
+			<a href="index.html" class="navbar-brand navBrandColor">Charity Base</a>
 
-            <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="navbarNavDropdown" aria-controls="false">
+			<button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="navbarNavDropdown" aria-controls="false">
 
             <span class="navbar-toggler-icon"></span></button>
 
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a href="index.html" class="nav-link hvr-shutter-out-vertical">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="map.html" class="nav-link hvr-shutter-out-vertical">Map</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="statistics.html" class="nav-link hvr-shutter-out-vertical">Statistics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="donate.html" class="nav-link hvr-shutter-out-vertical">Donate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link hvr-shutter-out-vertical">Contacts</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="javascript: dc.filterAll(); dc.redrawAll();" class="btn btn-success reset-button">Reset all filters</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a href="index.html" class="nav-link hvr-shutter-out-vertical">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="map.html" class="nav-link hvr-shutter-out-vertical">Map</a>
+					</li>
+					<li class="nav-item">
+						<a href="statistics.html" class="nav-link hvr-shutter-out-vertical">Statistics</a>
+					</li>
+					<li class="nav-item">
+						<a href="donate.html" class="nav-link hvr-shutter-out-vertical">Donate</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link hvr-shutter-out-vertical">Contacts</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="javascript: dc.filterAll(); dc.redrawAll();" class="btn btn-success reset-button">Reset
+							all filters</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
-    <!--Main Header-->
+	<!--Main Header-->
 
-    <article id="statistics-article">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="statisticsHeading">
-                        <h1 class="header">Statistics</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<article>
+		<section>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<div id="statsBox">
+							<h1 id="stats-banner-heading">Statistics</h1>
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div id="statsBox">
-                        <div class="theCounters">
-                            <div class="col-6">
-                                <div id="counterStats"></div>
-                            </div>
-                            <div class="col-6">
-                                <div id="deathStats"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="death-seconds" id="deathCounterText">
-                        <p>It is estimated that two children die every second!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+							<div class="theCounters">
+								<div class="col-6">
+									<div id="counterStats"></div>
+								</div>
+								<div class="col-6">
+									<div id="deathStats"></div>
+								</div>
+							</div>
+						</div>
+						<div class="death-seconds" id="deathCounterText">
+							<p>It is estimated that two children die every second!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Short Notice about the Interactive Charts-->
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 row-flex">
+						<p class="notice-text">Click on the bars in the first graph to compare the dispalyed data with
+							the data in the charts below.</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <!--Short Notice about the Interactive Charts-->
-        <div class="container">
-            <div class="row">
-                <div class="col-12 row-flex">
-                    <p class="notice-text">Click on the bars in the first graph to compare the dispalyed data with the data in the charts below.</p>
-                </div>
-            </div>
-        </div>
+		<!--GDP Per Capita Chart-->
+		<section>
+			<div class="container-fluid chartStyling">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="graph-color heading-margin">Lowest GDP Per Capita In The World (Projected)</h2>
+						<div class="d-none d-sm-block chart-margin" id="gdp-per-capita-chart"></div>
+						<div class="d-block d-sm-none no-content-BG">
+							<p>This content is only available on devices with larger screen sizes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <!--GDP Per Capita Chart-->
-        <div class="container-fluid chartStyling">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="graph-color">Lowest GDP Per Capita In The World (Projected)</h2>
-                    <div class="d-none d-sm-block" id="gdp-per-capita-chart"></div>
-                    <div class="d-block d-sm-none no-content-BG">
-                        <p>This content is only available on devices with larger screen sizes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <p class="chartText d-none d-sm-block">
-                        DRC-Demcratic Republic of Congo, MZ-Mozambique, UG-Uganda, TJ-Tajikistan, YE-Yemen, HT-Haiti, ET-Ethopia, TZ-Tanzania, KG-Kyrgystan, UZ-Uzbekistan
-                    </p>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<p class="chartText d-none d-sm-block">
+							DRC-Demcratic Republic of Congo, MZ-Mozambique, UG-Uganda, TJ-Tajikistan, YE-Yemen,
+							HT-Haiti, ET-Ethopia, TZ-Tanzania, KG-Kyrgystan, UZ-Uzbekistan
+						</p>
 
-                    <p class="chartText">
-                        The chart shows the countries with the lowest GDP per capita in the world. This indicates that the Demcratic Republic of Congo has the lowest standards of living, as a low gross domestic product means that there is not enough output in the economy for
-                        the country's entire population.
-                    </p>
-                </div>
-            </div>
-        </div>
+						<p class="chartText">
+							The chart shows the countries with the lowest GDP per capita in the world. This indicates
+							that the Demcratic Republic of Congo has the lowest standards of living, as a low gross
+							domestic product means that there is not enough output in the economy for
+							the country's entire population.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <!--Gini Coefficient Chart-->
+		<!--Gini Coefficient Chart-->
+		<section>
+			<div class="container-fluid chartStyling">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="graph-color heading-margin">Gini Coefficient Chart</h2>
+						<div class="d-none d-sm-block chart-margin" id="gini-coefficient-chart"></div>
+						<div class="d-block d-sm-none no-content-BG">
+							<p>This content is only available on devices with larger screen sizes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <div class="container-fluid chartStyling">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="graph-color">Gini Coefficient Chart</h2>
-                    <div class="d-none d-sm-block" id="gini-coefficient-chart"></div>
-                    <div class="d-block d-sm-none no-content-BG">
-                        <p>This content is only available on devices with larger screen sizes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <p class="chartText d-none d-sm-block">
-                        DRC-Demcratic Republic of Congo, MZ-Mozambique, UG-Uganda, TJ-Tajikistan, YE-Yemen, HT-Haiti, ET-Ethopia, TZ-Tanzania, KG-Kyrgystan, UZ-Uzbekistan
-                    </p>
-                    <p class="chartText">
-                        The chart above shows the values of the lowest gini coefficient values in the world. This indicates how unequally the countries' income is distributed per 20% of the labour forces, which causes poor people to remain poor and wealthy people to stay wealthy.
-                    </p>
-                </div>
-            </div>
-        </div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<p class="chartText d-none d-sm-block">
+							DRC-Demcratic Republic of Congo, MZ-Mozambique, UG-Uganda, TJ-Tajikistan, YE-Yemen,
+							HT-Haiti, ET-Ethopia, TZ-Tanzania, KG-Kyrgystan, UZ-Uzbekistan
+						</p>
+						<p class="chartText">
+							The chart above shows the values of the lowest gini coefficient values in the world. This
+							indicates how unequally the countries' income is distributed per 20% of the labour forces,
+							which causes poor people to remain poor and wealthy people to stay wealthy.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <!--Unemployment Rate Pie Chart-->
-        <div class="container-fluid chartStyling">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="graph-color">Unemployment Rate Pie Chart</h2>
-                    <div class="d-none d-sm-block" id="unemployment-rate-pie-chart"></div>
-                    <div class="d-block d-sm-none no-content-BG">
-                        <p>This content is only available on devices with larger screen sizes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <p class="chartText d-none d-sm-block">
-                        DRC-Demcratic Republic of Congo, MZ-Mozambique, UG-Uganda, TJ-Tajikistan, YE-Yemen, HT-Haiti, ET-Ethopia, TZ-Tanzania, KG-Kyrgystan, UZ-Uzbekistan
-                    </p>
-                    <p class="chartText">
-                        The pie chart above, compares some of the countries with the highest total unemployment rates on Earth.
-                    </p>
-                </div>
-            </div>
-        </div>
+		<!--Unemployment Rate Pie Chart-->
+		<section>
+			<div class="container-fluid chartStyling">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="graph-color">Unemployment Rate Pie Chart</h2>
+						<div class="d-none d-sm-block" id="unemployment-rate-pie-chart"></div>
+						<div class="d-block d-sm-none no-content-BG">
+							<p>This content is only available on devices with larger screen sizes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <!--Female Unemployent Rates Graph-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<p class="chartText d-none d-sm-block">
+							DRC-Demcratic Republic of Congo, MZ-Mozambique, UG-Uganda, TJ-Tajikistan, YE-Yemen,
+							HT-Haiti, ET-Ethopia, TZ-Tanzania, KG-Kyrgystan, UZ-Uzbekistan
+						</p>
+						<p class="chartText">
+							The pie chart above, compares some of the countries with the highest total unemployment
+							rates on Earth.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <div class="container-fluid chartStyling">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="graph-color">Female Unemployment Rate</h2>
-                    <div class="d-none d-sm-block" id="unemployment-rate-female"></div>
-                    <div class="d-block d-sm-none no-content-BG">
-                        <p>This content is only available on devices with larger screen sizes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <p class="chartText">
-                        The graph above, compares how high the unemployment rates are for women, in some of the countries with the highest values. Currently Yemen has the highest result, whereas Tanziana has the lowest.
-                    </p>
-                </div>
-            </div>
-        </div>
+		<!--Female Unemployent Rates Graph-->
 
-        <!--Male Unemployment Rates Graph-->
+		<section>
+			<div class="container-fluid chartStyling">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="graph-color heading-margin">Female Unemployment Rate</h2>
+						<div class="d-none d-sm-block chart-margin" id="unemployment-rate-female"></div>
+						<div class="d-block d-sm-none no-content-BG">
+							<p>This content is only available on devices with larger screen sizes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <div class="container-fluid chartStyling">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="graph-color">Male Unemployment Rate</h2>
-                    <div class="d-none d-sm-block" id="unemployment-rate-male"></div>
-                    <div class="d-block d-sm-none no-content-BG">
-                        <p>This content is only available on devices with larger screen sizes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <p class="chartText">
-                        The graph above, compares how high the unemployment rates are for men, in some of the countries with the highest values. Currently Mozambique has the highest result, whereas Uganda has the lowest.
-                    </p>
-                </div>
-            </div>
-        </div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<p class="chartText">
+							The graph above, compares how high the unemployment rates are for women, in some of the
+							countries with the highest values. Currently Yemen has the highest result, whereas Tanziana
+							has the lowest.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Male Unemployment Rates Graph-->
+		<section>
+			<div class="container-fluid chartStyling">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="graph-color heading-margin">Male Unemployment Rate</h2>
+						<div class="d-none d-sm-block chart-margin" id="unemployment-rate-male"></div>
+						<div class="d-block d-sm-none no-content-BG">
+							<p>This content is only available on devices with larger screen sizes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<p class="chartText">
+							The graph above, compares how high the unemployment rates are for men, in some of the
+							countries with the highest values. Currently Mozambique has the highest result, whereas
+							Uganda has the lowest.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <!--Total Gender Unemployment Rates-->
+		<!--Total Gender Unemployment Rates-->
 
-        <div class="container-fluid chartStyling">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="graph-color">Unemployment Rates Pie Chart</h2>
-                    <div class="d-none d-sm-block" id="gender-unemployment-rate-pie-chart"></div>
-                    <div class="d-block d-sm-none no-content-BG">
-                        <p>This content is only available on devices with larger screen sizes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<section>
+			<div class="container-fluid chartStyling">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="graph-color">Unemployment Rates Pie Chart</h2>
+						<div class="d-none d-sm-block" id="gender-unemployment-rate-pie-chart"></div>
+						<div class="d-block d-sm-none no-content-BG">
+							<p>This content is only available on devices with larger screen sizes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <p class="chartText">
-                        The chart above, compares the total unemployment rates for both genders of all the countries shown in the other two unemployment rate graphs, above this pie chart. It indicates that the female unemployment rate is higher, than the male unemployment rate,
-                        which means that there are more women, who are struggling to find jobs, than man in those countries, even though they are all actively looking for work.
-                    </p>
-                </div>
-            </div>
-        </div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<p class="chartText">
+							The chart above, compares the total unemployment rates for both genders of all the countries
+							shown in the other two unemployment rate graphs, above this pie chart. It indicates that the
+							female unemployment rate is higher, than the male unemployment rate,
+							which means that there are more women, who are struggling to find jobs, than man in those
+							countries, even though they are all actively looking for work.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <!--Costs of Meals Chart-->
+		<!--Costs of Meals Chart-->
 
-        <div class="container-fluid chartStyling">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="graph-color">Costs of Food in Various Countries or City.</h2>
-                    <div class="d-none d-sm-block" id="costs-of-meals-chart"></div>
-                    <div class="d-block d-sm-none no-content-BG">
-                        <p>This content is only available on devices with larger screen sizes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<section class="stats-padding-bottom">
+			<div class="container-fluid chartStyling">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="graph-color heading-margin">Costs of Food in Various Countries or City.</h2>
+						<div class="d-none d-sm-block chart-margin" id="costs-of-meals-chart"></div>
+						<div class="d-block d-sm-none no-content-BG">
+							<p>This content is only available on devices with larger screen sizes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <p class="chartText d-none d-sm-block">
-                        NG-Nigeria, DRC-Democratic Republic of Congo, HT-Haiti, MZ-Mozambique, YE-Yemen, SO-Somalia, SoP-State of Palestine, BD-Bangladesh, SV-El Salvador, ID-Indonesia, JO-Jordan, NY-New York
-                    </p>
-                    <p class="chartText">
-                        The prices for meals in many countries are a lot more expensive, than one would think! Not just adults, but even children need to work hard and miss out on education just to have food for themselves and their families. The chart above shows how expansive
-                        it is, in some of the countries that a meal costs the most in the world.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </article>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<p class="chartText d-none d-sm-block">
+							NG-Nigeria, DRC-Democratic Republic of Congo, HT-Haiti, MZ-Mozambique, YE-Yemen, SO-Somalia,
+							SoP-State of Palestine, BD-Bangladesh, SV-El Salvador, ID-Indonesia, JO-Jordan, NY-New York
+						</p>
+						<p class="chartText">
+							The prices for meals in many countries are a lot more expensive, than one would think! Not
+							just adults, but even children need to work hard and miss out on education just to have food
+							for themselves and their families. The chart above shows how expansive
+							it is, in some of the countries that a meal costs the most in the world.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</article>
 
-    <aside>
-        <div>
-            <ul class="social-media-button d-none d-sm-block">
-                <li class="facebook-aside"><a href="http://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a></li>
-                <li class="twitter-aside"><a href="http://www.twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                <li class="youtube-aside"><a href="http://www.youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a></li>
-                <li class="instagram-aside"><a href="http://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </div>
-    </aside>
+	<aside>
+		<div>
+			<ul class="social-media-button d-none d-sm-block">
+				<li class="facebook-aside"><a href="http://www.facebook.com" target="_blank"
+						class="facebook"><i class="fab fa-facebook"></i></a></li>
+				<li class="twitter-aside"><a href="http://www.twitter.com" target="_blank"
+						class="twitter"><i class="fab fa-twitter"></i></a></li>
+				<li class="youtube-aside"><a href="http://www.youtube.com" target="_blank"
+						class="youtube"><i class="fab fa-youtube"></i></a></li>
+				<li class="instagram-aside"><a href="http://www.instagram.com" target="_blank"
+						class="instagram"><i class="fab fa-instagram"></i></a></li>
+			</ul>
+		</div>
+	</aside>
 
 
-    <footer id="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-sm-6 text-center">
-                    <ul class="footer-list">
-                        <li>Phone number: 1234</li>
-                        <li><a href="contact.html" class="footer-link">Send Me a Message</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 text-center">
-                    <ul class="footer-list">
-                        <li><a href="dontate.html" class="footer-link">Donate</a></li>
-                        <li><a href="map.html" class="footer-link">Map</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+	<footer id="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-6 text-center">
+					<ul class="footer-list">
+						<li><a href="tel: 12 3456 7890" class="footer-link">Phone number: 12 4567 7890</li>
+						<li><a href="contact.html" class="footer-link">Send Me a Message</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-sm-6 text-center">
+					<ul class="footer-list">
+						<li><a href="donate.html" class="footer-link">Donate</a></li>
+						<li><a href="map.html" class="footer-link">Map</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-        <div class="d-block d-sm-none">
-            <hr>
+		<div class="d-block d-sm-none">
+			<hr>
 
-            <!--Footer Social Media Icons-->
+			<!--Footer Social Media Icons-->
 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <ul class="social-media-icons-footer">
-                            <li class="facebook-footer"><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                            <li class="twitter-footer"><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                            <li class="youtube-footer"><a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                            <li class="instagram-footer"><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<ul class="social-media-icons-footer">
+							<li class="facebook-footer"><a href="http://www.facebook.com"
+									target="_blank"><i class="fab fa-facebook"></i></a></li>
+							<li class="twitter-footer"><a href="http://www.twitter.com"
+									target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li class="youtube-footer"><a href="http://www.youtube.com"
+									target="_blank"><i class="fab fa-youtube"></i></a></li>
+							<li class="instagram-footer"><a href="http://www.instagram.com"
+									target="_blank"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+	</script>
 
-    <script src="assets/js/d3.min.js"></script>
-    <script src="assets/js/crossfilter.min.js"></script>
-    <script src="assets/js/dc.min.js"></script>
-    <script src="assets/js/queue.min.js"></script>
+	<script src="assets/js/d3.min.js"></script>
+	<script src="assets/js/crossfilter.min.js"></script>
+	<script src="assets/js/dc.min.js"></script>
+	<script src="assets/js/queue.min.js"></script>
 
-    <script src="assets/js/statistics.js"></script>
+	<script src="assets/js/statistics.js"></script>
 
 </body>
 
