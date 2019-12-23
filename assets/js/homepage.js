@@ -56,6 +56,29 @@ scrollByPage();
 
 
 // Causes the text sections of the homepage to appear on certain scroll positions
+
+// const textEffect2 = document.querySelectorAll(".scroll-effect");
+
+// window.addEventListener("scroll", scrollByPage2);
+
+// function scrollByPage2(scrollPosition) {
+//     for(let effects of textEffect2) {
+//         if (window.scrollY >= scrollPosition) {
+//             effects.style.opacity = '1';
+//             effects.style.transform = 'translateX(0px)';
+//             effects.style.transition = '1s ease-in-out';
+//         }
+//         else {
+//             effects.style.opacity = '0';
+//             effects.style.transform = 'translateX(-20px)';
+//         }
+//     }
+// }
+// scrollByPage2(500);
+// scrollByPage2(1250);
+// scrollByPage2(2250);
+// scrollByPage2(3000);
+
 const textEffect2 = document.getElementById("textEffect2");
 
 window.addEventListener("scroll", scrollByPage2);
@@ -127,7 +150,6 @@ function scrollByPage5() {
     }
 }
 scrollByPage5();
-
 
 // Death Counter
 
