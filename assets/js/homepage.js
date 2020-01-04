@@ -56,133 +56,165 @@ scrollByPage();
 
 
 // Causes the text sections of the homepage to appear on certain scroll positions
-
-// const textEffect2 = document.querySelectorAll(".scroll-effect");
-
-// window.addEventListener("scroll", scrollByPage2);
-
-// function scrollByPage2(scrollPosition) {
-//     for(let effects of textEffect2) {
-//         if (window.scrollY >= scrollPosition) {
-//             effects.style.opacity = '1';
-//             effects.style.transform = 'translateX(0px)';
-//             effects.style.transition = '1s ease-in-out';
-//         }
-//         else {
-//             effects.style.opacity = '0';
-//             effects.style.transform = 'translateX(-20px)';
-//         }
-//     }
-// }
-// scrollByPage2(500);
-// scrollByPage2(1250);
-// scrollByPage2(2250);
-// scrollByPage2(3000);
-
 const textEffect2 = document.getElementById("textEffect2");
+const textEffect3 = document.getElementById("textEffect3");
+const textEffect4 = document.getElementById("textEffect4");
+const textEffect5 = document.getElementById("textEffect5");
 
 window.addEventListener("scroll", scrollByPage2);
 
 function scrollByPage2() {
-    if (window.scrollY >= 500) {
+//     switch (textEffect2) {
+//         case window.scrollY >= 700 && window.scrollY < 1600:
+//             console.log("its working");
+//             textEffect2.style.opacity = '1';
+//             textEffect2.style.transform = 'translateX(0px)';
+//             textEffect2.style.transition = '1s all ease-in-out';
+//             break;
+//         default: 
+//         textEffect2.style.opacity = '0';
+//         textEffect2.style.transform = 'translateX(-20px)';
+
+//     }
+// }
+    if (window.scrollY >= 700 && window.scrollY < 1600) {
+        console.log("its working");
         textEffect2.style.opacity = '1';
         textEffect2.style.transform = 'translateX(0px)';
-        textEffect2.style.transition = '1s ease-in-out';
+        textEffect2.style.transition = '1s all ease-in-out';
+    }
+    if (window.scrollY >= 1600 && window.scrollY < 2500) {
+        textEffect3.style.opacity = '1';
+        textEffect3.style.transform = 'translateX(0px)';
+        textEffect3.style.transition = '1s all ease-in-out';
+    }
+    if (window.scrollY >= 2500 && window.scrollY < 3200) {
+        textEffect4.style.opacity = '1';
+        textEffect4.style.transform = 'translateX(0px)';
+        textEffect4.style.transition = '1s all ease-in-out';
+    }
+    if (window.scrollY >= 3200) {
+        textEffect5.style.opacity = '1';
+        textEffect5.style.transform = 'translateX(0px)';
+        textEffect5.style.transition = '1s all ease-in-out';
     }
     else {
         textEffect2.style.opacity = '0';
         textEffect2.style.transform = 'translateX(-20px)';
-    }
-}
-scrollByPage2();
-
-
-const textEffect3 = document.getElementById("textEffect3");
-
-window.addEventListener("scroll", scrollByPage3);
-
-function scrollByPage3() {
-    if (window.scrollY >= 1250) {
-        textEffect3.style.opacity = '1';
-        textEffect3.style.transform = 'translateX(0px)';
-        textEffect3.style.transition = '1s ease-in-out';
-    }
-    else {
         textEffect3.style.opacity = '0';
         textEffect3.style.transform = 'translateX(-20px)';
-    }
-}
-scrollByPage3();
-
-
-
-const textEffect4 = document.getElementById("textEffect4");
-
-window.addEventListener("scroll", scrollByPage4);
-
-function scrollByPage4() {
-    if (window.scrollY >= 2250) {
-        textEffect4.style.opacity = '1';
-        textEffect4.style.transform = 'translateX(0px)';
-        textEffect4.style.transition = '1s ease-in-out';
-    }
-    else {
         textEffect4.style.opacity = '0';
         textEffect4.style.transform = 'translateX(-20px)';
-    }
-}
-scrollByPage4();
-
-
-const textEffect5 = document.getElementById("textEffect5");
-
-window.addEventListener("scroll", scrollByPage5);
-
-function scrollByPage5() {
-    if (window.scrollY >= 3000) {
-        textEffect5.style.opacity = '1';
-        textEffect5.style.transform = 'translateX(0px)';
-        textEffect5.style.transition = '1s ease-in-out';
-    }
-    else {
         textEffect5.style.opacity = '0';
         textEffect5.style.transform = 'translateX(-20px)';
     }
-}
-scrollByPage5();
 
-// Death Counter
+    scrollByPage2();
 
-const COUNTER = document.getElementById("counter");
-const DEATHS = document.getElementById("death");
+    // const textEffect2 = document.getElementById("textEffect2");
 
-var theMinutes = 0;
-var seconds = 0;
+    // window.addEventListener("scroll", scrollByPage2);
 
-var count = 0;
+    // function scrollByPage2() {
+    //     if (window.scrollY >= 700) {
+    //         textEffect2.style.opacity = '1';
+    //         textEffect2.style.transform = 'translateX(0px)';
+    //         textEffect2.style.transition = '1s ease-in-out';
+    //     }
+    //     else {
+    //         textEffect2.style.opacity = '0';
+    //         textEffect2.style.transform = 'translateX(-20px)';
+    //     }
+    // }
+    // scrollByPage2();
 
-document.addEventListener("DOMContentLoaded", countSeconds());
 
-function countSeconds() {
-    // Display text for the counters
-    COUNTER.innerHTML = "<p>You've been here for <span class='blue-seconds'>" + theMinutes + ":" + seconds + "</span> minutes.</p>";
-    DEATHS.innerHTML = "<p>Estimated amount of people that passed away: <span class='red-count'>" + count + "</span></p>";
-    // Count up by one
-    seconds++;
-    // Count up by two
-    count += 2;
+    // const textEffect3 = document.getElementById("textEffect3");
 
-    // Set up the timer
-    if (seconds % 60 == 0) {
-        seconds = 0;
-        theMinutes++;
-        if (theMinutes < 10) {
-            theMinutes = "0" + theMinutes;
+    // window.addEventListener("scroll", scrollByPage3);
+
+    // function scrollByPage3() {
+    //     if (window.scrollY >= 1600) {
+    //         textEffect3.style.opacity = '1';
+    //         textEffect3.style.transform = 'translateX(0px)';
+    //         textEffect3.style.transition = '1s ease-in-out';
+    //     }
+    //     else {
+    //         textEffect3.style.opacity = '0';
+    //         textEffect3.style.transform = 'translateX(-20px)';
+    //     }
+    // }
+    // scrollByPage3();
+
+
+
+    // const textEffect4 = document.getElementById("textEffect4");
+
+    // window.addEventListener("scroll", scrollByPage4);
+
+    // function scrollByPage4() {
+    //     if (window.scrollY >= 2500) {
+    //         textEffect4.style.opacity = '1';
+    //         textEffect4.style.transform = 'translateX(0px)';
+    //         textEffect4.style.transition = '1s ease-in-out';
+    //     }
+    //     else {
+    //         textEffect4.style.opacity = '0';
+    //         textEffect4.style.transform = 'translateX(-20px)';
+    //     }
+    // }
+    // scrollByPage4();
+
+
+    // const textEffect5 = document.getElementById("textEffect5");
+
+    // window.addEventListener("scroll", scrollByPage5);
+
+    // function scrollByPage5() {
+    //     if (window.scrollY >= 3200) {
+    //         textEffect5.style.opacity = '1';
+    //         textEffect5.style.transform = 'translateX(0px)';
+    //         textEffect5.style.transition = '1s ease-in-out';
+    //     }
+    //     else {
+    //         textEffect5.style.opacity = '0';
+    //         textEffect5.style.transform = 'translateX(-20px)';
+    //     }
+    // }
+    // scrollByPage5();
+
+    // Death Counter
+
+    const COUNTER = document.getElementById("counter");
+    const DEATHS = document.getElementById("death");
+
+    var theMinutes = 0;
+    var seconds = 0;
+
+    var count = 0;
+
+    document.addEventListener("DOMContentLoaded", countSeconds());
+
+    function countSeconds() {
+        // Display text for the counters
+        COUNTER.innerHTML = "<p>You've been here for <span class='blue-seconds'>" + theMinutes + ":" + seconds + "</span> minutes.</p>";
+        DEATHS.innerHTML = "<p>Estimated amount of people that passed away: <span class='red-count'>" + count + "</span></p>";
+        // Count up by one
+        seconds++;
+        // Count up by two
+        count += 2;
+
+        // Set up the timer
+        if (seconds % 60 == 0) {
+            seconds = 0;
+            theMinutes++;
+            if (theMinutes < 10) {
+                theMinutes = "0" + theMinutes;
+            }
+        }
+        if (seconds < 10 || seconds == 0) {
+            seconds = "0" + seconds;
         }
     }
-    if (seconds < 10 || seconds == 0) {
-        seconds = "0" + seconds;
-    }
-}
-// cause the function to work after each 1000 miliseconds
-var time = setInterval(countSeconds, 1000);
+    // cause the function to work after each 1000 miliseconds
+    var time = setInterval(countSeconds, 1000);
