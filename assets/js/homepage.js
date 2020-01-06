@@ -130,7 +130,7 @@ scrollByPage();
         });
     }
 
-    window.addEventListener('scroll', debounce(FadeIn));
+    window.addEventListener('scroll', FadeIn);
 
     // const textEffect2 = document.getElementById("textEffect2");
 

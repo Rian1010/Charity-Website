@@ -8,34 +8,34 @@ function initMap() {
 
     var syria = new countryPosition(35.009778, 38.459732);
     var southAfrica = new countryPosition(-31.054483, 24.168686);
-    var indonesia = new countryPosition(-4.326026, 122.081875);
-    var Uzbekistan = new countryPosition(42.084362, 63.582015);
-    var Yemen = new countryPosition(15.830300, 47.516581);
-    var Kyrgystan = new countryPosition(41.544684, 74.327115);
-    var Bangladesh = new countryPosition(24.183282, 90.146031);
-    var Tajikistan = new countryPosition(38.538064, 70.942738);
-    var Pakistan = new countryPosition(29.861529, 69.397467);
-    var India = new countryPosition(23.009295, 79.278429);
-    var DRC = new countryPosition(-2.990635, 23.213607);
-    var Mozambique = new countryPosition(-17.257179, 35.535016);
-    var Nigeria = new countryPosition(9.702898, 8.131115);
-    var Uganda = new countryPosition(1.453979, 32.347322);
-    var SouthSudan = new countryPosition(7.396102, 30.066992);
-    var Zimbabwe = new countryPosition(-19.041653, 29.827411);
-    var Somalia = new countryPosition(2.940413, 45.343220);
-    var Botswana = new countryPosition(-22.204538, 23.602852);
-    var Bolivia = new countryPosition(-16.610980, -64.670684);
-    var Guyana = new countryPosition(4.793348, -58.920553);
-    var Ecuador = new countryPosition(-1.446133, -78.435942);
-    var Haiti = new countryPosition(18.918287, -72.585389);
-    var Brazil = new countryPosition(-7.891161, -55.828338);
-    var Moldova = new countryPosition(47.572718, 28.461647);
-    var Ukraine = new countryPosition(49.097680, 31.622624);
-    var KosovoSerbia = new countryPosition(42.632686, 20.884051);
-    var Mexico = new countryPosition(24.001237, -102.466664);
-    var DetroitMIUSA = new countryPosition(42.333690, -83.048441);
-    var UnitedStates = new countryPosition(40.131143, -101.715410);
-    var Australia = new countryPosition(-24.972577, 134.742806);
+    // var indonesia = new countryPosition(-4.326026, 122.081875);
+    // var Uzbekistan = new countryPosition(42.084362, 63.582015);
+    // var Yemen = new countryPosition(15.830300, 47.516581);
+    // var Kyrgystan = new countryPosition(41.544684, 74.327115);
+    // var Bangladesh = new countryPosition(24.183282, 90.146031);
+    // var Tajikistan = new countryPosition(38.538064, 70.942738);
+    // var Pakistan = new countryPosition(29.861529, 69.397467);
+    // var India = new countryPosition(23.009295, 79.278429);
+    // var DRC = new countryPosition(-2.990635, 23.213607);
+    // var Mozambique = new countryPosition(-17.257179, 35.535016);
+    // var Nigeria = new countryPosition(9.702898, 8.131115);
+    // var Uganda = new countryPosition(1.453979, 32.347322);
+    // var SouthSudan = new countryPosition(7.396102, 30.066992);
+    // var Zimbabwe = new countryPosition(-19.041653, 29.827411);
+    // var Somalia = new countryPosition(2.940413, 45.343220);
+    // var Botswana = new countryPosition(-22.204538, 23.602852);
+    // var Bolivia = new countryPosition(-16.610980, -64.670684);
+    // var Guyana = new countryPosition(4.793348, -58.920553);
+    // var Ecuador = new countryPosition(-1.446133, -78.435942);
+    // var Haiti = new countryPosition(18.918287, -72.585389);
+    // var Brazil = new countryPosition(-7.891161, -55.828338);
+    // var Moldova = new countryPosition(47.572718, 28.461647);
+    // var Ukraine = new countryPosition(49.097680, 31.622624);
+    // var KosovoSerbia = new countryPosition(42.632686, 20.884051);
+    // var Mexico = new countryPosition(24.001237, -102.466664);
+    // var DetroitMIUSA = new countryPosition(42.333690, -83.048441);
+    // var UnitedStates = new countryPosition(40.131143, -101.715410);
+    // var Australia = new countryPosition(-24.972577, 134.742806);
     
     // Set up the initial zoomed in position on the map
     var map = new google.maps.Map(document.getElementById("map"), {
@@ -554,204 +554,204 @@ function initMap() {
         title: 'South Africa'
     });
 
-    var marker3 = new google.maps.Marker({
-        position: indonesia,
-        map: map,
-        title: 'Indonesia'
-    });
+    // var marker3 = new google.maps.Marker({
+    //     position: indonesia,
+    //     map: map,
+    //     title: 'Indonesia'
+    // });
 
-    var marker4 = new google.maps.Marker({
-        position: Uzbekistan,
-        map: map,
-        title: 'Uzbekistan'
-    });
-
-
-    var marker5 = new google.maps.Marker({
-        position: Yemen,
-        map: map,
-        title: 'Yemen'
-    });
+    // var marker4 = new google.maps.Marker({
+    //     position: Uzbekistan,
+    //     map: map,
+    //     title: 'Uzbekistan'
+    // });
 
 
-    var marker6 = new google.maps.Marker({
-        position: Kyrgystan,
-        map: map,
-        title: 'Kyrgystan'
-    });
+    // var marker5 = new google.maps.Marker({
+    //     position: Yemen,
+    //     map: map,
+    //     title: 'Yemen'
+    // });
 
 
-    var marker7 = new google.maps.Marker({
-        position: Bangladesh,
-        map: map,
-        title: 'Bangladesh'
-    });
+    // var marker6 = new google.maps.Marker({
+    //     position: Kyrgystan,
+    //     map: map,
+    //     title: 'Kyrgystan'
+    // });
 
 
-    var marker8 = new google.maps.Marker({
-        position: Tajikistan,
-        map: map,
-        title: 'Tajikistan'
-    });
+    // var marker7 = new google.maps.Marker({
+    //     position: Bangladesh,
+    //     map: map,
+    //     title: 'Bangladesh'
+    // });
 
 
-    var marker9 = new google.maps.Marker({
-        position: Pakistan,
-        map: map,
-        title: 'Pakistan'
-    });
+    // var marker8 = new google.maps.Marker({
+    //     position: Tajikistan,
+    //     map: map,
+    //     title: 'Tajikistan'
+    // });
 
 
-    var marker10 = new google.maps.Marker({
-        position: India,
-        map: map,
-        title: 'India'
-    });
+    // var marker9 = new google.maps.Marker({
+    //     position: Pakistan,
+    //     map: map,
+    //     title: 'Pakistan'
+    // });
 
 
-    var marker11 = new google.maps.Marker({
-        position: DRC,
-        map: map,
-        title: 'Democratic Republic of Congo'
-    });
+    // var marker10 = new google.maps.Marker({
+    //     position: India,
+    //     map: map,
+    //     title: 'India'
+    // });
 
 
-    var marker12 = new google.maps.Marker({
-        position: Mozambique,
-        map: map,
-        title: 'Mozambique'
-    });
+    // var marker11 = new google.maps.Marker({
+    //     position: DRC,
+    //     map: map,
+    //     title: 'Democratic Republic of Congo'
+    // });
 
 
-    var marker13 = new google.maps.Marker({
-        position: Nigeria,
-        map: map,
-        title: 'Nigeria'
-    });
+    // var marker12 = new google.maps.Marker({
+    //     position: Mozambique,
+    //     map: map,
+    //     title: 'Mozambique'
+    // });
 
 
-    var marker14 = new google.maps.Marker({
-        position: Uganda,
-        map: map,
-        title: 'Uganda'
-    });
+    // var marker13 = new google.maps.Marker({
+    //     position: Nigeria,
+    //     map: map,
+    //     title: 'Nigeria'
+    // });
 
 
-    var marker15 = new google.maps.Marker({
-        position: SouthSudan,
-        map: map,
-        title: 'South Sudan'
-    });
+    // var marker14 = new google.maps.Marker({
+    //     position: Uganda,
+    //     map: map,
+    //     title: 'Uganda'
+    // });
 
 
-    var marker16 = new google.maps.Marker({
-        position: Zimbabwe,
-        map: map,
-        title: 'Zimbabwe'
-    });
-
-    var marker17 = new google.maps.Marker({
-        position: Malawi,
-        map: map,
-        title: 'Malawi'
-    });
-
-    var marker18 = new google.maps.Marker({
-        position: Malawi,
-        map: map,
-        title: 'Somalia'
-    });
+    // var marker15 = new google.maps.Marker({
+    //     position: SouthSudan,
+    //     map: map,
+    //     title: 'South Sudan'
+    // });
 
 
-    var marker19 = new google.maps.Marker({
-        position: Botswana,
-        map: map,
-        title: 'Botswana'
-    });
+    // var marker16 = new google.maps.Marker({
+    //     position: Zimbabwe,
+    //     map: map,
+    //     title: 'Zimbabwe'
+    // });
+
+    // var marker17 = new google.maps.Marker({
+    //     position: Malawi,
+    //     map: map,
+    //     title: 'Malawi'
+    // });
+
+    // var marker18 = new google.maps.Marker({
+    //     position: Somalia,
+    //     map: map,
+    //     title: 'Somalia'
+    // });
 
 
-    var marker20 = new google.maps.Marker({
-        position: Bolivia,
-        map: map,
-        title: 'Bolivia'
-    });
+    // var marker19 = new google.maps.Marker({
+    //     position: Botswana,
+    //     map: map,
+    //     title: 'Botswana'
+    // });
 
 
-    var marker21 = new google.maps.Marker({
-        position: Guyana,
-        map: map,
-        title: 'Guyana'
-    });
+    // var marker20 = new google.maps.Marker({
+    //     position: Bolivia,
+    //     map: map,
+    //     title: 'Bolivia'
+    // });
 
 
-    var marker22 = new google.maps.Marker({
-        position: Ecuador,
-        map: map,
-        title: 'Ecuador'
-    });
+    // var marker21 = new google.maps.Marker({
+    //     position: Guyana,
+    //     map: map,
+    //     title: 'Guyana'
+    // });
 
 
-    var marker23 = new google.maps.Marker({
-        position: Haiti,
-        map: map,
-        title: 'Haiti'
-    });
+    // var marker22 = new google.maps.Marker({
+    //     position: Ecuador,
+    //     map: map,
+    //     title: 'Ecuador'
+    // });
 
 
-    var marker24 = new google.maps.Marker({
-        position: Brazil,
-        map: map,
-        title: 'Brazil'
-    });
+    // var marker23 = new google.maps.Marker({
+    //     position: Haiti,
+    //     map: map,
+    //     title: 'Haiti'
+    // });
 
 
-    var marker25 = new google.maps.Marker({
-        position: Moldova,
-        map: map,
-        title: 'Moldova'
-    });
+    // var marker24 = new google.maps.Marker({
+    //     position: Brazil,
+    //     map: map,
+    //     title: 'Brazil'
+    // });
 
 
-    var marker26 = new google.maps.Marker({
-        position: Ukraine,
-        map: map,
-        title: 'Ukraine'
-    });
+    // var marker25 = new google.maps.Marker({
+    //     position: Moldova,
+    //     map: map,
+    //     title: 'Moldova'
+    // });
 
 
-    var marker27 = new google.maps.Marker({
-        position: KosovoSerbia,
-        map: map,
-        title: 'KosovoSerbia'
-    });
+    // var marker26 = new google.maps.Marker({
+    //     position: Ukraine,
+    //     map: map,
+    //     title: 'Ukraine'
+    // });
 
 
-    var marker28 = new google.maps.Marker({
-        position: Mexico,
-        map: map,
-        title: 'Mexico'
-    });
+    // var marker27 = new google.maps.Marker({
+    //     position: KosovoSerbia,
+    //     map: map,
+    //     title: 'KosovoSerbia'
+    // });
 
 
-    var marker29 = new google.maps.Marker({
-        position: DetroitMIUSA,
-        map: map,
-        title: 'DetroitMIUSA'
-    });
+    // var marker28 = new google.maps.Marker({
+    //     position: Mexico,
+    //     map: map,
+    //     title: 'Mexico'
+    // });
 
 
-    var marker30 = new google.maps.Marker({
-        position: UnitedStates,
-        map: map,
-        title: 'UnitedStates'
-    });
+    // var marker29 = new google.maps.Marker({
+    //     position: DetroitMIUSA,
+    //     map: map,
+    //     title: 'DetroitMIUSA'
+    // });
 
 
-    var marker31 = new google.maps.Marker({
-        position: Australia,
-        map: map,
-        title: 'Australia'
-    });
+    // var marker30 = new google.maps.Marker({
+    //     position: UnitedStates,
+    //     map: map,
+    //     title: 'UnitedStates'
+    // });
+
+
+    // var marker31 = new google.maps.Marker({
+    //     position: Australia,
+    //     map: map,
+    //     title: 'Australia'
+    // });
 
 
 
@@ -766,141 +766,141 @@ function initMap() {
         infowindow2.open(map, marker2);
     });
 
-    marker3.addListener('click', function () {
-        infowindow3.open(map, marker3);
-    });
+    // marker3.addListener('click', function () {
+    //     infowindow3.open(map, marker3);
+    // });
 
-    marker4.addListener('click', function () {
-        infowindow4.open(map, marker4);
-    });
+    // marker4.addListener('click', function () {
+    //     infowindow4.open(map, marker4);
+    // });
 
-    marker5.addListener('click', function () {
-        infowindow5.open(map, marker5);
-    });
+    // marker5.addListener('click', function () {
+    //     infowindow5.open(map, marker5);
+    // });
 
-    marker6.addListener('click', function () {
-        infowindow6.open(map, marker6);
-    });
+    // marker6.addListener('click', function () {
+    //     infowindow6.open(map, marker6);
+    // });
 
-    marker7.addListener('click', function () {
-        infowindow7.open(map, marker7);
-    });
+    // marker7.addListener('click', function () {
+    //     infowindow7.open(map, marker7);
+    // });
 
-    marker8.addListener('click', function () {
-        infowindow8.open(map, marker8);
-    });
+    // marker8.addListener('click', function () {
+    //     infowindow8.open(map, marker8);
+    // });
 
-    marker9.addListener('click', function () {
-        infowindow9.open(map, marker9);
-    });
+    // marker9.addListener('click', function () {
+    //     infowindow9.open(map, marker9);
+    // });
 
-    marker10.addListener('click', function () {
-        infowindow10.open(map, marker10);
-    });
+    // marker10.addListener('click', function () {
+    //     infowindow10.open(map, marker10);
+    // });
 
-    marker11.addListener('click', function () {
-        infowindow11.open(map, marker11);
-    });
-
-
-    marker12.addListener('click', function () {
-        infowindow12.open(map, marker12);
-    });
+    // marker11.addListener('click', function () {
+    //     infowindow11.open(map, marker11);
+    // });
 
 
-    marker13.addListener('click', function () {
-        infowindow13.open(map, marker13);
-    });
+    // marker12.addListener('click', function () {
+    //     infowindow12.open(map, marker12);
+    // });
 
 
-    marker14.addListener('click', function () {
-        infowindow14.open(map, marker14);
-    });
+    // marker13.addListener('click', function () {
+    //     infowindow13.open(map, marker13);
+    // });
 
 
-    marker15.addListener('click', function () {
-        infowindow15.open(map, marker15);
-    });
+    // marker14.addListener('click', function () {
+    //     infowindow14.open(map, marker14);
+    // });
 
 
-    marker16.addListener('click', function () {
-        infowindow16.open(map, marker16);
-    });
+    // marker15.addListener('click', function () {
+    //     infowindow15.open(map, marker15);
+    // });
 
 
-    marker17.addListener('click', function () {
-        infowindow17.open(map, marker17);
-    });
+    // marker16.addListener('click', function () {
+    //     infowindow16.open(map, marker16);
+    // });
 
 
-    marker18.addListener('click', function () {
-        infowindow18.open(map, marker18);
-    });
+    // marker17.addListener('click', function () {
+    //     infowindow17.open(map, marker17);
+    // });
 
 
-    marker19.addListener('click', function () {
-        infowindow19.open(map, marker19);
-    });
+    // marker18.addListener('click', function () {
+    //     infowindow18.open(map, marker18);
+    // });
 
 
-    marker20.addListener('click', function () {
-        infowindow20.open(map, marker20);
-    });
+    // marker19.addListener('click', function () {
+    //     infowindow19.open(map, marker19);
+    // });
 
 
-    marker21.addListener('click', function () {
-        infowindow21.open(map, marker21);
-    });
+    // marker20.addListener('click', function () {
+    //     infowindow20.open(map, marker20);
+    // });
 
 
-    marker22.addListener('click', function () {
-        infowindow22.open(map, marker22);
-    });
+    // marker21.addListener('click', function () {
+    //     infowindow21.open(map, marker21);
+    // });
 
 
-    marker23.addListener('click', function () {
-        infowindow23.open(map, marker23);
-    });
+    // marker22.addListener('click', function () {
+    //     infowindow22.open(map, marker22);
+    // });
 
 
-    marker24.addListener('click', function () {
-        infowindow24.open(map, marker24);
-    });
+    // marker23.addListener('click', function () {
+    //     infowindow23.open(map, marker23);
+    // });
 
 
-    marker25.addListener('click', function () {
-        infowindow25.open(map, marker25);
-    });
+    // marker24.addListener('click', function () {
+    //     infowindow24.open(map, marker24);
+    // });
 
 
-    marker26.addListener('click', function () {
-        infowindow26.open(map, marker26);
-    });
+    // marker25.addListener('click', function () {
+    //     infowindow25.open(map, marker25);
+    // });
 
 
-    marker27.addListener('click', function () {
-        infowindow27.open(map, marker27);
-    });
+    // marker26.addListener('click', function () {
+    //     infowindow26.open(map, marker26);
+    // });
 
 
-    marker28.addListener('click', function () {
-        infowindow28.open(map, marker28);
-    });
+    // marker27.addListener('click', function () {
+    //     infowindow27.open(map, marker27);
+    // });
 
 
-    marker29.addListener('click', function () {
-        infowindow29.open(map, marker29);
-    });
+    // marker28.addListener('click', function () {
+    //     infowindow28.open(map, marker28);
+    // });
 
 
-    marker30.addListener('click', function () {
-        infowindow30.open(map, marker30);
-    });
+    // marker29.addListener('click', function () {
+    //     infowindow29.open(map, marker29);
+    // });
 
 
-    marker31.addListener('click', function () {
-        infowindow31.open(map, marker31);
-    });
+    // marker30.addListener('click', function () {
+    //     infowindow30.open(map, marker30);
+    // });
+
+
+    // marker31.addListener('click', function () {
+    //     infowindow31.open(map, marker31);
+    // });
 
 }
 initMap();
