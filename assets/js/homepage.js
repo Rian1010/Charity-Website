@@ -111,77 +111,98 @@ scrollByPage();
 
     // scrollByPage2();
 
-    const textEffect2 = document.getElementById("textEffect2");
+   
 
-    window.addEventListener("scroll", scrollByPage2);
-
-    function scrollByPage2() {
-        if (window.scrollY >= 700) {
-            textEffect2.style.opacity = '1';
-            textEffect2.style.transform = 'translateX(0px)';
-            textEffect2.style.transition = '1s ease-in-out';
-        }
-        else {
-            textEffect2.style.opacity = '0';
-            textEffect2.style.transform = 'translateX(-20px)';
-        }
+    const scrollEffects = document.querySelectorAll(".scroll-effect");
+   
+    function FadeIn() {
+        scrollEffects.forEach(scrollEffect => {
+            const slideInAt = (window.scrollY + window.innerHeitght) - scrollEffect.height / 2;
+            // the bottom of the text area
+            const txtAreaBottom = scrollEffect.offsetTop + scrollEffect.height;
+            const halfArea = slideInAt > scrollEffect.offsetTop;
+            const notScrolledPast = window.scrollY > txtAreaBottom;
+            if (halfArea && notScrolledPast) {
+                scrollEffect.classList.add('active');
+            } else {
+                scrollEffect.classList.remove('active');
+            }
+        });
     }
-    scrollByPage2();
+
+    window.addEventListener('scroll', debounce(FadeIn));
+
+    // const textEffect2 = document.getElementById("textEffect2");
+
+    // window.addEventListener("scroll", scrollByPage2);
+
+    // function scrollByPage2() {
+    //     if (window.scrollY >= 700) {
+    //         textEffect2.style.opacity = '1';
+    //         textEffect2.style.transform = 'translateX(0px)';
+    //         textEffect2.style.transition = '1s ease-in-out';
+    //     }
+    //     else {
+    //         textEffect2.style.opacity = '0';
+    //         textEffect2.style.transform = 'translateX(-20px)';
+    //     }
+    // }
+    // scrollByPage2();
 
 
-    const textEffect3 = document.getElementById("textEffect3");
+    // const textEffect3 = document.getElementById("textEffect3");
 
-    window.addEventListener("scroll", scrollByPage3);
+    // window.addEventListener("scroll", scrollByPage3);
 
-    function scrollByPage3() {
-        if (window.scrollY >= 1600) {
-            textEffect3.style.opacity = '1';
-            textEffect3.style.transform = 'translateX(0px)';
-            textEffect3.style.transition = '1s ease-in-out';
-        }
-        else {
-            textEffect3.style.opacity = '0';
-            textEffect3.style.transform = 'translateX(-20px)';
-        }
-    }
-    scrollByPage3();
-
-
-
-    const textEffect4 = document.getElementById("textEffect4");
-
-    window.addEventListener("scroll", scrollByPage4);
-
-    function scrollByPage4() {
-        if (window.scrollY >= 2500) {
-            textEffect4.style.opacity = '1';
-            textEffect4.style.transform = 'translateX(0px)';
-            textEffect4.style.transition = '1s ease-in-out';
-        }
-        else {
-            textEffect4.style.opacity = '0';
-            textEffect4.style.transform = 'translateX(-20px)';
-        }
-    }
-    scrollByPage4();
+    // function scrollByPage3() {
+    //     if (window.scrollY >= 1600) {
+    //         textEffect3.style.opacity = '1';
+    //         textEffect3.style.transform = 'translateX(0px)';
+    //         textEffect3.style.transition = '1s ease-in-out';
+    //     }
+    //     else {
+    //         textEffect3.style.opacity = '0';
+    //         textEffect3.style.transform = 'translateX(-20px)';
+    //     }
+    // }
+    // scrollByPage3();
 
 
-    const textEffect5 = document.getElementById("textEffect5");
 
-    window.addEventListener("scroll", scrollByPage5);
+    // const textEffect4 = document.getElementById("textEffect4");
 
-    function scrollByPage5() {
-        if (window.scrollY >= 3200) {
-            textEffect5.style.opacity = '1';
-            textEffect5.style.transform = 'translateX(0px)';
-            textEffect5.style.transition = '1s ease-in-out';
-        }
-        else {
-            textEffect5.style.opacity = '0';
-            textEffect5.style.transform = 'translateX(-20px)';
-        }
-    }
-    scrollByPage5();
+    // window.addEventListener("scroll", scrollByPage4);
+
+    // function scrollByPage4() {
+    //     if (window.scrollY >= 2500) {
+    //         textEffect4.style.opacity = '1';
+    //         textEffect4.style.transform = 'translateX(0px)';
+    //         textEffect4.style.transition = '1s ease-in-out';
+    //     }
+    //     else {
+    //         textEffect4.style.opacity = '0';
+    //         textEffect4.style.transform = 'translateX(-20px)';
+    //     }
+    // }
+    // scrollByPage4();
+
+
+    // const textEffect5 = document.getElementById("textEffect5");
+
+    // window.addEventListener("scroll", scrollByPage5);
+
+    // function scrollByPage5() {
+    //     if (window.scrollY >= 3200) {
+    //         textEffect5.style.opacity = '1';
+    //         textEffect5.style.transform = 'translateX(0px)';
+    //         textEffect5.style.transition = '1s ease-in-out';
+    //     }
+    //     else {
+    //         textEffect5.style.opacity = '0';
+    //         textEffect5.style.transform = 'translateX(-20px)';
+    //     }
+    // }
+    // scrollByPage5();
 
     // Death Counter
 

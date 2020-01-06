@@ -30,6 +30,19 @@ function countSeconds() {
 
 var time = setInterval(countSeconds, 1000);
 
+// Notice box
+let noticeBox = document.getElementById("notice-wrap");
+let cross = document.getElementById("closeX");
+
+cross.addEventListener("click", closeNoticeBox);
+
+function closeNoticeBox() {
+    noticeBox.style.display = "none";
+    return
+}
+
+
+
 // Connects to the JSON files that store the required data
 queue()
     .defer(d3.json, "data/data.json")

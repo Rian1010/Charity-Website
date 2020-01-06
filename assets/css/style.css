@@ -392,7 +392,17 @@ body {
 .top-section-counter-BG {
   background-color: rgba(225, 0, 0, 0.3);
   color: #FFFFFF;
+  padding: 10px 0;
   position: relative; }
+
+#textEffect2 {
+  opacity: 0;
+  transform: translateX(-20px); }
+
+#textEffect2 {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: 1s all ease-in-out; }
 
 .headerGDP {
   color: #000000;
@@ -438,9 +448,23 @@ body {
   text-align: center;
   color: #FFFFFF; }
 
+.closing-button-wrapper {
+  display: flex;
+  justify-content: flex-end; }
+
+.closing-button {
+  width: 20px;
+  cursor: pointer; }
+
+.closing-button:hover {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.closing-button:active {
+  background-color: rgba(255, 255, 255, 0.5); }
+
 .row-flex {
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
   margin-bottom: 30px;
   background-color: #ffff8a; }
 

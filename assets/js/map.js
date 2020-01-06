@@ -1,159 +1,42 @@
 function initMap() {
     // Set up the location of each country
-    var syria = {
-        lat: 35.009778,
-        lng: 38.459732
-    };
 
-    var southAfrica = {
-        lat: -31.054483,
-        lng: 24.168686
-    };
+    function countryPosition(lat, lng) {
+        this.lat = lat;
+        this.lng = lng;
+    }
 
-    var indonesia = {
-        lat: -4.326026,
-        lng: 122.081875
-    };
-
-    var Uzbekistan = {
-        lat: 42.084362,
-        lng: 63.582015
-    };
-
-    var Yemen = {
-        lat: 15.830300,
-        lng: 47.516581
-    };
-
-    var Kyrgystan = {
-        lat: 41.544684,
-        lng: 74.327115
-    };
-
-    var Bangladesh = {
-        lat: 24.183282,
-        lng: 90.146031
-    };
-
-    var Tajikistan = {
-        lat: 38.538064,
-        lng: 70.942738
-    };
-
-    var Pakistan = {
-        lat: 29.861529,
-        lng: 69.397467
-    };
-
-    var India = {
-        lat: 23.009295,
-        lng: 79.278429
-    };
-
-    var DRC = {
-        lat: -2.990635,
-        lng: 23.213607
-    };
-
-    var Mozambique = {
-        lat: -17.257179,
-        lng: 35.535016
-    };
-
-    var Nigeria = {
-        lat: 9.702898,
-        lng: 8.131115
-    };
-
-    var Uganda = {
-        lat: 1.453979,
-        lng: 32.347322
-    };
-
-    var SouthSudan = {
-        lat: 7.396102,
-        lng: 30.066992
-    };
-
-    var Zimbabwe = {
-        lat: -19.041653,
-        lng: 29.827411
-    };
-
-    var Malawi = {
-        lat: -13.517843,
-        lng: 34.309239
-    };
-
-    var Somalia = {
-        lat: 2.940413,
-        lng: 45.343220
-    };
-
-    var Botswana = {
-        lat: -22.204538,
-        lng: 23.602852
-    };
-
-    var Bolivia = {
-        lat: -16.610980,
-        lng: -64.670684
-    };
-
-    var Guyana = {
-        lat: 4.793348,
-        lng: -58.920553
-    };
-
-    var Ecuador = {
-        lat: -1.446133,
-        lng: -78.435942
-    };
-
-    var Haiti = {
-        lat: 18.918287,
-        lng: -72.585389
-    };
-
-    var Brazil = {
-        lat: -7.891161,
-        lng: -55.828338
-    };
-
-    var Moldova = {
-        lat: 47.572718,
-        lng: 28.461647
-    };
-
-    var Ukraine = {
-        lat: 49.097680,
-        lng: 31.622624
-    };
-
-    var KosovoSerbia = {
-        lat: 42.632686,
-        lng: 20.884051
-    };
-
-    var Mexico = {
-        lat: 24.001237,
-        lng: -102.466664
-    };
-
-    var DetroitMIUSA = {
-        lat: 42.333690,
-        lng: -83.048441
-    };
-
-    var UnitedStates = {
-        lat: 40.131143,
-        lng: -101.715410
-    };
-
-    var Australia = {
-        lat: -24.972577,
-        lng: 134.742806
-    };
+    var syria = new countryPosition(35.009778, 38.459732);
+    var southAfrica = new countryPosition(-31.054483, 24.168686);
+    var indonesia = new countryPosition(-4.326026, 122.081875);
+    var Uzbekistan = new countryPosition(42.084362, 63.582015);
+    var Yemen = new countryPosition(15.830300, 47.516581);
+    var Kyrgystan = new countryPosition(41.544684, 74.327115);
+    var Bangladesh = new countryPosition(24.183282, 90.146031);
+    var Tajikistan = new countryPosition(38.538064, 70.942738);
+    var Pakistan = new countryPosition(29.861529, 69.397467);
+    var India = new countryPosition(23.009295, 79.278429);
+    var DRC = new countryPosition(-2.990635, 23.213607);
+    var Mozambique = new countryPosition(-17.257179, 35.535016);
+    var Nigeria = new countryPosition(9.702898, 8.131115);
+    var Uganda = new countryPosition(1.453979, 32.347322);
+    var SouthSudan = new countryPosition(7.396102, 30.066992);
+    var Zimbabwe = new countryPosition(-19.041653, 29.827411);
+    var Somalia = new countryPosition(2.940413, 45.343220);
+    var Botswana = new countryPosition(-22.204538, 23.602852);
+    var Bolivia = new countryPosition(-16.610980, -64.670684);
+    var Guyana = new countryPosition(4.793348, -58.920553);
+    var Ecuador = new countryPosition(-1.446133, -78.435942);
+    var Haiti = new countryPosition(18.918287, -72.585389);
+    var Brazil = new countryPosition(-7.891161, -55.828338);
+    var Moldova = new countryPosition(47.572718, 28.461647);
+    var Ukraine = new countryPosition(49.097680, 31.622624);
+    var KosovoSerbia = new countryPosition(42.632686, 20.884051);
+    var Mexico = new countryPosition(24.001237, -102.466664);
+    var DetroitMIUSA = new countryPosition(42.333690, -83.048441);
+    var UnitedStates = new countryPosition(40.131143, -101.715410);
+    var Australia = new countryPosition(-24.972577, 134.742806);
+    
     // Set up the initial zoomed in position on the map
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 2.5,
@@ -847,147 +730,147 @@ function initMap() {
 
     // Open markers on click
 
-    marker.addListener('click', function() {
+    marker.addListener('click', function () {
         infowindow.open(map, marker);
     });
 
-    marker2.addListener('click', function() {
+    marker2.addListener('click', function () {
         infowindow2.open(map, marker2);
     });
 
-    marker3.addListener('click', function() {
+    marker3.addListener('click', function () {
         infowindow3.open(map, marker3);
     });
 
-    marker4.addListener('click', function() {
+    marker4.addListener('click', function () {
         infowindow4.open(map, marker4);
     });
 
-    marker5.addListener('click', function() {
+    marker5.addListener('click', function () {
         infowindow5.open(map, marker5);
     });
 
-    marker6.addListener('click', function() {
+    marker6.addListener('click', function () {
         infowindow6.open(map, marker6);
     });
 
-    marker7.addListener('click', function() {
+    marker7.addListener('click', function () {
         infowindow7.open(map, marker7);
     });
 
-    marker8.addListener('click', function() {
+    marker8.addListener('click', function () {
         infowindow8.open(map, marker8);
     });
 
-    marker9.addListener('click', function() {
+    marker9.addListener('click', function () {
         infowindow9.open(map, marker9);
     });
 
-    marker10.addListener('click', function() {
+    marker10.addListener('click', function () {
         infowindow10.open(map, marker10);
     });
 
-    marker11.addListener('click', function() {
+    marker11.addListener('click', function () {
         infowindow11.open(map, marker11);
     });
 
 
-    marker12.addListener('click', function() {
+    marker12.addListener('click', function () {
         infowindow12.open(map, marker12);
     });
 
 
-    marker13.addListener('click', function() {
+    marker13.addListener('click', function () {
         infowindow13.open(map, marker13);
     });
 
 
-    marker14.addListener('click', function() {
+    marker14.addListener('click', function () {
         infowindow14.open(map, marker14);
     });
 
 
-    marker15.addListener('click', function() {
+    marker15.addListener('click', function () {
         infowindow15.open(map, marker15);
     });
 
 
-    marker16.addListener('click', function() {
+    marker16.addListener('click', function () {
         infowindow16.open(map, marker16);
     });
 
 
-    marker17.addListener('click', function() {
+    marker17.addListener('click', function () {
         infowindow17.open(map, marker17);
     });
 
 
-    marker18.addListener('click', function() {
+    marker18.addListener('click', function () {
         infowindow18.open(map, marker18);
     });
 
 
-    marker19.addListener('click', function() {
+    marker19.addListener('click', function () {
         infowindow19.open(map, marker19);
     });
 
 
-    marker20.addListener('click', function() {
+    marker20.addListener('click', function () {
         infowindow20.open(map, marker20);
     });
 
 
-    marker21.addListener('click', function() {
+    marker21.addListener('click', function () {
         infowindow21.open(map, marker21);
     });
 
 
-    marker22.addListener('click', function() {
+    marker22.addListener('click', function () {
         infowindow22.open(map, marker22);
     });
 
 
-    marker23.addListener('click', function() {
+    marker23.addListener('click', function () {
         infowindow23.open(map, marker23);
     });
 
 
-    marker24.addListener('click', function() {
+    marker24.addListener('click', function () {
         infowindow24.open(map, marker24);
     });
 
 
-    marker25.addListener('click', function() {
+    marker25.addListener('click', function () {
         infowindow25.open(map, marker25);
     });
 
 
-    marker26.addListener('click', function() {
+    marker26.addListener('click', function () {
         infowindow26.open(map, marker26);
     });
 
 
-    marker27.addListener('click', function() {
+    marker27.addListener('click', function () {
         infowindow27.open(map, marker27);
     });
 
 
-    marker28.addListener('click', function() {
+    marker28.addListener('click', function () {
         infowindow28.open(map, marker28);
     });
 
 
-    marker29.addListener('click', function() {
+    marker29.addListener('click', function () {
         infowindow29.open(map, marker29);
     });
 
 
-    marker30.addListener('click', function() {
+    marker30.addListener('click', function () {
         infowindow30.open(map, marker30);
     });
 
 
-    marker31.addListener('click', function() {
+    marker31.addListener('click', function () {
         infowindow31.open(map, marker31);
     });
 

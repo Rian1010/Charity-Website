@@ -23,7 +23,19 @@ body {
 .top-section-counter-BG {
     background-color:  $counterBG;
     color: $white;
+    padding: 10px 0;
     position: relative;
+}
+
+#textEffect2 {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+#textEffect2 {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: 1s all ease-in-out;
 }
 
 .headerGDP {

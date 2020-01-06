@@ -261,6 +261,23 @@ Finally, there is a contact page, which specifies what a user can contact me and
 The navbar and the footer are both white with black texts because I wanted to keep the website bright. The navbar has blue hover effects, as the most of the pages' colors are blue as well.
 
 ## Testing
+
+### Solving buggs 
+#### Maps Page
+- Tested each of the the JavaScript codes by using console.log() and the console in the devtools on Google Chrome
+- Had problems with the codes in the maps.js file, as the codes were almost 1000 lines long, so I solved it using the following procedures:
+> - Used a constructor to call the longitude and latitude values of the countries that are displayed
+
+#### Statistics page
+- The line charts did not work, so I found a way to make them work by using the following code, which was repeated for each given data in both of the data charts to make the information be displayed in the graphs.: 
+> - femaleUnempRateDRC = unemp_rate_female_dim.group().reduceCount(function(d) {
+            if (d.unemploymentRateCountry === 'DRC') {
+                return +d.femaleUnemploymentRate;
+            }
+            else {
+                return 0;
+            }
+        }), 
 #### User Stories
 1. As a person who is visiting the website, I want to know how I could help people in need and why they need my help. 
 > - Scroll through the homepage to receive quick information about how countries fall into poverty or war and find out how one could help 
@@ -278,7 +295,10 @@ The navbar and the footer are both white with black texts because I wanted to ke
 
 
 #### Different browsers, mobile, desktop
-In order to check the responsiveness, the live preview was utilised to check different screen sizes in the devtools.
+- Check the responsiveness by utilising the live preview to look at the website in different screen sizes in the devtools on Google Chrome
+- Opened up the website on my phone
+- Asked friends to check out the website on their devices and let me know of any bugs they found 
+
 
 #### Code validation
 The two websites that I used to validate the HTML and CSS codes are:
