@@ -8,6 +8,69 @@ function initMap() {
 
     var syria = new countryPosition(35.009778, 38.459732);
     var southAfrica = new countryPosition(-31.054483, 24.168686);
+
+    // Set up the initial zoomed in position on the map
+    var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 2.5,
+        center: syria
+    });
+
+    // Information windows texts
+    let countriesAsiaAfrica = [
+        {
+            name: "Syria",
+            infoText: "Syria is going through the world's largest humanitarian crisis of all time. You could help to make a change!",
+        },
+        {
+            name: "South Africa",
+            infoText: "South Africa requires your support to improve economic growth and development!"
+        }
+    ];
+    let asiaAfricaSec = "donate.html#AsiaAfricaSection";
+    let buttonText = "Donate"
+
+    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    let contentString1 = 
+        countriesAsiaAfrica.map(information => {
+            for (i = 0; i < countriesAsiaAfrica.length; i++) {
+            '<div id="content">' +
+                '</div>' +
+                '<h2 id="markerInfoHeading">' + countriesAsiaAfrica.name + '</h2>' +
+                '<div id="mapmarkerInfoBodyContent">' +
+                '<p>' + countriesAsiaAfrica.infoText + '</p>' +
+                '<a href="' + asiaAfricaSec + '" class="btn donateButtonStyle">' +
+                buttonText + '</a> ' +
+                '</div>';
+        }
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString1,
+        maxWidth: 200
+    });
+
+    var marker = new google.maps.Marker({
+        position: syria,
+        map: map,
+        title: 'Syria'
+    });
+
+    var marker2 = new google.maps.Marker({
+        position: southAfrica,
+        map: map,
+        title: 'South Africa'
+    });
+
+    marker.addListener('click', function () {
+        infowindow.open(map, marker);
+    });
+
+    marker2.addListener('click', function () {
+        infowindow2.open(map, marker2);
+    });
+
+
     // var indonesia = new countryPosition(-4.326026, 122.081875);
     // var Uzbekistan = new countryPosition(42.084362, 63.582015);
     // var Yemen = new countryPosition(15.830300, 47.516581);
@@ -36,37 +99,6 @@ function initMap() {
     // var DetroitMIUSA = new countryPosition(42.333690, -83.048441);
     // var UnitedStates = new countryPosition(40.131143, -101.715410);
     // var Australia = new countryPosition(-24.972577, 134.742806);
-    
-    // Set up the initial zoomed in position on the map
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 2.5,
-        center: syria
-    });
-
-    // Information windows texts
-    let countriesAsiaAfrica = [
-        {
-            name: "Syria",
-            infoText: "Syria is going through the world's largest humanitarian crisis of all time. You could help to make a change!",
-        },
-        {
-            name: "South Africa",
-            infoText: "South Africa requires your support to improve economic growth and development!"
-        }
-    ];
-    let asiaAfricaSec = "donate.html#AsiaAfricaSection";
-    let buttonText = "Donate"
-
-    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-    let contentString1 = '<div id="content">' +
-        '</div>' +
-        '<h2 id="markerInfoHeading">' + countriesAsiaAfrica.name + '</h2>' +
-        '<div id="mapmarkerInfoBodyContent">' +
-        '<p>' + countriesAsiaAfrica.infoText + '</p>' +
-        '<a href="' + asiaAfricaSec + '" class="btn donateButtonStyle">' +
-        buttonText + '</a> ' +
-        '</div>';
 
     // var contentString = '<div id="content">' +
     //     '</div>' +
@@ -377,10 +409,7 @@ function initMap() {
 
     // Set up the infowindows to be available, if the markers are clicked
 
-    var infowindow = new google.maps.InfoWindow({
-        content: contentString1,
-        maxWidth: 200
-    });
+
 
     // var infowindow = new google.maps.InfoWindow({
     //     content: contentString,
@@ -542,17 +571,17 @@ function initMap() {
 
     // Set up markers for each country's position
 
-    var marker = new google.maps.Marker({
-        position: syria,
-        map: map,
-        title: 'Syria'
-    });
+    // var marker = new google.maps.Marker({
+    //     position: syria,
+    //     map: map,
+    //     title: 'Syria'
+    // });
 
-    var marker2 = new google.maps.Marker({
-        position: southAfrica,
-        map: map,
-        title: 'South Africa'
-    });
+    // var marker2 = new google.maps.Marker({
+    //     position: southAfrica,
+    //     map: map,
+    //     title: 'South Africa'
+    // });
 
     // var marker3 = new google.maps.Marker({
     //     position: indonesia,
@@ -758,13 +787,13 @@ function initMap() {
 
     // Open markers on click
 
-    marker.addListener('click', function () {
-        infowindow.open(map, marker);
-    });
+    // marker.addListener('click', function () {
+    //     infowindow.open(map, marker);
+    // });
 
-    marker2.addListener('click', function () {
-        infowindow2.open(map, marker2);
-    });
+    // marker2.addListener('click', function () {
+    //     infowindow2.open(map, marker2);
+    // });
 
     // marker3.addListener('click', function () {
     //     infowindow3.open(map, marker3);
