@@ -40,11 +40,11 @@
 }
 
 .charity-collapse:hover {
-    background-color: $blue;
+    background-color: $blue; 
 }
 
 .donateButtonStyle {
-    background-color: $green;
+    background-image: $buttonBG;
     margin-bottom: 10px;
     color: $white;
     transition: 0.2s ease-in-out;
@@ -52,7 +52,7 @@
 }
 
 .donateButtonStyle:hover {
-    background-color: $darkerGreen;
+    background-image: $buttonHoverBG;
     color: $white;
 }
 

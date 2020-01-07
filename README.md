@@ -129,43 +129,53 @@ The clear button has an 'click' event listener, which is connected to a function
 
 
 Finally, the dragElement has the following variables:
-- var pos1 = 0,
-        pos2 = 0,
-        pos3 = 0,
-        pos4 = 0;
+```javascript
+var pos1 = 0,
+    pos2 = 0,
+    pos3 = 0,
+    pos4 = 0;
+```
 
 These are initialised values to work with throughout the functions beneath it. Then, the functions named dragMouseDown, elementDrag and closeDragElement are used.
 
-- e = e || window.event;
+```javascript
+e = e || window.event;
 e.preventDefault();
+```
 
 In function dragMouseDown, the code above either triggers a mouse event is or window.event. The second line of the code is used to prevent any disruption to stop the item's ability of being dragged throughout the page. 
 Then, the function uses the following code to get the position of the item at the startup and to connect to the functions below it: 
 
-- pos3 = e.clientX;
+```javascript
+pos3 = e.clientX;
 pos4 = e.clientY;
 
-- document.onmouseup = closeDragElement;
+document.onmouseup = closeDragElement;
 document.onmousemove = elementDrag;
+```
 
 The function calle closeDragElement gets stops the process of dragging the caluclator, when the mouse is released, whereas the function elementDrag, gets triggered through the movement of the mouse. It keeps the process of dragging the item consistent by adding the lines, e = e || window.event; and e.preventDefault(); too, in order to prevent other things from stopping the procedure. Afterwards, 
 the following code enables the item to be dragger around: 
 
-- pos1 = pos3 - e.clientX;
+```javascript
+pos1 = pos3 - e.clientX;
 pos2 = pos4 - e.clientY;
 pos3 = e.clientX;
 pos4 = e.clientY;
         
-- elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+ 
+elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
 elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+```
 
 It gets the position of the item, calculates its new position when dragged and enables the calculator to be moved by subtracting elmnt.offsetTop by pos2 and elmnt.offsetTop by pos1, using pixels for the unit of the result. 
 
 Finally, the closeDragElement function uses the following codes to stop the process, once the mouse is released:
 
-- document.onmouseup = null;
+```javascript 
+document.onmouseup = null;
 document.onmousemove = null;
-
+```
 
 For the Google Maps API, on the 'Map' page, the JavaScript code is in the map.js file.
 
@@ -177,11 +187,13 @@ different info boxes have been targeted. The variables with the name of 'infowin
 
 As for the contact page, Email.JS was used to enable users to contact me. The JavaScript codes are in the sendEmail.js file. Three parameters were used in the sendMail function, name, email and message.
 
-- emailjs.send("gmail", "first_template", {
-            "from_name": name,
-            "from_email": email,
-            "project_request": message,
-        })
+```javascript 
+emailjs.send("gmail", "first_template", {
+    "from_name": name,
+    "from_email": email,
+    "project_request": message,
+})
+```
 
 The code above, is used to set values to the stored properties in the Email.JS template, which are first_template, from_name, from_email and project_request. Afterwards, there are two functions in a then statement that display a thank you and confirmation message, if
 a user's message got sent. However, the second function in the then statement gets triggered instead, if an error occurs, so that it displays a text, which lets one know that an error.
@@ -260,9 +272,8 @@ Finally, there is a contact page, which specifies what a user can contact me and
 
 The navbar and the footer are both white with black texts because I wanted to keep the website bright. The navbar has blue hover effects, as the most of the pages' colors are blue as well.
 
-## Testing
+### Solving bugs and problems
 
-### Solving buggs 
 #### Maps Page
 - Tested each of the the JavaScript codes by using console.log() and the console in the devtools on Google Chrome
 - Had problems with the codes in the maps.js file, as the codes were almost 1000 lines long, so I solved it using the following procedures:
@@ -270,14 +281,41 @@ The navbar and the footer are both white with black texts because I wanted to ke
 
 #### Statistics page
 - The line charts did not work, so I found a way to make them work by using the following code, which was repeated for each given data in both of the data charts to make the information be displayed in the graphs.: 
-> - femaleUnempRateDRC = unemp_rate_female_dim.group().reduceCount(function(d) {
-            if (d.unemploymentRateCountry === 'DRC') {
-                return +d.femaleUnemploymentRate;
-            }
-            else {
-                return 0;
-            }
-        }), 
+
+```javascript
+femaleUnempRateDRC = unemp_rate_female_dim.group().reduceCount(function(d) {
+    if (d.unemploymentRateCountry === 'DRC') {
+        return +d.femaleUnemploymentRate;
+        }
+    else {
+        return 0;
+    }
+}),
+```
+
+#### Contact page
+There was the problem that every time one pressed submit on the contact page, an empty email would be sent to me. Therefore, I added the sendMsg function, which contains if statements that cause alerts to show up,
+if one does not write anything into any of the input boxes. 
+
+### Unsolved bugs
+
+#### homepage
+I tried to refactor the code for the functions called scrollByPage2, scrollByPage3, scrollByPage4 and scrollByPage5 by using calculations, for example: 
+```javascript 
+(window.scrollY + window.innerHeight) - scrollEffect.height / 2
+``` 
+However, everything that I tried did not completely work and only hard coded numbers in the if statements would work, like I have them now, as in the following part: 
+```javascript
+if (window.scrollY >= 600)
+```
+#### Maps Page
+I tried to refactor the code in the map.js file, so that code would not be as long as it is now however, because of the little amount of time I had left for this project, I was not able to find a good solution to accomplish
+this task. I used objects and more variables to reduce the amount of code for the content in the info windows of the markers that are on the map, but the text that the content turned into, kept being undefined, although I had defined the variables.
+My mentor and a tutor suggested to move on because of the time limit, but I am still planning to reduce the code, probably by using objects.
+
+
+## Testing
+
 #### User Stories
 1. As a person who is visiting the website, I want to know how I could help people in need and why they need my help. 
 > - Scroll through the homepage to receive quick information about how countries fall into poverty or war and find out how one could help 
@@ -292,6 +330,8 @@ The navbar and the footer are both white with black texts because I wanted to ke
 > - Click on the 'Contact' button in the navigation bar to send me an email and information of who you are and how I can contact you back
 6. As a person who is visiting the website, I want to follow this page through social media to see the creator's work for charity organisations
 > - Click on the social media icons in the footer on mobile and tablet or in the aside bar on desktop
+
+
 
 
 #### Different browsers, mobile, desktop
