@@ -12,15 +12,12 @@ $large-desktop-width: 1200px;
             padding-left: 10px;
         }
 
-        .section,
-        .section2,
-        .section3 {
+        .section{
             margin-left: 44px;
         }
 
-        .headerGDP {
+        .headingGDP {
             position: relative;
-            top: 56px;
         }
 
         .textGDP {
@@ -34,11 +31,9 @@ $large-desktop-width: 1200px;
         }
 
         .MotherTeresaQuote {
-            top: 75px;
             font-size: 20px;
             text-transform: uppercase;
             position: relative;
-            padding-bottom: 37px;
         }
         //Map Page
         .mapInstruction {
@@ -80,9 +75,6 @@ $large-desktop-width: 1200px;
         .textHP2 {
             text-align: center;
         }
-        #submitBtn {
-            right:  8em;
-        }
     }
 }
 
@@ -100,9 +92,6 @@ $large-desktop-width: 1200px;
         h3 {
             font-size: 25px;
         }
-        p {
-            font-size: 22px;
-        }
         /*Homepage*/
         .hpimg-1 {
             padding: 164px 0;
@@ -117,10 +106,6 @@ $large-desktop-width: 1200px;
 
         .hpimg-4 {
             height: 975px;
-        }
-
-        .header {
-            margin-top: 9px;
         }
 
         .text {
@@ -142,8 +127,6 @@ $large-desktop-width: 1200px;
         .MotherTeresaQuote {
             font-size: 26px;
             position: relative;
-            top: 156px;
-            padding-bottom: 197px;
         }
 
         .graph-color {
@@ -165,9 +148,6 @@ $large-desktop-width: 1200px;
         // Contact Page
         .text-box-length {
             width: 400px;
-        }
-         #submitBtn {
-            right:  12em;
         }
         .contactMeBulletPoints {
             height: 300px;
@@ -271,9 +251,7 @@ $large-desktop-width: 1200px;
             padding-left: 40px;
         }
 
-        .section,
-        .section2,
-        .section3 {
+        .section {
             margin-left: 40px;
         }//Aside Social Media Buttons
         .social-media-button a, .social-media-button div {
@@ -290,9 +268,6 @@ $large-desktop-width: 1200px;
         }// Contact Page
         .text-box-length {
             width: 780px;
-        }
-         #submitBtn {
-            right:  40em;
         }
     }
 }

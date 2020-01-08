@@ -27,20 +27,13 @@ body {
     position: relative;
 }
 
-#textEffect2 {
-    opacity: 0;
-    transform: translateX(-20px);
-}
-
-#textEffect2 {
-    opacity: 1;
-    transform: translateX(0px);
-    transition: 1s all ease-in-out;
-}
-
-.headerGDP {
+.section {
+    height: auto;
     color: $black;
-    top: 7px;
+}
+
+.headingGDP {
+    color: $black;
 }
 
 .textHP2 {
@@ -48,13 +41,12 @@ body {
 }
 
 .textGDP {
-    top: 82px;
     padding-right: 10px;
     color: $black;
+    margin-top: 5%;
 }
 
 .MotherTeresaQuote {
-    top: 115px;
     text-transform: uppercase;
     color: $black;
     font-style: italic;

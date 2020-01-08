@@ -81,27 +81,27 @@ clear statistics, informations and donation possibilities for people, who choose
 The logic of this project is contained in all of the JavaScript files, which are located in the js folder that is in the assets folder.
 
 Various JavaScript effects have been implemented into this project in order to provide a pleasant user experience and make
-user interactions visually appealing and satisfactory. As for the homepage, I have used multiple functions to include the desired functionalities.
+user interactions visually appealing and satisfying. As for the homepage, I have used multiple functions to include the desired functionalities.
 
-One example for it is that I used the constants, readBtn, more and dots to let a user trigger events on the web page. I connected the readBtn variable to an event listener called 'click' and
+One example for it is that I used the constants, 'readBtn', 'more' and 'dots' to let a user trigger events on the web page. I connected the 'readBtn' variable to an event listener called 'click' and
 concatenated each of the three variables to innerText or style with a property, which I set equal to a variable to accomplish the effect that I wanted to bring forth. Furthermore,
 I repeated the same procedure for another section. The purpose of this was to let the user be able to press a button, in order to show or hide texts.
 
-Secondly, I used the constant called, textEffect and the window object with scrollY, so that most of the texts and buttons would only fade in, while sliding in from the left, on scroll.
+Secondly, I used the constant called, 'textEffect', 'textEffect2', 'textEffect3', 'textEffect4' and 'textEffect5' and the window object with scrollY, so that most of the texts and buttons would fade in, while sliding in from the left, on scroll.
 I attached the window object to the 'scroll' event listener to automatically use the scrollByPage() function in order to change the styles through an if statement. This process was repeated multiple
 times for sections at different scrolling positions and added else statements to those.
 
 Thirdly, I made a death counter per second. One line of text, is supposed to show the amount of time that has passed, since a user has entered the page and another line is meant to display the amount of
-people that are estimated to have passed away each second. The way I did this was to use 'document.addEventListener("DOMContentLoaded", countSeconds());' to have the counts start when the page has loaded and
-connect it to the countSeconds() function.
+people that are estimated to have passed away each second, since then. The way I did this, was to use 'document.addEventListener("DOMContentLoaded", countSeconds());' to have the counts start when the page has loaded and
+connect them to the countSeconds() function.
 The 'COUNTER' and 'DEATHS' constants are used to implement the desired text on the homepage. Moreover, the 'seconds' variable is set as 'seconds++', inside the function to increment numbers by one
-and the 'count' variable is set to be incremented by two each second.
+and the 'count' variable is set to be incremented by two each second for the count of estimated deaths per second.
 The if statements make sure that once the the seconds have counted up to 60, it immediately changes to '00'. Additionally, the seconds and minutes got set to display a '0'
 in front of any number under 10, through the 'seconds' and 'theMinutes' variables in the if statements. Finally, the time variable is set to 'setInterval(countSeconds, 1000);', so that the displayed numbers
 get incremented by each second to show the time and number of deaths. In addition, I have done the exact same thing for the time and death counters at the top of the 'Statistics' page.
 
 
-In the donate.js file, I started off by adding the functionality of opening the collapsible sections for the charity organisations on the 'Donate' page.
+In the donate.js file, I started off by adding the functionality of opening and closing the collapsible sections for the charity organisations on the 'Donate' page.
 
 The variables that were utilised are the following:
 - var collapse - a targetted class name, which is use to add the 'click' event listener on to connect it to a function
@@ -316,22 +316,32 @@ My mentor and a tutor suggested to move on because of the time limit, but I am s
 
 ## Testing
 
+#### Client story testing
+I have asked friends and a parent of mine to go through the website to give me feedback about it. This is the information that they gave me: 
+- The website is easy to read and gather the most important information from
+- Clear indications of call to action 
+- The colours on the website fit well and are nice
+- It is great to have such a wide range of good charity organisations available to donate to 
+- Easy to understand why each specific country requires help
+- The statistics and map pages gives a clearer overall view of where and why people struggle so much
+- The images on the homepage and the scrolling effects are a good and suitable addition to the page
+- Easy to contact me through the contact page
+
+
 #### User Stories
-1. As a person who is visiting the website, I want to know how I could help people in need and why they need my help. 
+1. Know how one could help people in need and why they need my help. 
 > - Scroll through the homepage to receive quick information about how countries fall into poverty or war and find out how one could help 
-2. As a person who is visiting the website, I want to know what countries are offered to be donated to on the website with quick information about them
+2. Know what countries are offered to be donated to on the website with quick information about them
 > - Click on the 'Map' button in the navigation bar to find an interactive map with markers all over it, each providing short details of why the country currently requires help
-3. As a person who is visiting the website, I want know see data and explanation of that data in order to compare the conditions of countries that need help 
+3. See data and explanation of that data in order to compare the conditions of countries that need help 
 > - Click on the 'Statistics' button in the navigation bar to find interactive graphs with explanation beneath them and click on the chart bars to compare (The graphs are not available on mobile or tablet devices)
-4. As a person who is visiting the website, I want to have a wide selection of good charity organisations to choose from to help the country/countries that I want to help and keep track of how much I am donating
+4. Have a wide selection of good charity organisations to choose from to help the country/countries that I want to help and keep track of how much I am donating
 > - Click on the 'Donate' button in the navigation bar to find information of various countries in need with buttons that link to websites of charity organisations
 > - Click on the calculator button in the fixed aside section, to the left to calculate how much you want to donate
-5. As a person who is visiting the website, I want to be able to contact to creator of the website to ask questions about the countries in need or request to more charity organisations, if I have some in mind
+5. Contact the creator of the website to ask questions about the countries in need or request to more charity organisations, if I have some in mind
 > - Click on the 'Contact' button in the navigation bar to send me an email and information of who you are and how I can contact you back
-6. As a person who is visiting the website, I want to follow this page through social media to see the creator's work for charity organisations
+6. Follow this page through social media to see the website's future work for charity organisations
 > - Click on the social media icons in the footer on mobile and tablet or in the aside bar on desktop
-
-
 
 
 #### Different browsers, mobile, desktop

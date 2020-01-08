@@ -56,7 +56,7 @@
   padding-right: 10px;
   position: relative; }
 
-.top-section, .section, .section2, .section3 {
+.top-section {
   margin: 15px 0;
   padding: 1em 0;
   position: relative;
@@ -190,7 +190,6 @@
   cursor: move;
   padding: 0;
   width: 91%;
-  left: 5%;
   background-color: lightblue;
   border: 1px solid blue;
   border-top-right-radius: 10px;
@@ -202,6 +201,9 @@
   background: #292938;
   color: white;
   border: none; }
+
+.calc-no-padding {
+  padding: 0; }
 
 .buttons {
   display: flex;
@@ -239,7 +241,7 @@
   background-image: linear-gradient(#17a2b8, #01557b);
   color: #FFFFFF;
   position: absolute;
-  right: 8em; }
+  float: right; }
 
 .hvr-shutter-out-vertical {
   background-color: #FFFFFF; }
@@ -395,6 +397,10 @@ body {
   padding: 10px 0;
   position: relative; }
 
+.section {
+  height: auto;
+  color: #000000; }
+
 #textEffect2 {
   opacity: 0;
   transform: translateX(-20px); }
@@ -404,20 +410,18 @@ body {
   transform: translateX(0px);
   transition: 1s all ease-in-out; }
 
-.headerGDP {
-  color: #000000;
-  top: 7px; }
+.headingGDP {
+  color: #000000; }
 
 .textHP2 {
   color: #000000; }
 
 .textGDP {
-  top: 82px;
   padding-right: 10px;
-  color: #000000; }
+  color: #000000;
+  margin-top: 5%; }
 
 .MotherTeresaQuote {
-  top: 115px;
   text-transform: uppercase;
   color: #000000;
   font-style: italic; }
@@ -531,7 +535,7 @@ body {
   width: 100%;
   height: 30px;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: center; }
 
 .contactWrap {
   margin-top: 100px;
@@ -565,14 +569,11 @@ body {
     margin-top: 36px;
     padding-left: 10px; }
 
-  .section,
-  .section2,
-  .section3 {
+  .section {
     margin-left: 44px; }
 
-  .headerGDP {
-    position: relative;
-    top: 56px; }
+  .headingGDP {
+    position: relative; }
 
   .textGDP {
     padding-top: 0%;
@@ -583,11 +584,9 @@ body {
     height: 49px; }
 
   .MotherTeresaQuote {
-    top: 75px;
     font-size: 20px;
     text-transform: uppercase;
-    position: relative;
-    padding-bottom: 37px; }
+    position: relative; }
 
   .mapInstruction {
     padding-top: 17%; }
@@ -624,10 +623,7 @@ body {
     margin-left: 5px; }
 
   .textHP2 {
-    text-align: center; }
-
-  #submitBtn {
-    right: 8em; } }
+    text-align: center; } }
 @media (min-width: 768px) {
   h1 {
     font-size: 50px; }
@@ -637,9 +633,6 @@ body {
 
   h3 {
     font-size: 25px; }
-
-  p {
-    font-size: 22px; }
 
   /*Homepage*/
   .hpimg-1 {
@@ -653,9 +646,6 @@ body {
 
   .hpimg-4 {
     height: 975px; }
-
-  .header {
-    margin-top: 9px; }
 
   .text {
     margin-top: 5%;
@@ -672,9 +662,7 @@ body {
 
   .MotherTeresaQuote {
     font-size: 26px;
-    position: relative;
-    top: 156px;
-    padding-bottom: 197px; }
+    position: relative; }
 
   .graph-color {
     color: #000000; }
@@ -693,9 +681,6 @@ body {
 
   .text-box-length {
     width: 400px; }
-
-  #submitBtn {
-    right: 12em; }
 
   .contactMeBulletPoints {
     height: 300px;
@@ -769,9 +754,7 @@ body {
   .textHP1 {
     padding-left: 40px; }
 
-  .section,
-  .section2,
-  .section3 {
+  .section {
     margin-left: 40px; }
 
   .social-media-button a, .social-media-button div {
@@ -787,9 +770,6 @@ body {
     font-size: 30px; }
 
   .text-box-length {
-    width: 780px; }
-
-  #submitBtn {
-    right: 40em; } }
+    width: 780px; } }
 
 /*# sourceMappingURL=style.css.map */

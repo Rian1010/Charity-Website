@@ -78,7 +78,6 @@
     cursor: move;
     padding: 0;
     width: 91%;
-    left: 5%;
     background-color: lightblue;
     border: 1px solid blue;
     border-top-right-radius: 10px;
@@ -92,6 +91,10 @@
     color: white;
     border: none;
 
+}
+
+.calc-no-padding {
+    padding: 0;
 }
 
 .buttons {
@@ -137,5 +140,5 @@
     background-image: linear-gradient(#17a2b8, #01557b);
     color: $white;
     position: absolute;
-    right: 8em;
+    float:right;
 }
