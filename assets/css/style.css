@@ -50,19 +50,6 @@
   justify-content: left;
   align-items: center; }
 
-.text, .text2 {
-  font-size: 1em;
-  margin-top: 5%;
-  padding-right: 10px;
-  position: relative; }
-
-.top-section {
-  margin: 15px 0;
-  padding: 1em 0;
-  position: relative;
-  color: #000000;
-  height: auto; }
-
 /*Charity Page*/
 .charityAsiaPic1, .charityAfricaPic, .charityAsiaPic2, .charityEuropePic1, .charitySAPic, .charityEuropePic2, .charityRedCrossPic, .disasterReliefRedCrossPic {
   width: 100%;
@@ -253,9 +240,6 @@
   transition: 0.2s;
   color: #007bff !important; }
 
-p {
-  font-size: 16px; }
-
 #footer {
   width: 100%;
   height: 300px;
@@ -401,25 +385,18 @@ body {
   height: auto;
   color: #000000; }
 
-#textEffect2 {
-  opacity: 0;
-  transform: translateX(-20px); }
+.top-section {
+  margin: 15px 0;
+  padding: 1em 0;
+  color: #000000;
+  height: auto; }
 
-#textEffect2 {
-  opacity: 1;
-  transform: translateX(0px);
-  transition: 1s all ease-in-out; }
-
-.headingGDP {
-  color: #000000; }
+.text {
+  margin-top: 3%;
+  padding-right: 10px; }
 
 .textHP2 {
   color: #000000; }
-
-.textGDP {
-  padding-right: 10px;
-  color: #000000;
-  margin-top: 5%; }
 
 .MotherTeresaQuote {
   text-transform: uppercase;
@@ -572,21 +549,8 @@ body {
   .section {
     margin-left: 44px; }
 
-  .headingGDP {
-    position: relative; }
-
-  .textGDP {
-    padding-top: 0%;
-    position: relative;
-    padding-right: 10px; }
-
   .donateButtonStyleHP {
     height: 49px; }
-
-  .MotherTeresaQuote {
-    font-size: 20px;
-    text-transform: uppercase;
-    position: relative; }
 
   .mapInstruction {
     padding-top: 17%; }
@@ -648,16 +612,7 @@ body {
     height: 975px; }
 
   .text {
-    margin-top: 5%;
     padding-right: 10px;
-    position: relative; }
-
-  .section1 {
-    bottom: 20px;
-    padding-top: 10%;
-    position: relative; }
-
-  .textGDP {
     position: relative; }
 
   .MotherTeresaQuote {

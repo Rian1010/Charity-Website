@@ -54,6 +54,22 @@ function scrollByPage() {
 }
 scrollByPage();
 
+let sections = document.querySelectorAll(".section");
+window.onscroll = function fadeIn() {
+    sections.forEach(section => {
+        let sectionSize = section.getBoundingClientRect();
+        let bottomPart = sectionSize.bottom;
+        if (window.scrollY >= bottomPart) {
+            section.style.opacity = "1";
+            section.style.transform = "translateX(0)";
+            section.style.transition = "1s ease-in-out";
+        } else {
+            section.style.opacity = "0";
+            section.style.transform = "translateX(-20px)";
+            section.style.transition = "1s ease-in-out";
+        }
+    });
+}
 
 // Causes the text sections of the homepage to appear on certain scroll positions
 // const textEffect2 = document.getElementById("textEffect2");
@@ -138,22 +154,7 @@ scrollByPage();
 
 // }
 
-let sections = document.querySelectorAll(".section");
-window.onscroll = function fadeIn() {
-    sections.forEach(section => {
-        let sectionSize = section.getBoundingClientRect();
-        let bottomPart = sectionSize.bottom;
-        if (window.scrollY >= bottomPart) {
-            section.style.opacity = "1";
-            section.style.transform = "translateX(0)";
-            section.style.transition = "1s ease-in-out";
-        } else {
-            section.style.opacity = "0";
-            section.style.transform = "translateX(-20px)";
-            section.style.transition = "1s ease-in-out";
-        }
-    });
-}
+
 
     // let textEffect2 = document.getElementById("textEffect2");
     // let section = document.querySelector(".hpimg-4")

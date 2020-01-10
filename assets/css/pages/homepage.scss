@@ -32,18 +32,20 @@ body {
     color: $black;
 }
 
-.headingGDP {
+.top-section {
+    margin: 15px 0;
+    padding: 1em 0;
     color: $black;
+    height: auto;
+}
+
+.text {
+    margin-top: 3%;
+    padding-right: 10px;
 }
 
 .textHP2 {
     color: $black;
-}
-
-.textGDP {
-    padding-right: 10px;
-    color: $black;
-    margin-top: 5%;
 }
 
 .MotherTeresaQuote {

@@ -32,34 +32,6 @@
     @extend %background,
 }
 
-%textStyling {
-    font-size: 1em;
-    margin-top: 5%;
-    padding-right: 10px;
-    position: relative;
-}
-
-
-%sectionStyle {
-    margin: 15px 0;
-    padding: 1em 0;
-    position: relative;
-    color: $black;
-    height: auto;
-}
-
-.top-section {
-    @extend %sectionStyle;
-}
-
-.text {
-    @extend %textStyling;
-}
-
-.text2 {
-    @extend %textStyling
-}
-
 /*Charity Page*/
 
 %charityCarouselPics {

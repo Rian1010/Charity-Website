@@ -360,157 +360,157 @@ function initMap() {
 
     var infowindow = new google.maps.InfoWindow({
         content: contentString,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow2 = new google.maps.InfoWindow({
         content: contentString2,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow3 = new google.maps.InfoWindow({
         content: contentString3,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow4 = new google.maps.InfoWindow({
         content: contentString4,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow5 = new google.maps.InfoWindow({
         content: contentString5,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow6 = new google.maps.InfoWindow({
         content: contentString6,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow7 = new google.maps.InfoWindow({
         content: contentString7,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow8 = new google.maps.InfoWindow({
         content: contentString8,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow9 = new google.maps.InfoWindow({
         content: contentString9,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow10 = new google.maps.InfoWindow({
         content: contentString10,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow11 = new google.maps.InfoWindow({
         content: contentString11,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow12 = new google.maps.InfoWindow({
         content: contentString12,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow13 = new google.maps.InfoWindow({
         content: contentString13,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow14 = new google.maps.InfoWindow({
         content: contentString14,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow15 = new google.maps.InfoWindow({
         content: contentString15,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow16 = new google.maps.InfoWindow({
         content: contentString16,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow17 = new google.maps.InfoWindow({
         content: contentString17,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow18 = new google.maps.InfoWindow({
         content: contentString18,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow19 = new google.maps.InfoWindow({
         content: contentString19,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow20 = new google.maps.InfoWindow({
         content: contentString20,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow21 = new google.maps.InfoWindow({
         content: contentString21,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow22 = new google.maps.InfoWindow({
         content: contentString22,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow23 = new google.maps.InfoWindow({
         content: contentString23,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow24 = new google.maps.InfoWindow({
         content: contentString24,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow25 = new google.maps.InfoWindow({
         content: contentString25,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow26 = new google.maps.InfoWindow({
         content: contentString26,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow27 = new google.maps.InfoWindow({
         content: contentString27,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow28 = new google.maps.InfoWindow({
         content: contentString28,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow29 = new google.maps.InfoWindow({
         content: contentString29,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow30 = new google.maps.InfoWindow({
         content: contentString30,
-        maxWidth: 200
+        maxWidth: 250
     });
 
     var infowindow31 = new google.maps.InfoWindow({
         content: contentString31,
-        maxWidth: 200
+        maxWidth: 250
     });
 
 

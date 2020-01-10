@@ -89,22 +89,62 @@ I repeated the same procedure for another section. The purpose of this was to le
 
 Secondly, I used the constant called, 'textEffect', 'textEffect2', 'textEffect3', 'textEffect4' and 'textEffect5' and the window object with scrollY, so that most of the texts and buttons would fade in, while sliding in from the left, on scroll.
 I attached the window object to the 'scroll' event listener to automatically use the scrollByPage() function in order to change the styles through an if statement. This process was repeated multiple
-times for sections at different scrolling positions and added else statements to those.
+times with different if statements that cause other sections at various scrolling positions to do the effect and added else statements to those. One example of those multiple functions is this:
+```javascript
+const textEffect3 = document.getElementById("textEffect3");
+
+window.addEventListener("scroll", scrollByPage3);
+
+function scrollByPage3() {
+    if (window.scrollY >= 1300) {
+        textEffect3.style.opacity = '1';
+        textEffect3.style.transform = 'translateX(0px)';
+        textEffect3.style.transition = '1s ease-in-out';
+    }
+    else {
+        textEffect3.style.opacity = '0';
+        textEffect3.style.transform = 'translateX(-20px)';
+    }
+}
+scrollByPage3();
+```
+
+However, as it was too much repeated code, I tried refactoring it in many different ways and finally came to the following result to use one function that loops through each section, and removed the unnecessary IDs of the previous JavaScript code from the HTML codes: 
+```javascript
+let sections = document.querySelectorAll(".section");
+window.onscroll = function fadeIn() {
+    sections.forEach(section => {
+        let sectionSize = section.getBoundingClientRect();
+        let bottomPart = sectionSize.bottom;
+        if (window.scrollY >= bottomPart) {
+            section.style.opacity = "1";
+            section.style.transform = "translateX(0)";
+            section.style.transition = "1s ease-in-out";
+        } else {
+            section.style.opacity = "0";
+            section.style.transform = "translateX(-20px)";
+            section.style.transition = "1s ease-in-out";
+        }
+    });
+}
+```
 
 Thirdly, I made a death counter per second. One line of text, is supposed to show the amount of time that has passed, since a user has entered the page and another line is meant to display the amount of
 people that are estimated to have passed away each second, since then. The way I did this, was to use 'document.addEventListener("DOMContentLoaded", countSeconds());' to have the counts start when the page has loaded and
 connect them to the countSeconds() function.
-The 'COUNTER' and 'DEATHS' constants are used to implement the desired text on the homepage. Moreover, the 'seconds' variable is set as 'seconds++', inside the function to increment numbers by one
+
+The 'COUNTER' and 'DEATHS' constants are used to implement the desired text on the homepage. Moreover, the 'seconds' variable is set as 'seconds++', inside the function to increment numbers by one,
 and the 'count' variable is set to be incremented by two each second for the count of estimated deaths per second.
+
 The if statements make sure that once the the seconds have counted up to 60, it immediately changes to '00'. Additionally, the seconds and minutes got set to display a '0'
-in front of any number under 10, through the 'seconds' and 'theMinutes' variables in the if statements. Finally, the time variable is set to 'setInterval(countSeconds, 1000);', so that the displayed numbers
+in front of any number under 10, through the 'seconds' and 'theMinutes' variables in the if statements. Finally, the 'time' variable is set to 'setInterval(countSeconds, 1000);', so that the displayed numbers
 get incremented by each second to show the time and number of deaths. In addition, I have done the exact same thing for the time and death counters at the top of the 'Statistics' page.
 
 
 In the donate.js file, I started off by adding the functionality of opening and closing the collapsible sections for the charity organisations on the 'Donate' page.
 
 The variables that were utilised are the following:
-- var collapse - a targetted class name, which is use to add the 'click' event listener on to connect it to a function
+- var collapse - a targetted class name, which is use to add the 'click' event listener to connect it to a function
 - var i - used to iterate through all of the elements with the same class of the 'collapse' variable
 - var content - used to target the next sibling element to cause the collapsible bars to open up, when clicked and close again, if clicked again
 
@@ -120,10 +160,10 @@ Furthermore, for the calculator to work, the following constants were used:
 - const screen - connected to the box at the top of the calculator, which is supposed to display the calculations
 
 A for loop was used to iterate through each if the elements with a class of 'calcBtn'. A 'click' event listener was used to trigger a function that targets all the buttons with the attributes
-called 'data-num' and used 'screen.value += number;' to show the clicked numbers and calculation appear inside of the box at the top of the calculator.
+called 'data-num' and used 'screen.value += number;' to show the clicked numbers and calculations appear inside of the box at the top of the calculator.
 
-The equal button was also given an event listener called, 'click' and triggered a function that consists of if and else statements. The state that if the value of the screen is empty, then the result
-should be 0. Otherwise, if numbers have been inputed, these will be evaluated and calculated.
+The equal button was also given an event listener called, 'click' and triggered a function that consists of if and else statements. These state that if the value of the screen is empty, then the result
+should be 0, otherwise, if numbers have been inputed, these will be evaluated and calculated.
 
 The clear button has an 'click' event listener, which is connected to a function that turns the value of the calculator screen empty. So, once the button is clicked, the screen turns empty.
 
@@ -143,7 +183,7 @@ e = e || window.event;
 e.preventDefault();
 ```
 
-In function dragMouseDown, the code above either triggers a mouse event is or window.event. The second line of the code is used to prevent any disruption to stop the item's ability of being dragged throughout the page. 
+In function dragMouseDown, the code above either triggers a mouse event or window.event. The second line of the code is used to prevent any disruption to stop the item's ability of being dragged throughout the page. 
 Then, the function uses the following code to get the position of the item at the startup and to connect to the functions below it: 
 
 ```javascript
@@ -154,8 +194,8 @@ document.onmouseup = closeDragElement;
 document.onmousemove = elementDrag;
 ```
 
-The function calle closeDragElement gets stops the process of dragging the caluclator, when the mouse is released, whereas the function elementDrag, gets triggered through the movement of the mouse. It keeps the process of dragging the item consistent by adding the lines, e = e || window.event; and e.preventDefault(); too, in order to prevent other things from stopping the procedure. Afterwards, 
-the following code enables the item to be dragger around: 
+The function called closeDragElement stops the process of dragging the calculator, when the mouse is released, whereas the function elementDrag, gets triggered through the movement of the mouse. It keeps the process of dragging the item consistently by adding the lines, e = e || window.event; and e.preventDefault(); too, 
+in order to prevent other things from stopping the procedure. Afterwards, the following code enables the item to be dragged around: 
 
 ```javascript
 pos1 = pos3 - e.clientX;
@@ -179,10 +219,10 @@ document.onmousemove = null;
 
 For the Google Maps API, on the 'Map' page, the JavaScript code is in the map.js file.
 
-The initMap() function contains all of the code for the displayed map. Inside of it, variables with the names of each marked country have been added. The serve the purpose of latitudes and longitudes of each
+The initMap() function contains all of the code for the displayed map. Inside of it, variables with the names of each marked country have been added. These serve the purpose of latitudes and longitudes of each
 country. Furthermore, the map variable causes the initial zoom to be at 2.5 and its center to be at the position of syria, as it is close to the middle of the map. In addition, "var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';" was used
-as an array in order to label the markers on the map. Then, variables called contentString were used to use html for the text in the window boxes of the markers.  Numbers got attached in their variable names to indicate that
-different info boxes have been targeted. The variables with the name of 'infowindow' in them, enabled the contentString variables to be the displayed content of the info windows and a max width of 200 has been given to the each of them.
+as an array in order to label the markers on the map. Then, variables called contentString were used to use HTML for the text in the window boxes of the markers.  Numbers got attached in their variable names to indicate that
+different info boxes have been targeted. The variables with the name of 'infowindow' in them, enabled the contentString variables to be the displayed content of the info windows. In addition, a max width of 200 has been given to each of them.
 
 
 As for the contact page, Email.JS was used to enable users to contact me. The JavaScript codes are in the sendEmail.js file. Three parameters were used in the sendMail function, name, email and message.
@@ -196,12 +236,12 @@ emailjs.send("gmail", "first_template", {
 ```
 
 The code above, is used to set values to the stored properties in the Email.JS template, which are first_template, from_name, from_email and project_request. Afterwards, there are two functions in a then statement that display a thank you and confirmation message, if
-a user's message got sent. However, the second function in the then statement gets triggered instead, if an error occurs, so that it displays a text, which lets one know that an error.
+a user's message got sent. However, the second function in the then statement gets triggered instead, if an error occurs, so that it displays a text, which lets one know of the error.
 
-The sendMail function gets called in the sendMsg function, which is located inside of another function. That other function, also makes sure that an alarm pops up, in case a user forgets to fill in a required field, before clicking on the submit button.
+The sendMail function gets called in the sendMsg function, which is located inside of another function that causes the page to load before triggering what is inside of it. The other function, inside of it, makes sure that an alarm pops up, in case a user forgets to fill in a required field, before clicking on the submit button.
 
-As for the 'Statistics' page, crossfilter.JS, D3.JS and DC.JS were used to create interactive charts. The queue is used to connect to the JSON files and the createDataVis function connects to the each function below it and 
-renders all of them. The show_country_data function displays three charts that are connected, so that users can visually compare the given data. Below this function, there are three further functions that display other graphs with different kinds of data to be show to a user. 
+As for the 'Statistics' page, crossfilter.JS, D3.JS and DC.JS, those were used to create interactive charts. The queue is used to connect to the JSON files and the createDataVis function connects to the each function below it and 
+renders all of them. The show_country_data function displays three charts that are connected, so that users can visually compare the given data. Below this function, there are three further functions that display other graphs with different kinds of data to be shown to a user. 
 
 All JavaScript codes were tested through the console in the dev tools by using console.log to check if the codes work or not.
 
@@ -274,6 +314,37 @@ The navbar and the footer are both white with black texts because I wanted to ke
 
 ### Solving bugs and problems
 
+#### Homepage
+I tried to refactor the code for the functions called scrollByPage2, scrollByPage3, scrollByPage4 and scrollByPage5 by using calculations, for example: 
+```javascript 
+(window.scrollY + window.innerHeight) - scrollEffect.height / 2
+``` 
+However, everything that I tried did not completely work and only hard coded numbers in the if statements would work, as in the following part: 
+```javascript
+if (window.scrollY >= 600)
+```
+
+Finally, I there was a way to solve it using the following code, which loops through each of the same class names:
+```javascript
+let sections = document.querySelectorAll(".section");
+window.onscroll = function fadeIn() {
+    sections.forEach(section => {
+        let sectionSize = section.getBoundingClientRect();
+        let bottomPart = sectionSize.bottom;
+        if (window.scrollY >= bottomPart) {
+            section.style.opacity = "1";
+            section.style.transform = "translateX(0)";
+            section.style.transition = "1s ease-in-out";
+        } else {
+            section.style.opacity = "0";
+            section.style.transform = "translateX(-20px)";
+            section.style.transition = "1s ease-in-out";
+        }
+    });
+}
+
+```
+
 #### Maps Page
 - Tested each of the the JavaScript codes by using console.log() and the console in the devtools on Google Chrome
 - Had problems with the codes in the maps.js file, as the codes were almost 1000 lines long, so I solved it using the following procedures:
@@ -299,15 +370,6 @@ if one does not write anything into any of the input boxes.
 
 ### Unsolved bugs
 
-#### homepage
-I tried to refactor the code for the functions called scrollByPage2, scrollByPage3, scrollByPage4 and scrollByPage5 by using calculations, for example: 
-```javascript 
-(window.scrollY + window.innerHeight) - scrollEffect.height / 2
-``` 
-However, everything that I tried did not completely work and only hard coded numbers in the if statements would work, like I have them now, as in the following part: 
-```javascript
-if (window.scrollY >= 600)
-```
 #### Maps Page
 I tried to refactor the code in the map.js file, so that code would not be as long as it is now however, because of the little amount of time I had left for this project, I was not able to find a good solution to accomplish
 this task. I used objects and more variables to reduce the amount of code for the content in the info windows of the markers that are on the map, but the text that the content turned into, kept being undefined, although I had defined the variables.
