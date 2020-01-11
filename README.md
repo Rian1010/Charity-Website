@@ -1,6 +1,7 @@
-#### Second Milestone Project
+# Second Milestone Project
 
-# Charity Base
+## Charity Base
+The link, at which my website is published is [here](https://rian1010.github.io/Charity-Website/).
 > A website that spreads awareness on economic and political problems, which cause poverty and life threatening situations in many countries.
 This was made for the second milestone project for the full stack developer course of Code Institute. The goal is to make a user interactive web application and to use HTML, CSS and JavaScript.
 
@@ -50,6 +51,11 @@ clear statistics, informations and donation possibilities for people, who choose
 10. As someone, who wants to find out more information about the website or charity organisations, I want to contact the web developer to ask questions
 
 #### Wireframes
+- Please find the paper and pen mockups for this website [here](https://github.com/Rian1010/Charity-Website/tree/master/Mockups)
+
+I have changed a lot from what I had originally planned for the design of the website in the Wireframes. The idea that I had for the homepage at first, ended up being too messy and included too many images, which the website would need to load, and a user would need to focus on 
+too many things at once. Furthermore, I have changed the statistics page, in order for it to resemble the homepage a bit more and for a user to have a clear view on it overall. Also, I have changed the design of the contact page and reduced the content, so that it does not look so complicated to 
+contact me and to keep the purpose of that web page clear and consise on the first look. So, the donate page was added later to the mockups, so that all the ways to donate to charities would be on one web page.
 
 ## Features
 - Death counter
@@ -407,8 +413,7 @@ I have asked friends and a parent of mine to go through the website to give me f
 - Clicked on the visually displayed chart data that are supposed to be interactive, in order to see, if they were working or not
 - Hovered over the displayed data to check, if the expected numbers would be shown or not
 - Clicked on the arrows of each bootstrap carousel, on the 'Donate' page to check if the sliders are working and if each image shows up or not
-- Pressed on each of the of the 'Donate' page to check, if they would open up and close again, and if the + symbol changes to the - symbol, if an 
-accordion is opened and back to the + symbol, if it is closed
+- Pressed on each of the of the 'Donate' page to check, if they would open up and close again, and if the + symbol changes to the - symbol, if an accordion is opened and back to the + symbol, if it is closed
 - Made sure that an alert would pop up, if any of the input boxes on the 'Contact' page are empty when clicking on the submit button
 - Checked if I received an email with the correct information, in case one filled in all of the input boxes on the 'Contact' page and submitted the form
 - Made sure that all of it looked good and worked responsively too by using the devtools in Google Chrome and a smartphone
