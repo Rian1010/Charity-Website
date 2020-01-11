@@ -529,6 +529,7 @@ body {
   background-size: cover;
   background-position: right;
   background-attachment: fixed;
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center; }
