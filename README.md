@@ -7,8 +7,8 @@ This was made for the second milestone project for the full stack developer cour
 ## Table of Contents
 
 ## Team
-- -__Author__- Rian Sunthbocus
-- -__Mentor__- Antonija Šimić
+- __Author__ - Rian Sunthbocus
+- __Mentor__ - Antonija Šimić
 
 ## UX
 The aim of this website is to let users know of some of the problems that are happening around the world and offer the access to some of the most popular charity organisation for people in need.
@@ -242,6 +242,7 @@ The sendMail function gets called in the sendMsg function, which is located insi
 
 As for the 'Statistics' page, crossfilter.JS, D3.JS and DC.JS, those were used to create interactive charts. The queue is used to connect to the JSON files in the data folder. The createDataVis function is connected to the each function below it and 
 renders all of them. The show_country_data function displays three charts that are connected, so that users can visually compare the given data. Below this function, there are three further functions that display other graphs with different kinds of data to be shown to a user. 
+The comments above each function in the statistics.js file, indicate what the functions are for. The graphs are not responsive, as it is not a requirement in the course, so they are hidden on phone sizes and are bigger, than the rest of the page on tablet sizes
 
 All JavaScript codes were tested through the console in the dev tools by using console.log to check if the codes work or not.
 
@@ -351,7 +352,7 @@ window.onscroll = function fadeIn() {
 > - Used a constructor to call the longitude and latitude values of the countries that are displayed
 
 #### Statistics page
-- The line charts did not work, so I found a way to make them work by using the following code, which was repeated for each given data in both of the data charts to make the information be displayed in the graphs.: 
+- The line charts did not work, so I found a way to make them work by using the following code, which was repeated for each given data in both of the data charts to make the information be displayed in the graphs: 
 
 ```javascript
 femaleUnempRateDRC = unemp_rate_female_dim.group().reduceCount(function(d) {
@@ -363,6 +364,7 @@ femaleUnempRateDRC = unemp_rate_female_dim.group().reduceCount(function(d) {
     }
 }),
 ```
+- I did not have enough time to try to refactor these repetitive codes, but I am planning to do so in the future
 
 #### Contact page
 There was the problem that every time one pressed submit on the contact page, an empty email would be sent to me. Therefore, I added the sendMsg function, which contains if statements that cause alerts to show up,
@@ -393,8 +395,27 @@ I have asked friends and a parent of mine to go through the website to give me f
 - The images on the homepage and the scrolling effects are a good and suitable addition to the page
 - Easy to contact me through the contact page
 
+#### Tests
+- All JavaScript codes were tested by using console.log(), the console in the Google Chrome devtools and manual testing of the interactive effects
+- Scrolled through the homepage to check if the fixed value for the background attachment is working correctly
+- Checked if the counters and the text for them at the top of the homepage and the 'Statistics' page work or not
+- Clicked on the 'Read More' buttons on the homepage texts to make sure that more text would appear on click
+- Pressed on the 'Read Less' buttons on the homepage texts to make sure that less text would be displayed on click
+- Checked if the map on the 'Map' page displays or not
+- Clicked on the markers that appear on the map to open up the info boxes of each of them 
+- Looked if the charts on the 'Statistics' page are working or not
+- Clicked on the visually displayed chart data that are supposed to be interactive, in order to see, if they were working or not
+- Hovered over the displayed data to check, if the expected numbers would be shown or not
+- Clicked on the arrows of each bootstrap carousel, on the 'Donate' page to check if the sliders are working and if each image shows up or not
+- Pressed on each of the of the 'Donate' page to check, if they would open up and close again, and if the + symbol changes to the - symbol, if an 
+accordion is opened and back to the + symbol, if it is closed
+- Made sure that an alert would pop up, if any of the input boxes on the 'Contact' page are empty when clicking on the submit button
+- Checked if I received an email with the correct information, in case one filled in all of the input boxes on the 'Contact' page and submitted the form
+- Made sure that all of it looked good and worked responsively too by using the devtools in Google Chrome and a smartphone
+- Checked if each aside bar was working on each page by checking, if their hover effects are working and if they lead to the right pages when they are pressed on
+- Checked if each of the texts or icons that are supposed to link to other web pages, work or not
 
-#### User Stories
+#### Useful functionalities
 1. Know how one could help people in need and why they need my help. 
 > - Scroll through the homepage to receive quick information about how countries fall into poverty or war and find out how one could help 
 2. Know what countries are offered to be donated to on the website with quick information about them
@@ -414,6 +435,7 @@ I have asked friends and a parent of mine to go through the website to give me f
 - Check the responsiveness by utilising the live preview to look at the website in different screen sizes in the devtools on Google Chrome
 - Opened up the website on my phone
 - Asked friends to check out the website on their devices and let me know of any bugs they found 
+- Used my smartphone to see, if all the functionalities work on there too or not, and if the design looks good or not
 
 
 #### Code validation
@@ -450,7 +472,6 @@ The link, at which the site is published, should appear
 - [the balance](https://www.thebalance.com/gdp-per-capita-formula-u-s-compared-to-highest-and-lowest-3305848)
 
 #### Images index.html
-The images in index.html were obtained from the following websites: 
 - [Max Pixels](https://www.maxpixel.net/Disease-Africa-Sick-Poverty-Young-Face-Sadness-1783794)
 - [pxhere](https://pxhere.com/en/photo/1053497)
 - [Harry S. Trueman](https://www.trumanlibrary.gov/photograph-records/61-102)
