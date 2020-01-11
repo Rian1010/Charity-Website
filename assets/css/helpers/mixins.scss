@@ -16,7 +16,7 @@
 .hpimg-2 {
     width: 100%;
     @include box (900px,
-    (linear-gradient(to right, rgba(240, 251, 255, 0.7), rgba(240, 251, 277, 0.4), rgba(240, 251, 255, 0.7)), url('../images/starvation.jpg')));
+    (linear-gradient(to right, rgba(240, 251, 255, 0.7), rgba(240, 251, 277, 0.4), rgba(240, 251, 255, 0.7)), url('../images/india-kids.jpg')));
     top: 40px;
     background-position: center;
 }
@@ -24,7 +24,7 @@
 .hpimg-3 {
     width: 100%;
     @include box(900px,
-    (linear-gradient(to right, rgba(240, 251, 255, 0.5), rgba(240, 251, 277, 0.3), rgba(240, 251, 255, 0.5)), url('../images/Starving -African-Child.jpg')));
+    (linear-gradient(to right, rgba(240, 251, 255, 0.5), rgba(240, 251, 277, 0.3), rgba(240, 251, 255, 0.5)), url('../images/starvation.jpg')));
     top: 40px;
     background-position: center;
     background-size: cover;
@@ -33,7 +33,7 @@
 .hpimg-4 {
     width: 100%;
     @include box (775px,
-    (linear-gradient(to right, rgba(240, 251, 255, 0.7), rgba(240, 251, 277, 0.3), rgba(240, 251, 255, 0.7)), url('../images/india-kids.jpg')));
+    (linear-gradient(to right, rgba(240, 251, 255, 0.7), rgba(240, 251, 277, 0.3), rgba(240, 251, 255, 0.7)), url('../images/Starving -African-Child.jpg')));
     top: 40px;
     background-position: center;
 }

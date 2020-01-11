@@ -240,7 +240,7 @@ a user's message got sent. However, the second function in the then statement ge
 
 The sendMail function gets called in the sendMsg function, which is located inside of another function that causes the page to load before triggering what is inside of it. The other function, inside of it, makes sure that an alarm pops up, in case a user forgets to fill in a required field, before clicking on the submit button.
 
-As for the 'Statistics' page, crossfilter.JS, D3.JS and DC.JS, those were used to create interactive charts. The queue is used to connect to the JSON files and the createDataVis function connects to the each function below it and 
+As for the 'Statistics' page, crossfilter.JS, D3.JS and DC.JS, those were used to create interactive charts. The queue is used to connect to the JSON files in the data folder. The createDataVis function is connected to the each function below it and 
 renders all of them. The show_country_data function displays three charts that are connected, so that users can visually compare the given data. Below this function, there are three further functions that display other graphs with different kinds of data to be shown to a user. 
 
 All JavaScript codes were tested through the console in the dev tools by using console.log to check if the codes work or not.
@@ -369,6 +369,10 @@ There was the problem that every time one pressed submit on the contact page, an
 if one does not write anything into any of the input boxes. 
 
 ### Unsolved bugs
+
+#### Homepage
+I wanted to refactor the functions for the 'Read More' and 'Read Less' buttons by using classes and querySelectorAll, instead of IDs and querySelector, which I currently use. However, it would not work, so I tried looping
+through the classes, but it also did not work. Due to the little amount of time, I did not manage to look further into it, but I am planning to do so in the future. 
 
 #### Maps Page
 I tried to refactor the code in the map.js file, so that code would not be as long as it is now however, because of the little amount of time I had left for this project, I was not able to find a good solution to accomplish

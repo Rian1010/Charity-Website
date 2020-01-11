@@ -11,24 +11,23 @@ $large-desktop-width: 1200px;
             margin-top: 36px;
             padding-left: 10px;
         }
-
         .section{
             margin-left: 44px;
         }
-
         .donateButtonStyleHP {
             height: 49px;
         }
+
         //Map Page
         .mapInstruction {
             padding-top: 17%
         }
+
         //Statistics Texts
         .chartText {
             margin: 0 10%;
             text-align: center;
         }
-
         .chartStyling {
             background-color: $white;
             margin: 70px 0px 70px 0px;
@@ -42,22 +41,25 @@ $large-desktop-width: 1200px;
         }
         .chart-margin{
             margin-left: 230px;
-        }//Aside Social Media Buttons
+        }
+        
+        //Aside Social Media Buttons
         .social-media-button a, .social-media-button div {
             transform: translateX(-15px);
         }
         .social-media-button {
             width: 5.5%;
-        } //Footers
+        } 
+        
+        //Footers
         #footer {
             height: 110px
-        } // Contact Page
+        } 
+        
+        // Contact Page
         .text-box-length {
             width: 300px;
             margin-left: 5px;
-        }
-        .textHP2 {
-            text-align: center;
         }
     }
 }
@@ -76,6 +78,7 @@ $large-desktop-width: 1200px;
         h3 {
             font-size: 25px;
         }
+
         /*Homepage*/
         .hpimg-1 {
             padding: 164px 0;
@@ -83,29 +86,25 @@ $large-desktop-width: 1200px;
         .hpimg-2 {
             height: 975px;
         }
-
         .hpimg-3 {
             height: 975px;
         }
-
         .hpimg-4 {
             height: 975px;
         }
-
         .text {
             padding-right: 10px;
             position: relative;
         }
-
         .MotherTeresaQuote {
             font-size: 26px;
             position: relative;
         }
 
+        //Statistics Page
         .graph-color {
             color: $black;
         }
-        //Statistics Page
         #statsBox {
             height: 500px;
         }
@@ -118,6 +117,7 @@ $large-desktop-width: 1200px;
         .row-flex {
             margin-bottom: 0; 
         }
+
         // Contact Page
         .text-box-length {
             width: 400px;
@@ -129,6 +129,7 @@ $large-desktop-width: 1200px;
         .contact-list {
             list-style: none;
         }
+
         //Aside
         .social-media-button a, .social-media-button div {
             transform: translateX(-90px);
@@ -147,10 +148,12 @@ $large-desktop-width: 1200px;
         p {
             font-size: 18px;
         }
+
         // Homepage
         .hpimg-1 {
             padding: 100px 0 350px 0;
         }
+
         //Map Page
         .mapInstruction {
             padding-top: 13%
@@ -158,6 +161,7 @@ $large-desktop-width: 1200px;
         .stats-banner-text{
             font-size: 26px;
         }
+
         //Statistics Page
         div.dc-chart {
             float: none;
@@ -195,38 +199,35 @@ $large-desktop-width: 1200px;
 
 @mixin large-desktop {
     @media (min-width: $large-desktop-width) {
+
         //Homepage
         .top-section-counter-BG {
             padding-right: 29px;
         }
-
         .hpimg-1 {
             padding: 200px 0;
         }
-        
         .hpimg-2 {
             width: 100%;
             height: 1000px;
             top: 40px;
         }
-
         .hpimg-3 {
             width: 100%;
             height: 1000px;
             top: 40px;
         }
-
         .hpimg-4 {
             height: 1000px;
         }
-
         .textHP1 {
             padding-left: 40px;
         }
-
         .section {
             margin-left: 40px;
-        }//Aside Social Media Buttons
+        }
+        
+        //Aside Social Media Buttons
         .social-media-button a, .social-media-button div {
             transform: translateX(-53px);
         }

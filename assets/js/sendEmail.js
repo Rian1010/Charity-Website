@@ -32,7 +32,7 @@ window.onload = function() {
         let emailContent = emailBox.value;
         let MsgContent = MsgBox.value;
 
-        // Alerts to pop up, if a required field has not been filled in, before pressing on the submit
+        // Alerts pop up, if a required field has not been filled in, before pressing on the submit
         if (nameContent === '') {
             alert('Please fill in the input field for your name.');
         }
@@ -42,7 +42,7 @@ window.onload = function() {
         else if (MsgContent === '') {
             alert('Please fill in the input field for your message.');
         }
-        // The sendMail function gets called, if each of the required fields on the page have been filled
+        // The sendMail function gets called, if each of the required fields on the page have been filled in
         else {
             sendMail(nameContent, emailContent, MsgContent);
         }

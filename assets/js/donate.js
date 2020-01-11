@@ -1,5 +1,5 @@
 // Open and close the accordions
-// Change the + symbol to switch to the - symbol, if the accordion opens, and switch it back to the + symbol, if the accordion closes
+// Also, change the + symbol to switch to the - symbol, if the accordion opens, and switch it back to the + symbol, if the accordion closes
 var collapse = document.getElementsByClassName("charity-collapse");
 var i;
 // Iterate through each accordion
@@ -90,7 +90,7 @@ function dragElement(elmnt) {
     function dragMouseDown(e) {
         // use either the mouse event or the window event
         e = e || window.event;
-        // prevents the default action from stopping the drag
+        // prevents the default action from stopping the drag effect
         e.preventDefault();
         // get the mouse cursor position at startup
         pos3 = e.clientX;
@@ -103,7 +103,7 @@ function dragElement(elmnt) {
     function elementDrag(e) {
         // use either the mouse event or the window event
         e = e || window.event;
-        // prevents the default action from stopping the drag
+        // prevents the default action from stopping the drag effect
         e.preventDefault();
         // pos3 and pos4 are the new positions 
         // pos1 and pos2 are the distance/difference from the old position

@@ -18,7 +18,7 @@
 
 .readBtn {
     background-image: $buttonBG;
-    color: white;
+    color: $white;
     border: none;
     font-weight: 600;
 }
@@ -48,7 +48,6 @@
     margin-bottom: 10px;
     color: $white;
     transition: 0.2s ease-in-out;
-
 }
 
 .donateButtonStyle:hover {
@@ -88,9 +87,8 @@
     width: 100%;
     font-size: 1.5rem;
     background: rgb(41, 41, 56);
-    color: white;
+    color: $white;
     border: none;
-
 }
 
 .calc-no-padding {
