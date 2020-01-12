@@ -1,7 +1,6 @@
-window.onload = function () {
+window.initMap = function () {
 
     // Set up the location of each country
-
     function countryPosition(lat, lng) {
         this.lat = lat;
         this.lng = lng;
