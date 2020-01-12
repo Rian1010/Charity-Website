@@ -562,6 +562,8 @@ The link, at which the site is published, should appear
 - [American Red Cross](https://www.redcross.org/)
 - [Ronald McDonald House Charities](http://www.rmhc.org.au/tax2019?gclsrc=aw.ds&gclid=Cj0KCQjwov3nBRDFARIsANgsdoGNpLUkE8DFjiOWXXlHrwg68jQDcvTxap9pOu77qWQIL04nghRgHhgaAvZVEALw_wcB&gclsrc=aw.ds)
 - [Australian Red Cross](https://www.redcross.org.au/)
+- [SOS Children's Villages](https://www.sos-childrensvillages.org/where-we-help/asia/kyrgyzstan)
+- [ActionAid](https://www.actionaid.org.uk/about-us/where-we-work/democratic-republic-of-congo)
 
 #### Images on donate.html
 - [flickr](https://www.flickr.com/photos/syriafreedom/21076307990)

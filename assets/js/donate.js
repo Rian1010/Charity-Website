@@ -84,7 +84,7 @@ function dragElement(calculator) {
         document.getElementById(calculator.id + "header").onmousedown = dragMouseDown;
     }
     else {
-        elmnt.onmousedown = dragMouseDown;
+        calculator.onmousedown = dragMouseDown;
     }
 
     function dragMouseDown(e) {
