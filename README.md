@@ -475,6 +475,7 @@ I have asked friends and a parent of mine to go through the website to give me f
 - Opened up the website on my phone
 - Asked friends to check out the website on their devices and let me know of any bugs they found 
 - Used my smartphone to see, if all the functionalities work on there too or not, and if the design looks good or not
+- Opened up the website on Google Chrome and Firefox to check, if it would be working well on other browsers too or not, and it did go well
 
 
 #### Code validation
