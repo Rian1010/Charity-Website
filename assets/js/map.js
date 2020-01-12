@@ -1,6 +1,9 @@
-window.initMap = function () {
 
-    // Set up the location of each country
+window.initMap = function () {
+    function initMap() {
+        GoogleMap.initGoogleMap();
+    }
+    // Set up the location of each country to use them for the location of the markers
     function countryPosition(lat, lng) {
         this.lat = lat;
         this.lng = lng;

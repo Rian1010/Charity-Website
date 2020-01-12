@@ -356,6 +356,40 @@ window.onscroll = function fadeIn() {
 - Tested each of the the JavaScript codes by using console.log() and the console in the devtools on Google Chrome
 - Had problems with the codes in the maps.js file, as the codes were almost 1000 lines long, so I solved it using the following procedures:
 > - Used a constructor to call the longitude and latitude values of the countries that are displayed
+```javascript
+    function countryPosition(lat, lng) {
+        this.lat = lat;
+        this.lng = lng;
+    }
+```
+
+Also, there was an error that kept occuring, which said the following: 
+
+> Uncaught (in promise) zd {message: "initMap is not a function", name: "InvalidValueError", stack: "Error↵    at new zd (https://maps.googleapis.com/m…1G505RUOrZ3EJpIqBqpMGNcs&callback=initMap:145:124"}
+
+I solved that problem by adding the following code:
+
+```javascript
+    window.initMap = function () {}
+```
+
+However, although the error does not appear most of the time, it would still sometimes show up, when I loaded the page twice, so quickly that I didn't let the page fully load the first time around. 
+I have tried to solve this bug using the following two approaches, but none of these worked. 
+
+```javascript
+    window.onload = function () {}
+```
+
+```javascript
+    $(document).ready(function(){});
+```
+
+Finally, when loading the JavaScript file, before all of the other script files and using the following code, the error totally stopped appearing: 
+```javascript
+    function initMap() {
+        GoogleMap.initGoogleMap();
+    }
+```
 
 #### Statistics page
 - The line charts did not work, so I found a way to make them work by using the following code, which was repeated for each given data in both of the data charts to make the information be displayed in the graphs: 
@@ -386,7 +420,6 @@ through the classes, but it also did not work. Due to the little amount of time,
 I tried to refactor the code in the map.js file, so that code would not be as long as it is now however, because of the little amount of time I had left for this project, I was not able to find a good solution to accomplish
 this task. I used objects and more variables to reduce the amount of code for the content in the info windows of the markers that are on the map, but the text that the content turned into, kept being undefined, although I had defined the variables.
 My mentor and a tutor suggested to move on because of the time limit, but I am still planning to reduce the code, probably by using objects.
-
 
 ## Testing
 
