@@ -1,4 +1,3 @@
-
 window.initMap = function () {
     function initMap() {
         GoogleMap.initGoogleMap();
@@ -42,13 +41,13 @@ window.initMap = function () {
     var Australia = new countryPosition(-24.972577, 134.742806);
 
 
-    // Set up the initial zoomed in position on the map
+    // Set up the initial zoomed in position on the map nearby the middle of it for one to at first have a clear overall look at the map
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 2.5,
         center: syria
     });
 
-    // Here is the content that shall appear in the info boxes of the markers
+    // The content that shall appear in the info boxes of the markers
     var contentString = '<div id="content">' +
         '</div>' +
         '<h2 id="markerInfoHeading">Syria</h2>' +
@@ -356,10 +355,7 @@ window.initMap = function () {
 
 
 
-    // Set up the infowindows to be available, if the markers are clicked
-
-
-
+    // Set up the info windows to be available with the content in the variables above, each with a size of 250px max-width
     var infowindow = new google.maps.InfoWindow({
         content: contentString,
         maxWidth: 250
@@ -515,11 +511,7 @@ window.initMap = function () {
         maxWidth: 250
     });
 
-
-
-
     // Set up markers for each country's position
-
     var marker = new google.maps.Marker({
         position: syria,
         map: map,

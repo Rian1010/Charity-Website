@@ -93,16 +93,19 @@ function countSeconds() {
     count += 2;
 
     // Set up the timer
+    // If the seconds hit the 60th second, they restart from 0 seconds and a minute is incremented by one
     if (seconds % 60 == 0) {
         seconds = 0;
         theMinutes++;
+        // If the minutes are below 10, a 0 is attached in front of a number
         if (theMinutes < 10) {
             theMinutes = "0" + theMinutes;
         }
     }
-    if (seconds < 10 || seconds == 0) {
+    // If the seconds are below 10, a 0 is attached in front of a number
+    if (seconds < 10) {
         seconds = "0" + seconds;
     }
 }
-// cause the function to work after each 1000 miliseconds
+// Cause the function to work after each 1000 miliseconds
 var time = setInterval(countSeconds, 1000);

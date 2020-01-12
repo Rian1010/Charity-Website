@@ -227,8 +227,8 @@ For the Google Maps API, on the 'Map' page, the JavaScript code is in the map.js
 
 The initMap() function contains all of the code for the displayed map. Inside of it, variables with the names of each marked country have been added. These serve the purpose of latitudes and longitudes of each
 country. Furthermore, the map variable causes the initial zoom to be at 2.5 and its center to be at the position of syria, as it is close to the middle of the map. In addition, "var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';" was used
-as an array in order to label the markers on the map. Then, variables called contentString were used to use HTML for the text in the window boxes of the markers.  Numbers got attached in their variable names to indicate that
-different info boxes have been targeted. The variables with the name of 'infowindow' in them, enabled the contentString variables to be the displayed content of the info windows. In addition, a max width of 200 has been given to each of them.
+as an array in order to label the markers on the map. Then, variables called contentString were used to use HTML of the text in the window boxes of the markers.  Numbers got attached in their variable names to indicate that
+different info boxes have been targeted. The variables with the name of 'infowindow' in them, enabled the contentString variables to be the displayed content of the info windows. In addition, a maximum width of 250 has been given to each of them.
 
 
 As for the contact page, Email.JS was used to enable users to contact me. The JavaScript codes are in the sendEmail.js file. Three parameters were used in the sendMail function, name, email and message.
@@ -248,7 +248,8 @@ The sendMail function gets called in the sendMsg function, which is located insi
 
 As for the 'Statistics' page, crossfilter.JS, D3.JS and DC.JS, those were used to create interactive charts. The queue is used to connect to the JSON files in the data folder. The createDataVis function is connected to the each function below it and 
 renders all of them. The show_country_data function displays three charts that are connected, so that users can visually compare the given data. Below this function, there are three further functions that display other graphs with different kinds of data to be shown to a user. 
-The comments above each function in the statistics.js file, indicate what the functions are for. The graphs are not responsive, as it is not a requirement in the course, so they are hidden on phone sizes and are bigger, than the rest of the page on tablet sizes
+The comments above each function in the statistics.js file, indicate what the functions are for. The graphs are not responsive, as it is not a requirement in the course, so they are hidden on phone sizes and are bigger, than the rest of the page on tablet sizes.
+Also, I have conntected the first three data charts for a user to compare their information, but I did not conntect any of the other data charts, as they contain different kinds of information.
 
 All JavaScript codes were tested through the console in the dev tools by using console.log to check if the codes work or not.
 
@@ -419,7 +420,7 @@ through the classes, but it also did not work. Due to the little amount of time,
 #### Maps Page
 I tried to refactor the code in the map.js file, so that code would not be as long as it is now however, because of the little amount of time I had left for this project, I was not able to find a good solution to accomplish
 this task. I used objects and more variables to reduce the amount of code for the content in the info windows of the markers that are on the map, but the text that the content turned into, kept being undefined, although I had defined the variables.
-My mentor and a tutor suggested to move on because of the time limit, but I am still planning to reduce the code, probably by using objects.
+My mentor and a tutor suggested to move on because of the time limit, but I am still planning to reduce the code, probably by using objects and JSON files.
 
 ## Testing
 
