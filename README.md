@@ -6,6 +6,46 @@ The link, at which my website is published is [here](https://rian1010.github.io/
 This was made for the second milestone project for the full stack developer course of Code Institute. The goal is to make a user interactive web application and to use HTML, CSS and JavaScript.
 
 ## Table of Contents
+1. [**Team**](#team)
+2. [**UX**](#ux)
+    - [**Users Stories**](#users-stories)
+    - [**Wireframes**](#wireframes)
+3. [**Features**](#features)
+4. [**Logic**](#logic)
+    - [**Logic of the Homepage**](#logic-of-the-homepage)
+    - [**Logic of the Map Page**](#logic-of-the-map-page)
+    - [**Logic of the Statistics Page**](#logic-of-the-statistics-page)
+    - [**Logic of the Donate Page**](#logic-of-the-donate-page)
+    - [**Logic of the Contact Page**](#logic-of-the-contact-page)
+5. [**Style and Layout**](#style-and-layout)
+6. [**Technologies Used**](#technologies-used)
+7. [**Project Approach and Difficulties**](#project-approach-and-difficulties)
+    - [**Style**](#style)
+    - [**Solving Bugs and Problems**](#solving-bugs-and-problems)
+        - [**Solved Bugs on the Homepage**](#solved-bugs-on-the-homepage)
+        - [**Solved Bugs on the Map Page**](#solved-bugs-on-the-map-page)
+        - [**Solved Bugs on the Statistics Page**](#solved-bugs-on-the-statistics-page)
+        - [**Solved Bugs on the Contact Page**](#solved-bugs-on-the-contact-page)
+    - [**Unsolved bugs**](#unsolved-bugs)
+        - [**Unsolved Bugs on the Homepage**](#unsolved-bugs-on-the-homepage)
+        - [**Unsolved Bugs on the Map Page**](#unsolved-bugs-on-the-map-page)
+8. [**Testing**](#testing)
+    - [**Client Story Testing**](#client-story-testing)
+    - [**Tests**](#tests)
+    - [**Useful Functionalities**](#useful-functionalities)
+    - [**Different Devices and Browsers**](#different-devices-and-browsers)
+    - [**Code Validation**](#code-validation)
+9. [**Deployment**](#deployment)
+    - [**Steps on How to Push the Workspace onto Github**](#steps-on-how-to-push-the-workspace-onto-github)
+    - [**Steps on the Final Deployment**](#steps-on-the-final-deployment)
+10. [**Content**](#content)
+    - [**Content in index.html**](#content-in-index.html)
+    - [**Images in index.html**](#images-in-index.html)
+    - [**Content in map.html and statistics.html**](#content-in-map.html-and-statistics.html)
+    - [**Images in statistics.html**](#images-in-statistics.html)
+    - [**Content in donate.html**](#content-in-donate.html)
+    - [**Images in donate.html**](#images-in-donate.html)
+11. [**Acknowledgements**](#acknowledgements)
 
 ## Team
 - __Author__ - Rian Sunthbocus
@@ -38,7 +78,7 @@ with a lot and how different their conditions are, compared to people in countri
 As a result, I tried to make the website that is easy to utilise for users because it would encourage them to help people in a quick and simple way with a wide variety of options. The aim was to provide
 clear statistics, informations and donation possibilities for people, who choose to help and want to know more about this topic. 
 
-#### Users Stories
+### Users Stories
 1. As a person, who is visiting the website, I want to read why I should donate to any organisation
 2. As a person, who is visiting the website, I want to easily find good charity organisations and know how my donation could help people in need
 3. As someone, who is interested in helping people in need, I would like to find information about countries with economic problems and political instabily
@@ -50,7 +90,7 @@ clear statistics, informations and donation possibilities for people, who choose
 9. As someone, who cares about helping people in need, I want to spread awareness about a charity that has not been included on the website yet, and contact the developer to add information about that certain charity organisation to the website
 10. As someone, who wants to find out more information about the website or charity organisations, I want to contact the web developer to ask questions
 
-#### Wireframes
+### Wireframes
 - Please find the paper and pen mockups for this website [here](https://github.com/Rian1010/Charity-Website/tree/master/Mockups)
 
 I have changed a lot from what I had originally planned for the design of the website in the Wireframes. The idea that I had for the homepage at first, ended up being too messy and included too many images, which the website would need to load, and a user would need to focus on 
@@ -87,7 +127,10 @@ contact me and to keep the purpose of that web page clear and consise on the fir
 The logic of this project is contained in all of the JavaScript files, which are located in the js folder that is in the assets folder.
 
 Various JavaScript effects have been implemented into this project in order to provide a pleasant user experience and make
-user interactions visually appealing and satisfying. As for the homepage, I have used multiple functions to include the desired functionalities.
+user interactions visually appealing and satisfying. 
+
+### Logic of the Homepage
+As for the homepage, I have used multiple functions to include the desired functionalities.
 
 One example for it is that I used the constants, 'readBtn', 'more' and 'dots' to let a user trigger events on the web page. I connected the 'readBtn' variable to an event listener called 'click' and
 concatenated each of the three variables to innerText or style with a property, which I set equal to a variable to accomplish the effect that I wanted to bring forth. Furthermore,
@@ -146,6 +189,24 @@ The if statements make sure that once the the seconds have counted up to 60, it 
 in front of any number under 10, through the 'seconds' and 'theMinutes' variables in the if statements. Finally, the 'time' variable is set to 'setInterval(countSeconds, 1000);', so that the displayed numbers
 get incremented by each second to show the time and number of deaths. In addition, I have done the exact same thing for the time and death counters at the top of the 'Statistics' page.
 
+### Logic of the Map Page
+
+For the Google Maps API, on the 'Map' page, the JavaScript code is in the map.js file.
+
+The initMap() function contains all of the code for the displayed map. Inside of it, variables with the names of each marked country have been added. These serve the purpose of latitudes and longitudes of each
+country. Furthermore, the map variable causes the initial zoom to be at 2.5 and its center to be at the position of syria, as it is close to the middle of the map. In addition, "var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';" was used
+as an array in order to label the markers on the map. Then, variables called contentString were used to use HTML of the text in the window boxes of the markers.  Numbers got attached in their variable names to indicate that
+different info boxes have been targeted. The variables with the name of 'infowindow' in them, enabled the contentString variables to be the displayed content of the info windows. In addition, a maximum width of 250 has been given to each of them.
+
+
+### Logic of the Statistics Page
+
+As for the 'Statistics' page, crossfilter.JS, D3.JS and DC.JS, those were used to create interactive charts. The queue is used to connect to the JSON files in the data folder. The createDataVis function is connected to the each function below it and 
+renders all of them. The show_country_data function displays three charts that are connected, so that users can visually compare the given data. Below this function, there are three further functions that display other graphs with different kinds of data to be shown to a user. 
+The comments above each function in the statistics.js file, indicate what the functions are for. The graphs are not responsive, as it is not a requirement in the course, so they are hidden on phone sizes and are bigger, than the rest of the page on tablet sizes.
+Also, I have conntected the first three data charts for a user to compare their information, but I did not conntect any of the other data charts, as they contain different kinds of information.
+
+### Logic of the Donate Page
 
 In the donate.js file, I started off by adding the functionality of opening and closing the collapsible sections for the charity organisations on the 'Donate' page.
 
@@ -223,13 +284,7 @@ document.onmouseup = null;
 document.onmousemove = null;
 ```
 
-For the Google Maps API, on the 'Map' page, the JavaScript code is in the map.js file.
-
-The initMap() function contains all of the code for the displayed map. Inside of it, variables with the names of each marked country have been added. These serve the purpose of latitudes and longitudes of each
-country. Furthermore, the map variable causes the initial zoom to be at 2.5 and its center to be at the position of syria, as it is close to the middle of the map. In addition, "var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';" was used
-as an array in order to label the markers on the map. Then, variables called contentString were used to use HTML of the text in the window boxes of the markers.  Numbers got attached in their variable names to indicate that
-different info boxes have been targeted. The variables with the name of 'infowindow' in them, enabled the contentString variables to be the displayed content of the info windows. In addition, a maximum width of 250 has been given to each of them.
-
+### Logic of the Contact Page
 
 As for the contact page, Email.JS was used to enable users to contact me. The JavaScript codes are in the sendEmail.js file. Three parameters were used in the sendMail function, name, email and message.
 
@@ -245,13 +300,6 @@ The code above, is used to set values to the stored properties in the Email.JS t
 a user's message got sent. However, the second function in the then statement gets triggered instead, if an error occurs, so that it displays a text, which lets one know of the error.
 
 The sendMail function gets called in the sendMsg function, which is located inside of another function that causes the page to load before triggering what is inside of it. The other function, inside of it, makes sure that an alarm pops up, in case a user forgets to fill in a required field, before clicking on the submit button.
-
-As for the 'Statistics' page, crossfilter.JS, D3.JS and DC.JS, those were used to create interactive charts. The queue is used to connect to the JSON files in the data folder. The createDataVis function is connected to the each function below it and 
-renders all of them. The show_country_data function displays three charts that are connected, so that users can visually compare the given data. Below this function, there are three further functions that display other graphs with different kinds of data to be shown to a user. 
-The comments above each function in the statistics.js file, indicate what the functions are for. The graphs are not responsive, as it is not a requirement in the course, so they are hidden on phone sizes and are bigger, than the rest of the page on tablet sizes.
-Also, I have conntected the first three data charts for a user to compare their information, but I did not conntect any of the other data charts, as they contain different kinds of information.
-
-All JavaScript codes were tested through the console in the dev tools by using console.log to check if the codes work or not.
 
 ## Style and Layout
 -__Overall Style__-
@@ -293,8 +341,8 @@ Shows social media buttons on phone screen sizes that link to social media pages
 - Git and GitHub
     - Used for the project's control and deployment
 
-## Project approach and difficulties
-#### Style
+## Project Approach and Difficulties
+### Style
 In order to come up with a style for it, I had to think about the topic that I wanted to work on and what functionalities there are that could be added with JavaScript to deliver enough information about the topic in 
 a way that gives users a good user experience. So, I aimed to let people know what the website was all about, on the cover of the homepage. In order to make one's experience unique, I caused each background image to be 
 fixed, as one scrolls down and included a linear-gradient on them to make them look better. Furthermore, the death counter and the box it is in are red to visually represent something bad, as this colour is 
@@ -320,9 +368,9 @@ Finally, there is a contact page, which specifies what a user can contact me and
 
 The navbar and the footer are both white with black texts because I wanted to keep the website bright. The navbar has blue hover effects, as the most of the pages' colors are blue as well.
 
-### Solving bugs and problems
+### Solving Bugs and Problems
 
-#### Homepage
+#### Solved Bugs on the Homepage
 I tried to refactor the code for the functions called scrollByPage2, scrollByPage3, scrollByPage4 and scrollByPage5 by using calculations, for example: 
 ```javascript 
 (window.scrollY + window.innerHeight) - scrollEffect.height / 2
@@ -353,7 +401,7 @@ window.onscroll = function fadeIn() {
 
 ```
 
-#### Maps Page
+#### Solved Bugs on the Map Page
 - Tested each of the the JavaScript codes by using console.log() and the console in the devtools on Google Chrome
 - Had problems with the codes in the maps.js file, as the codes were almost 1000 lines long, so I solved it using the following procedures:
 > - Used a constructor to call the longitude and latitude values of the countries that are displayed
@@ -392,7 +440,7 @@ Finally, when loading the JavaScript file, before all of the other script files 
     }
 ```
 
-#### Statistics page
+#### Solved Bugs on the Statistics Page
 - The line charts did not work, so I found a way to make them work by using the following code, which was repeated for each given data in both of the data charts to make the information be displayed in the graphs: 
 
 ```javascript
@@ -407,24 +455,24 @@ femaleUnempRateDRC = unemp_rate_female_dim.group().reduceCount(function(d) {
 ```
 - I did not have enough time to try to refactor these repetitive codes, but I am planning to do so in the future
 
-#### Contact page
+#### Solved Bugs on the Contact Page
 There was the problem that every time one pressed submit on the contact page, an empty email would be sent to me. Therefore, I added the sendMsg function, which contains if statements that cause alerts to show up,
 if one does not write anything into any of the input boxes. 
 
-### Unsolved bugs
+### Unsolved Bugs
 
-#### Homepage
+#### Unsolved Bugs on the Homepage
 I wanted to refactor the functions for the 'Read More' and 'Read Less' buttons by using classes and querySelectorAll, instead of IDs and querySelector, which I currently use. However, it would not work, so I tried looping
 through the classes, but it also did not work. Due to the little amount of time, I did not manage to look further into it, but I am planning to do so in the future. 
 
-#### Maps Page
+#### Unsolved Bugs on the Map Page
 I tried to refactor the code in the map.js file, so that code would not be as long as it is now however, because of the little amount of time I had left for this project, I was not able to find a good solution to accomplish
 this task. I used objects and more variables to reduce the amount of code for the content in the info windows of the markers that are on the map, but the text that the content turned into, kept being undefined, although I had defined the variables.
 My mentor and a tutor suggested to move on because of the time limit, but I am still planning to reduce the code, probably by using objects and JSON files.
 
 ## Testing
 
-#### Client story testing
+### Client Story Testing
 I have asked friends and a parent of mine to go through the website to give me feedback about it. This is the information that they gave me: 
 - The website is easy to read and gather the most important information from
 - Clear indications of call to action 
@@ -435,7 +483,7 @@ I have asked friends and a parent of mine to go through the website to give me f
 - The images on the homepage and the scrolling effects are a good and suitable addition to the page
 - Easy to contact me through the contact page
 
-#### Tests
+### Tests
 - All JavaScript codes were tested by using console.log(), the console in the Google Chrome devtools and manual testing of the interactive effects
 - Scrolled through the homepage to check if the fixed value for the background attachment is working correctly
 - Checked if the counters and the text for them at the top of the homepage and the 'Statistics' page work or not
@@ -454,7 +502,7 @@ I have asked friends and a parent of mine to go through the website to give me f
 - Checked if each aside bar was working on each page by checking, if their hover effects are working and if they lead to the right pages when they are pressed on
 - Checked if each of the texts or icons that are supposed to link to other web pages, work or not
 
-#### Useful functionalities
+### Useful Functionalities
 1. Know how one could help people in need and why they need my help. 
 > - Scroll through the homepage to receive quick information about how countries fall into poverty or war and find out how one could help 
 2. Know what countries are offered to be donated to on the website with quick information about them
@@ -470,7 +518,7 @@ I have asked friends and a parent of mine to go through the website to give me f
 > - Click on the social media icons in the footer on mobile and tablet or in the aside bar on desktop
 
 
-#### Different browsers, mobile, desktop
+### Different Devices and Browsers
 - Check the responsiveness by utilising the live preview to look at the website in different screen sizes in the devtools on Google Chrome
 - Opened up the website on my phone
 - Asked friends to check out the website on their devices and let me know of any bugs they found 
@@ -478,15 +526,16 @@ I have asked friends and a parent of mine to go through the website to give me f
 - Opened up the website on Google Chrome and Firefox to check, if it would be working well on other browsers too or not, and it did go well
 
 
-#### Code validation
-The two websites that I used to validate the HTML and CSS codes are:
-[HTML Validator](https://validator.w3.org/nu/)
-[CSS Validator](https://jigsaw.w3.org/css-validator/)
+### Code Validation
+The three websites that I used to validate the HTML, CSS and JavaScript codes are:
+[HTML Validator](https://validator.w3.org/nu/) for validation of HTML
+[CSS Validator](https://jigsaw.w3.org/css-validator/) for validation of CSS
+[JavaScript Validator](https://jshint.com/) for validation of JavaScript
 
 ## Deployment
 The GitHub pages that the project has been deployed on, can be viewed here: [live preview of project](https://rian1010.github.io/Charity-Website/) 
 
-#### Steps on how to push it:
+### Steps on How to Push the Workspace onto Github
 - git add .
 - git status (to check if the correct file/s were added or not)
 - git commit -m "a short description of what has been updated"
@@ -495,7 +544,7 @@ The GitHub pages that the project has been deployed on, can be viewed here: [liv
 - Insert Github username
 - Insert Github password
 
-#### Steps on the final deployment:
+### Steps on the Final Deployment
 Go to the github repository
 Click on 'Settings'
 Scroll down to the 'Github Pages' section
@@ -503,7 +552,7 @@ Set the source to 'master branch'
 The link, at which the site is published, should appear
 
 ## Content
-#### Content on index.html 
+### Content in index.html 
 - [Food Aid Foundation](https://www.foodaidfoundation.org/)
 - [Investopedia](https://www.investopedia.com/terms/p/poverty-trap.asp)
 - [Federal Reserve Bank of St. Louis](https://www.stlouisfed.org/education/economic-lowdown-podcast-series/episode-2-factors-of-production)
@@ -511,13 +560,13 @@ The link, at which the site is published, should appear
 - [World Food Program](https://cdn.wfp.org/2018/plate-of-food/)
 - [the balance](https://www.thebalance.com/gdp-per-capita-formula-u-s-compared-to-highest-and-lowest-3305848)
 
-#### Images index.html
+### Images in index.html
 - [Max Pixels](https://www.maxpixel.net/Disease-Africa-Sick-Poverty-Young-Face-Sadness-1783794)
 - [pxhere](https://pxhere.com/en/photo/1053497)
 - [Harry S. Trueman](https://www.trumanlibrary.gov/photograph-records/61-102)
 - [Starving Children In Africa](https://sites.google.com/site/starvingchildreninafrica777/)
 
-#### Content on statistics.html
+### Content in map.html and statistics.html
 - [Grafiti](https://beta.grafiti.io/facts/557233-extreme-poverty-asia-2018)
 - [Statistics Times](http://statisticstimes.com/economy/countries-by-projected-gdp-capita.php)
 - [Medium](https://insight.wfp.org/where-do-you-think-you-would-find-the-most-expensive-plate-of-food-in-the-world-408ed2856108)
@@ -527,10 +576,10 @@ The link, at which the site is published, should appear
 - [The Guardian](https://www.theguardian.com/inequality/datablog/2017/apr/26/inequality-index-where-are-the-worlds-most-unequal-countries)
 - [Trading Economics](https://tradingeconomics.com/country-list/unemployment-rate)
 
-#### Images on statistics.html
+### Images in statistics.html
 - [pxhere](https://pxhere.com/en/photo/1053497)
 
-#### Content information on donate.html
+### Content in donate.html
 - [Muslim Global Relief](https://www.muslimglobalrelief.org/syria-emergency-appeal/?gclid=Cj0KCQjw3PLnBRCpARIsAKaUbgvUScWalFRhKSaO9QfHb4Yqc6ELL2ZnKetlWrllvhLzkHA6GlKolYoaAh5HEALw_wcB)
 - [Save the Children](https://www.savethechildren.org/us/what-we-do/where-we-work/asia/indonesia)
 - [SOS Children's Village](https://www.sos-childrensvillages.org/where-we-help/asia/uzbekistan)
@@ -566,7 +615,7 @@ The link, at which the site is published, should appear
 - [SOS Children's Villages](https://www.sos-childrensvillages.org/where-we-help/asia/kyrgyzstan)
 - [ActionAid](https://www.actionaid.org.uk/about-us/where-we-work/democratic-republic-of-congo)
 
-#### Images on donate.html
+### Images in donate.html
 - [flickr](https://www.flickr.com/photos/syriafreedom/21076307990)
 - [Pixabay](https://pixabay.com/photos/children-uganda-africa-poverty-663392/)
 - [Wikimedia](https://commons.wikimedia.org/wiki/File:Jakarta_slumlife71.JPG)
@@ -576,7 +625,7 @@ The link, at which the site is published, should appear
 - [Wikimedia](https://commons.wikimedia.org/wiki/File:Katrina-14501.jpg)
 - [flickr](https://www.flickr.com/photos/elainevigneault/351169448)
 
-## Acknowldgements
+## Acknowledgements
 I was inspired to do this project from [Code Institute](https://www.codeinstitute.net/).
 Thank you to my mentor, Antonija Simic to guide me throughout the process of the project!
 Thank you to the tutors, Haley, Tim, Xavier, Stephan, Kevin, Michael, Samantha and Niel for helping me with the problems that I encountered.
