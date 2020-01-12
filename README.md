@@ -176,13 +176,13 @@ The clear button has an 'click' event listener, which is connected to a function
 
 Finally, the dragElement has the following variables:
 ```javascript
-var pos1 = 0,
-    pos2 = 0,
-    pos3 = 0,
-    pos4 = 0;
+var position1 = 0,
+    position2 = 0,
+    position3 = 0,
+    position4 = 0;
 ```
 
-These are initialised values to work with throughout the functions beneath it. Then, the functions named dragMouseDown, elementDrag and closeDragElement are used.
+These are initialised values to work with throughout the functions beneath it. Then, the functions named dragMouseDown, calculatorDrag and closeDragcalculator are used.
 
 ```javascript
 e = e || window.event;
@@ -193,30 +193,30 @@ In function dragMouseDown, the code above either triggers a mouse event or windo
 Then, the function uses the following code to get the position of the item at the startup and to connect to the functions below it: 
 
 ```javascript
-pos3 = e.clientX;
-pos4 = e.clientY;
+position3 = e.clientX;
+position4 = e.clientY;
 
 document.onmouseup = closeDragElement;
 document.onmousemove = elementDrag;
 ```
 
-The function called closeDragElement stops the process of dragging the calculator, when the mouse is released, whereas the function elementDrag, gets triggered through the movement of the mouse. It keeps the process of dragging the item consistently by adding the lines, e = e || window.event; and e.preventDefault(); too, 
+The function called closeDragCalculator stops the process of dragging the calculator, when the mouse is released, whereas the function calculatorDrag, gets triggered through the movement of the mouse. It keeps the process of dragging the item consistently by adding the lines, e = e || window.event; and e.preventDefault(); too, 
 in order to prevent other things from stopping the procedure. Afterwards, the following code enables the item to be dragged around: 
 
 ```javascript
-pos1 = pos3 - e.clientX;
-pos2 = pos4 - e.clientY;
-pos3 = e.clientX;
-pos4 = e.clientY;
+position1 = position3 - e.clientX;
+position2 = position4 - e.clientY;
+position3 = e.clientX;
+position4 = e.clientY;
         
  
-elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+calculator.style.top = (calculator.offsetTop - position2) + "px";
+calculator.style.left = (calculator.offsetLeft - position1) + "px";
 ```
 
-It gets the position of the item, calculates its new position when dragged and enables the calculator to be moved by subtracting elmnt.offsetTop by pos2 and elmnt.offsetTop by pos1, using pixels for the unit of the result. 
+It gets the position of the item, calculates its new position when dragged and enables the calculator to be moved by subtracting calculator.offsetTop by position2 and calculator.offsetTop by position1, using pixels for the unit of the result. 
 
-Finally, the closeDragElement function uses the following codes to stop the process, once the mouse is released:
+Finally, the closeDragCalculator function uses the following codes to stop the process, once the mouse is released:
 
 ```javascript 
 document.onmouseup = null;
