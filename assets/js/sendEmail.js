@@ -7,10 +7,12 @@ function sendMail(name, email, message) {
         })
         // Let users know, if the message was successfully sent or not
         .then(
+            // Function that lets users know, if the message was successfully sent
             function(response) {
                 let form = document.getElementById("contact_form");
                 let replacement = form.innerHTML = "<h2>Thank you for your message! It has been sent!</h2>";
             },
+            // Function that lets users know, if the message was notsuccessfully sent
             function(error) {
                 let form = document.getElementById("contact_form");
 

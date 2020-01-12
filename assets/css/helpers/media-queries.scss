@@ -5,7 +5,7 @@ $large-desktop-width: 1200px;
 
 @mixin phone {
     @media (min-width: $phone-width) {
-        /*Homepage*/
+        //Homepage
         .textHP1 {
             margin-left: 36px;
             margin-top: 36px;
@@ -79,7 +79,7 @@ $large-desktop-width: 1200px;
             font-size: 25px;
         }
 
-        /*Homepage*/
+        //Homepage
         .hpimg-1 {
             padding: 164px 0;
         }

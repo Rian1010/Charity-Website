@@ -1,3 +1,4 @@
+// Death Counter on the 'Statistics' page
 const COUNTER = document.getElementById("counterStats");
 const DEATHS = document.getElementById("deathStats");
 
@@ -8,22 +9,28 @@ var count = 0;
 
 document.addEventListener("DOMContentLoaded", countSeconds);
 
+// Display text for the counters
 function countSeconds() {
 
     COUNTER.innerHTML = "<p class='stats-banner-text'>You've been here for <span class='blue-seconds'>" + theMinutes + ":" + seconds + "</span> minutes.</p>";
     DEATHS.innerHTML = "<p class='stats-banner-text'>Estimated amount of people that passed away: <span class='red-count-statistics'>" + count + "</span></p>"
-
+    // Count up by one
     seconds++;
+    // Count up by two
     count += 2;
 
+    // Set up the timer
+    // If the seconds hit the 60th second, they restart from 0 seconds and a minute is incremented by one
     if (seconds % 60 == 0) {
         seconds = 0;
         theMinutes++;
+        // If the minutes are below 10, a 0 is attached in front of a number
         if (theMinutes < 10) {
             theMinutes = "0" + theMinutes;
         }
     }
-    if (seconds < 10 || seconds == 0) {
+    // If the seconds are below 10, a 0 is attached in front of a number
+    if (seconds < 10) {
         seconds = "0" + seconds;
     }
 }
