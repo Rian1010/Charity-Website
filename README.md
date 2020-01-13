@@ -32,7 +32,6 @@ This was made for the second milestone project for the full stack developer cour
 8. [**Testing**](#testing)
     - [**Client Story Testing**](#client-story-testing)
     - [**Tests**](#tests)
-    - [**Useful Functionalities**](#useful-functionalities)
     - [**Different Devices and Browsers**](#different-devices-and-browsers)
     - [**Code Validation**](#code-validation)
 9. [**Deployment**](#deployment)
@@ -80,15 +79,14 @@ clear statistics, informations and donation possibilities for people, who choose
 
 ### Users Stories
 1. As a person, who is visiting the website, I want to read why I should donate to any organisation
-2. As a person, who is visiting the website, I want to easily find good charity organisations and know how my donation could help people in need
-3. As someone, who is interested in helping people in need, I would like to find information about countries with economic problems and political instabily
-4. As someone, who is interested in knowing about countries in need, I would like to know where those countries are locate at, on a map and get short and quick information about them through markers
-5. As someone, who is interested in helping people in need, I would like to know what causes people to urgently require my assistance
-6. As someone, who is interested in helping people in need or just gathering knowledge about the world, I would like to find data and statistics about economic situations of countries in need
-7. As someone, who wants to find a good charity organisation, I want to have a wide range of options to donate to
-8. As someone, who wants to donate, I want to be able to keep track of how much I want to spend and therefore, have the option to use an online calculator on the same web page
-9. As someone, who cares about helping people in need, I want to spread awareness about a charity that has not been included on the website yet, and contact the developer to add information about that certain charity organisation to the website
-10. As someone, who wants to find out more information about the website or charity organisations, I want to contact the web developer to ask questions
+2. As someone, who is interested in helping people in need, I would like to know what causes people to urgently require my assistance by finding quick information on the homepage
+3. As someone, who is interested in helping people in need, I would like to find information about countries with economic problems and political instability
+4. As someone, who is interested in knowing about countries in need, I would like to know where those countries are locate at on a map and get short and quick information about them, simply through markers
+5. As someone, who is interested in helping people in need or just gathering knowledge about the world, I would like to find data and statistics about economic situations of countries in need and want to be able to compare them visually
+6. As someone, who wants to find a good charity organisation, I want to have a wide range of options to donate to on a donation page and be able to have a look at their websites myself by clicking on buttons that link me to them
+7. As someone, who wants to donate, I want to be able to keep track of how much I want to spend and therefore, have the option to use an online calculator on the same web page
+8. As someone, who cares about helping people in need, I want to spread awareness about a charity that has not been included on the website yet, and contact the developer to add information about that certain charity organisation to the website
+9. As someone, who wants to find out more information about the website or charity organisations, I want to contact the web developer to ask questions
 
 ### Wireframes
 - Please find the paper and pen mockups for this website [here](https://github.com/Rian1010/Charity-Website/tree/master/Mockups)
@@ -501,21 +499,6 @@ I have asked friends and a parent of mine to go through the website to give me f
 - Made sure that all of it looked good and worked responsively too by using the devtools in Google Chrome and a smartphone
 - Checked if each aside bar was working on each page by checking, if their hover effects are working and if they lead to the right pages when they are pressed on
 - Checked if each of the texts or icons that are supposed to link to other web pages, work or not
-
-### Useful Functionalities
-1. Know how one could help people in need and why they need my help. 
-> - Scroll through the homepage to receive quick information about how countries fall into poverty or war and find out how one could help 
-2. Know what countries are offered to be donated to on the website with quick information about them
-> - Click on the 'Map' button in the navigation bar to find an interactive map with markers all over it, each providing short details of why the country currently requires help
-3. See data and explanation of that data in order to compare the conditions of countries that need help 
-> - Click on the 'Statistics' button in the navigation bar to find interactive graphs with explanation beneath them and click on the chart bars to compare (The graphs are not available on mobile or tablet devices)
-4. Have a wide selection of good charity organisations to choose from to help the country/countries that I want to help and keep track of how much I am donating
-> - Click on the 'Donate' button in the navigation bar to find information of various countries in need with buttons that link to websites of charity organisations
-> - Click on the calculator button in the fixed aside section, to the left to calculate how much you want to donate
-5. Contact the creator of the website to ask questions about the countries in need or request to more charity organisations, if I have some in mind
-> - Click on the 'Contact' button in the navigation bar to send me an email and information of who you are and how I can contact you back
-6. Follow this page through social media to see the website's future work for charity organisations
-> - Click on the social media icons in the footer on mobile and tablet or in the aside bar on desktop
 
 
 ### Different Devices and Browsers
