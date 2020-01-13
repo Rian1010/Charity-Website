@@ -18,6 +18,10 @@ This was made for the second milestone project for the full stack developer cour
     - [**Logic of the Donate Page**](#logic-of-the-donate-page)
     - [**Logic of the Contact Page**](#logic-of-the-contact-page)
 5. [**Style and Layout**](#style-and-layout)
+    - [**Overall Style**](#overall-style)
+    - [**Navigation**](#navigation)
+    - [**Aside Bar**](#aside-bar)
+    - [**Footer**](#footer)
 6. [**Technologies Used**](#technologies-used)
 7. [**Project Approach and Difficulties**](#project-approach-and-difficulties)
     - [**Style**](#style)
@@ -38,12 +42,12 @@ This was made for the second milestone project for the full stack developer cour
     - [**Steps on How to Push the Workspace onto Github**](#steps-on-how-to-push-the-workspace-onto-github)
     - [**Steps on the Final Deployment**](#steps-on-the-final-deployment)
 10. [**Content**](#content)
-    - [**Content in index.html**](#content-in-index)
-    - [**Images in index.html**](#images-in-index.html)
-    - [**Content in map.html and statistics.html**](#content-in-map.html-and-statistics.html)
-    - [**Images in statistics.html**](#images-in-statistics.html)
-    - [**Content in donate.html**](#content-in-donate.html)
-    - [**Images in donate.html**](#images-in-donate.html)
+    - [**Content on the homepage**](#content-on-the-homepage)
+    - [**Images on the homepage**](#images-on-the-homepage)
+    - [**Content on the Map and Statistics Pages**](#content-on-the-map-and-statistics-pages)
+    - [**Images on the Statistics Page**](#images-on-the-statistics-page)
+    - [**Content on the Donate Page**](#content-on-the-donate-page)
+    - [**Images on the Donate Page**](#images-on-the-donate-page)
 11. [**Acknowledgements**](#acknowledgements)
 
 ## Team
@@ -309,7 +313,7 @@ The sendMail function gets called in the sendMsg function, which is located insi
 ### Navigation
 - The website has a responsive navigation bar at the top, so that one can be linked to other web pages of the website
 
-### Aside bar
+### Aside Bar
 - Has buttons that lead to multiple social media pages
 - Has a calculator button on the 'Donate' page, which causes a draggable and fixed online calculator to appear
 - Are unavailable on phone size
@@ -535,7 +539,7 @@ Set the source to 'master branch'
 The link, at which the site is published, should appear
 
 ## Content
-### Content in index.html 
+### Content on the Homepage
 - [Food Aid Foundation](https://www.foodaidfoundation.org/)
 - [Investopedia](https://www.investopedia.com/terms/p/poverty-trap.asp)
 - [Federal Reserve Bank of St. Louis](https://www.stlouisfed.org/education/economic-lowdown-podcast-series/episode-2-factors-of-production)
@@ -543,13 +547,13 @@ The link, at which the site is published, should appear
 - [World Food Program](https://cdn.wfp.org/2018/plate-of-food/)
 - [the balance](https://www.thebalance.com/gdp-per-capita-formula-u-s-compared-to-highest-and-lowest-3305848)
 
-### Images in index.html
+### Images on the Homepage
 - [Max Pixels](https://www.maxpixel.net/Disease-Africa-Sick-Poverty-Young-Face-Sadness-1783794)
 - [pxhere](https://pxhere.com/en/photo/1053497)
 - [Harry S. Trueman](https://www.trumanlibrary.gov/photograph-records/61-102)
 - [Starving Children In Africa](https://sites.google.com/site/starvingchildreninafrica777/)
 
-### Content in map.html and statistics.html
+### Content on the Map and Statistics Pages
 - [Grafiti](https://beta.grafiti.io/facts/557233-extreme-poverty-asia-2018)
 - [Statistics Times](http://statisticstimes.com/economy/countries-by-projected-gdp-capita.php)
 - [Medium](https://insight.wfp.org/where-do-you-think-you-would-find-the-most-expensive-plate-of-food-in-the-world-408ed2856108)
@@ -559,10 +563,10 @@ The link, at which the site is published, should appear
 - [The Guardian](https://www.theguardian.com/inequality/datablog/2017/apr/26/inequality-index-where-are-the-worlds-most-unequal-countries)
 - [Trading Economics](https://tradingeconomics.com/country-list/unemployment-rate)
 
-### Images in statistics.html
+### Images on the Statistics Page
 - [pxhere](https://pxhere.com/en/photo/1053497)
 
-### Content in donate.html
+### Content on the Donate Page
 - [Muslim Global Relief](https://www.muslimglobalrelief.org/syria-emergency-appeal/?gclid=Cj0KCQjw3PLnBRCpARIsAKaUbgvUScWalFRhKSaO9QfHb4Yqc6ELL2ZnKetlWrllvhLzkHA6GlKolYoaAh5HEALw_wcB)
 - [Save the Children](https://www.savethechildren.org/us/what-we-do/where-we-work/asia/indonesia)
 - [SOS Children's Village](https://www.sos-childrensvillages.org/where-we-help/asia/uzbekistan)
@@ -598,7 +602,7 @@ The link, at which the site is published, should appear
 - [SOS Children's Villages](https://www.sos-childrensvillages.org/where-we-help/asia/kyrgyzstan)
 - [ActionAid](https://www.actionaid.org.uk/about-us/where-we-work/democratic-republic-of-congo)
 
-### Images in donate.html
+### Images on the Donate Page
 - [flickr](https://www.flickr.com/photos/syriafreedom/21076307990)
 - [Pixabay](https://pixabay.com/photos/children-uganda-africa-poverty-663392/)
 - [Wikimedia](https://commons.wikimedia.org/wiki/File:Jakarta_slumlife71.JPG)
