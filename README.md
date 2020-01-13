@@ -38,7 +38,7 @@ This was made for the second milestone project for the full stack developer cour
     - [**Steps on How to Push the Workspace onto Github**](#steps-on-how-to-push-the-workspace-onto-github)
     - [**Steps on the Final Deployment**](#steps-on-the-final-deployment)
 10. [**Content**](#content)
-    - [**Content in index.html**](#content-in-index.html)
+    - [**Content in index.html**](#content-in-index)
     - [**Images in index.html**](#images-in-index.html)
     - [**Content in map.html and statistics.html**](#content-in-map.html-and-statistics.html)
     - [**Images in statistics.html**](#images-in-statistics.html)
@@ -300,21 +300,21 @@ a user's message got sent. However, the second function in the then statement ge
 The sendMail function gets called in the sendMsg function, which is located inside of another function that causes the page to load before triggering what is inside of it. The other function, inside of it, makes sure that an alarm pops up, in case a user forgets to fill in a required field, before clicking on the submit button.
 
 ## Style and Layout
--__Overall Style__-
+### Overall Style
 - The website has five different web pages
 - The website should be as responsive as possible
 - I tried my best to use lots of semantic HTML5 elements, in order to have a good structure of the codes
 - SASS was utilized, in order to organise the CSS3 codes in a cleaner way and have a better overview of them
 
--__Navigation__-
+### Navigation
 - The website has a responsive navigation bar at the top, so that one can be linked to other web pages of the website
 
--__Aside bar__-
+### Aside bar
 - Has buttons that lead to multiple social media pages
 - Has a calculator button on the 'Donate' page, which causes a draggable and fixed online calculator to appear
 - Are unavailable on phone size
 
--__Footer__-
+### Footer
 - Gives contact information
 - Links a user the 'Contact', 'Map' and 'Statistics' pages
 - Shows social media buttons on phone screen sizes that link to social media pages
