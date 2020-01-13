@@ -3,7 +3,7 @@
 ## Charity Base
 The link, at which my website is published is [here](https://rian1010.github.io/Charity-Website/).
 > A website that spreads awareness on economic and political problems, which cause poverty and life threatening situations in many countries.
-This was made for the second milestone project for the full stack developer course of Code Institute. The goal is to make a user interactive web application and to use HTML, CSS and JavaScript.
+This was made for the second milestone project for the full stack developer course of Code Institute. The goal is to make a user interactive web application and use HTML, CSS and JavaScript.
 
 ## Table of Contents
 1. [**Team**](#team)
@@ -55,7 +55,7 @@ This was made for the second milestone project for the full stack developer cour
 - __Mentor__ - Antonija Šimić
 
 ## UX
-The aim of this website is to let users know of some of the problems that are happening around the world and offer the access to some of the most popular charity organisation for people in need.
+The aim of this website is to let users know of some of the problems that are happening around the world and offer them access to some of the most popular charity organisation for people in need.
 The target audience of this site are people, who are looking for good charity organisations and or want to have an idea of some of the places in the world, in which people require help. 
 Basic information of economic and political problems are presented on the homepage with buttons that lead to the 'Donate' page, if a user wants to find a popular charity organisation
 for a country in the list. There is also another button, so one gets linked to the 'Statistics' page to compare data of countries in need.
@@ -126,7 +126,7 @@ contact me and to keep the purpose of that web page clear and consise on the fir
     - Allows a user to send the developer any questions or suggestions that one may have about the website
 
 ## Logic
-The logic of this project is contained in all of the JavaScript files, which are located in the js folder that is in the assets folder.
+The logic of this project is contained in all of the JavaScript files, which are located in the 'js' folder that is in the assets folder.
 
 Various JavaScript effects have been implemented into this project in order to provide a pleasant user experience and make
 user interactions visually appealing and satisfying. 
@@ -458,7 +458,7 @@ femaleUnempRateDRC = unemp_rate_female_dim.group().reduceCount(function(d) {
 - I did not have enough time to try to refactor these repetitive codes, but I am planning to do so in the future
 
 #### Solved Bugs on the Contact Page
-There was the problem that every time one pressed submit on the contact page, an empty email would be sent to me. Therefore, I added the sendMsg function, which contains if statements that cause alerts to show up,
+There was the problem that every time one pressed the submit button on the contact page, an empty email would be sent to me. Therefore, I added the sendMsg function, which contains if statements that cause alerts to show up,
 if one does not write anything into any of the input boxes. 
 
 ### Unsolved Bugs
@@ -515,9 +515,9 @@ I have asked friends and a parent of mine to go through the website to give me f
 
 ### Code Validation
 The three websites that I used to validate the HTML, CSS and JavaScript codes are:
-[HTML Validator](https://validator.w3.org/nu/) for validation of HTML
-[CSS Validator](https://jigsaw.w3.org/css-validator/) for validation of CSS
-[JavaScript Validator](https://jshint.com/) for validation of JavaScript
+- [HTML Validator](https://validator.w3.org/nu/) for validation of the HTML codes
+- [CSS Validator](https://jigsaw.w3.org/css-validator/) for validation of the CSS codes
+- [JavaScript Validator](https://jshint.com/) for validation of the JavaScript codes
 
 ## Deployment
 The GitHub pages that the project has been deployed on, can be viewed here: [live preview of project](https://rian1010.github.io/Charity-Website/) 
@@ -532,11 +532,11 @@ The GitHub pages that the project has been deployed on, can be viewed here: [liv
 - Insert Github password
 
 ### Steps on the Final Deployment
-Go to the github repository
-Click on 'Settings'
-Scroll down to the 'Github Pages' section
-Set the source to 'master branch'
-The link, at which the site is published, should appear
+- Go to the github repository
+- Click on 'Settings'
+- Scroll down to the 'Github Pages' section
+- Set the source to 'master branch'
+- The link, at which the site is published, should appear
 
 ## Content
 ### Content on the Homepage
@@ -584,7 +584,7 @@ The link, at which the site is published, should appear
 - [Ripple Africa](https://www.rippleafrica.org/)
 - [Save the Children](https://www.savethechildren.org/us/what-we-do/where-we-work/africa/somalia)
 - [Greater Good SA](http://www.greatergoodsa.co.za/)
-- [SOS Childrens Villages](https://www.sos-childrensvillages.org/where-we-help/africa/botswana)
+- [SOS Children's Villages](https://www.sos-childrensvillages.org/where-we-help/africa/botswana)
 - [Charity Water](https://www.charitywater.org/our-projects/south-america/bolivia)
 - [Save the Children](https://www.savethechildren.org/us/what-we-do/where-we-work/latin-america/bolivia)
 - [Guyana Medical Relief](https://guyanamedicalrelief.com/)
@@ -615,4 +615,4 @@ The link, at which the site is published, should appear
 ## Acknowledgements
 I was inspired to do this project from [Code Institute](https://www.codeinstitute.net/).
 Thank you to my mentor, Antonija Simic to guide me throughout the process of the project!
-Thank you to the tutors, Haley, Tim, Xavier, Stephan, Kevin, Michael, Samantha and Niel for helping me with the problems that I encountered.
+Thank you to the tutors, Haley, Tim, Xavier, Anna, Stephan, Kevin, Michael, Samantha and Niel for helping me with the problems that I encountered.
