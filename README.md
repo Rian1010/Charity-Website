@@ -236,6 +236,7 @@ should be 0, otherwise, if numbers have been inputed, these will be evaluated an
 
 The clear button has an 'click' event listener, which is connected to a function that turns the value of the calculator screen empty. So, once the button is clicked, the screen turns empty.
 
+I got the codes for the with the help of tutors and a [YouTube Video by motiQ](https://www.youtube.com/watch?v=JDiurjhpOXA).
 
 Finally, the dragElement has the following variables:
 ```javascript
@@ -278,6 +279,7 @@ calculator.style.left = (calculator.offsetLeft - position1) + "px";
 ```
 
 It gets the position of the item, calculates its new position when dragged and enables the calculator to be moved by subtracting calculator.offsetTop by position2 and calculator.offsetTop by position1, using pixels for the unit of the result. 
+I got the code to move the calculator around the page, with the help of tutors and a [Stackoverflow post](https://stackoverflow.com/questions/53247852/javascript-moveable-divs-with-javascript).
 
 Finally, the closeDragCalculator function uses the following codes to stop the process, once the mouse is released:
 
@@ -382,7 +384,7 @@ However, everything that I tried did not completely work and only hard coded num
 if (window.scrollY >= 600)
 ```
 
-Finally, I there was a way to solve it using the following code, which loops through each of the same class names:
+Finally, after receiving help from a tutor, there was a way to solve it using the following code, which loops through each of the same class names:
 ```javascript
 let sections = document.querySelectorAll(".section");
 window.onscroll = function fadeIn() {
