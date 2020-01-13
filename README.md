@@ -301,23 +301,23 @@ The sendMail function gets called in the sendMsg function, which is located insi
 
 ## Style and Layout
 -__Overall Style__-
-The website should have four different web pages
-The website should be as responsive as possible
-I tried my best to use lots of semantic HTML5 elements, in order to have a good structure of the codes
-SASS was utilized, in order to organise the CSS3 codes in a cleaner way and have a better overview of them
+- The website has five different web pages
+- The website should be as responsive as possible
+- I tried my best to use lots of semantic HTML5 elements, in order to have a good structure of the codes
+- SASS was utilized, in order to organise the CSS3 codes in a cleaner way and have a better overview of them
 
 -__Navigation__-
-The website has a responsive navigation bar at the top, so that one can be linked to other web pages of the website
+- The website has a responsive navigation bar at the top, so that one can be linked to other web pages of the website
 
 -__Aside bar__-
-Has buttons that lead to multiple social media pages
-Has a calculator button on the 'Donate' page, which causes a draggable and fixed online calculator to appear
-Are unavailable on phone size
+- Has buttons that lead to multiple social media pages
+- Has a calculator button on the 'Donate' page, which causes a draggable and fixed online calculator to appear
+- Are unavailable on phone size
 
 -__Footer__-
-Gives contact information
-Links a user the 'Contact', 'Map' and 'Statistics' pages
-Shows social media buttons on phone screen sizes that link to social media pages
+- Gives contact information
+- Links a user the 'Contact', 'Map' and 'Statistics' pages
+- Shows social media buttons on phone screen sizes that link to social media pages
 
 ## Technologies Used
 - HTML5
