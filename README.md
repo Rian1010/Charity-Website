@@ -222,6 +222,8 @@ represent index numbers inside of it. Then, the symbol class was targeted to rep
 and back to a plus sign, after being clicked again. Through the if and else statement, I edited the style of the content to cause the scrollHeight property to appear and disappear to make it
 look like the collapsible bars open, when clicked and close, if clicked again.
 
+I learned how to write the code for the accordions and used most of its code from [W3Schools](https://www.w3schools.com/howto/howto_js_accordion.asp).
+
 Furthermore, for the calculator to work, the following constants were used:
 - const btns - connected it to each of the buttons with the, 'calcBtn' class
 - const equalBtn - connected to the equal button of the calculator
@@ -236,7 +238,7 @@ should be 0, otherwise, if numbers have been inputed, these will be evaluated an
 
 The clear button has an 'click' event listener, which is connected to a function that turns the value of the calculator screen empty. So, once the button is clicked, the screen turns empty.
 
-I got the codes for the with the help of tutors and a [YouTube Video by motiQ](https://www.youtube.com/watch?v=JDiurjhpOXA).
+I got the codes for the calculator with the help of tutors and a [YouTube Video by motiQ](https://www.youtube.com/watch?v=JDiurjhpOXA).
 
 Finally, the dragElement has the following variables:
 ```javascript
@@ -279,7 +281,6 @@ calculator.style.left = (calculator.offsetLeft - position1) + "px";
 ```
 
 It gets the position of the item, calculates its new position when dragged and enables the calculator to be moved by subtracting calculator.offsetTop by position2 and calculator.offsetTop by position1, using pixels for the unit of the result. 
-I got the code to move the calculator around the page, with the help of tutors and a [Stackoverflow post](https://stackoverflow.com/questions/53247852/javascript-moveable-divs-with-javascript).
 
 Finally, the closeDragCalculator function uses the following codes to stop the process, once the mouse is released:
 
@@ -287,6 +288,8 @@ Finally, the closeDragCalculator function uses the following codes to stop the p
 document.onmouseup = null;
 document.onmousemove = null;
 ```
+
+I got the code to move the calculator around the page, with the help of tutors and a [Stackoverflow post](https://stackoverflow.com/questions/53247852/javascript-moveable-divs-with-javascript).
 
 ### Logic of the Contact Page
 

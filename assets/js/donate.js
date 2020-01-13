@@ -1,5 +1,7 @@
 // Open and close the accordions
 // Also, change the + symbol to switch to the - symbol, if the accordion opens, and switch it back to the + symbol, if the accordion closes
+// I learned how to write the code for the accordions and used most of its code from this W3Schools page: https://www.w3schools.com/howto/howto_js_accordion.asp
+
 var collapse = document.getElementsByClassName("charity-collapse");
 var i;
 // Iterate through each accordion
@@ -19,9 +21,9 @@ for (i = 0; i < collapse.length; i++) {
 }
 
 // Aside Calculator Button
+// The following code was written by myself
 const calculatorBtn = document.querySelector('#calcBtn');
 const theCalculator = document.querySelector('#calculator-wrapper')
-
 
 theCalculator.style.display = 'none';
 
@@ -37,6 +39,7 @@ calculatorBtn.addEventListener('click', () => {
 });
 
 // Cause the calculator to function
+// I got all of the following codes for the calculator with the help of tutors and a YouTube Video by motiQ: https://www.youtube.com/watch?v=JDiurjhpOXA
 
 const btns = document.querySelectorAll('.calcBtn');
 const equalBtn = document.querySelector('.btn-equal');
@@ -70,6 +73,8 @@ clearBtn.addEventListener('click', function () {
 });
 
 
+// Code to drag the Calculator
+// I got the following four functions to move the calculator around the page, with the help of tutors and a stackoverflow post from this page: https://stackoverflow.com/questions/53247852/javascript-moveable-divs-with-javascript).
 
 dragElement(document.getElementById("calculator-wrapper"));
 

@@ -32,12 +32,14 @@
     background-color: $white;
 }
 
+// I learned how to use the CSS + and - symbols from the following W3School page: https://www.w3schools.com/howto/howto_js_accordion.asp
 .charity-collapse:after {
     content: '\02795';
     float: right;
     margin-left: 5px;
 }
 
+// I learned how to use the CSS + and - symbols from the following W3School page: https://www.w3schools.com/howto/howto_js_accordion.asp
 .symbol:after {
     content: "\2796";
 }
